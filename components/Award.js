@@ -112,7 +112,7 @@ const Award = () => {
                 height={10}
               />
               <Image
-                className="absolute sm:w-40 lg:w-40 contrast-100 xl:w-48 md:w-48 top-2  bottom-10 lg:top-10 xl:left-20 xl:top-1 2xl:top-2 left-16 md:top-5 md:left-20"
+                className="absolute sm:w-40 lg:w-40 contrast-100 xl:w-48 md:w-48 top-2  bottom-10 lg:top-10 xl:left-20 xl:top-4 2xl:top-2 left-16 md:top-5 md:left-20"
                 src="top_clutch.svg"
                 alt="Clutch"
                 width={150}
