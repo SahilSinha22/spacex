@@ -26,7 +26,7 @@ const Indus = () => {
                 </a>
                 </div>
             </div>
-            <div className="relative xl:-left-16  lg:-left-8  md:-left-2 -left-3 sm:-left-5 bg-black dark:bg-zinc-800 mr-20 w-6 sm:w-16 hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
+            <div className="relative xl:-left-[74px]  lg:-left-8  md:-left-2 -left-3 sm:-left-5 bg-black dark:bg-zinc-800 mr-20 w-6 sm:w-16 hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
             >
                 <div className=" absolute z-10 bottom-10 opacity-0 hover:opacity-100">
 
@@ -40,7 +40,7 @@ const Indus = () => {
                 </a>
             </div>
             </div>
-            <div className="relative xl:-left-32 lg:-left-16 md:-left-4 -left-6 sm:-left-10  bg-black dark:bg-zinc-800 w-6 sm:w-16   hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
+            <div className="relative xl:-left-[145px] lg:-left-16 md:-left-4 -left-6 sm:-left-10  bg-black dark:bg-zinc-800 w-6 sm:w-16   hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
             >
                 <div className=" absolute z-10 bottom-10 opacity-0 hover:opacity-100">
 
@@ -54,7 +54,7 @@ const Indus = () => {
                 </a>
             </div>
             </div>
-            <div className="relative xl:-left-48 lg:-left-24 md:-left-6 -left-8 sm:-left-16 bg-black dark:bg-zinc-800 w-6 sm:w-16 hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
+            <div className="relative xl:-left-[220px] lg:-left-24 md:-left-6 -left-8 sm:-left-[60px] bg-black dark:bg-zinc-800 w-6 sm:w-16 hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
             >
                 <div className="z-10 absolute bottom-10 opacity-0 hover:opacity-100">
 
@@ -68,7 +68,7 @@ const Indus = () => {
                 </a>
             </div>
             </div>
-            <div className="relative mt-2 xl:-left-64 sm:mt-0 lg:-left-32 md:-left-8  sm:-left-20 bg-black dark:bg-zinc-800 w-6 sm:w-16  hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
+            <div className="relative mt-2 xl:-left-[291px] sm:mt-0 lg:-left-32 md:-left-8  sm:-left-20 bg-black dark:bg-zinc-800 w-6 sm:w-16  hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
             >
                 <div className="z-10 absolute bottom-10 opacity-0 hover:opacity-100">
 
@@ -82,7 +82,7 @@ const Indus = () => {
                 </a>
             </div>
             </div>
-            <div className="relative  mt-2 xl:-left-80 sm:mt-0 lg:-left-40 md:-left-10 -left-2 sm:-left-24 bg-black dark:bg-zinc-800 w-6 sm:w-16 hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
+            <div className="relative  mt-2 xl:-left-[364px] sm:mt-0 lg:-left-40 md:-left-10 -left-2 sm:-left-24 bg-black dark:bg-zinc-800 w-6 sm:w-16 hover:h-80 md:hover:h-auto  md:w-20 lg:w-24 md:hover:w-60 lg:hover:w-80  hover:w-52 p-6 rounded-lg"
             >
                 <div className="z-10 absolute bottom-10 opacity-0 hover:opacity-100">
 
