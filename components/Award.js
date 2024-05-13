@@ -73,14 +73,14 @@ const Award = () => {
           <p className="text-sm">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale hover:grayscale-0 flex-col text-center items-center">
-        <div className="rounded-xl p-6 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
+        <div className="rounded-xl p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
           <Image src="GoodFirms.svg" alt="GoodFirms" width={150} height={10} />
           </div>
           <p className="mt-2 font-semibold">GoodFirms</p>
           <p className="text-sm text-center ">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
-        <div className="rounded-xl p-6 bg-gray-200 hover:drop-shadow-lg  hover:bg-white hover:shadow">
+        <div className="rounded-xl p-8 bg-gray-200 hover:drop-shadow-lg  hover:bg-white hover:shadow">
           <Image src="Clutch-1.svg" alt="Clutch" width={150} height={10} />
 </div>
           <p className="mt-2 font-semibold">Clutch</p>
