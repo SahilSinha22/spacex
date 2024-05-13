@@ -52,7 +52,7 @@ const Form = () => {
 </div>
 
 
-<div className=" text-center mx-16 lg:ml-28 xl:ml-64 2xl:ml-60 flex flex-col ">
+<div className=" text-center mx-16 lg:ml-28 xl:ml-60 2xl:ml-60 flex flex-col ">
 <h1 className="text-left sm:text-2xl items-center text-white text-lg md:text-4xl  font-sedan">
         Get in touch with us today to see how we can help <br/> you develop the right
         product-faster
