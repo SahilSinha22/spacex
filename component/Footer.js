@@ -4,8 +4,8 @@ import Logo from "@/public/logo.png"
 
 const Footer = () => {
   return (
-    <footer classNameName="sm:mx-8 w-auto  md:mb-10 border-2 items-center justify-center flex flex-col  w-full flex    text-white  text-xs">
-      <div className="sm:mx-8 bg-black  flex-col sm:flex-row 2xl:justify-around   xl:justify-between    2xl: xl:text-xl 2xl:text-2xl   grid grid-cols-3  sm:gap-6  sm:justify-between sm:gap-y-10 lg:grid-cols-4  md:flex md:justify-between   py-5  text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+    <footer classNameName=" w-auto  md:mb-10 border-2 items-center justify-center flex flex-col  w-full flex    text-white  text-xs">
+      <div className=" bg-black  flex-col sm:flex-row 2xl:justify-around   xl:justify-between    2xl: xl:text-xl 2xl:text-2xl   grid grid-cols-3  sm:gap-6  sm:justify-between sm:gap-y-10 lg:grid-cols-4  md:flex md:justify-between   py-5  text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
         <ul
           className="w-auto  flex-col 2xl:justify-around xl:justify-between  xl:text-xl 2xl:text-2xl   mb-4 sm:flex sm:flex-col space-y-5 md:mb-0 md:block"
           aria-labelledby="mega-menu-full-image-button"
@@ -130,7 +130,7 @@ const Footer = () => {
       </div>
 
     
-    <ul className='sm:mx-8 bg-zinc-400  xl:text-xl 2xl:text-2xl  flex flex-row  px-4  space-x-11  text-gray-800 border-2xl justify-center   text-center  text-xl '>
+    <ul className=' bg-zinc-400  xl:text-xl 2xl:text-2xl  flex flex-row  px-4  space-x-11  text-gray-800 border-2xl justify-center   text-center  text-xl '>
       <li className="xl:text-xl  my-4 2xl:text-2xl mb-3 hover:text-white text-lg">
         2023 Techlerate
       </li>

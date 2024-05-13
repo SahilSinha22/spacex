@@ -13,6 +13,10 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         sedan:['Sedan SC','Poppins'],
       },
+      fontSize: {
+        '7xl': '7rem',
+       '8xl': '8rem',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

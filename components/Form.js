@@ -14,7 +14,7 @@ import Img11 from "@/public/11.jpg"
 import Img12 from "@/public/12.jpg"
 const Form = () => {
   return (
-    <div className=" bg-black sm:mx-8">
+    <div className=" bg-black ">
 
 <div className="flex flex-col m-1  pt-4  ">
   <div className="grid grid-cols-4 py-4 px-4 ">
@@ -52,21 +52,21 @@ const Form = () => {
 </div>
 
 
-<div className=" text-center  ">
-<h1 className="text-center text-white text-4xl  font-sedan">
+<div className=" text-center mx-16 lg:ml-28 xl:ml-64 flex flex-col ">
+<h1 className="text-left sm:text-2xl items-center text-white text-lg md:text-4xl  font-sedan">
         Get in touch with us today to see how we can help <br/> you develop the right
         product-faster
       </h1>
       </div>
-      <div className="flex flex-col sm:flex-row items-center m-auto justify-between  md:mx-4">
+      <div className="flex flex-col mx-10 sm:flex-row items-center m-auto justify-around md:mx-4">
         
-          <div className=" md:mx-2 rounded-lg bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8 md:ml-10 ">
+          <div className="  md:mx-2 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8 md:ml-10 ">
             <div className="m-8 md:text-2xl ">
-              <h1>Hello now!</h1>
+              <h1 className="md:text-2xl font-semibold" >Hello now !</h1>
               <div className="flex flex-row my-2" > 
-                <Image src="flag.svg" alt="logo" width={40} height={4} /> <div className="ml-4">+91 88 820 76 755 </div> </div>
-              <h1>Connect with us</h1>
-              <p className="md:text-lg">
+                <Image src="flag.svg" alt="logo" width={40} height={4} /> <div className="ml-4 md:text-xl">+91 88 820 76 755 </div> </div>
+              <h1 className="md:text-2xl font-semibold mt-2" >Connect with us</h1>
+              <p className="md:text-xl ">
                 Email : amit@spacetotech.com
                 <br />
                 office : C-171 Sector-63,Noida
@@ -76,8 +76,8 @@ const Form = () => {
               </div>
           </div>
        
-        <div className="mr-4 md:mx-2 ">
-          <form className="max-w-md mx-auto">
+        <div className="mr-4 mb-4  md:mx-2 ">
+          <form className="max-w-md mx-auto ">
             <div className="grid md:grid-cols-2 md:gap-6">
               <div className="relative z-0 w-full mb-5 group">
                 <input
@@ -90,7 +90,7 @@ const Form = () => {
                 />
                 <label
                   for="floating_first_name"
-                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium  absolute text-sm lg:text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Full Name
                 </label>

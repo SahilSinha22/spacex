@@ -6,7 +6,7 @@ function App() {
  const [isOpen, setIsOpen] = useState(false);
 
  return (
-   <nav className="flex bg-black items-center sm:mx-8 justify-between flex-wrap p-6">
+   <nav className=" md:px-10 flex bg-black items-center  justify-between flex-wrap p-6">
      <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
      <span><Image src={Logo} className="" alt="Logo" width={200} height={10}/>
      </span> 
@@ -35,7 +35,7 @@ function App() {
      <div
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-       <div className="text-sm lg:flex-grow">
+       <div className="text-sm xl:text-xl lg:flex-grow">
          <a href="#" className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
            Home
          </a>
@@ -53,7 +53,7 @@ function App() {
          </a>
        </div>
        <div>
-         <button className=" bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white">
+         <button className=" mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white">
            Contact Us
          </button>
        </div>
