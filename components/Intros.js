@@ -66,7 +66,7 @@ const Intros = () => {
           />
         </div>
       </div>
-      <div className="grid md:px-20  grid-cols-4 h-24 xl:px-60 2xl:px-40 sm:px-10 sm:grid-cols-4 px-5 md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 bg-purple-500 md:h-32 xl:h-60">
+      <div className="grid md:px-20  grid-cols-4 h-24 xl:px-60 2xl:px-48 sm:px-10 sm:grid-cols-4 px-5 md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 bg-purple-500 md:h-32 xl:h-60">
         <Image
           src={Mobi2}
           alt="Company Logo 1"
