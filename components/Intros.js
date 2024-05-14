@@ -28,7 +28,7 @@ const Intros = () => {
         </button>
       </div>
       <div className=" relative   h-20 md:h-5  sm:h-40 lg:h-60 xl:h-80 ">
-        <div className="absolute sm:px-10 xl:px-32 md:px-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4">
+        <div className="absolute sm:px-10 xl:px-10  md:px-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4">
           <Image
             src={Mobi1}
             alt="App Image 1"
