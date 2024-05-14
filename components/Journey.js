@@ -13,7 +13,7 @@ const Journey = () => {
           businesses in numerous sectors to engage customers, optimize
           operations, and unlock new opportunities for growth.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2   space-y-5 lg:grid-cols-5 xl:grid-cols-5  justify-center items-center space-x-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2   space-y-5 lg:grid-cols-4 xl:grid-cols-5  justify-center items-center space-x-8 mt-8">
           <div className="text-center   mt-4 ml-10">
             <div className="w-48 h-48 2xl:w-52 2xl:h-52  border-dashed mb-4 border-2  mx-auto  flex items-center justify-center rounded-full">
               <div className="relative 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
