@@ -8,15 +8,15 @@ const Pef = () => {
       <div className="flex justify-between  lg:h-auto lg:items-center lg:text-center p-5 lg:p-20 bg-black text-white ">
         <div className="text-center px-2  sm:pr-10 md:pr-20 xl:pr-30 lg:px-10 border-r-2">
           <h1  className="text-2xl proportional-nums md:text-6xl  lg:text-7xl xl:text-8xl lg:pt-8 h-45 font-semibold">25+</h1>
-          <p className="text-lg font-light lg:text-4xl lg:py-8 mt-2">PARTNERS</p>
+          <p className="text-sm sm:text-lg font-light lg:text-4xl lg:py-8 mt-2">PARTNERS</p>
         </div>
         <div className="text-center px-2 sm:pr-10 md:pr-20 lg:px-10 xl:pr-30 border-r-2">
           <h1 className="text-2xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8 font-semibold">50+</h1>
-          <p className=" text-lg font-light lg:text-4xl px-4 sm:px-1 lg:py-8 mt-2">TEAM SIZE</p>
+          <p className=" text-sm sm:text-lg font-light lg:text-4xl px-4 sm:px-1 lg:py-8 mt-2">TEAM SIZE</p>
         </div>
         <div className="text-center lg:pl-1 xl:pl-4 ">
           <h1 className="text-2xl proportional-nums md:text-6xl lining-nums lg:text-7xl xl:text-8xl lg:pt-8 font-bold">100+</h1>
-          <p className="text-lg font-light pr-2  lg:text-4xl lg:py-8 mt-2">SUCCESSFUL PRODUCTS</p>
+          <p className="text-sm sm:text-lg font-light pr-2  lg:text-4xl lg:py-8 mt-2">SUCCESSFUL PRODUCTS</p>
         </div>
       </div>
       <div className="bg-red-600 p-10 text-center items-center">
