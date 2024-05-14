@@ -52,13 +52,13 @@ const Form = () => {
 </div>
 
 
-<div className=" text-center mx-16 lg:ml-28 xl:ml-40 2xl:ml-60 flex flex-col ">
-<h1 className="text-left sm:text-2xl items-center text-white text-lg md:text-4xl  font-sedan">
+<div className="   flex flex-col ">
+<h1 className="text-left mx-16  2xl:ml-60 lg:ml-28 xl:ml-40 sm:text-2xl items-center text-white text-lg md:text-4xl  font-sedan">
         Get in touch with us today to see how we can help <br/> you develop the right
         product-faster
       </h1>
-      </div>
-      <div className="flex flex-col mx-10 sm:flex-row items-center m-auto justify-around md:mx-4">
+     
+      <div className="flex   flex-col mx-10 sm:flex-row items-center m-auto justify-around md:mx-4">
         
           <div className="  md:mx-2 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8 md:ml-10 ">
             <div className="m-8 md:text-2xl ">
@@ -79,7 +79,7 @@ const Form = () => {
         <div className="mr-4 mb-4  md:mx-2 ">
           <form className="max-w-md mx-auto ">
             <div className="grid md:grid-cols-2 md:gap-6">
-              <div className="relative z-0 w-full mb-5 group">
+              <div className="relative z-0 w-full mb-4 group">
                 <input
                   type="text"
                   name="floating_first_name"
@@ -184,13 +184,15 @@ const Form = () => {
             <button
               className="text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Get a free quote →
+              Get a free quote -
             </button>
           </form>
         </div>
+      </div>
       </div>
     </div>
   );
 };
 
 export default Form;
+
