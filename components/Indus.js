@@ -42,7 +42,7 @@ const Indus = () => {
         <div className=" relative sm:hover:w-52 sm:hover:-left-10 hover:-left-20 left-16 md:h-60 lg:left-32 lg:h-80 xl:left-32 xl:hover:w-72 lg:hover:h-80 md:left-[150px] sm:left-[120px] bg-black sm:h-56  dark:bg-zinc-800 hover:w-64 w-10 sm:w-16 h-48 md:hover:h-auto md:w-16 lg:w-24  xl:w-28 md:hover:w-60 lg:hover:w-64   p-2  rounded-lg">
           <div className="  absolute   bottom-2  opacity-0 p-4 hover:opacity-100">
             <h3 className="mt-2  text-sm lg:text-lg font-semibold text-white  dark:text-white">
-              Healthcare
+              Finance
             </h3>
             <div className="mt-1 md:mt-2  ">
             <p className="text-white  text-xs lg:text-sm  dark:text-zinc-300">
@@ -64,7 +64,7 @@ const Indus = () => {
         <div className=" relative mt-1 xl:hover:-left-20 sm:hover:w-52 sm:mt-0 z-10 sm:hover:-left-10 left-0 md:h-60 lg:left-24 lg:h-80 xl:left-20 xl:hover:w-72 lg:hover:h-80 md:left-32 sm:left-[94px] bg-black sm:h-56  dark:bg-zinc-800 hover:w-52 w-10 sm:w-16 h-48 md:hover:h-auto md:w-16 lg:w-24 xl:w-28 md:hover:w-60 lg:hover:w-64   p-2  rounded-lg">
           <div className=" absolute   bottom-2 text-white opacity-0 p-4 hover:opacity-100">
             <h3 className="mt-2  text-sm lg:text-lg  font-semibold text-white  dark:text-white">
-              Healthcare
+              Retail
             </h3>
             <div className="mt-1 md:mt-2">
             <p className="text-white  text-xs lg:text-sm  dark:text-zinc-300">
@@ -86,7 +86,7 @@ const Indus = () => {
         <div className=" relative xl:hover:-left-40  sm:hover:-left-20 sm:hover:w-52 mt-1 -left-24  md:h-60 lg:left-[68px] lg:h-80 xl:left-6 xl:hover:w-72 lg:hover:h-80 md:left-28 sm:mt-0 sm:left-[74px] bg-black sm:h-56  dark:bg-zinc-800 hover:w-52 w-10 sm:w-16 h-48 md:hover:h-auto md:w-16 lg:w-24 xl:w-28 md:hover:w-60 lg:hover:w-64   p-2  rounded-lg">
           <div className="  absolute z-10  bottom-2  opacity-0 p-4 hover:opacity-100">
             <h3 className="mt-2  text-sm lg:text-lg font-semibold text-white  dark:text-white">
-              Healthcare
+              Education
             </h3>
             <div className="mt-1 md:mt-2">
             <p className="text-white  text-xs lg:text-sm  dark:text-zinc-300">
@@ -108,7 +108,7 @@ const Indus = () => {
         <div className=" relative xl:hover:-left-52 sm:hover:-left-24 sm:hover:w-52 mt-1 md:h-60 lg:h-80 xl:-left-8 xl:hover:w-72 lg:left-10 lg:hover:h-80 md:left-24 sm:mt-0 sm:left-[60px] left-0 sm:h-56 bg-black  dark:bg-zinc-800 hover:w-52 w-10 sm:w-16 h-48 md:hover:h-auto md:w-16 lg:w-24 xl:w-28 md:hover:w-60 lg:hover:w-64   p-2  rounded-lg">
           <div className="  absolute z-10  bottom-2  opacity-0 p-4 hover:opacity-100">
             <h3 className="mt-2  text-sm lg:text-lg font-semibold text-white  dark:text-white">
-              Healthcare
+              Education
             </h3>
             <div className="mt-1 md:mt-2">
             <p className="text-white  text-xs lg:text-sm  dark:text-zinc-300">
@@ -130,7 +130,7 @@ const Indus = () => {
         <div className=" relative xl:hover:-left-64 sm:hover:-left-32 sm:hover:w-60 md:h-60 lg:h-80 xl:-left-20 xl:hover:w-72 lg:left-3 lg:hover:h-80 -left-24 md:left-20 sm:mt-0 sm:left-10  sm:h-56 mt-1 bg-black  dark:bg-zinc-800 hover:w-52 w-10 sm:w-16 h-48 md:hover:h-auto md:w-16 lg:w-24 xl:w-28 md:hover:w-60 lg:hover:w-64   p-2  rounded-lg">
           <div className="  absolute z-10   bottom-2 hover:opacity-100 opacity-0   p-4 ">
             <h3 className="mt-2  text-sm lg:text-lg font-semibold text-white  dark:text-white">
-              Healthcare
+              Education
             </h3>
             <div className="mt-1 md:mt-2">
             <p className="text-white  text-xs lg:text-sm  dark:text-zinc-300">
