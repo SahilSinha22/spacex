@@ -188,7 +188,7 @@ const Form = () => {
               </label>
             </div>
             
-            <div className="g-recaptcha recap" data-sitekey="6Lc5Od4pAAAAAEr5_MwUj93HLCVogAPipguT96VI"></div>
+            <div className="g-recaptcha recap" data-sitekey="6LdZQt4pAAAAAJcNLa_g63LZMyVQLp48mx7IEEdC"></div>
 
       
             <button
