@@ -12,9 +12,15 @@ import Img9 from "@/public/9.jpg"
 import Img10 from "@/public/10.jpg"
 import Img11 from "@/public/11.jpg"
 import Img12 from "@/public/12.jpg"
+import Script from "next/script";
 const Form = () => {
   return (
+
+
     <div className=" bg-black ">
+<Script src="https://www.google.com/recaptcha/api.js" async defer  />
+<Script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer/>
 
 <div className="flex flex-col m-1  pt-4  ">
   <div className="grid grid-cols-4 py-4 px-4 ">
@@ -76,8 +82,8 @@ const Form = () => {
               </div>
           </div>
        
-        <div className="mr-4 mb-4  md:mx-2 ">
-          <form className="max-w-md mx-auto ">
+        <div className="mr-4 mb-4  md:mx-2 sm:ml-3 ">
+          <form className="max-w-md mx-auto  ">
             <div className="grid md:grid-cols-2 md:gap-6">
               <div className="relative z-0 w-full mb-4 group">
                 <input
@@ -181,8 +187,12 @@ const Form = () => {
                 Description
               </label>
             </div>
+            
+            <div className="g-recaptcha recap" data-sitekey="6Lc5Od4pAAAAAEr5_MwUj93HLCVogAPipguT96VI"></div>
+
+      
             <button
-              className="text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="rounds text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Get a free quote →
             </button>
@@ -196,4 +206,3 @@ const Form = () => {
 };
 
 export default Form;
-
