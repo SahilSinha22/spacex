@@ -14,7 +14,7 @@ module.exports = {
         sedan:['Sedan SC','Poppins'],
       },
       fontSize: {
-        
+        '9xl':'7rem',
        '8xl': '8rem',
       },
       backgroundImage: {
