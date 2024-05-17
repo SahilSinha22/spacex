@@ -9,7 +9,7 @@ function App() {
     <nav className="  bg-black items-center p-4 ">
      <div className="md:px-10 xl:px-40 flex bg-black items-center  justify-between flex-wrap ">
 
-      <div className="  flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
+      <div className="  flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
         <span>
           <Image src={Logo} className="sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={200} height={10} />
         </span>
@@ -40,7 +40,7 @@ function App() {
           isOpen ? "block" : "hidden"
         }`}
       >
-        <div className="text-sm lg:mr-10  justify-left lg:flex-grow">
+        <div className="text-sm lg:mr-10 xl:ml-10 xl:mr-0  justify-left lg:flex-grow">
           <a
             href="#"
             className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
