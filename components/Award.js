@@ -5,7 +5,7 @@ const Award = () => {
     <div className="bg-white text-zinc-800 p-8 sm:mx-4 xl:mx-28 mt-10 lg:mt-20 ">
       <div className="text-between flex flex-col md:flex-row justify-between">
         <div className="">
-          <h1 className="text-2xl  font-bold mb-4 sm:text-4xl md:text-6xl playfair">
+          <h1 className="text-2xl  font-bold mb-4 sm:text-4xl md:text-5xl playfair">
             Awards & Recognition
           </h1>
           <p className="text-lg  md:text-xl mb-10">
@@ -91,7 +91,7 @@ const Award = () => {
       <div className="flex flex-row w-full xl:justify-between ">
         <div className="flex flex-col lg:flex-row w-full">
          
-            <div className=" justify-between text-4xl flex flex-col sm:text-4xl md:text-6xl lg:text-6xl  mb-4">
+            <div className="  text-4xl flex flex-col sm:text-4xl md:text-5xl lg:text-5xl  mb-4">
               <div className="font-bold playfair ">
                 Grow with our
                 <br /> technical expertise
