@@ -4,7 +4,7 @@ const Journey = () => {
   return (
     <div className="max-w-7xl  px-4 py-12 mx-10 ">
       <div className="mx-5 md:mx-20">
-        <h2 className="text-3xl md:text-6xl font-bold font-sedan text-left">
+        <h2 className="text-3xl md:text-6xl font-bold playfair text-left">
           Spacetotech journey of <br /> Mobile app development
         </h2>
         <p className="text-left md:text-2xl text-zinc-600 mt-4">
