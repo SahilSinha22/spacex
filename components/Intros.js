@@ -14,7 +14,7 @@ const Intros = () => {
       }}
     >
       <div className=" mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
-        <h1 className="text-2xl xl:mx-0 lg:text-5xl md:text-4xl font-bold mb-4 font-sedan">
+        <h1 className="text-2xl xl:mx-0 lg:text-5xl md:text-4xl font-bold mb-4 playfair">
           Transforming Business with <br />
           Digital Innovation & Data-driven Apps
         </h1>
