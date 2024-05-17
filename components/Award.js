@@ -102,7 +102,7 @@ const Award = () => {
              
             </div>
           </div>
-          <div className=" grid grid-rows-1 sm:px-14 xl:px-20 xl:justify-right items-right">
+          <div className=" grid grid-rows-1 sm:px-14 lg:px-32  xl:px-20 xl:justify-right items-right">
             <div className="relative flex flex-row   grayscale">
               <Image
                 className="sm:w-40 md:w-48   lg:w-40 xl:w-48 2xl:w-52"
