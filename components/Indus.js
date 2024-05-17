@@ -7,7 +7,7 @@ const Indus = () => {
   return (
     <div className=" max-w-7xl   lg:px-8 py-12">
       <div className="text-left ml-10 md:mx-20">
-        <h2 className="text-3xl font-bold font-sedan md:text-6xl text-zinc-900 ">
+        <h2 className="text-3xl font-bold playfair md:text-6xl text-zinc-900 ">
           Industries we serve
         </h2>
         <p className="mt-2 text-lg md:text-2xl text-zinc-600 ">
