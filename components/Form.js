@@ -83,7 +83,7 @@ const Form = () => {
       </div>
 
       <div className="   flex flex-col ">
-        <h1 className="text-left mx-14 sm:ml-12 md:ml-24 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl items-center text-white text-lg lg:text-4xl  font-sedan">
+        <h1 className="text-left mx-14 sm:ml-12 md:ml-24 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl items-center text-white text-lg lg:text-4xl  playfair">
           Get in touch with us today to see how we can help <br /> you develop
           the right product-faster
         </h1>
