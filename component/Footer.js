@@ -5,13 +5,13 @@ import Logo from "@/public/logo.png";
 const Footer = () => {
   return (
     <footer classNameName=" w-auto  md:mb-10  items-center justify-center flex flex-col  w-full flex    text-white  text-xs">
-      <div className=" bg-black  flex-col sm:flex-row       2xl: xl:text-xl 2xl:text-2xl   grid grid-cols-3  sm:gap-6   sm:gap-y-10 lg:grid-cols-4  md:flex    py-5  text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+      <div className=" bg-black pt-12 flex-col sm:flex-row       2xl: xl:text-xl 2xl:text-2xl   grid grid-cols-3  sm:gap-6   sm:gap-y-10 lg:grid-cols-4  md:flex    py-5  text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
         <ul
           className="w-auto sm:ml-10 xl:ml-40 2xl:ml-36 md:ml-20 flex-col 2xl:justify-around xl:justify-between  xl:text-xl 2xl:text-2xl   mb-4 sm:flex sm:flex-col space-y-5 md:mb-0 md:block"
           aria-labelledby="mega-menu-full-image-button"
         >
           <span className=" space-y-4  ">
-            <Image src={Logo} className="" alt="Logo" width={400} height={40} />
+            <Image src={Logo} className="xl:w-72 sm:w-72 sm:h-10" alt="Logo" width={100} height={40} />
           </span>
 
           <li className="xl:text-xl 2xl:text-2xl  flex flex-row text-xl space-x-4">
@@ -51,7 +51,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className="xl:text-xl 2xl:text-2xl lg:mx-4 xl:mx-8 2xl:mx-24 mb-4 justify-around  md:mb-0">
+        <ul className="xl:text-xl 2xl:text-2xl lg:mx-4 xl:ml-32 xl:mr-10 2xl:mx-24 mb-4 justify-around  md:mb-0">
           <h1 className="xl:text-2xl 2xl:text-3xl pb-4 text-white sm:pb-4 font-bold  text-xl sm:text-2xl">
             {" "}
             Services
@@ -160,4 +160,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
