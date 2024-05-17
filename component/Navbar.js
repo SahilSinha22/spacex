@@ -40,7 +40,7 @@ function App() {
           isOpen ? "block" : "hidden"
         }`}
       >
-        <div className="text-sm lg:mr-10 xl:ml-10 xl:mr-0  justify-left lg:flex-grow">
+        <div className="text-sm lg:mr-10 xl:ml-8 xl:mr-0  justify-left lg:flex-grow">
           <a
             href="#"
             className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8"
