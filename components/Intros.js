@@ -13,12 +13,12 @@ const Intros = () => {
         backgroundImage: `url("bg.jpg")`,
       }}
     >
-      <div className="  mx-auto flex flex-col items-center text-center">
-        <h1 className="text-2xl lg:text-5xl md:text-4xl font-bold mb-4 font-sedan">
+      <div className=" mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
+        <h1 className="text-2xl xl:mx-0 lg:text-5xl md:text-4xl font-bold mb-4 font-sedan">
           Transforming Business with <br />
           Digital Innovation & Data-driven Apps
         </h1>
-        <p className=" text-lg lg:text-2xl md:text-xl mb-8 ">
+        <p className=" text-sm  px-8 sm:px-24 md:px-32 lg:px-1 xl:px-64 xl:text-xl lg:text-xl md:text-lg mb-8 ">
           Spacetotech is turning ideas into reality for a decade now. Partner
           with us &<br /> drive digitization to your business with innovation
           and technology
@@ -76,7 +76,7 @@ const Intros = () => {
           </div>
         </div>
       </div>
-      <div className="grid md:px-20 2xl:px-56 grid-cols-4 h-20 xl:px-60  sm:px-10 sm:grid-cols-4 px-8 md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 bg-purple-500 md:h-32 xl:h-60">
+      <div className="grid md:px-20 lg:px-12 2xl:px-56 grid-cols-4 h-20 xl:px-40 sm:h-24  sm:px-10 sm:grid-cols-4 px-8 md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 bg-purple-500 md:h-32 xl:h-56">
         <Image
           src={Mobi2}
           alt="Company Logo 1"
