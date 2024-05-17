@@ -95,7 +95,7 @@ const Award = () => {
                 Grow with our
                 <br /> technical expertise
               </div>
-              <div className="text-lg  sm:text-lg lg:text-2xl md:text-3xl">
+              <div className="text-lg  sm:text-lg lg:text-xl md:text-3xl">
                 Our team is experienced with various different mobile
                 <br />
                 technologies and can help you choose the right tech.
@@ -105,21 +105,21 @@ const Award = () => {
           <div className=" grid grid-rows-1 sm:px-14 xl:px-20 xl:justify-right items-right">
             <div className="relative flex flex-row   grayscale">
               <Image
-                className="sm:w-40 md:w-48   lg:w-40 xl:w-48 "
+                className="sm:w-40 md:w-48   lg:w-40 xl:w-48 2xl:w-52"
                 src="top_clutch.svg"
                 alt="Clutch"
                 width={150}
                 height={10}
               />
               <Image
-                className="absolute sm:w-40 lg:w-40 contrast-100 xl:w-48 md:w-48 top-2  bottom-10 lg:top-10 xl:left-20 xl:top-4 2xl:top-2 left-16 md:top-5 md:left-20"
+                className="absolute sm:w-40 lg:w-40  2xl:w-52 contrast-100 xl:w-48 md:w-48 top-2  bottom-10 lg:top-10 xl:left-20 xl:top-4 2xl:top-2 left-16 md:top-5 md:left-20"
                 src="top_clutch.svg"
                 alt="Clutch"
                 width={150}
                 height={10}
               />
               <Image
-                className="sm:w-40  lg:w-40 xl:w-48 md:w-48"
+                className="sm:w-40  lg:w-40  xl:w-48 2xl:w-52 md:w-48"
                 src="top_clutch.svg"
                 alt="Clutch"
                 width={150}
