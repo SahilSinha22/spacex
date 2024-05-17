@@ -5,7 +5,7 @@ import Doc from "@/public/doctor.jpg";
 
 const Indus = () => {
   return (
-    <div className=" max-w-7xl   lg:px-8 py-12">
+    <div className=" max-w-7xl mx-1-  lg:px-8 py-12">
       <div className="text-left ml-10 md:mx-20">
         <h2 className="text-3xl font-bold playfair md:text-6xl text-zinc-900 ">
           Industries we serve
