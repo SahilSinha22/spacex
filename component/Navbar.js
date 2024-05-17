@@ -9,7 +9,7 @@ function App() {
     <nav className="  bg-black items-center  ">
      <div className="md:px-10 xl:px-40 flex bg-black items-center  justify-between flex-wrap p-6">
 
-      <div className="  flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
+      <div className="  flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
         <span>
           <Image src={Logo} className="sm:w-60 lg:w-60 lg:h-5 sm:h-10" alt="Logo" width={200} height={10} />
         </span>
