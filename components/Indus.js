@@ -1,167 +1,157 @@
-import React from "react";
-import Image from "next/image";
-import Doc from "@/public/doctor.jpg";
+'use client'
+
+import React ,{ useEffect } from "react";
 
 
 const Indus = () => {
+  useEffect(() => {
+    console.log("hello");
+    const panels = document.querySelectorAll(".panel");
+    
+    panels.forEach((panel) => {
+      panel.addEventListener("click", () => {
+        removeActiveClasses();
+        panel.classList.add("active");
+      });
+    });
+
+    function removeActiveClasses() {
+      panels.forEach((panel) => {
+        panel.classList.remove("active");
+      });
+    }
+    console.log("hellow1");
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      panels.forEach((panel) => {
+        panel.removeEventListener("click", () => {
+          removeActiveClasses();
+          panel.classList.add("active");
+        });
+      });
+    };
+  }, []); // Empty dependency array means this runs once after initial render
+
   return (
-    <div className=" max-w-7xl mx-1-  lg:px-8 py-12">
+    <div className=" max-w-7xl mx-10  lg:px-8 py-12">
       <div className="text-left ml-10 md:mx-20">
-        <h2 className="text-3xl font-bold playfair md:text-6xl text-zinc-900 ">
+        <h2 className="text-3xl font-bold playfair md:text-6xl text-zinc-900 dark:text-white">
           Industries we serve
         </h2>
-        <p className="mt-2 text-lg md:text-2xl text-zinc-600 ">
+        <p className="mt-2 text-lg md:text-2xl text-zinc-600 dark:text-zinc-300">
           Our top mobile app development company proudly serves a diverse range
           of industries. Through innovative technology solutions, we empower
           businesses in numerous sectors to engage customers, optimize
           operations, and unlock new opportunities for growth.
         </p>
-      
-      
-<div className="container ">
-  <div className="gallery">
-    <div className="  box ">
-      <div className="img-boxss">
-            <h3 className="head">
-              Healthcare
-            </h3>
-            <div className="mt-1 md:mt-2">
-            <p className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
-            </p>
+        <div className="galerrys ">
+          <div className="containers mr-10">
+            <div className="panel active bg-black">
+              <div className="img-boxs">
+                <h3 className="head">Healthcare</h3>
+                <div className="mt-1 md:mt-2">
+                  <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+                <div className="mt-4   lg:mt-5 xl:mt-10">
+                  <a href="#" className="round pl-0 ">
+                    Explore more →
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="mt-4 lg:mt-5 xl:mt-10">
-            <a
-              href="#"
-              className="round  "
-            >
-              Explore more →
-            </a>
+            <div className="panel bg-black">
+              <div className="img-boxs ">
+                <h3 className="head ">Healthcare</h3>
+                <div className="mt-1 md:mt-2">
+                  <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+                <div className="mt-4 lg:mt-5 xl:mt-10">
+                  <a href="#" className=" round    ">
+                    Explore more →
+                  </a>
+                </div>
+              </div>
             </div>
-          </div></div>
-    <div className="img-box ">
-      <div className="img-boxs ">
-            <h3 className="head ">
-              Healthcare
-            </h3>
-            <div className="mt-1 md:mt-2">
-            <p className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
-            </p>
+            <div className="panel bg-black">
+            <div className="img-boxs ">
+                <h3 className="head ">Healthcare</h3>
+                <div className="mt-1 md:mt-2">
+                  <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+                <div className="mt-4 lg:mt-5 xl:mt-10">
+                  <a href="#" className=" round    ">
+                    Explore more →
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="mt-4 lg:mt-5 xl:mt-10">
-            <a
-              href="#"
-              className=" round    "
-            >
-              Explore more →
-            </a>
+            <div className="panel bg-black">
+            <div className="img-boxs ">
+                <h3 className="head ">Healthcare</h3>
+                <div className="mt-1 md:mt-2">
+                  <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+                <div className="mt-4 lg:mt-5 xl:mt-10">
+                  <a href="#" className=" round    ">
+                    Explore more →
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          </div>
-
-          <div className="img-box  ">
-      <div className="img-boxs ">
-            <h3 className=" head">
-              Healthcare
-            </h3>
-            <div className="mt-1 md:mt-2">
-            <p className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
-            </p>
+            <div className="panel bg-black">
+            <div className="img-boxs ">
+                <h3 className="head ">Healthcare</h3>
+                <div className="mt-1 md:mt-2">
+                  <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+                <div className="mt-4 lg:mt-5 xl:mt-10">
+                  <a href="#" className=" round    ">
+                    Explore more →
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="mt-4 lg:mt-5 xl:mt-10">
-            <a
-              href="#"
-              className=" round   "
-            >
-              Explore more →
-            </a>
-            </div>
-          </div>
-          </div>
-
-          <div className="img-box ">
-      <div className="   img-boxs ">
-            <h3 className="head ">
-              Healthcare
-            </h3>
-            <div className="mt-1 md:mt-2">
-            <p className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
-            </p>
-            </div>
-            <div className="mt-4 lg:mt-5 xl:mt-10">
-            <a
-              href="#"
-              className=" round   "
-            >
-              Explore more →
-            </a>
-            </div>
-          </div>
-          </div>
-
-          <div className="img-box ">
-      <div className="img-boxs ">
-            <h3 className="head ">
-              Healthcare
-            </h3>
-            <div className="mt-1 md:mt-2">
-            <p className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
-            </p>
-            </div>
-            <div className="mt-4 lg:mt-5 xl:mt-10">
-            <a
-              href="#"
-              className="round   "
-            >
-              Explore more →
-            </a>
+            <div className="panel bg-black">
+            <div className="img-boxs ">
+                <h3 className="head ">Healthcare</h3>
+                <div className="mt-1 md:mt-2">
+                  <p className="">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's.
+                  </p>
+                </div>
+                <div className="mt-4 lg:mt-5 xl:mt-10">
+                  <a href="#" className=" round    ">
+                    Explore more →
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
-
-          <div className="img-box ">
-      <div className="img-boxs ">
-            <h3 className="head ">
-              Healthcare
-            </h3>
-            <div className="mt-1 md:mt-2">
-            <p className="">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's.
-            </p>
-            </div>
-            <div className="mt-4 lg:mt-5 xl:mt-10">
-            <a
-              href="#"
-              className=" round    "
-            >
-              Explore more →
-            </a>
-            </div>
-          </div>
-          </div>
-   
-  </div>
-</div>
-
+        </div>
         
-
-
-</div>
       </div>
-   
+    </div>
   );
 };
 
 export default Indus;
+
 
 
