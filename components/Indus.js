@@ -56,9 +56,9 @@ const Indus = () => {
                     typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
                 </div>
-                <div className="mt-4   lg:mt-5 xl:mt-10">
-                  <a href="#" className="round pl-0 ">
-                    Explore more →
+                <div className=" mt-5  lg:mt-5 xl:mt-10">
+                  <a href="#" className="round  ">
+                   <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -72,9 +72,9 @@ const Indus = () => {
                     typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
                 </div>
-                <div className="mt-4 lg:mt-5 xl:mt-10">
+                <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    Explore more →
+                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -88,9 +88,9 @@ const Indus = () => {
                     typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
                 </div>
-                <div className="mt-4 lg:mt-5 xl:mt-10">
+                <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    Explore more →
+                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -104,9 +104,9 @@ const Indus = () => {
                     typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
                 </div>
-                <div className="mt-4 lg:mt-5 xl:mt-10">
+                <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    Explore more →
+                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -120,9 +120,9 @@ const Indus = () => {
                     typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
                 </div>
-                <div className="mt-4 lg:mt-5 xl:mt-10">
+                <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    Explore more →
+                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -136,9 +136,9 @@ const Indus = () => {
                     typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
                 </div>
-                <div className="mt-4 lg:mt-5 xl:mt-10">
+                <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    Explore more →
+                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
