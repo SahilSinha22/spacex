@@ -218,7 +218,8 @@
   .round{
     border:1px solid white;
     border-radius: 25px;
-    padding:1px 1px 2px 1px;
+   
+   
     left:0px;
   }
      .img-box:hover{
@@ -358,7 +359,7 @@
   display:flex;
   align-items:center;
     justify-content:center;
-  width:900px;
+  width:auto;
   margin-top:30px;
 }
 
@@ -366,8 +367,8 @@
   background-size:cover;
   background-position:center;
   background-repeat: no-repeat;
-  height:55vh;
-  width:110px;
+  height:40vh;
+  width:100px;
   border-radius:20px;
   color:#fff;
   cursor:pointer;
@@ -385,14 +386,14 @@
 .panel.active .img-boxs{
   opacity:1;
   bottom:50px;
-  left:30px;
+  left:40px;
   right:30px;
   font-size:13px;
   transition:opacity 0.3s  ease-in 0.4s;
 }
 
 
-@media (max-width:400px){
+@media (max-width:430px){
   .containers {
     width:80vw;
     transition:opacity 0.3s ease-in 0.4s;
@@ -436,13 +437,13 @@
   .round{
     border:1px solid white;
     border-radius: 25px;
-    padding:2px 2px 2px 2px;
+    padding:1px 0.5px 0.5px 2px;
     left:0px;
   }
 }
 
 
-@media only screen and (min-width:400px) and (max-width: 640px) {
+@media only screen and (min-width:430px) and (max-width: 500px) {
   .containers {
     width:80vw;
     transition:opacity 0.3s ease-in 0.4s;
@@ -460,7 +461,7 @@
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
-    height:150px;
+    height:160px;
     width:25px;
     border-radius:10px;
     color:#fff;
@@ -507,11 +508,80 @@
     border:1px solid white;
     border-radius: 25px;
     font-size:4px;
-    padding:1px 1px 2px 1px;
+   padding:1px 0px 1px 0px ;
     left:0px;
   }
      }
-
+     @media only screen and (min-width:500px) and (max-width: 640px) {
+      .containers {
+        width:80vw;
+        transition:opacity 0.3s ease-in 0.4s;
+      }
+      .containers {
+        display:flex;
+        align-items:center;
+          justify-content:center;
+        width:auto;
+        margin-top:30px;
+        height:auto;
+      }
+      
+      .panel {
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        height:160px;
+        width:40px;
+        border-radius:10px;
+        color:#fff;
+        cursor:pointer;
+        flex:0.5s;
+        margin:3px;
+        position:relative;
+        transition: all 700ms ease-in;
+      }
+    
+      .panel.active .img-boxs{
+        opacity:1;
+        bottom:20px;
+        left:10px;
+        right:10px;
+        font-size:5px;
+        transition:opacity 0.3s  ease-in 0.4s;
+      }
+       
+         
+          .img-boxs {
+            color:#fff;
+            position:absolute;
+            bottom:0;
+            left:30px;
+            opacity:0;
+            font-size:8px;
+            transition:bottom 0.5s,opacity 0.5s;
+        }
+        .img-boxs:hover{
+          color:#fff;
+          position:absolute;
+          bottom:25px;
+          left:10px;
+          right:10px;
+          opacity:1;
+          transition:bottom 0.5s,opacity 0.5s;
+          font-size:6px;
+      }
+      .head{
+        font-size:10px;
+      }
+      .round{
+        border:1px solid white;
+        border-radius: 25px;
+        font-size:4px;
+       padding:1px 0px 1px 0px ;
+        left:0px;
+      }
+         }
+    
 
      @media only screen and (min-width : 640px) and (max-width: 768px) {
       .containers {
@@ -532,7 +602,7 @@
         background-position:center;
         background-repeat: no-repeat;
         height:200px;
-        width:50px;
+        width:60px;
         border-radius:10px;
         color:#fff;
         cursor:pointer;
@@ -569,7 +639,7 @@
     @media only screen and (min-width : 768px) and (max-width: 1024px) {
       
       .containers {
-        width:80vw;
+        
         transition:opacity 0.3s ease-in 0.4s;
       }
       .containers {
@@ -618,7 +688,7 @@
     }
 
 
-    @media only screen and (min-width : 1024px) and (max-width: 1279px) {
+    @media only screen and (min-width : 1024px) and (max-width: 1240px) {
      
       .containers {
         width:80vw;
@@ -669,7 +739,7 @@
     }
 
 
-    @media only screen and (min-width : 1280px) and (max-width: 1530px) {
+    @media only screen and (min-width : 1240px) and (max-width: 1530px) {
      
       .containers {
         width:70vw;
