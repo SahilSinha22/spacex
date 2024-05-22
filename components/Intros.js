@@ -28,7 +28,7 @@ const Intros = () => {
         </button>
       </div>
       <div className=" relative   h-28 md:h-10 -top-10  sm:h-32 lg:h-52 xl:h-52 2xl:h-56 ">
-        <div className="absolute bottom-0  xl:mx-44 2xl:mx-10 md:mx-8    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4 ">
+        <div className="absolute bottom-0  xl:mx-20 2xl:mx-10 md:mx-8    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4 ">
           <div className="relative">
           <Image
             src={Mobi1}
@@ -77,32 +77,32 @@ const Intros = () => {
         </div>
       </div>
       <div className="bg-purple-600 2xl:px-10">
-      <div className="grid md:mx-16 mx-12 lg:px-12 grid-cols-4 h-20 xl:mx-64 2xl:mx-40 2xl:px-0 sm:h-32  sm:grid-cols-4  md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 lg:h-40 md:h-32 xl:h-48">
+      <div className="grid md:mx-16 mx-12 lg:px-12 grid-cols-4 h-20 xl:mx-48 2xl:mx-40 2xl:px-0 sm:h-32  sm:grid-cols-4  md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 lg:h-40 md:h-32 xl:h-48">
         <Image
           src={Mobi2}
           alt="Company Logo 1"
-          className=" md:h-40 lg:w-40 sm:w-28 lg:mt-4 xl:w-44 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-1 xl:mt-2  md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
+          className=" md:h-40 lg:w-40 sm:w-28 lg:mt-4 xl:w-44 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-1 xl:mt-0  md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
           width={80}
           height={5}
         />
         <Image
           src={Mobi2}
           alt="Company Logo 2"
-          className="md:h-40 lg:w-40 xl:w-44 lg:mt-4 sm:w-28 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-1 xl:mt-2 md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
+          className="md:h-40 lg:w-40 xl:w-44 lg:mt-4 sm:w-28 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-1 xl:mt-0 md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
           width={80}
           height={5}
         />
         <Image
           src={Mobi}
           alt="Company Logo 3"
-          className="md:h-40 lg:w-40 xl:w-44  lg:mt-4 sm:w-32 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-0 xl:mt-2 md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
+          className="md:h-40 lg:w-40 xl:w-44  lg:mt-4 sm:w-32 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-0 xl:mt-0 md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
           width={80}
           height={5}
         />
         <Image
           src={Mobi}
           alt="Company Logo 4"
-          className="md:h-40 lg:w-40 xl:w-44 lg:mt-4 sm:w-32 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-0 xl:mt-2 md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
+          className="md:h-40 lg:w-40 xl:w-44 lg:mt-4 sm:w-32 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-0 xl:mt-0 md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
           width={80}
           height={5}
         />
