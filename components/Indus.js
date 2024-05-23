@@ -58,7 +58,7 @@ const Indus = () => {
                 </div>
                 <div className=" mt-5  lg:mt-5 xl:mt-10">
                   <a href="#" className="round  ">
-                   <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                   <span  className="md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -122,7 +122,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <a href="#" className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
                   </a>
                 </div>
               </div>
