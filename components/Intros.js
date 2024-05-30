@@ -33,7 +33,7 @@ const Intros = () => {
           <Image
             src={Mobi1}
             alt="App Image 1"
-            className="rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-64 xl:top-0 2xl:w-68 2xl:h-72 2xl:-top-2 shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-0 2xl:w-68 2xl:h-72 2xl:-top-2 shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5} 
           />
