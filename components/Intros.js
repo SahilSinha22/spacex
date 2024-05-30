@@ -28,12 +28,12 @@ const Intros = () => {
         </button>
       </div>
       <div className=" relative   h-24 md:h-10 -top-10  sm:h-32 lg:h-52 xl:h-52 2xl:h-56 ">
-        <div className="absolute bottom-0  xl:mx-28 2xl:mx-10 md:mx-8    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4 ">
+        <div className="absolute bottom-0   xl:mx-28  2xl:mx-10 md:mx-8    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4 ">
           <div className="relative">
           <Image
             src={Mobi1}
             alt="App Image 1"
-            className="rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-68 xl:w-60 xl:top-4 2xl:w-68 2xl:h-72 2xl:-top-2 shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-[256px] xl:w-60 xl:top-0 2xl:w-68 2xl:h-72 2xl:-top-2 shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5} 
           />
