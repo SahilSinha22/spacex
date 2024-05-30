@@ -842,3 +842,25 @@
       }
      
     }
+  @keyframes fallIn {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .fall-in {
+      animation: fallIn 1s ease forwards;
+    }
+    
+    .outfit {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      
+    }
+    
