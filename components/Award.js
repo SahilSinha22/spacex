@@ -8,7 +8,7 @@ const Award = () => {
           <h1 className="text-2xl  font-bold mb-2 md:mb-4 sm:text-4xl md:text-5xl playfair">
             Awards & Recognition
           </h1>
-          <p className="text-lg  md:text-xl mb-10">
+          <p className="text-lg outfit md:text-xl mb-10">
             We have been featured and certified by recognised authorities
             Worldwide.
           </p>
