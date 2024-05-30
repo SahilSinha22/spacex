@@ -5,7 +5,7 @@ const Imgcmp = () => {
   return (
   <div className="mx-4 md:mx-8 xl:mx-36 grid  mb-10 items-center justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
     
-    <div className="hover:bg-zinc-800   bg-black xl:w-60 2xl:w-80 h-44 px-6 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800   bg-black xl:w-64 2xl:w-80 h-44 px-6 rounded-xl space-y-2">
       <div className="text-zinc-400 mt-2">01</div>
       <div className="pt-8">
       <h2 className="text-xl text-zinc-500 font-poppins xl:text-2xl ">Blockchain</h2>
@@ -14,7 +14,7 @@ const Imgcmp = () => {
     </div>
     </div>
     
-    <div className="hover:bg-zinc-800  bg-black xl:w-60 2xl:w-80 h-44 px-6 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black xl:w-64 2xl:w-80 h-44 px-6 rounded-xl space-y-2">
       <div className="text-zinc-400 mt-2">02</div>
       <div className="pt-8">
       <h2 className="text-xl text-zinc-500 xl:text-2xl">AR/VR</h2>
@@ -23,7 +23,7 @@ const Imgcmp = () => {
     </div>
     </div>
     
-    <div className="hover:bg-zinc-800  bg-black xl:w-60 2xl:w-80 h-44 px-6 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black xl:w-64 2xl:w-80 h-44 px-6 rounded-xl space-y-2">
       <div className="text-zinc-400 mt-2">03</div>
 <div className="pt-8">
       <h2 className="text-xl text-zinc-500 xl:text-2xl">Metaverse</h2>
@@ -32,7 +32,7 @@ const Imgcmp = () => {
     </div>
     </div>
     
-    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-60 2xl:w-80 h-44 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-64 2xl:w-80 h-44 rounded-xl space-y-2">
       <div className="text-zinc-400 mt-2">04</div>
       <div className="pt-8">
       <h2 className="text-xl text-zinc-500 xl:text-2xl">IOT</h2>
@@ -41,7 +41,7 @@ const Imgcmp = () => {
     </div>
     </div>
     
-    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-60 2xl:w-80 h-44 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-64 2xl:w-80 h-44 rounded-xl space-y-2">
       <div className="text-zinc-400 mt-2">05</div>
       <div className="pt-8">
       <h2 className="text-xl text-zinc-500 xl:text-2xl">NFT</h2>
@@ -50,7 +50,7 @@ const Imgcmp = () => {
     </div>
     </div>
     
-    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-60 2xl:w-80 h-44 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-64 2xl:w-80 h-44 rounded-xl space-y-2">
       <div className="text-zinc-400 mt-2">06</div>
       <div className="pt-8">
       <h2 className="text-xl text-zinc-500 xl:text-2xl">AI Development</h2>
@@ -59,7 +59,7 @@ const Imgcmp = () => {
     </div>
     </div>
     
-    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-60 2xl:w-80 h-44 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-64 2xl:w-80 h-44 rounded-xl space-y-2">
 
 <div className="text-zinc-400 mt-2 flex flex-row justify-between"><div className="">07</div>
 <div className=" opacity-0 hover:opacity-100"><Image className='rounded-full' src="icons.svg" alt='icon' width={50} height={50}/> </div>
@@ -71,7 +71,7 @@ const Imgcmp = () => {
     </div>
     
     
-    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-60 2xl:w-80 h-44 rounded-xl space-y-2">
+    <div className="hover:bg-zinc-800  bg-black px-6 xl:w-64 2xl:w-80 h-44 rounded-xl space-y-2">
       <div className=" relative text-zinc-400 mt-2">08</div>
       <div className="pt-8">
       <h2 className="text-xl text-zinc-500 xl:text-2xl">iOS</h2>

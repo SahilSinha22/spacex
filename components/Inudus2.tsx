@@ -1,0 +1,38 @@
+'use client'
+import * as React from 'react';
+import './style.css';
+
+interface Card {
+  id: number;
+  url: string;
+  title: string;
+};
+
+interface Props {
+  data: Array<Card>;
+};
+
+const ExpandingCards = ({data}: Props) => {
+  const [activeId, setActiveId] = React.useState<number>(1)
+
+  const onClick = (id: number) => setActiveId(id);
+
+  return (
+    <div class="container">
+     {
+        data.map(card => (
+          <div
+            key={card.id}
+            class={`panel ${activeId === card.id ? 'active' : ''}`}
+            onClick={() => onClick(card.id)}
+            style={{ backgroundImage: `url(${card.url})` }}>
+            <h3>{card.title}</h3>
+          </div>
+        ))
+      }
+   
+    </div>
+  )
+}
+
+export default ExpandingCards;
