@@ -27,13 +27,13 @@ const Intros = () => {
           Let's Talk!
         </button>
       </div>
-      <div className=" relative   h-24 md:h-10 -top-10  sm:h-32 lg:h-52 xl:h-52 2xl:h-56 ">
-        <div className="absolute bottom-0   xl:mx-16  2xl:mx-10 md:mx-8    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4 ">
+      <div className=" relative   h-24 md:h-10 -top-10   sm:h-32 lg:h-52 xl:h-52 2xl:h-56 ">
+        <div className="absolute bottom-0   xl:px-10   2xl:mx-10 md:mx-8    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-4 ">
           <div className="relative">
           <Image
             src={Mobi1}
             alt="App Image 1"
-            className="rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-0 2xl:w-68 2xl:h-72 2xl:-top-2 shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-2 2xl:w-68 2xl:h-72 2xl:-top-2 shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5} 
           />
@@ -47,6 +47,7 @@ const Intros = () => {
             height={5}
           />
           </div>
+          
           <div className="relative  ">
           <Image
             src={Mobi1}
@@ -60,7 +61,7 @@ const Intros = () => {
           <Image
             src={Mobi3}
             alt="App Image 3"
-            className="rounded-2xl absolute h-24 top-8 sm:h-36 sm:top-4 sm:w-44 md:top-8 md:h-44 md:w-52 lg:h-48 lg:w-44 lg:top-16 xl:h-52 xl:w-44 xl:top-12 2xl:w-72 2xl:h-68 2xl:top-14   shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-2xl  absolute h-24 top-8 sm:h-36 sm:top-4 sm:w-44 md:top-8 md:h-44 md:w-52 lg:h-48 lg:w-44 lg:top-16 xl:h-52 xl:w-52 xl:top-12 2xl:w-72 2xl:h-68 2xl:top-14   shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5}
           />
@@ -73,6 +74,7 @@ const Intros = () => {
             width={100}
             height={5}
           />
+         
           </div>
         </div>
       </div>
@@ -81,7 +83,7 @@ const Intros = () => {
         <Image
           src={Mobi2}
           alt="Company Logo 1"
-          className=" md:h-40 lg:w-40 sm:w-28 lg:mt-4 xl:w-44 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-1 xl:mt-0  md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300"
+          className=" md:h-40 lg:w-40 sm:w-28 lg:mt-4 xl:w-44 xl:h-60 md:w-36 md:mx-2 mt-3 sm:mt-1 xl:mt-0  md:mt-0  md:pt-0 sm:pt-5 opacity-75 hover:opacity-100 transition duration-300 hover:duration-600"
           width={80}
           height={5}
         />
@@ -113,3 +115,4 @@ const Intros = () => {
 };
 
 export default Intros;
+
