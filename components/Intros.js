@@ -70,7 +70,7 @@ const Intros = () => {
           <Image
             src={Mobi3}
             alt="App Image 4"
-            className="rounded-2xl  absolute h-32 sm:h-52 sm:-top-10 sm:w-44 md:w-52 md:-top-7 md:h-60  lg:h-72 lg:-top-7 lg:w-44 xl:h-72  xl:w-60 xl:-top-8 2xl:w-72 2xl:h-80 2xl:-top-12   shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-2xl  absolute h-32 sm:h-52 sm:-top-10 sm:w-44 md:w-52 md:-top-7 md:h-60  lg:h-72 lg:-top-7 lg:w-44 xl:h-72  xl:w-72 xl:-top-8 2xl:w-72 2xl:h-80 2xl:-top-12   shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5}
           />
