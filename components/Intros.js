@@ -28,7 +28,7 @@ const Intros = () => {
         </button>
       </div>
       <div className=" relative   h-24 md:h-10 -top-10   sm:h-32 lg:h-52 xl:h-52 2xl:h-56 ">
-        <div className="absolute bottom-0   xl:mx-16  2xl:mx-10 md:mx-8    lg:mx-16 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 ">
+        <div className="absolute bottom-0   xl:mx-20  2xl:mx-10 md:mx-8    lg:mx-16 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 ">
           <div className="relative ">
           <Image
             src={Mobi1}
@@ -52,7 +52,7 @@ const Intros = () => {
           <Image
             src={Mobi1}
             alt="App Image 2"
-            className="rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-40  xl:h-48 xl:w-40 xl:top-16 2xl:w-72 2xl:h-68 2xl:top-24 shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-40  xl:h-48 xl:w-44 xl:top-16 2xl:w-72 2xl:h-68 2xl:top-24 shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5} 
           />
@@ -79,7 +79,7 @@ const Intros = () => {
         </div>
       </div>
       <div className="bg-violet-500 2xl:px-10">
-      <div className="grid md:mx-16 mx-12 lg:px-12 grid-cols-4 h-20 xl:mx-40 2xl:mx-40 2xl:px-0 sm:h-32  sm:grid-cols-4  md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 lg:h-40 md:h-32 xl:h-48">
+      <div className="grid md:mx-16 mx-12 lg:px-12 grid-cols-4 h-20 xl:mx-44 2xl:mx-40 2xl:px-0 sm:h-32  sm:grid-cols-4  md:flex mt-5 justify-center md:justify-around  md:space-x-4 md:mt-40 lg:mt-8 lg:h-40 md:h-32 xl:h-48">
         <Image
           src={Mobi2}
           alt="Company Logo 1"
