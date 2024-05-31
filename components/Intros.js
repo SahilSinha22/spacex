@@ -28,7 +28,7 @@ const Intros = () => {
         </button>
       </div>
       <div className=" relative   h-24 md:h-10 -top-10   sm:h-32 lg:h-52 xl:h-52 2xl:h-56 ">
-        <div className="absolute bottom-0   xl:mx-12  2xl:mx-10 md:mx-8    lg:mx-16 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 xl:gap-3 ">
+        <div className="absolute bottom-0   xl:mx-12  2xl:mx-10 md:mx-8    lg:mx-16 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5  gap-2 ">
           <div className="relative ">
           <Image
             src={Mobi1}
