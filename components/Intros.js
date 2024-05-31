@@ -57,7 +57,7 @@ const Intros = () => {
             height={5} 
           />
           </div>
-          <div className="relative  ">
+          <div className="relative mx-1 ">
           <Image
             src={Mobi3}
             alt="App Image 3"
