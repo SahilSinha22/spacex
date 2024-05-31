@@ -48,11 +48,11 @@ const Intros = () => {
           />
           </div>
           
-          <div className="relative mx-0.5 xl:mx-0 ">
+          <div className="relative mx-0.5 xl:mx-1 ">
           <Image
             src={Mobi1}
             alt="App Image 2"
-            className="rounded-xl md:rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-[165px]  xl:h-48 xl:w-[178px] xl:top-16 2xl:w-72 2xl:h-68 2xl:top-24 shadow-lg transform hover:scale-105 transition duration-300"
+            className="rounded-xl md:rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-[165px]  xl:h-48 xl:w-[175px] xl:top-16 2xl:w-72 2xl:h-68 2xl:top-24 shadow-lg transform hover:scale-105 transition duration-300"
             width={100}
             height={5} 
           />
