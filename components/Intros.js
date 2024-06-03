@@ -16,8 +16,8 @@ import Logo from "@/public/logo.png";
 const Intros = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" text-white  h-full w-full  ">
-      <div className="intros w-full h-full ">
+    <div className=" text-white   h-full w-full  ">
+      <div className="intros w-full xl:h-[760px] h-full ">
         <nav className="   items-center p-4 ">
           <div className="md:px-10 xl:px-40 flex  items-center  justify-between flex-wrap ">
             <div className="  flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
@@ -101,6 +101,7 @@ const Intros = () => {
             </div>
           </div>
         </nav>
+        <div className="intros ">
         <div className="pt-12 ">
           <div className=" mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
             <h1 className="text-2xl xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
@@ -167,6 +168,7 @@ const Intros = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       <div className="logoss 2xl:px-10">
