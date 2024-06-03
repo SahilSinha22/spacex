@@ -93,7 +93,11 @@ const Award = () => {
       <div className=" w-full  ">
         <div className="flex flex-col lg:flex-row  xl:justify-between w-full">
          
+<<<<<<< HEAD
             <div className=" xl:mt-2 text-4xl w-full flex flex-col xl:mx-8  sm:text-4xl md:text-5xl xl:text-5xl lg:text-5xl  mb-4">
+=======
+            <div className=" xl:mt-2 text-4xl w-full flex flex-col sm:text-4xl md:text-5xl xl:text-5xl lg:text-5xl  mb-4">
+>>>>>>> f68a2f849f2a906d781958e41d756b22ab563ee1
               <div className="font-bold playfair ">
                 Grow with our
                 <br /> technical expertise
