@@ -97,7 +97,7 @@ const Award = () => {
             </div>
             <div className="text-lg outfit_dispaly font-light sm:text-lg lg:text-xl md:text-3xl">
               Our team is experienced with various different mobile
-              <br />
+              
               technologies and can help you choose the right tech.
             </div>
           </div>
