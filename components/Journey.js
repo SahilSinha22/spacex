@@ -18,11 +18,11 @@ const Journey = () => {
             <div className="w-48 h-48 2xl:w-52 2xl:h-52  border-dashed mb-4 border-2  mx-auto  flex items-center justify-center rounded-full">
               <div className="relative 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
-                  className="absolute top-8 left-6 2xl:top-12 2xl:left-10"
-                  src="book.svg"
+                  className="absolute top-12 left-12 2xl:top-12 2xl:left-10"
+                  src="1jour.svg"
                   alt="Inception"
-                  width={100}
-                  height={10}
+                  width={60}
+                  height={8}
                 />
               </div>
             </div>
@@ -32,11 +32,11 @@ const Journey = () => {
             <div className="w-48 h-48 2xl:mx-6   2xl:w-52 2xl:h-52 border-dashed border-2  mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative   2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
-                  className="absolute top-8 left-6 2xl:top-12 2xl:left-10"
-                  src="design.svg"
+                  className="absolute top-10 left-10 2xl:top-12 2xl:left-10"
+                  src="2jour.svg"
                   alt="Design"
-                  width={100}
-                  height={10}
+                  width={80}
+                  height={8}
                 />
               </div>
             </div>
@@ -46,11 +46,11 @@ const Journey = () => {
             <div className="w-48 h-48 2xl:mx-6 2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
-                  className="absolute top-8 left-6 2xl:top-12 2xl:left-10"
-                  src="development.svg"
+                  className="absolute top-10 left-10 2xl:top-12 2xl:left-10"
+                  src="3jour.svg"
                   alt="Development"
-                  width={100}
-                  height={10}
+                  width={80}
+                  height={8}
                 />
               </div>
             </div>
@@ -60,11 +60,11 @@ const Journey = () => {
             <div className="w-48 h-48 2xl:mx-6 2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
-                  className="absolute top-8 left-6 2xl:top-12 2xl:left-10"
-                  src="stabi.svg"
+                  className="absolute top-10 left-10 2xl:top-12 2xl:left-10"
+                  src="4jour.svg"
                   alt="Stabilization"
-                  width={100}
-                  height={10}
+                  width={80}
+                  height={8}
                 />
               </div>
             </div>
@@ -75,7 +75,7 @@ const Journey = () => {
               <div className="relative  2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
                   className="absolute top-8 left-6 2xl:top-12 2xl:left-10"
-                  src="deploy.svg"
+                  src="5jour.svg"
                   alt="Deployment"
                   width={100}
                   height={10}

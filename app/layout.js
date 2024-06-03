@@ -1,6 +1,6 @@
 import { Inter, Playfair_Display, Outfit, Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar";
+
 import Footer from "@/component/Footer";
 import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${open_sans_init.variable} ${Playfair_Display_init.variable} ${outfit_init.variable}`}>
       <Script  src='../public/vendor.js'/>
 
-        <Navbar/>
+       
         {children}</body>
 <Footer/>
     </html>

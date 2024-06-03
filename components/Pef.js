@@ -2,8 +2,9 @@
 
 import React, { useEffect, useCallback } from "react";
 import Image from "next/image";
-import Mobi from "@/public/mobi1.png";
-import Tab from "@/public/tab.png";
+import Mobi from "@/public/1pef.png";
+import Mobi1 from "@/public/2pef.png";
+import Tab from "@/public/3pef.png";
 
 const Pef = () => {
   // Function to check if an element is in the viewport
@@ -91,7 +92,7 @@ const Pef = () => {
         </div>
       </div>
 
-      <div className="bg-rose-500 p-10 text-center items-center">
+      <div className="okomo p-10 text-center items-center">
         <h2 className="text-2xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
           Okomo
         </h2>
@@ -106,8 +107,8 @@ const Pef = () => {
             src={Mobi}
             alt="VR Experience"
             className="mr-4"
-            width={800}
-            height={600}
+            width={600}
+            height={550}
           />
         </div>
       </div>
@@ -124,11 +125,11 @@ const Pef = () => {
         <div className="flex justify-center space-x-4">
           <div className="h-200">
             <Image
-              src={Mobi}
+              src={Mobi1}
               alt="VR Experience"
               className="mr-4"
-              width={800}
-              height={600}
+              width={400}
+              height={300}
             />
           </div>
         </div>
@@ -137,7 +138,7 @@ const Pef = () => {
       <div className="bg-teal-400 font-sans">
         <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="">
-            <div className="p-5 text-center">
+            <div className="p-5 px-4 items-center justify-center text-center">
               <h1 className="text-4xl text-white md:text-6xl pt-8 font-sedan font-bold mb-4">
                 Liquiclear
               </h1>
@@ -146,13 +147,15 @@ const Pef = () => {
                 and softening needs. We bring you a wide range of water
                 purifiers and softeners for commercial and domestic use.
               </p>
+             
               <Image
                 src={Tab}
                 alt="VR Experience"
-                className="mr-4"
-                width={800}
-                height={600}
+                className=" mx-auto mt-12"
+                width={600}
+                height={200}
               />
+              
             </div>
           </div>
         </div>

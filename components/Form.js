@@ -1,17 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Img1 from "@/public/1.jpg";
-import Img2 from "@/public/2.jpg";
-import Img3 from "@/public/3.jpg";
-import Img4 from "@/public/4.jpg";
-import Img5 from "@/public/5.jpg";
-import Img6 from "@/public/6.jpg";
-import Img7 from "@/public/7.jpg";
-import Img8 from "@/public/8.jpg";
-import Img9 from "@/public/9.jpg";
-import Img10 from "@/public/10.jpg";
-import Img11 from "@/public/11.jpg";
-import Img12 from "@/public/12.jpg";
+import Mobi from "@/public/1form.png"
+
 import Script from "next/script";
 const Form = () => {
   return (
@@ -23,67 +13,15 @@ const Form = () => {
         defer
       />
 
-      <div className="flex flex-col m-1  pt-4  ">
-        <div className="grid grid-cols-4 py-4 px-4 ">
-          <div className=" m-1">
-            <Image src={Img1} alt="staff" width={400} height={40} />
-          </div>
-          <div className="flex flex-col mx-4 ">
-            <Image src={Img2} alt="staff" width={400} height={20} />
-            <Image
-              className="mt-4"
-              src={Img3}
-              alt="staff"
-              width={400}
-              height={20}
-            />
-          </div>
-          <div className="m-1">
-            <Image src={Img4} alt="staff" width={400} height={40} />
-          </div>
-          <div className="flex flex-col mx-4">
-            <Image src={Img5} alt="staff" width={400} height={20} />
-            <Image
-              className="mt-4"
-              src={Img6}
-              alt="staff"
-              width={400}
-              height={20}
-            />
-          </div>
-        </div>
-        <div className="grid grid-cols-4 ">
-          <div className="flex flex-col m-1">
-            <Image src={Img7} alt="staff" width={400} height={20} />
-            <Image
-              className="mt-4"
-              src={Img8}
-              alt="staff"
-              width={400}
-              height={20}
-            />
-          </div>
-          <div className="m-1 mx-4 ">
-            <Image src={Img9} alt="staff" width={400} height={40} />
-          </div>
-          <div className="flex flex-col m-1">
-            <Image src={Img10} alt="staff" width={400} height={20} />
-            <Image
-              className="mt-4"
-              src={Img11}
-              alt="staff"
-              width={400}
-              height={20}
-            />
-          </div>
-          <div className="m-1 mx-4">
-            <Image src={Img12} alt="staff" width={400} height={40} />
-          </div>
-        </div>
-      </div>
+      <div className="  m-1  pt-2  " >
+      <Image src={Mobi} alt="picture" width={4000} height={40} />{" "}
 
-      <div className="   flex flex-col ">
-        <h1 className="text-left mx-14 sm:ml-12 md:ml-24 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl items-center text-white text-lg lg:text-4xl  playfair">
+        
+          
+         </div>
+<div className="md:relative  -top-2 w-full h-92">
+      <div className="  flex flex-col ">
+        <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-14 sm:ml-12 md:ml-24 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl items-center text-white text-lg lg:text-4xl  playfair_display">
           Get in touch with us today to see how we can help <br /> you develop
           the right product-faster
         </h1>
@@ -234,6 +172,7 @@ const Form = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

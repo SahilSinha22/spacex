@@ -12,10 +12,10 @@ const Footer = () => {
         >
           <li>
           <span className=" space-y-4  ">
-            <Image src={Logo} className="xl:w-72 sm:w-72 sm:h-10" alt="Logo" width={100} height={40} />
+            <Image src={Logo} className="xl:w-72 h-4 w-28   sm:w-72 sm:h-10" alt="Logo" width={100} height={10} />
           </span>
           </li>
-          <li className="xl:text-xl  pb-28 2xl:text-2xl  flex flex-row text-xl space-x-4">
+          <li className="xl:text-xl ml-2 pb-28 2xl:text-2xl  flex flex-row text-xl space-x-2">
             <a
               href="#"
               className="xl:text-xl 2xl:text-2xl    hover:text-white dark:hover:text-blue-500"
@@ -23,7 +23,7 @@ const Footer = () => {
               <Image
                 src="instagram.svg"
                 alt="logo"
-                className="h-6 w-6 2xl:w-16 2xl:h-16 sm:h-12 sm:w-12"
+                className="h-4 w-4 2xl:w-16 2xl:h-16 sm:h-12 sm:w-12"
                 width={30}
                 height={1}
               />
@@ -35,7 +35,7 @@ const Footer = () => {
               <Image
                 src="twitter.svg"
                 alt="logo"
-                className="h-6 w-6 2xl:w-16 2xl:h-16 sm:h-12 sm:w-12"
+                className="h-4 w-4 2xl:w-16 2xl:h-16 sm:h-12 sm:w-12"
                 width={30}
                 height={1}
               />
@@ -44,7 +44,7 @@ const Footer = () => {
               <Image
                 src="facebook.svg"
                 alt="logo"
-                className="h-6 w-6 2xl:w-16 2xl:h-16 sm:h-12 sm:w-12"
+                className="h-4 w-4 2xl:w-16 2xl:h-16 sm:h-12 sm:w-12"
                 width={30}
                 height={1}
               />

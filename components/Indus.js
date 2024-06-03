@@ -47,7 +47,7 @@ const Indus = () => {
         </p>
         <div className="galerrys ">
           <div className="containers mr-10">
-            <div className="panel active bg-black">
+            <div className="panel active Indus">
               <div className="img-boxs">
                 <h3 className="head">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
@@ -63,7 +63,7 @@ const Indus = () => {
                 </div>
               </div>
             </div>
-            <div className="panel bg-black">
+            <div className="panel Indus1">
               <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
@@ -79,7 +79,7 @@ const Indus = () => {
                 </div>
               </div>
             </div>
-            <div className="panel bg-black">
+            <div className="panel Indus2">
             <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
@@ -95,7 +95,7 @@ const Indus = () => {
                 </div>
               </div>
             </div>
-            <div className="panel bg-black">
+            <div className="panel Indus3">
             <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
@@ -111,7 +111,7 @@ const Indus = () => {
                 </div>
               </div>
             </div>
-            <div className="panel bg-black">
+            <div className="panel Indus4">
             <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
@@ -127,7 +127,7 @@ const Indus = () => {
                 </div>
               </div>
             </div>
-            <div className="panel bg-black">
+            <div className="panel Indus5">
             <div className="img-boxs ">
                 <h3 className="head ">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
