@@ -965,13 +965,182 @@ opacity: 1;
   background: #8E64F2 0% 0% no-repeat padding-box;
 
  }
-.logos Image{
-  
+ .logos {
+  overflow: hidden;
 opacity :100;
 
 }
+
+
  .grows{
   background: transparent url('../public/1grow.png') 0% 0% no-repeat padding-box;
 opacity: 1;
 height:140px;
  }
+
+
+
+.logos1 {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  gap: 20px;  
+  padding: 20px; 
+}
+
+
+@media only screen and (max-width: 480px) {
+  .logos1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 15px;  
+    padding: 20px; 
+    height:100px;
+  }
+  .logo {
+    flex: 1 1 50px; 
+  margin-top:50px;
+  height:60px;
+  }
+  .logo3 {
+    flex: 1 1 50px;  
+    margin-top:48px;
+  height:60px;
+  }
+  .logo4 {
+    flex: 1 1 50px;  
+    margin-top:45px;
+  height:60px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+  .logos1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px;  
+    padding: 20px;
+   height:120px;
+    }
+  
+  .logo {
+    flex: 1 1 50px; 
+  
+  margin-top:55px;
+}
+  .logo3 {
+    flex: 1 1 50px;  
+    margin-top:50px;
+  }
+  .logo4 {
+    flex: 1 1 50px;  
+    margin-top:45px;
+    height:40px;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 769px) {
+  .logos1 {
+    justify-content: center;
+    height:140px;  
+  }
+  
+  
+  .logo {
+    flex: 1 1 100px; 
+  
+  margin-top:60px;
+}
+  .logo3 {
+    flex: 1 1 100px;  
+    margin-top:55px;
+  }
+  .logo4 {
+    flex: 1 1 100px;
+    margin-top:52px;
+  }
+}
+
+@media only screen and (min-width: 769px) and  (max-width: 1023px) {
+  
+  .logos1 {
+    justify-content: center;
+    height:150px; 
+    gap:40px;
+  }
+  .logo {
+    flex: 1 1 100px;  
+    height: auto;
+    overflow: hidden;
+    text-align: center;  
+  margin-top:60px;
+  }
+  .logo3 {
+    flex: 1 1 100px;  
+    height: auto; 
+    overflow: hidden; 
+    text-align: center; 
+    margin-top:55px;
+  }
+  .logo4 {
+    flex: 1 1 100px; 
+    height: auto;  
+    overflow: hidden;  
+    text-align: center;  
+    margin-top:50px;
+  }
+  }
+@media only screen and (min-width: 1024px) and  (max-width: 1240px) {
+ 
+  .logos1 {
+    justify-content: center;
+     
+  }
+  .logo {
+    flex: 1 1 50px;  
+    height: auto;  
+    overflow: hidden;  
+    text-align: center;  
+  margin-top:92px;
+  }
+  .logo3 {
+    flex: 1 1 50px;  
+    height: auto;  
+    overflow: hidden;  
+    text-align: center;  
+    margin-top:87px;
+  }
+  .logo4 {
+    flex: 1 1 50px; 
+    height: auto; 
+    overflow: hidden;  
+    text-align: center;  
+    margin-top:80px;
+  }
+  }
+  @media only screen and (min-width: 1240px) and  (max-width: 1530px) {
+   
+    .logos1 {
+      justify-content: center;
+        gap:50px;
+    }
+    .logo {
+      flex: 1 1 10px;  
+      overflow: hidden;  
+      text-align: center;  
+    margin-top:102px;
+    }
+    .logo3 {
+      flex: 1 1 10px;  
+      overflow: hidden;  
+      text-align: center;  
+      margin-top:97px;
+    }
+    .logo4 {
+      flex: 1 1 10px;  
+      overflow: hidden;  
+      text-align: center;  
+      margin-top:90px;
+    }
+    }
+  

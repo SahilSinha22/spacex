@@ -117,7 +117,7 @@ const Intros = () => {
             </button>
           </div>
           <div className=" relative   h-24 md:h-48 -top-10   sm:h-32 lg:h-56 xl:h-52 2xl:h-56 ">
-            <div className="absolute bottom-0   xl:mx-20  2xl:mx-10 md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-4 2xl:gap-5 ">
+            <div className="absolute bottom-0   xl:mx-20  2xl:mx-10 md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-5 ">
               <div className="relative ">
                 <Image
                   src={Mobi1}
@@ -170,43 +170,19 @@ const Intros = () => {
       </div>
 
       <div className="logoss 2xl:px-10">
-        <div className="grid logos gap-3 md:mx-16 mx-8 lg:px-12 grid-cols-4 h-24 xl:mx-44 2xl:mx-40 2xl:px-0 sm:h-32  sm:grid-cols-4  md:flex  justify-center md:justify-around  md:space-x-4  lg:h-48 md:h-32 xl:h-48">
-          <div className="">
-            <Image
-              src={Mobi3}
-              alt="Company Logo 1"
-              className="grow  md:h-10 opacity-100  lg:w-40 sm:w-28 lg:mt-28 xl:w-40 xl:h-12 md:w-36 md:mx-2 mt-16 sm:mt-1 xl:mt-24  md:mt-16  md:pt-0 sm:pt-5  hover:opacity-100 transition duration-300  hover:scale-110"
-              width={60}
-              height={5}
-            />
-          </div>
-          <div className="">
-            <Image
-              src={Mobi4}
-              alt="Company Logo 2"
-              className="grow md:h-10   lg:w-40 xl:w-40 lg:mt-28 sm:w-28 xl:h-12 md:w-36 md:mx-2 mt-16 sm:mt-1 xl:mt-[102px] md:mt-16  md:pt-0 sm:pt-5  hover:opacity-100 transition duration-300 hover:scale-105"
-              width={60}
-              height={5}
-            />
-          </div>
-          <div className="">
-            <Image
-              src={Mobi5}
-              alt="Company Logo 3"
-              className="grow md:h-10  lg:w-40 xl:w-48  lg:mt-28 sm:w-32 xl:h-16 md:w-36 md:mx-2 mt-16 sm:mt-0 xl:mt-24 md:mt-16  md:pt-0 sm:pt-5  hover:opacity-100 transition duration-300 hover:scale-105"
-              width={60}
-              height={5}
-            />
-          </div>
-          <div className="">
-            <Image
-              src={Mobi6}
-              alt="Company Logo 4"
-              className="grow md:h-10   lg:w-40 xl:w-40 lg:mt-28 sm:w-32 xl:h-16 md:w-36 md:mx-2 mt-16 sm:mt-0 xl:mt-24 md:mt-16  md:pt-0 sm:pt-5  hover:opacity-100 transition duration-300 hover:scale-105"
-              width={60}
-              height={5}
-            />
-          </div>
+        <div className="grid logos1 gap-3 mx-6 md:mx-14 lg:mx-32 grid-cols-4  xl:mx-60 2xl:mx-40 2xl:px-0    md:flex  justify-center md:justify-around  md:space-x-4  ">
+        <div className="logo">
+        <Image src={Mobi3} alt="Logo 1" layout="responsive" width={200} height={100} />
+      </div>
+      <div className="logo">
+        <Image src={Mobi4} alt="Logo 2" layout="responsive" width={200} height={100} />
+      </div>
+      <div className="logo3">
+        <Image src={Mobi5} alt="Logo 1" layout="responsive" width={200} height={100} />
+      </div>
+      <div className="logo4">
+        <Image src={Mobi6} alt="Logo 2" layout="responsive" width={200} height={100} />
+      </div>
         </div>
       </div>
     </div>
