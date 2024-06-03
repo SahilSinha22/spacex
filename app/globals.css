@@ -937,12 +937,13 @@ opacity: 1;
  .intros{
   background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
   opacity: 1;
-  background-size: contain; /* Or 'contain' depending on your preference */
+  background-size: cover; /* Or 'contain' depending on your preference */
   background-position: center;
   background-repeat: no-repeat;
  
  
  }
+ 
  
  .intro1 Image{
   background: transparent  0% 0% no-repeat padding-box;
@@ -962,11 +963,12 @@ opacity: 1;
  }
  .logoss{
   background: #8E64F2 0% 0% no-repeat padding-box;
-opacity: 1;
+
  }
 .logos Image{
-  background: transparent  0% 0% no-repeat padding-box;
-opacity: 1;
+  
+opacity :100;
+
 }
  .grows{
   background: transparent url('../public/1grow.png') 0% 0% no-repeat padding-box;

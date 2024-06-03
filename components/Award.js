@@ -93,19 +93,19 @@ const Award = () => {
       <div className=" w-full  ">
         <div className="flex flex-col lg:flex-row  xl:justify-between w-full">
          
-            <div className=" xl:mt-2 text-4xl w-full flex flex-col sm:text-4xl md:text-5xl xl:text-6xl lg:text-5xl  mb-4">
+            <div className=" xl:mt-2 text-4xl w-full flex flex-col xl:mx-8  sm:text-4xl md:text-5xl xl:text-5xl lg:text-5xl  mb-4">
               <div className="font-bold playfair ">
                 Grow with our
                 <br /> technical expertise
               </div>
-              <div className="text-lg  sm:text-lg lg:text-xl md:text-3xl">
+              <div className="text-lg outfit_dispaly font-light  sm:text-lg lg:text-xl md:text-3xl">
                 Our team is experienced with various different mobile
-                <br />
+                <br/>
                 technologies and can help you choose the right tech.
              
             </div>
           </div>
-          <div className="  sm:pl-14 lg:pl-32 mt-0 w-full h-full xl:pl-52 xl:justify-right items-right">
+          <div className="  sm:pl-14 lg:pl-32 xl:mx-2 mt-0 w-full h-full xl:pl-52 xl:justify-right items-right">
           <Image src={Mobi} alt="GoodFirms" width={400} height={8} />
 
               
