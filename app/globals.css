@@ -1144,3 +1144,28 @@ height:140px;
     }
     }
   
+    @media only screen and (min-width: 1530px)  {
+   
+      .logos1 {
+        justify-content: center;
+          gap:50px;
+      }
+      .logo {
+        flex: 1 1 10px;  
+        overflow: hidden;  
+        text-align: center;  
+      margin-top:102px;
+      }
+      .logo3 {
+        flex: 1 1 10px;  
+        overflow: hidden;  
+        text-align: center;  
+        margin-top:97px;
+      }
+      .logo4 {
+        flex: 1 1 10px;  
+        overflow: hidden;  
+        text-align: center;  
+        margin-top:90px;
+      }
+      }
