@@ -906,43 +906,49 @@ opacity: 1;
 }
 @media only screen and (min-width:1360px) and (max-width: 1530px) {
   .imgco{
-    width:260px;
+    width:250px;
   }
   }
 .Indus{
+  background-size:cover;
+    background-position: center;
   background: transparent url('../public/1indus.png') 0% 0% no-repeat padding-box;
 opacity: 1;
 }
    .Indus1{
-    background:  transparent url('../public/2Indus.webp') 0% 0% no-repeat padding-box;
-    object-fit:fill;
+    background:  transparent url('../public/Mobility.png') 0% 0% no-repeat padding-box;
+    background-size:cover;
+    background-position: center;
    
     opacity: 0.75;
    } 
    .Indus2{
-    background:  transparent url('../public/3Indus.jpg') 0% 0% no-repeat padding-box;
-    object-fit:cover;
+    background:  transparent url('../public/Fintech.png') 0% 0% no-repeat padding-box;
+    background-size:cover;
+    background-position: center;
     
     opacity: 0.75;
    } 
    .Indus3{
-    background:  transparent url('../public/3Indus.jpg') 0% 0% no-repeat padding-box;
-    object-fit:cover;
+    background:  transparent url('../public/Ecommerce.png') 0% 0% no-repeat padding-box;
+    background-size:cover;
+    background-position: center;
     
     opacity: 0.75;
    } 
    .Indus4{
-    background:  transparent url('../public/5Indus.jpg') 0% 0% no-repeat padding-box;
-    
+    background:  transparent url('../public/Logistics.png') 0% 0% no-repeat padding-box;
+    background-size:cover;
+    background-position: center;
     
     opacity: 0.75;
    } 
    
 
    .Indus5{
-    background:  transparent url('../public/3Indus.jpg') 0% 0% no-repeat padding-box;
-    object-fit:cover;
-    
+    background:  transparent url('../public/Education.png') 0% 0% no-repeat padding-box;
+    background-size:cover;
+    background-position: center;
     opacity: 0.75;
    } 
 
@@ -1181,3 +1187,5 @@ height:140px;
         margin-top:90px;
       }
       }
+
+     

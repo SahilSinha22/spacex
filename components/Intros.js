@@ -123,7 +123,7 @@ const Intros = () => {
                 <Image
                   src={Mobi1}
                   alt="App Image 1"
-                  className="rounded-xl md:rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-3 2xl:w-68 2xl:h-72 2xl:top-0 shadow-lg transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-3 2xl:w-68 2xl:h-72 2xl:top-0  transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
@@ -132,7 +132,7 @@ const Intros = () => {
                 <Image
                   src={Mobi11}
                   alt="App Image 2"
-                  className="rounded-xl md:rounded-2xl absolute h-24 top-8 sm:h-36 sm:top-4 sm:w-44 md:h-44 md:top-8 md:w-52 lg:h-48 lg:top-16 lg:w-44 xl:h-52 xl:w-44 xl:top-11 2xl:w-72 2xl:h-68 2xl:top-20 shadow-lg transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl absolute h-24 top-8 sm:h-36 sm:top-4 sm:w-44 md:h-44 md:top-8 md:w-52 lg:h-48 lg:top-16 lg:w-44 xl:h-52 xl:w-44 xl:top-11 2xl:w-72 2xl:h-68 2xl:top-20  transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
@@ -142,7 +142,7 @@ const Intros = () => {
                 <Image
                   src={Mobi111}
                   alt="App Image 2"
-                  className="rounded-xl md:rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-[165px]  xl:h-44 xl:w-40 xl:top-20 2xl:w-72 2xl:h-68 2xl:top-24 shadow-lg transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-[165px]  xl:h-44 xl:w-40 xl:top-20 2xl:w-72 2xl:h-68 2xl:top-24  transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
@@ -151,7 +151,7 @@ const Intros = () => {
                 <Image
                   src={Mobi2}
                   alt="App Image 3"
-                  className="rounded-xl md:rounded-2xl absolute h-24 top-8 sm:h-36 sm:top-4 sm:w-44 md:top-8 md:h-44 md:w-52 lg:h-48 lg:w-44 lg:top-16 xl:h-52 xl:w-52 xl:top-11 2xl:w-72 2xl:h-68 2xl:top-20   shadow-lg transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl absolute h-24 top-8 sm:h-36 sm:top-4 sm:w-44 md:top-8 md:h-44 md:w-52 lg:h-48 lg:w-44 lg:top-16 xl:h-52 xl:w-52 xl:top-11 2xl:w-72 2xl:h-68 2xl:top-20    transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
@@ -160,7 +160,7 @@ const Intros = () => {
                 <Image
                   src={Mobi22}
                   alt="App Image 4"
-                  className="rounded-xl md:rounded-2xl  absolute h-32 sm:h-52 sm:-top-10 sm:w-44 md:w-52 md:-top-7 md:h-60  lg:h-72 lg:-top-7 lg:w-44 xl:h-72  xl:w-72 xl:-top-8 2xl:w-72 2xl:h-80 2xl:-top-8   shadow-lg transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl  absolute h-32 sm:h-52 sm:-top-10 sm:w-44 md:w-52 md:-top-7 md:h-60  lg:h-72 lg:-top-7 lg:w-44 xl:h-72  xl:w-72 xl:-top-8 2xl:w-72 2xl:h-80 2xl:-top-8    transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
