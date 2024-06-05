@@ -1008,6 +1008,17 @@ height:140px;
 
 
 @media only screen and (max-width: 480px) {
+  .imagex {
+    display: inline-block;
+    width:80px;
+    margin-right: 10px; /* Adjust as needed for spacing */
+    transition: transform 0.5s;
+  }
+  .logoss{
+    background: #8E64F2 0% 0% no-repeat padding-box;
+    width:auto;
+  
+   }
   .logos1 {
     display: flex;
     flex-wrap: wrap; 
@@ -1236,7 +1247,7 @@ height:140px;
 .marquee {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  
   white-space: nowrap;
 }
 
@@ -1254,11 +1265,7 @@ height:140px;
   }
 }
 
-.imagex {
-  display: inline-block;
-  margin-right: 10px; /* Adjust as needed for spacing */
-  transition: transform 0.5s;
-}
+
 
 .imagex:hover {
   transform: scale(1.1);
