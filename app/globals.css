@@ -1016,7 +1016,7 @@ height:140px;
   }
   .logoss{
     background: #8E64F2 0% 0% no-repeat padding-box;
-    width:auto;
+    height:110px;
   
    }
   .logos1 {
@@ -1044,28 +1044,45 @@ height:140px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) {
-  .logos1 {
+  
+  .imagex {
+    display: inline-block;
+    width:100px;
+    
+    margin-right: 10px; /* Adjust as needed for spacing */
+    transition: transform 0.5s;
+  }
+  .logoss{
+    background: #8E64F2 0% 0% no-repeat padding-box;
+    
+  
+   }
+   .logos1 {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
     gap: 20px;  
-    padding: 20px;
+    padding-top: 20px;
    height:120px;
     }
   
   .logo {
     flex: 1 1 50px; 
-  
+    height:50px;
   margin-top:55px;
 }
+.logo Image{
+  width:100px;
+}
   .logo3 {
-    flex: 1 1 50px;  
+    flex: 1 1 50px;
+    height:50px;  
     margin-top:50px;
   }
   .logo4 {
     flex: 1 1 50px;  
     margin-top:45px;
-    height:40px;
+    height:50px;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 769px) {
