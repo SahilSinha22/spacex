@@ -1189,3 +1189,77 @@ height:140px;
       }
 
      
+
+
+      /* components/AnimatedImages.module.css */
+
+
+
+
+.fromLeft {
+  animation: fromLeft 1s forwards;
+}
+
+.fromRight {
+  animation: fromRight 1s forwards;
+}
+
+.imagex:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* components/Intros.module.css */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.imagex {
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed for spacing */
+  transition: transform 0.5s;
+}
+
+.imagex:hover {
+  transform: scale(1.1);
+}

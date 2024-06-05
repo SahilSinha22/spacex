@@ -27,11 +27,11 @@ const Award = () => {
             </div>
           </div>
           <div className="flex justify-center ml-8 md:l-14 2xl:ml-0 space-x-2 mb-2 text-blue-600">
-            <span className="text-xl md:text-4xl">★</span>
-            <span className="text-xl md:text-4xl">★</span>
-            <span className="text-xl md:text-4xl">★</span>
-            <span className="text-xl md:text-4xl">★</span>
-            <span className="text-xl md:text-4xl">★</span>
+            <span className="text-3xl md:text-4xl">★</span>
+            <span className="text-3xl md:text-4xl">★</span>
+            <span className="text-3xl md:text-4xl">★</span>
+            <span className="text-3xl md:text-4xl">★</span>
+            <span className="text-3xl md:text-4xl">★</span>
           </div>
         </div>
       </div>

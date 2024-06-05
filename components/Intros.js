@@ -172,19 +172,21 @@ const Intros = () => {
       </div>
 
       <div className="logoss 2xl:px-10">
-        <div className="grid logos1 gap-3 mx-6 md:mx-14 lg:mx-32 grid-cols-4  xl:mx-60 2xl:mx-40 2xl:px-0    md:flex  justify-center md:justify-around  md:space-x-4  ">
-        <div className="logo">
+        <div className="marquee">
+        <div className="grid marquee-content logos1 gap-3 mx-6 md:mx-14 lg:mx-32 grid-cols-4  xl:mx-60 2xl:mx-40 2xl:px-0    md:flex  justify-center md:justify-around  md:space-x-4  ">
+        <div className="logo imagex ">
         <Image src={Mobi3} alt="Logo 1" layout="responsive" width={200} height={100} />
       </div>
-      <div className="logo">
+      <div className="logo imagex ">
         <Image src={Mobi4} alt="Logo 2" layout="responsive" width={200} height={100} />
       </div>
-      <div className="logo3">
+      <div className="logo3 imagex ">
         <Image src={Mobi5} alt="Logo 1" layout="responsive" width={200} height={100} />
       </div>
-      <div className="logo4">
+      <div className="logo4 imagex ">
         <Image src={Mobi6} alt="Logo 2" layout="responsive" width={200} height={100} />
       </div>
+        </div>
         </div>
       </div>
     </div>
