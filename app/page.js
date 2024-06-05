@@ -5,6 +5,7 @@ import Imgcmp from '@/components/Imgcmp'
 import Journey from '@/components/Journey'
 import Indus from '@/components/Indus'
 import Intros from '@/components/Intros'
+import FormComponent from "@/components/FormComponent"
 
 import Pef from '@/components/Pef'
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
 <Indus/>
 
     <Form/>
+    <FormComponent />
     </div>
   )
 }
