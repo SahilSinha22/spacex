@@ -903,6 +903,7 @@ opacity: 1;
   margin:auto;
   padding:20px;
 }
+
 }
 @media only screen and (min-width:1360px) and (max-width: 1530px) {
   .imgco{
@@ -1270,13 +1271,14 @@ height:140px;
 
 .marquee-content {
   display: inline-block;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(100%);
   }
+  
   100% {
     transform: translateX(-100%);
   }
@@ -1286,4 +1288,8 @@ height:140px;
 
 .imagex:hover {
   transform: scale(1.1);
+}
+
+.imgco:hover >div >div.opacity-0 {
+  opacity: 100;
 }

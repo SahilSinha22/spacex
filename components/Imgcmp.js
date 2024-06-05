@@ -11,12 +11,12 @@ import mobi8 from "@/public/8imgcmp.png";
 const Imgcmp = () => {
   return (
     <div className="mx-4 md:mx-8 xl:mx-36 grid  mb-10 items-center justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-      <div className="hover:bg-zinc-800  imgco bg-black  2xl:w-80 h-44 px-6 xl:mr-10 rounded-xl space-y-2">
-        <div className="text-zinc-400 mt-2 flex flex-row justify-between">
+      <div className="hover:bg-zinc-800  imgco  bg-black  2xl:w-80 h-44 px-6 xl:mr-10 rounded-xl space-y-2">
+        <div className="text-zinc-400 mt-2  flex flex-row justify-between">
           <div className="">01</div>
-          <div className=" opacity-0 hover:opacity-100">
+          <div className="opacity-0 ">
             <Image
-              className="rounded-full"
+              className=" rounded-full"
               src={mobi}
               alt="icon"
               width={50}
