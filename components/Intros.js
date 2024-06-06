@@ -17,14 +17,14 @@ const Intros = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className=" text-white   h-full w-full  ">
-      <div className="intros w-full xl:h-[760px] h-full ">
+      <div className="intros w-full xl:h-[760px] h-full  ">
         <nav className="   items-center p-4 ">
           <div className="md:px-10 xl:px-40 flex  items-center  justify-between flex-wrap ">
             <div className="  flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
               <span>
                 <Image
                   src={Logo}
-                  className="sm:w-60 lg:w-44 lg:h-7 sm:h-10"
+                  className="sm:w-60 lg:w-44 imgx lg:h-7 sm:h-10"
                   alt="Logo"
                   width={200}
                   height={10}
@@ -117,13 +117,13 @@ const Intros = () => {
               Let's Talk!
             </button>
           </div>
-          <div className=" relative   h-24 md:h-48 -top-10   sm:h-32 lg:h-56 xl:h-52 2xl:h-56 ">
-            <div className="absolute bottom-0   xl:mx-20  2xl:mx-10 md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-5 ">
+          <div className=" relative   h-24 md:h-48 -top-10 2xl:px-20  sm:h-32 lg:h-56 xl:h-52 2xl:h-56 ">
+            <div className="absolute bottom-0   xl:mx-20  2xl:mx-10  md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-10 ">
               <div className="relative ">
                 <Image
                   src={Mobi1}
                   alt="App Image 1"
-                  className="rounded-xl md:rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-3 2xl:w-68 2xl:h-72 2xl:top-0  transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl h-28 top-4 absolute sm:h-40 sm:top-0 sm:w-44 lg:h-60 md:h-52 md:w-52 lg:top-5 lg:w-44 xl:h-60 xl:w-72 xl:top-3 2xl:w-96 2xl:h-96 2xl:top-0  transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
@@ -138,11 +138,11 @@ const Intros = () => {
                 />
               </div>
 
-              <div className="relative mx-0.5 xl:mx-1 ">
+              <div className="relative mx-0.5 xl:mx-1 2xl:mx-0 ">
                 <Image
                   src={Mobi111}
                   alt="App Image 2"
-                  className="rounded-xl md:rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-[165px]  xl:h-44 xl:w-40 xl:top-20 2xl:w-72 2xl:h-68 2xl:top-24  transform hover:scale-105 transition duration-300"
+                  className="rounded-xl md:rounded-2xl absolute h-20 top-12 sm:top-12 sm:h-28 sm:w-44 md:h-36 md:top-16 md:w-52 lg:h-40 lg:top-24 lg:w-[165px]  xl:h-44 xl:w-40 xl:top-20 2xl:w-96 2xl:h-68 2xl:top-24  transform hover:scale-105 transition duration-300"
                   width={100}
                   height={5}
                 />
@@ -174,16 +174,16 @@ const Intros = () => {
       <div className="logoss 2xl:px-10">
         <div className="marquee">
         <div className="grid marquee-content logos1 gap-3 mx-6 md:mx-14 lg:mx-32 grid-cols-4  xl:mx-60 2xl:mx-40 2xl:px-0    md:flex  justify-center md:justify-around  md:space-x-4  ">
-        <div className="logo imagex ">
+        <div className="logo imagex  ">
         <Image src={Mobi3} alt="Logo 1" layout="responsive" width={200} height={100} />
       </div>
-      <div className="logo imagex ">
+      <div className="logo imagex  ">
         <Image src={Mobi4} alt="Logo 2" layout="responsive" width={200} height={100} />
       </div>
-      <div className="logo3 imagex ">
+      <div className="logo3 imagex  ">
         <Image src={Mobi5} alt="Logo 1" layout="responsive" width={200} height={100} />
       </div>
-      <div className="logo4 imagex ">
+      <div className="logo4 imagex  ">
         <Image src={Mobi6} alt="Logo 2" layout="responsive" width={200} height={100} />
       </div>
         </div>

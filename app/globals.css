@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+imgx {
+  
+  image-rendering: crisp-edges;
+ 
+  background-color: #f0f0f0;
+}
 
 .playfair_display{
   font-family: var(--font-playfair_display);
@@ -959,6 +965,7 @@ opacity: 1;
   background-size: cover; /* Or 'contain' depending on your preference */
   background-position: center;
   background-repeat: no-repeat;
+  
  
  
  }
@@ -1237,27 +1244,8 @@ height:140px;
   transform: scale(1.1);
 }
 
-@keyframes fromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-@keyframes fromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
 
 
 

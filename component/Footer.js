@@ -12,7 +12,7 @@ const Footer = () => {
         >
           <li>
           <span className=" space-y-4  ">
-            <Image src={Logo} className="xl:w-72 h-4 w-28   sm:w-72 sm:h-10" alt="Logo" width={100} height={10} />
+            <Image src={Logo} className="xl:w-72 h-4 w-28 2xl:imgx  sm:w-72 sm:h-10" alt="Logo" width={100} height={10} />
           </span>
           </li>
           <li className="xl:text-xl ml-2 pb-28 2xl:text-2xl  flex flex-row text-xl space-x-2">

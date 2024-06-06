@@ -14,41 +14,42 @@ const Form = () => {
       />
 
       <div className="  m-1  pt-2  " >
-      <Image src={Mobi} alt="picture" width={4000} height={40} />{" "}
+      <Image src={Mobi} alt="picture" className="imgx" width={4000} height={40} />{" "}
 
         
           
          </div>
-<div className="md:relative  -top-2 w-full h-92">
-      <div className="  flex flex-col ">
-        <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-14 sm:ml-12 md:ml-24 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl items-center text-white text-lg lg:text-4xl  playfair_display">
+<div className="md:relative  -top-2 w-full h-92 ">
+      <div className="  flex flex-col  ">
+        <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-14 sm:ml-12 md:ml-20 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl 2xl:text-10xl items-center text-white text-lg lg:text-4xl  playfair_display">
           Get in touch with us today to see how we can help <br /> you develop
           the right product-faster
         </h1>
 
-        <div className="sm:mx-10 md:mx-20 xl:mx-40 ">
+        <div className="sm:mx-10 lg:mx-20 xl:mx-40 ">
           <div className="border-b flex   flex-col sm:flex-row items-center m-auto  md:mx-4 ">
-            <div className="  md:mx-2 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
-              <div className="m-8 2xl:text-4xl md:text-2xl ">
+            <div className="  md:mx-2 2xl:pr-16 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
+              <div className="m-8  2xl:text-4xl md:text-2xl ">
                 <h1 className="md:text-2xl 2xl:text-4xl font-semibold">Hello now !</h1>
                 <div className="flex flex-row my-2">
                   <Image src="flag.svg" alt="logo" width={40} height={4} />{" "}
                   <div className="ml-4 2xl:text-2xl md:text-xl">+91 88 820 76 755 </div>{" "}
                 </div>
-                <h1 className="md:text-2xl 2xl:text-4xl font-semibold mt-2">
+                <h1 className="md:text-2xl 2xl:text-4xl font-semibold mt-2 xl:mt-4">
                   Connect with us
                 </h1>
-                <p className="md:text-xl 2xl:text-2xl ">
+                <p className="md:text-xl open_sans_display xl:text-[17px] 2xl:text-lg ">
                   Email : amit@spacetotech.com
                   <br />
-                  office : C-171 Sector-63,Noida
+                 
+                  office : C-171 Sector-63 Noida,
                   <br />
                   Uttar Pradesh 201301
                 </p>
               </div>
             </div>
 
-            <div className="mr-4 mb-4 lg:ml-20 2xl:ml-64 xl:ml-36 md:mx-2 sm:ml-10 ">
+            <div className="mr-4 xl:mr-0 xl:w-[600px] mb-4 lg:ml-20 2xl:ml-64 xl:ml-20 md:mx-2 sm:ml-10 ">
               <form className=" mx-auto  ">
                 <div className="grid w-full md:grid-cols-2 md:gap-6">
                   <div className="relative z-0 w-full mb-4 group">
