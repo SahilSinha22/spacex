@@ -49,7 +49,7 @@ const Form = () => {
               </div>
             </div>
 
-            <div className="mr-4 xl:mr-0 xl:w-[600px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
+            <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
               <form className=" mx-auto  ">
                 <div className="grid w-full md:grid-cols-2 md:gap-6">
                   <div className="relative z-0 w-full mb-4 group">
