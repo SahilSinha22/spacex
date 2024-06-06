@@ -16,7 +16,7 @@ const Award = () => {
         </div>
         <div className="flex flex-col">
           <div className="flex flex-row justify-center">
-            <div className="relative -top-2 -left-6 md:-left-16 2xl:-left-20 flex-row flex text-6xl md:text-7xl font-extrabold">
+            <div className="relative -top-2 -left-6 md:-left-16 2xl:-left-24 flex-row flex text-6xl md:text-7xl font-extrabold">
               C
               <div className="absolute -top-12 md:-top-12 md:left-4 left-2 text-7xl md:text-8xl font-semibold md:font-extrabold text-red-600">
                 .
@@ -26,7 +26,7 @@ const Award = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center ml-8 md:l-14 2xl:ml-0 space-x-2 mb-2 text-blue-600">
+          <div className="flex justify-center ml-8 md:l-14 2xl:ml-0 2xl:mr-6 space-x-2 mb-2 text-blue-600">
             <span className="text-3xl md:text-4xl">★</span>
             <span className="text-3xl md:text-4xl">★</span>
             <span className="text-3xl md:text-4xl">★</span>
@@ -94,7 +94,7 @@ const Award = () => {
               Grow with our
               <br /> technical expertise
             </div>
-            <div className="text-lg outfit_dispaly font-light  sm:text-lg lg:text-xl md:text-3xl">
+            <div className="text-lg outfit_dispaly font-light  sm:text-lg lg:text-xl 2xl:text-2xl md:text-3xl">
               Our team is experienced with various different mobile
               
               technologies and can help you choose the right tech.

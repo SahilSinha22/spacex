@@ -46,8 +46,8 @@ const FormComponent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 mx-10 h-full   flex  items-center justify-center z-50">
-      <div className="bg-white p-8 md:-top-40 lg:top-0 rounded-lg shadow-lg w-full max-w-md relative transform transition-transform duration-300 scale-105">
+    <div className="fixed inset-0  h-full bg-black bg-opacity-50  flex  items-center justify-center z-50">
+      <div className="bg-white mx-10 p-8 md:-top-40 lg:top-0 rounded-lg shadow-lg w-full max-w-md relative transform transition-transform duration-300 scale-105">
         <button
           onClick={handleClose}
           className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors"
