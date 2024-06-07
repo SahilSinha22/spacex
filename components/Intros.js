@@ -15,6 +15,20 @@ import Mobi22 from "@/public/5intro.jpg";
 import Logo from "@/public/logo.png";
 const Intros = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const marqueeContent = document.querySelector('.marquee-content');
+  
+    marqueeContent.addEventListener('mouseover', () => {
+      marqueeContent.style.animationPlayState = 'paused';
+    });
+  
+    marqueeContent.addEventListener('mouseout', () => {
+      marqueeContent.style.animationPlayState = 'running';
+    });
+  });
+
+  
   return (
     <div className=" text-white   h-full w-full  ">
       <div className="intros w-full xl:h-[760px] h-full  ">

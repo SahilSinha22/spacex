@@ -1,9 +1,53 @@
-import React from "react";
+"use client"
+import React, {useState} from "react";
 import Image from "next/image";
 import Mobi from "@/public/1form.png"
 
 import Script from "next/script";
 const Form = () => {
+
+  const [user, setUser]= useState(
+    {
+      Name: '',Email: '',Number: '', Budget:'',message:''
+    }
+  )
+  let name,value;
+  console.log(user);
+  const data=(e) =>
+    {
+     
+      name=e.target.name;
+      value=e.target.value;
+      setUser({...user,[name]: value});
+      
+    }
+
+const getdata = async(e) =>
+  {
+    const {Name, Email, Number,Budget,message} = user;
+    e.preventDefault();
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'aplication/json'
+      },
+      body: JSON.stringify({
+        Name, Email, Number,Budget, message
+      })
+    }
+
+    const res = await fetch( 
+      'https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json',
+options
+    )
+    if(res){
+      alert("Message Sent")
+    }
+    else{
+      alert("Error Occured")
+    }
+  }
+
   return (
     <div className=" bg-black ">
       <Script src="https://www.google.com/recaptcha/api.js" async defer />
@@ -23,7 +67,7 @@ const Form = () => {
       <div className="  flex flex-col  ">
         <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-14 sm:ml-12 md:ml-20 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
           Get in touch with us today to see how we can help <br /> you develop
-          the right product-faster
+          the right product - faster.
         </h1>
 
         <div className="sm:mx-10 lg:mx-20 xl:mx-40 ">
@@ -50,19 +94,22 @@ const Form = () => {
             </div>
 
             <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
-              <form className=" mx-auto  ">
+              <form method='POST' className=" mx-auto  ">
                 <div className="grid w-full md:grid-cols-2 md:gap-6">
                   <div className="relative z-0 w-full mb-4 group">
                     <input
                       type="text"
-                      name="floating_first_name"
+                      name="Name"
                       id="floating_first_name"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
+                      value={user.Name}
+                      autoComplete="off"
                       required
+                      onChange={data}
                     />
                     <label
-                      for="floating_first_name"
+                      for="Name"
                       className="peer-focus:font-medium  absolute text-sm  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Full Name
@@ -71,14 +118,17 @@ const Form = () => {
                   <div className="relative z-0 w-full mb-5 group">
                     <input
                       type="text"
-                      name="floating_last_name"
+                      name="Email"
                       id="floating_last_name"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
+                      value={user.Email}
+                      autoComplete="off"
                       required
+                      onChange={data}
                     />
                     <label
-                      for="floating_last_name"
+                      for="Email"
                       className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Email*
@@ -90,17 +140,21 @@ const Form = () => {
                     <input
                       type="tel"
                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                      name="floating_phone"
+                      name="Number"
                       id="floating_phone"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
+                      value={user.Number}
+                      autoComplete="off"
                       required
+                      onChange={data}
                     />
                     <label
-                      for="floating_phone"
+                      for="Number"
                       className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       <div className="flex flex-row">
+                        
                         <div className="">
                           <Image
                             src="flag.svg"
@@ -116,11 +170,14 @@ const Form = () => {
                   <div className="relative z-0 w-full mb-5 group">
                     <input
                       type="text"
-                      name="floating_company"
+                      name="Budget"
                       id="floating_company"
-                      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                       placeholder=" "
+                      value={user.Budget}
+                      autoComplete="off"
                       required
+                      onChange={data}
                     />
                     <label
                       for="floating_company"
@@ -147,14 +204,17 @@ const Form = () => {
                 <div className="relative z-0 w-full mb-5 group">
                   <input
                     type="text"
-                    name="floating_email"
+                    name="message"
                     id="floating_email"
-                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
+                    value={user.message}
+                      autoComplete="off"
                     required
+                    onChange={data}
                   />
                   <label
-                    for="floating_email"
+                    for="message"
                     className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Description
@@ -166,7 +226,7 @@ const Form = () => {
                   data-sitekey="6Lc5Od4pAAAAAEr5_MwUj93HLCVogAPipguT96VI"
                 ></div>
 
-                <button className="rounds text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <button onClick={getdata} className="rounds text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Get a free quote →
                 </button>
               </form>
