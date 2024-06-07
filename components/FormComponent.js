@@ -71,7 +71,7 @@ const FormComponent = () => {
         >
           <FaTimes size={24} />
         </button>
-        <h2 className="text-3xl mb-6 text-center font-bold text-gray-800">Get in Touch</h2>
+        <h2 className="text-3xl mb-6 playfair_display font-bold text-center  text-gray-800">Get in Touch</h2>
         <form method="POST" className="space-y-4">
           <div className="relative z-0 w-full mb-4 group">
             <input
