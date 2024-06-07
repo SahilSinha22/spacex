@@ -7,7 +7,7 @@ const FormComponent = () => {
   const [visible, setVisible] = useState(false);
 
   const [user, setUser] = useState({
-    Name: '', Email: '', Number: '', message: '', File: null
+    Name: '', Email: '', Number: '', message: '', File: ''
   });
 
   let name, value;
@@ -18,9 +18,7 @@ const FormComponent = () => {
     setUser({ ...user, [name]: value });
   };
 
-  const handleFileChange = (e) => {
-    setUser({ ...user, File: e.target.files[0] });
-  };
+  
 
   const getdata = async (e) => {
     const { Name, Email, Number, message, File } = user;
@@ -163,9 +161,10 @@ const FormComponent = () => {
             <input
               type="file"
               name="File"
+              value={user.File}
               autoComplete="off"
               required
-              onChange={handleFileChange}
+              onChange={data}
               className="py-2.5 px-0 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer block w-full text-sm text-black file:mr-4 file:py-2 file:px-4 md:file:ml-20 sm:file:ml-10 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
           </div>
