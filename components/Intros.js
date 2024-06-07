@@ -16,17 +16,7 @@ import Logo from "@/public/logo.png";
 const Intros = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const marqueeContent = document.querySelector('.marquee-content');
   
-    marqueeContent.addEventListener('mouseover', () => {
-      marqueeContent.style.animationPlayState = 'paused';
-    });
-  
-    marqueeContent.addEventListener('mouseout', () => {
-      marqueeContent.style.animationPlayState = 'running';
-    });
-  });
 
   
   return (
