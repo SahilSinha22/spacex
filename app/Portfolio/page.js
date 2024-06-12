@@ -290,30 +290,27 @@ const page = () => {
             </h1>
 
             <div className="sm:mx-10 lg:mx-20 xl:mx-40 ">
-              <div className="border-b flex  2xl:mt-6 flex-col sm:flex-row items-center m-auto 2xl:h-auto  md:mx-4 ">
-                <div className=" 2xl:w-auto md:mx-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
-                  <div className="m-8  2xl:text-4xl md:text-2xl ">
-                    <h1 className="md:text-2xl 2xl:text-4xl font-semibold">
-                      Hello now !
-                    </h1>
-                    <div className="flex flex-row my-2">
-                      <Image src="flag.svg" alt="logo" width={40} height={4} />{" "}
-                      <div className="ml-4 2xl:text-3xl md:text-xl">
-                        +91 88 820 76 755{" "}
-                      </div>{" "}
-                    </div>
-                    <h1 className="md:text-2xl 2xl:text-4xl font-semibold mt-2 xl:mt-4">
-                      Connect with us
-                    </h1>
-                    <p className="md:text-xl open_sans_display xl:text-[17px] 2xl:text-2xl ">
-                      Email : amit@spacetotech.com
-                      <br />
-                      office : C-171 Sector-63 Noida,
-                      <br />
-                      Uttar Pradesh 201301
-                    </p>
-                  </div>
+              <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:mx-4 ">
+              <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
+              <div className="m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
+                <h1 className="md:text-2xl 2xl:text-4xl font-semibold">Hello now !</h1>
+                <div className="flex flex-row my-2">
+                  <Image src="flag.svg" alt="logo" width={40} height={4} />{" "}
+                  <div className="ml-4 2xl:text-3xl md:text-xl">+91 88 820 76 755 </div>{" "}
                 </div>
+                <h1 className="md:text-2xl 2xl:text-4xl font-semibold mt-2 xl:mt-4">
+                  Connect with us
+                </h1>
+                <p className="text-xl lg:text-base open_sans_display xl:text-[17px] 2xl:text-2xl ">
+                  Email : amit@spacetotech.com
+                  <br />
+                 
+                  office : C-171 Sector-63 Noida,
+                  <br />
+                  Uttar Pradesh 201301
+                </p>
+              </div>
+            </div>
 
                 <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
                   <form method="POST" className=" mx-auto  ">
