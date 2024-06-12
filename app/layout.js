@@ -1,8 +1,10 @@
 import { Inter, Playfair_Display, Outfit, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-import Footer from "@/component/Footer";
-import Script from "next/script";
+import Footer from "@/app/component/Footer";
+
+import Navbar from "@/app/component/Navbar"
+
 const inter = Inter({ subsets: ["latin"] });
 
 const Playfair_Display_init=Playfair_Display({
@@ -10,10 +12,20 @@ const Playfair_Display_init=Playfair_Display({
   weight: '500' ,
   variable: '--font-playfair_display',
 });
+const Playfair_Display_inits=Playfair_Display({
+  subsets: ['latin'],
+  weight: '400' ,
+  variable: '--font-playfair_displays',
+});
 const outfit_init=Outfit({
   subsets: ['latin'],
   weight: '500' ,
   variable: '--font-outfit',
+});
+const outfit_inits=Outfit({
+  subsets: ['latin'],
+  weight: '400' ,
+  variable: '--font-outfits',
 });
 const open_sans_init=Open_Sans({
   subsets: ['latin'],
@@ -25,17 +37,22 @@ export const metadata = {
   description: "Space To Tech",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({   children }) {
 
   
   return (
     <html lang="en">
-      <body className={`${inter.className} ${open_sans_init.variable} ${Playfair_Display_init.variable} ${outfit_init.variable}`}>
-      <Script  src='../public/vendor.js'/>
+      
+      <body className={`${inter.className} ${open_sans_init.variable} ${Playfair_Display_init.variable} ${Playfair_Display_inits.variable} ${outfit_init.variable} ${outfit_inits.variable}`}>
+      
 
+       <Navbar/>
+              {children}
        
-        {children}</body>
-<Footer/>
+        
+        <Footer/>
+</body>
+
     </html>
   );
 }
