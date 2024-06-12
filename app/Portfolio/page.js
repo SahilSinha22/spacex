@@ -54,12 +54,12 @@ const page = () => {
   return (
     <div className="">
       <div className=" m-auto">
-        <h1 className="playfair_display text-2xl md:text-4xl ml-8 md:ml-24 xl:text-5xl font-bold mx-20 xl:mx-56 mt-20 md:mt-32">
+        <h1 className="playfair_display text-2xl md:text-4xl ml-8 md:ml-24 xl:text-5xl font-bold mx-20 xl:mx-44 mt-20 md:mt-32">
           Revolutionize with Your Idea,
           <br />
           Transforming the World
         </h1>
-        <p className="xl:mx-56 mr-5 md:ml-24 md:mr-20 ml-8 text-lg mt-4  md:mt-6 outfit_dispalys md:text-2xl">
+        <p className="xl:mx-44 mr-5 md:ml-24 md:mr-20 ml-8 text-lg mt-4  md:mt-6 outfit_dispalys md:text-2xl">
           From dream to reality, we proudly contribute to transforming apps
           shaping <br />
           the future of innovation and technology.{" "}
