@@ -1024,6 +1024,16 @@ height:140px;
 
 
 @media only screen and (max-width: 480px) {
+  .intros{
+    background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: cover; /* Or 'contain' depending on your preference */
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+   
+   
+   }
   .imagex {
     display: inline-block;
     width:80px;
@@ -1060,7 +1070,16 @@ height:140px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) {
-  
+  .intros{
+    background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: cover; /* Or 'contain' depending on your preference */
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+   
+   
+   }
   .imagex {
     display: inline-block;
     width:100px;
@@ -1102,7 +1121,17 @@ height:140px;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 769px) {
-  .logos1 {
+  .intros{
+    background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: cover; /* Or 'contain' depending on your preference */
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+   
+   
+   }
+     .logos1 {
     justify-content: center;
     height:140px;  
   }
@@ -1124,7 +1153,16 @@ height:140px;
 }
 
 @media only screen and (min-width: 769px) and  (max-width: 1023px) {
-  
+  .intros{
+    background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: cover; /* Or 'contain' depending on your preference */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    
+   
+   
+   }
   .logos1 {
     justify-content: center;
     height:150px; 
@@ -1153,7 +1191,16 @@ height:140px;
   }
   }
 @media only screen and (min-width: 1024px) and  (max-width: 1240px) {
- 
+  .intros{
+    background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: cover; /* Or 'contain' depending on your preference */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    
+   
+   
+   }
   .logos1 {
     justify-content: center;
      
@@ -1181,7 +1228,16 @@ height:140px;
   }
   }
   @media only screen and (min-width: 1240px) and  (max-width: 1530px) {
-   
+    .intros{
+      background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+      opacity: 1;
+      background-size: cover; /* Or 'contain' depending on your preference */
+      background-position: center ;
+      background-repeat: no-repeat;
+      
+     
+     
+     }
     .logos1 {
       justify-content: center;
         gap:50px;
@@ -1207,7 +1263,16 @@ height:140px;
     }
   
     @media only screen and (min-width: 1530px)  {
-   
+      .intros{
+        background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        background-size: cover; /* Or 'contain' depending on your preference */
+        background-position: center ;
+        background-repeat: no-repeat;
+        
+       
+       
+       }
       .logos1 {
         justify-content: center;
           gap:50px;
