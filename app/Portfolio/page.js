@@ -65,15 +65,15 @@ const page = () => {
           the future of innovation and technology.{" "}
         </p>
       </div>
-      <div class="image-container mt-20 mx-8 md:mx-20 xl:mx-40 mb-20 xl:mb-0 flex md:justify-center">
-        <div class="left-column mr-2 lg:mr-5 md:mx-5 ">
-          <div className="imgx imgl">
+      <div class=" mt-20 mx-8 md:mx-20 xl:mx-40 mb-20 xl:mb-0 flex md:justify-center">
+        <div class=" mr-2 lg:mr-5 md:mx-5 ">
+          <div className="">
             <div className="bg-black ">
             <Image
               src={Mobi}
               className="h-[400px] xl:h-[550px]"
               alt="Image 1"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -84,13 +84,13 @@ const page = () => {
             </div>
            
           </div>
-          <div className="imgx imgl mt-10">
+          <div className=" mt-10">
             <div className="bg-blue-600">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[300px] xl:h-[500px]"
-              class="animated-image left"
+             
               width={400}
               height={4}
             />
@@ -100,13 +100,13 @@ const page = () => {
               <p className="outfit_dispalys text-base md:text-xl lg:text-2xl  ">Lorem Epsom is dummy text for the<br/>print and digital</p>
             </div>
           </div>
-          <div className="imgx imgl mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[400px] xl:h-[500px]"
-              class="animated-image left"
+             
               width={500}
               height={5}
             />
@@ -116,13 +116,13 @@ const page = () => {
               <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
             </div>
           </div>
-          <div className="imgx imgl mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[300px] md:h-[380px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -134,13 +134,13 @@ const page = () => {
             
            
           </div>
-          <div className="imgx imgl mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[300px] md:h-[380px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -150,13 +150,13 @@ const page = () => {
               <p className="outfit_dispalys  text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
             </div>
           </div>
-          <div className="imgx imgl mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[300px] md:h-[380px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -167,14 +167,14 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div class="right-column">
-          <div className="imgx imgr">
+        <div class="">
+          <div className="">
             <div className="bg-black">
             <Image
               src={Mobi}
               alt="Image 2"
               className="h-[200px] md:h-[230px] lg:h-[240px] xl:h-[400px]"
-              class="animated-image right"
+              
               width={600}
               height={5}
             />
@@ -185,14 +185,14 @@ const page = () => {
             </div>
             
           </div>
-          <div className="imgx imgr mt-10 lg:mt-9 xl:mt-10">
+          <div className=" mt-10 lg:mt-9 xl:mt-10">
 
             <div className="bg-black">
             <Image
               src={Tab}
               alt="Image 4"
               className="h-[370px] md:h-[325px] lg:[330px] xl:h-[500px]"
-              class="animated-image right"
+              
               width={500}
               height={5}
             />
@@ -202,13 +202,13 @@ const page = () => {
             <p className="outfit_dispalys text-base  lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
           </div>
           </div>
-          <div className="imgx imgr mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[380px] md:h-[400px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -218,13 +218,13 @@ const page = () => {
             <p className="outfit_dispalys text-lg lg:text-2xl  md:text-xl">Lorem Epsom is dummy text for the<br/>print and digital</p>
           </div>
           </div>
-          <div className="imgx imgr mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[360px] md:h-[380px] lg:h-[420px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -234,13 +234,13 @@ const page = () => {
             <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
           </div>
           </div>
-          <div className="imgx imgr mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[360px] md:h-[410px] lg:h-[450px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
@@ -250,13 +250,13 @@ const page = () => {
             <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
           </div>
           </div>
-          <div className="imgx imgr mt-10">
+          <div className=" mt-10">
             <div className="bg-black">
             <Image
               src={Mobi1}
               alt="Image 3"
               className="h-[380px] md:h-[400px] lg:h-[420px] xl:h-[500px]"
-              class="animated-image left"
+              
               width={500}
               height={5}
             />
