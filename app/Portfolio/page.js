@@ -6,7 +6,6 @@ import Mobi from "@/public/1pef.png";
 import Mobi1 from "@/public/2pef.png";
 import Tab from "@/public/3pef.png";
 const page = () => {
-  
 
 
   const [user, setUser] = useState({
@@ -65,252 +64,308 @@ const page = () => {
           the future of innovation and technology.{" "}
         </p>
       </div>
-      <div class=" mt-20 mx-8 md:mx-20 xl:mx-40 mb-20 xl:mb-0 flex md:justify-center">
-        <div class=" mr-2 lg:mr-5 md:mx-5 ">
-          <div className="">
+      <div class="image-container mt-20 mx-8 md:mx-20 xl:mx-40 mb-20 xl:mb-0 flex md:justify-center">
+        <div class=" left-column mr-2 lg:mr-5 md:mx-5 ">
+          <div className="animated-image left show">
             <div className="bg-black ">
-            <Image
-              src={Mobi}
-              className="h-[400px] xl:h-[550px]"
-              alt="Image 1"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi}
+                className="imgx  h-[400px] xl:h-[550px]"
+                alt="Image 1"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">Cris - Indian Railway</h2>
-              <p className="outfit_dispalys  text-base md:text-xl lg:text-2xl  ">We tackled operational and data <br/> challenges at CRIS</p>
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
+                Cris - Indian Railway
+              </h2>
+              <p className="outfit_dispalys  text-base md:text-xl lg:text-2xl  ">
+                We tackled operational and data <br /> challenges at CRIS
+              </p>
             </div>
-           
           </div>
-          <div className=" mt-10">
+          <div className=" animated-image left show mt-10">
             <div className="bg-blue-600">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[300px] xl:h-[500px]"
-             
-              width={400}
-              height={4}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx  h-[300px] xl:h-[500px]"
+                width={400}
+                height={4}
+              />
             </div>
             <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">Dating App</h2>
-              <p className="outfit_dispalys text-base md:text-xl lg:text-2xl  ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">
+                Dating App
+              </h2>
+              <p className="outfit_dispalys text-base md:text-xl lg:text-2xl  ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
             </div>
           </div>
-          <div className=" mt-10">
+          <div className="animated-image left show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[400px] xl:h-[500px]"
-             
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[400px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">Siidcul UI Design</h2>
-              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
+                Siidcul UI Design
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
             </div>
           </div>
-          <div className=" mt-10">
+          <div className="animated-image left show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[300px] md:h-[380px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[300px] md:h-[380px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">Find the Doctors Online</h2>
-              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
-            </div>
-            
-           
-          </div>
-          <div className=" mt-10">
-            <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[300px] md:h-[380px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
-            </div>
-            <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">Clothes Store</h2>
-              <p className="outfit_dispalys  text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
+                Find the Doctors Online
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
             </div>
           </div>
-          <div className=" mt-10">
+          <div className="animated-image left show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[300px] md:h-[380px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[300px] md:h-[380px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">Generative AI</h2>
-              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">
+                Clothes Store
+              </h2>
+              <p className="outfit_dispalys  text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
+            </div>
+          </div>
+          <div className="animated-image left show mt-10">
+            <div className="bg-black">
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[300px] md:h-[380px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
+            </div>
+            <div className=" mt-5 ">
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
+                Generative AI
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
             </div>
           </div>
         </div>
-        <div class="">
-          <div className="">
+        <div class="right-column">
+          <div className="animated-image right show">
             <div className="bg-black">
-            <Image
-              src={Mobi}
-              alt="Image 2"
-              className="h-[200px] md:h-[230px] lg:h-[240px] xl:h-[400px]"
-              
-              width={600}
-              height={5}
-            />
+              <Image
+                src={Mobi}
+                alt="Image 2"
+                className="imgx h-[200px] md:h-[230px] lg:h-[240px] xl:h-[400px]"
+                width={600}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">VR Platform App</h2>
-              <p className="outfit_dispalys text-base lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">
+                VR Platform App
+              </h2>
+              <p className="outfit_dispalys text-base lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
             </div>
-            
           </div>
-          <div className=" mt-10 lg:mt-9 xl:mt-10">
-
+          <div className="animated-image right show mt-10 lg:mt-9 xl:mt-10">
             <div className="bg-black">
-            <Image
-              src={Tab}
-              alt="Image 4"
-              className="h-[370px] md:h-[325px] lg:[330px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Tab}
+                alt="Image 4"
+                className="imgx h-[370px] md:h-[325px] lg:[330px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-            <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">Water Purifier App</h2>
-            <p className="outfit_dispalys text-base  lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
+                Water Purifier App
+              </h2>
+              <p className="outfit_dispalys text-base  lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
+            </div>
           </div>
-          </div>
-          <div className=" mt-10">
+          <div className=" animated-image right show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[380px] md:h-[400px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[380px] md:h-[400px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-            <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">Gaming App</h2>
-            <p className="outfit_dispalys text-lg lg:text-2xl  md:text-xl">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
+                Gaming App
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl  md:text-xl">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
+            </div>
           </div>
-          </div>
-          <div className=" mt-10">
+          <div className="animated-image right show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[360px] md:h-[380px] lg:h-[420px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[360px] md:h-[380px] lg:h-[420px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-            <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">Gaming App</h2>
-            <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
+                Gaming App
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
+            </div>
           </div>
-          </div>
-          <div className=" mt-10">
+          <div className="animated-image right show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[360px] md:h-[410px] lg:h-[450px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[360px] md:h-[410px] lg:h-[450px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-            <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">Free Games Online</h2>
-            <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
+              <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
+                Free Games Online
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
+            </div>
           </div>
-          </div>
-          <div className=" mt-10">
+          <div className="animated-image right show mt-10">
             <div className="bg-black">
-            <Image
-              src={Mobi1}
-              alt="Image 3"
-              className="h-[380px] md:h-[400px] lg:h-[420px] xl:h-[500px]"
-              
-              width={500}
-              height={5}
-            />
+              <Image
+                src={Mobi1}
+                alt="Image 3"
+                className="imgx h-[380px] md:h-[400px] lg:h-[420px] xl:h-[500px]"
+                width={500}
+                height={5}
+              />
             </div>
             <div className=" mt-5 ">
-            <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">Fit with App</h2>
-            <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">Lorem Epsom is dummy text for the<br/>print and digital</p>
-          </div>
+              <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
+                Fit with App
+              </h2>
+              <p className="outfit_dispalys text-lg lg:text-2xl md:text-xl ">
+                Lorem Epsom is dummy text for the
+                <br />
+                print and digital
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl bg-gray-200">
-      <div className=" mt-10 mb-2 mx-5 xl:mt-20 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
-              <h1 className="text-lg mt-4 xl:mt-20  xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
-                Our Robust Mobile & Web App <br /> Development Solutions Stands Your<br/>
-                Business at the top!
-              </h1>
-             
-              <button className=" mt-4 mb-6 lg:mb-16 lg:mt-4 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 xl:px-8   text-white lg:mr-10 xl:mr-0">
+        <div className=" mt-10 mb-2 mx-5 xl:mt-20 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
+          <h1 className="text-lg mt-4 xl:mt-20  xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
+            Our Robust Mobile & Web App <br /> Development Solutions Stands Your
+            <br />
+            Business at the top!
+          </h1>
+
+          <button className=" mt-4 mb-6 lg:mb-16 lg:mt-4 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 xl:px-8   text-white lg:mr-10 xl:mr-0">
             Let's Talk
           </button>
-            </div>
-
+        </div>
       </div>
       <div className="bg-black">
         <div className=" w-full h-92 ">
           <div className="  flex flex-col  ">
-            <h1 className="text-left mx-14 mt-10 lg:mt-20 mb-8 sm:ml-12 md:ml-20 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
+            <h1 className="text-left mx-14 mt-10 lg:mt-20 mb-8 sm:ml-12 md:ml-20 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl playfair_display">
               Get in touch with us today to see how we can help <br /> you
               develop the right product - faster.
             </h1>
 
             <div className="sm:mx-10 lg:mx-20 xl:mx-40 ">
               <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:mx-4 ">
-              <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
-              <div className="m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
-                <h1 className="md:text-2xl 2xl:text-4xl font-semibold">Hello now !</h1>
-                <div className="flex flex-row my-2">
-                  <Image src="flag.svg" alt="logo" width={40} height={4} />{" "}
-                  <div className="ml-4 2xl:text-3xl md:text-xl">+91 88 820 76 755 </div>{" "}
+                <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
+                  <div className="m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
+                    <h1 className="md:text-2xl 2xl:text-4xl font-semibold">
+                      Hello now !
+                    </h1>
+                    <div className="flex flex-row my-2">
+                      <Image src="flag.svg" alt="logo" width={40} height={4} />{" "}
+                      <div className="ml-4 2xl:text-3xl md:text-xl">
+                        +91 88 820 76 755{" "}
+                      </div>{" "}
+                    </div>
+                    <h1 className="md:text-2xl 2xl:text-4xl font-semibold mt-2 xl:mt-4">
+                      Connect with us
+                    </h1>
+                    <p className="text-xl lg:text-base open_sans_display xl:text-[17px] 2xl:text-2xl ">
+                      Email : amit@spacetotech.com
+                      <br />
+                      office : C-171 Sector-63 Noida,
+                      <br />
+                      Uttar Pradesh 201301
+                    </p>
+                  </div>
                 </div>
-                <h1 className="md:text-2xl 2xl:text-4xl font-semibold mt-2 xl:mt-4">
-                  Connect with us
-                </h1>
-                <p className="text-xl lg:text-base open_sans_display xl:text-[17px] 2xl:text-2xl ">
-                  Email : amit@spacetotech.com
-                  <br />
-                 
-                  office : C-171 Sector-63 Noida,
-                  <br />
-                  Uttar Pradesh 201301
-                </p>
-              </div>
-            </div>
 
                 <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
                   <form method="POST" className=" mx-auto  ">

@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles/globals.css */
+.navbar {
+  /* Default background */
+  background-color: black;
+}
+
+.portfolio-bg {
+  /* Portfolio background */
+  background-color: black;
+}
+
 imgx {
   
   image-rendering: crisp-edges;
@@ -1383,3 +1395,60 @@ height:140px;
   transform: translateX(0);
 }
   */
+
+ 
+
+
+.juggle-button {
+   
+    
+   
+    
+    
+    position: relative;
+    animation: juggle 2s infinite, colorChange 2s infinite;
+}
+
+@keyframes juggle {
+    0%, 100% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        background: linear-gradient(45deg, #007bff, #00d4ff);
+    }
+    50% {
+        background: linear-gradient(45deg, #ff00ff, #ff8000);
+    }
+}
+
+
+
+
+.imgx {
+  
+  object-fit: cover;
+  
+  transition: opacity 1s, transform 1s;
+}
+
+.left {
+  transform: translateX(-100%);
+}
+
+.right {
+  transform: translateX(100%);
+}
+
+.animated-image.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+.portfolio-bg{
+  background-color:black;
+}
