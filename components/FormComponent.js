@@ -1,46 +1,65 @@
 "use client";
 import { useState, useEffect } from 'react';
-import { FaWhatsapp, FaPhone, FaTimes } from 'react-icons/fa';
+import { FaWhatsapp, FaPhone, FaTimes, FaCheckCircle } from 'react-icons/fa';
 import Image from 'next/image';
 
 const FormComponent = () => {
   const [visible, setVisible] = useState(false);
-
+  const [errors, setErrors] = useState({});
+  const [successBanner, setSuccessBanner] = useState(false);
   const [user, setUser] = useState({
-    Name: '', Email: '', Number: '', message: '', File: ''
+    Name: '', Email: '', Number: '', message: '', File: null
   });
 
   let name, value;
-  console.log(user);
   const data = (e) => {
     name = e.target.name;
     value = e.target.value;
     setUser({ ...user, [name]: value });
   };
 
-  
+  const validate = () => {
+    const newErrors = {};
+    if (!user.Name) newErrors.Name = 'Name is required';
+    else if (!/^[A-Za-z\s]+$/.test(user.Name)) newErrors.Name = 'Name can only contain letters and spaces';
+    if (!user.Email) newErrors.Email = 'Email is required';
+    else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
+    if (!user.Number) newErrors.Number = 'Phone number is required';
+    else if (!/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/.test(user.Number)) newErrors.Number = 'Phone number is invalid';
+    if (!user.message) newErrors.message = 'Message is required';
+    if (!user.File) newErrors.File = 'File is required';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const getdata = async (e) => {
-    const { Name, Email, Number, message, File } = user;
     e.preventDefault();
+    if (!validate()) return;
+    const { Name, Email, Number, message, File } = user;
+
+    const formData = new FormData();
+    formData.append('Name', Name);
+    formData.append('Email', Email);
+    formData.append('Number', Number);
+    formData.append('message', message);
+    formData.append('File', File);
+
     const options = {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        Name, Email, Number, message, File
-      })
+      body: formData
     };
 
     const res = await fetch(
       'https://nextfirebase-fab92-default-rtdb.firebaseio.com/Query.json',
       options
     );
-    if (res) {
-      alert("Message Sent");
-      setVisible(false);
-      document.body.style.overflow = 'auto';
+    if (res.ok) {
+      setSuccessBanner(true);
+      setTimeout(() => {
+        setSuccessBanner(false);
+        setVisible(false);
+        document.body.style.overflow = 'auto';
+      }, 3000);
     } else {
       alert("Error Occurred");
     }
@@ -71,8 +90,14 @@ const FormComponent = () => {
         >
           <FaTimes size={24} />
         </button>
-        <h2 className="text-3xl mb-6 playfair_display font-bold text-center  text-gray-800">Get in Touch</h2>
-        <form method="POST" className="space-y-4">
+        <h2 className="text-3xl mb-6 playfair_display font-bold text-center text-gray-800">Get in Touch</h2>
+        {successBanner && (
+          <div className="absolute inset-0 flex items-center justify-center bg-green-500 text-white p-4 rounded-lg">
+            <FaCheckCircle size={24} className="mr-2" />
+            <span>Query Submitted Successfully!</span>
+          </div>
+        )}
+        <form method="POST" className="space-y-4" onSubmit={getdata}>
           <div className="relative z-0 w-full mb-4 group">
             <input
               type="text"
@@ -82,9 +107,9 @@ const FormComponent = () => {
               placeholder=" "
               value={user.Name}
               autoComplete="off"
-              required
               onChange={data}
             />
+            {errors.Name && <p className="text-red-600 text-xs mt-1">{errors.Name}</p>}
             <label
               htmlFor="Name"
               className="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -101,9 +126,9 @@ const FormComponent = () => {
               placeholder=" "
               value={user.Email}
               autoComplete="off"
-              required
               onChange={data}
             />
+            {errors.Email && <p className="text-red-600 text-xs mt-1">{errors.Email}</p>}
             <label
               htmlFor="Email"
               className="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -121,9 +146,9 @@ const FormComponent = () => {
               placeholder=" "
               value={user.Number}
               autoComplete="off"
-              required
               onChange={data}
             />
+            {errors.Number && <p className="text-red-600 text-xs mt-1">{errors.Number}</p>}
             <label
               htmlFor="Number"
               className="peer-focus:font-medium absolute text-sm text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -147,9 +172,9 @@ const FormComponent = () => {
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               value={user.message}
               autoComplete="off"
-              required
               onChange={data}
             ></textarea>
+            {errors.message && <p className="text-red-600 text-xs mt-1">{errors.message}</p>}
             <label
               htmlFor="message"
               className="peer-focus:font-medium absolute text-xl text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -161,14 +186,13 @@ const FormComponent = () => {
             <input
               type="file"
               name="File"
-              value={user.File}
               autoComplete="off"
-              required
-              onChange={data}
+              onChange={(e) => setUser({ ...user, File: e.target.files[0] })}
               className="py-2.5 px-0 bg-transparent appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer block w-full text-sm text-black file:mr-4 file:py-2 file:px-4 md:file:ml-20 sm:file:ml-10 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
             />
+            {errors.File && <p className="text-red-600 text-xs mt-1">{errors.File}</p>}
           </div>
-          <button onClick={getdata} type="submit" className="rounds text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <button type="submit" className="rounds text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Submit →
           </button>
         </form>

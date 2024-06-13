@@ -11,7 +11,7 @@ const Footer = () => {
           aria-labelledby="mega-menu-full-image-button"
         >
           <li>
-          <span className=" space-y-4  ">
+          <span className=" space-y-4   ">
             <Image src={Logo} className="xl:w-80 xl:h-12 h-4 w-28 imgx  sm:w-72 sm:h-10" alt="Logo" width={100} height={10} />
           </span>
           </li>
