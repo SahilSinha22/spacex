@@ -1,53 +1,82 @@
 "use client"
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Image from "next/image";
 import Mobi from "@/public/1form.png"
+import { FaCheckCircle } from 'react-icons/fa';
 
 import Script from "next/script";
 const Form = () => {
 
-  const [user, setUser]= useState(
-    {
-      Name: '',Email: '',Number: '', Budget:'',message:''
-    }
-  )
-  let name,value;
-  console.log(user);
-  const data=(e) =>
-    {
-     
-      name=e.target.name;
-      value=e.target.value;
-      setUser({...user,[name]: value});
-      
-    }
+  
+  const [errors, setErrors] = useState({});
+  const [successBanner, setSuccessBanner] = useState(false);
+  const [user, setUser] = useState({
+    Name: '', Email: '', Number: '', message: '', Budget:''
+  });
 
-const getdata = async(e) =>
-  {
-    const {Name, Email, Number,Budget,message} = user;
+  let name, value;
+  const data = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUser({ ...user, [name]: value });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!user.Name) newErrors.Name = 'Name is required';
+    else if (!/^[A-Za-z\s]+$/.test(user.Name)) newErrors.Name = 'Name can only contain letters and spaces';
+    if (!user.Email) newErrors.Email = 'Email is required';
+    else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
+    if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
+    else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
+    if (!user.message) newErrors.message = 'Message is required';
+    if (!user.Budget) newErrors.File = 'Budget is required';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const getdata = async (e) => {
     e.preventDefault();
+    if (!validate()) return;
+    const { Name, Email, Number, message, Budget } = user;
+
+    const formData = new FormData();
+    formData.append('Name', Name);
+    formData.append('Email', Email);
+    formData.append('Number', Number);
+    formData.append('message', message);
+    formData.append('Budget', Budget);
+
     const options = {
       method: 'POST',
       headers: {
-        'Content-Type': 'aplication/json'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        Name, Email, Number,Budget, message
+        Name, Email, Number, message, Budget
       })
-    }
+    };
 
-    const res = await fetch( 
+    const res = await fetch(
       'https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json',
-options
-    )
-    if(res){
-      alert("Message Sent")
+      options
+    );
+    if (res) {
+      setSuccessBanner(true);
+      setTimeout(() => {
+        setSuccessBanner(false);
+        
+        
+      }, 3000);
+    } else {
+      alert("Error Occurred");
     }
-    else{
-      alert("Error Occured")
-    }
-  }
+  };
 
+  
+  
+
+  
   return (
     <div className=" bg-black ">
       <Script src="https://www.google.com/recaptcha/api.js" async defer />
@@ -94,6 +123,12 @@ options
             </div>
 
             <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
+            {successBanner && (
+          <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
+            <FaCheckCircle size={24} className="mr-2" />
+            <span>Query Submitted Successfully!</span>
+          </div>
+        )}
               <form method='POST' className=" mx-auto  ">
                 <div className="grid w-full md:grid-cols-2 md:gap-6">
                   <div className="relative z-0 w-full mb-4 group">
@@ -108,6 +143,8 @@ options
                       required
                       onChange={data}
                     />
+                {errors.Name && <p className="text-red-600 text-xs mt-1">{errors.Name}</p>}
+
                     <label
                       for="Name"
                       className="peer-focus:font-medium  absolute text-sm  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -127,6 +164,8 @@ options
                       required
                       onChange={data}
                     />
+            {errors.Email && <p className="text-red-600 text-xs mt-1">{errors.Email}</p>}
+
                     <label
                       for="Email"
                       className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -139,7 +178,7 @@ options
                   <div className="relative z-0 w-full mb-5 group">
                     <input
                       type="tel"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      
                       name="Number"
                       id="floating_phone"
                       className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -149,6 +188,8 @@ options
                       required
                       onChange={data}
                     />
+                 {errors.Number && <p className="text-red-600 text-xs mt-1">{errors.Number}</p>}
+
                     <label
                       for="Number"
                       className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -179,6 +220,8 @@ options
                       required
                       onChange={data}
                     />
+                {errors.File && <p className="text-red-600 text-xs mt-1">{errors.File}</p>}
+
                     <label
                       for="floating_company"
                       className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
@@ -213,6 +256,8 @@ options
                     required
                     onChange={data}
                   />
+              {errors.message && <p className="text-red-600 text-xs mt-1">{errors.message}</p>}
+
                   <label
                     for="message"
                     className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"

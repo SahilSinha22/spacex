@@ -5,65 +5,14 @@ import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
 
-import { usePathname, useSearchParams } from "next/navigation";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  const [bgColor, setBgColor] = useState('black');
-  const [textColor, setTextColor] = useState('rgb(161 161 170)');
-  const pathname = usePathname()
-const searchParams = useSearchParams()
-
-  useEffect(() => {
-    const handleRouteChange = (pathname) => {
-
-      console.log(pathname)
-
-      if (pathname === '/Portfolio') {
-        setBgColor('white');
-        setTextColor('rgb(161 161 170)');
-      } else {
-        setBgColor('black'); 
-        setTextColor('gray');
-      }
-    };
-
-    
-    handleRouteChange(pathname);
-
-    
-  }, [pathname, searchParams]);
-  useEffect(() => {
-    // Function to handle text color change on hover
-    const handleTextHover = (event) => {
-      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
-    };
-
-    // Function to handle text color reset
-    const handleTextReset = (event) => {
-      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
-    };
-
-    // Get all links that need hover effect
-    const links = document.querySelectorAll('.nav-link');
-
-    // Add event listeners to each link
-    links.forEach(link => {
-      link.addEventListener('mouseenter', handleTextHover);
-      link.addEventListener('mouseleave', handleTextReset);
-    });
-
-    // Cleanup: Remove event listeners when component unmounts
-    return () => {
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', handleTextHover);
-        link.removeEventListener('mouseleave', handleTextReset);
-      });
-    };
-  }, [textColor]);
+  
   return (
-    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
+    <nav className="items-center p-4 bg-black ">
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
