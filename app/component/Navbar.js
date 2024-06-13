@@ -1,29 +1,31 @@
-"use client"; // Ensure this is at the top for client-side components
+"use client"; 
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
+
 import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
-  const [bgColor, setBgColor] = useState('black'); // Default background color
-const pathname = usePathname()
+  
+  const [bgColor, setBgColor] = useState('black');
+  const [textColor, setTextColor] = useState('rgb(161 161 170)');
+  const pathname = usePathname()
 const searchParams = useSearchParams()
-console.log(pathname)
-console.log(searchParams)
+
   useEffect(() => {
     const handleRouteChange = (pathname) => {
 
       console.log(pathname)
 
       if (pathname === '/Portfolio') {
-        setBgColor('white'); 
+        setBgColor('white');
+        setTextColor('rgb(161 161 170)');
       } else {
         setBgColor('black'); 
+        setTextColor('gray');
       }
     };
 
@@ -32,9 +34,36 @@ console.log(searchParams)
 
     
   }, [pathname, searchParams]);
+  useEffect(() => {
+    // Function to handle text color change on hover
+    const handleTextHover = (event) => {
+      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
+    };
 
+    // Function to handle text color reset
+    const handleTextReset = (event) => {
+      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
+    };
+
+    // Get all links that need hover effect
+    const links = document.querySelectorAll('.nav-link');
+
+    // Add event listeners to each link
+    links.forEach(link => {
+      link.addEventListener('mouseenter', handleTextHover);
+      link.addEventListener('mouseleave', handleTextReset);
+    });
+
+    // Cleanup: Remove event listeners when component unmounts
+    return () => {
+      links.forEach(link => {
+        link.removeEventListener('mouseenter', handleTextHover);
+        link.removeEventListener('mouseleave', handleTextReset);
+      });
+    };
+  }, [textColor]);
   return (
-    <nav className="items-center p-4 " style={{ backgroundColor: bgColor, color: bgColor === 'white' ? 'white' : 'black' }}>
+    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
@@ -64,24 +93,24 @@ console.log(searchParams)
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 justify-left lg:flex-grow">
-            <Link href="/" className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="nav-link  block text-zinc-400 mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Home
             </Link>
-            <a href="#" className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="nav-link  block text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Services
-            </a>
-            <a href="#" className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            </Link>
+            <Link href="/" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Technologies
-            </a>
-            <Link href="/Portfolio" className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            </Link>
+            <Link href="/Portfolio" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Portfolio
             </Link>
-            <Link href="/" className="block text-zinc-400 hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="block nav-link text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Blog
             </Link>
           </div>
           <div>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-white inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0">
+            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full  inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0">
               Contact Us
             </button>
           </div>
