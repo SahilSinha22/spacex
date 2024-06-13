@@ -87,7 +87,7 @@ const FormComponent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed  lg:my-10 xl:h-[612px] inset-0 h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white mx-10 p-8 md:-top-40 lg:top-0 rounded-lg shadow-lg w-full max-w-md relative transform transition-transform duration-300 scale-105">
         <button
           onClick={handleClose}
@@ -198,20 +198,25 @@ const FormComponent = () => {
             />
             {errors.File && <p className="text-red-600 text-xs mt-1">{errors.File}</p>}
           </div>
+          <div className="flex justify-between ">
           <button type="submit" className="rounds text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Submit →
           </button>
-        </form>
-        <div className="flex justify-around mt-6">
+          
           <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-green-500 hover:text-green-600 transition-colors">
-            <FaWhatsapp size={24} />
-            <span>WhatsApp</span>
+            <FaWhatsapp size={40} />
+            <span>Whatsapp</span>
           </a>
           <a href="tel:YOURNUMBER" className="flex items-center space-x-2 text-blue-500 hover:text-blue-600 transition-colors">
-            <FaPhone size={24} />
+            <FaPhone size={40} />
             <span>Call</span>
-          </a>
-        </div>
+            </a>
+           
+            </div>
+        </form>
+        
+          
+        
       </div>
     </div>
   );
