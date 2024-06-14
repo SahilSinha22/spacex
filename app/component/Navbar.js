@@ -4,39 +4,16 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
-import { useRouter } from 'next/router';
+
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
-  const [bgColor, setBgColor] = useState('black');
-  const [textColor, setTextColor] = useState('rgb(161 161 170)');
   
+  
+  const [textColor, setTextColor] = useState('rgb(161 161 170)');
+  setTextColor("rgb(161 161 170)")
 
-    
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      if (url === '/Portfolio') {
-        setBgColor('white'); 
-        setTextColor('rgba(161,161,170');// Change background color to white for portfolio page
-      } else {
-        setBgColor('black'); 
-        setTextColor('rgba(161,161,170');// Default to black for other pages
-      }
-    };
-
-    // Set initial background color based on current route
-    handleRouteChange(router.pathname);
-
-    // Listen for route changes
-    router.events.on('routeChangeComplete', handleRouteChange);
-
-    // Clean up event listener on component unmount
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router]);
   useEffect(() => {
     
     const handleTextHover = (event) => {
@@ -66,7 +43,7 @@ const Navbar = () => {
     };
   }, [textColor]);
   return (
-    <nav className="items-center p-4 " style={{ backgroundColor: bgColor, color: bgColor === 'white' ? 'black' : 'white' }}>
+    <nav className="items-center p-4 bg-black " >
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
