@@ -4,15 +4,67 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
-
+import { useRouter } from 'next/router';
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  
+  const [bgColor, setBgColor] = useState('black');
+  const [textColor, setTextColor] = useState('rgb(161 161 170)');
+  const router = useRouter();
+ 
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (url === '/Portfolio') {
+        setBgColor('white'); // Change background color to white for portfolio page
+      } else {
+        setBgColor('black'); // Default to black for other pages
+      }
+    };
+
+    // Set initial background color based on current route
+    handleRouteChange(router.pathname);
+
+    // Listen for route changes
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    // Clean up event listener on component unmount
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router]);
+  useEffect(() => {
+    
+    const handleTextHover = (event) => {
+      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
+    };
+
+    
+    const handleTextReset = (event) => {
+      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
+    };
+
+    
+    const links = document.querySelectorAll('.nav-link');
+
+    
+    links.forEach(link => {
+      link.addEventListener('mouseenter', handleTextHover);
+      link.addEventListener('mouseleave', handleTextReset);
+    });
+
+    
+    return () => {
+      links.forEach(link => {
+        link.removeEventListener('mouseenter', handleTextHover);
+        link.removeEventListener('mouseleave', handleTextReset);
+      });
+    };
+  }, [textColor]);
   return (
-    <nav className="items-center p-4 bg-black ">
+    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
