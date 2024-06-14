@@ -11,37 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   
-  const [textColor, setTextColor] = useState('rgb(161 161 170)');
-  setTextColor("rgb(161 161 170)")
-
-  useEffect(() => {
-    
-    const handleTextHover = (event) => {
-      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
-    };
-
-    
-    const handleTextReset = (event) => {
-      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
-    };
-
-    
-    const links = document.querySelectorAll('.nav-link');
-
-    
-    links.forEach(link => {
-      link.addEventListener('mouseenter', handleTextHover);
-      link.addEventListener('mouseleave', handleTextReset);
-    });
-
-    
-    return () => {
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', handleTextHover);
-        link.removeEventListener('mouseleave', handleTextReset);
-      });
-    };
-  }, [textColor]);
+  
   return (
     <nav className="items-center p-4 bg-black " >
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
@@ -73,19 +43,19 @@ const Navbar = () => {
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 justify-left lg:flex-grow">
-            <Link href="/" className="nav-link  block text-zinc-400 mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="nav-link  block text-zinc-400  hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Home
             </Link>
-            <Link href="/" className="nav-link  block text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="nav-link  block text-zinc-400 hover:text-white   mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Services
             </Link>
-            <Link href="/" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="block text-zinc-400 hover:text-white  nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Technologies
             </Link>
-            <Link href="/Portfolio" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/Portfolio" className="block text-zinc-400 hover:text-white  nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Portfolio
             </Link>
-            <Link href="/" className="block nav-link text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="block nav-link text-zinc-400 hover:text-white   mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Blog
             </Link>
           </div>
