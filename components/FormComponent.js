@@ -27,7 +27,7 @@ const FormComponent = () => {
     if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
     else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
     if (!user.message) newErrors.message = 'Message is required';
-    if (!user.File) newErrors.File = 'File is required';
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -87,7 +87,7 @@ const FormComponent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed  lg:my-10 xl:h-[612px] inset-0 h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed mx-6 lg:my-10 xl:h-[612px] inset-0 h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white mx-10 p-8 md:-top-40 lg:top-0 rounded-lg shadow-lg w-full max-w-md relative transform transition-transform duration-300 scale-105">
         <button
           onClick={handleClose}
@@ -97,9 +97,11 @@ const FormComponent = () => {
         </button>
         <h2 className="text-3xl mb-6 playfair_display font-bold text-center text-gray-800">Get in Touch</h2>
         {successBanner && (
-          <div className="absolute inset-0 flex items-center justify-center bg-green-500 text-white p-4 rounded-lg">
-            <FaCheckCircle size={24} className="mr-2" />
+          <div className="absolute inset-0 flex items-center justify-center  bg-green-500 text-white p-4 rounded-lg">
+            <div className="flex mt-10 ml-16">
+           <FaCheckCircle size={24} className="mr-2" />
             <span>Query Submitted Successfully!</span>
+            </div>
           </div>
         )}
         <form method="POST" className="space-y-4" onSubmit={getdata}>
@@ -198,8 +200,8 @@ const FormComponent = () => {
             />
             {errors.File && <p className="text-red-600 text-xs mt-1">{errors.File}</p>}
           </div>
-          <div className="flex justify-between ">
-          <button type="submit" className="rounds text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <div className="flex  justify-between ">
+          <button type="submit" className="rounds  text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Submit →
           </button>
           

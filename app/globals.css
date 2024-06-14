@@ -1040,7 +1040,7 @@ height:140px;
     background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
     opacity: 1;
     background-size: cover; /* Or 'contain' depending on your preference */
-    background-position: center top;
+    background-position: center ;
     background-repeat: no-repeat;
     
    
@@ -1077,8 +1077,8 @@ height:140px;
   }
   .logo4 {
     flex: 1 1 50px;  
-    margin-top:45px;
-  height:40px;
+    margin-top:0px;
+  height:60px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) {
@@ -1244,7 +1244,7 @@ height:140px;
       background: transparent url('../public/intross.png') 0% 0% no-repeat padding-box;
       opacity: 1;
       background-size: cover; /* Or 'contain' depending on your preference */
-      background-position: center ;
+      background-position: center;
       background-repeat: no-repeat;
       
      
@@ -1451,4 +1451,53 @@ height:140px;
 }
 .portfolio-bg{
   background-color:black;
+}
+
+
+.popup{
+  width:400px;
+  background:#fff;
+  border-radius:6px;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding:0 30px 30px;
+  color:#333;
+  visibility:hidden;
+  transition:transform 0.4s, top 0.4s;
+}
+.open-popup{
+  visibility:visible;
+  top:50%;
+  transform:translate(-50%,-50%) scale(1);
+
+}
+
+.popup img{
+  width:100px;
+  margin-top:-50px;
+  margin-left:80px;
+  border-radius:50px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+  font-size:38px;
+  font-weight:500;
+  margin:30px 0 10px;
+}
+.popup button{
+width:100%;
+margin-top:50px;
+padding:10px 0;
+background:#6fd649;
+color:#fff;
+border:0;
+outline:none;
+font-size:18px;
+border-radius:4px;
+cursor:pointer;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }

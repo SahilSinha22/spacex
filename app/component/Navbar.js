@@ -9,18 +9,20 @@ import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+  const router = useRouter();
   const [bgColor, setBgColor] = useState('black');
   const [textColor, setTextColor] = useState('rgb(161 161 170)');
-  const router = useRouter();
- 
+  
 
+    
   useEffect(() => {
     const handleRouteChange = (url) => {
       if (url === '/Portfolio') {
-        setBgColor('white'); // Change background color to white for portfolio page
+        setBgColor('white'); 
+        setTextColor('rgba(161,161,170');// Change background color to white for portfolio page
       } else {
-        setBgColor('black'); // Default to black for other pages
+        setBgColor('black'); 
+        setTextColor('rgba(161,161,170');// Default to black for other pages
       }
     };
 
@@ -64,7 +66,7 @@ const Navbar = () => {
     };
   }, [textColor]);
   return (
-    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
+    <nav className="items-center p-4 " style={{ backgroundColor: bgColor, color: bgColor === 'white' ? 'black' : 'white' }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>

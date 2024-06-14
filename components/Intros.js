@@ -23,7 +23,7 @@ const Intros = () => {
       <div className="intros w-full xl:h-[680px] h-full  ">
        
         <div className=" ">
-          <div className="pt-12 ">
+          <div className="pt-40 md:pt-60 lg:pt-48 xl:pt-20 ">
             <div className=" mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
               <h1 className="text-2xl xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
                 Transforming Business with <br />
@@ -39,7 +39,7 @@ const Intros = () => {
               </button>
             </div>
             <div className=" relative   h-24 md:h-48 -top-10 2xl:px-20  sm:h-32 lg:h-56 xl:h-52 2xl:h-56 ">
-              <div className="absolute bottom-0   xl:mx-20  2xl:mx-28 2xl:left-40  2xl:right-40  md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-5 ">
+              <div className="absolute bottom-0   xl:mx-20  2xl:mx-28 2xl:left-40  2xl:right-40  md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:-top-4 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-5 ">
                 <div className="relative ">
                   <Image
                     src={Mobi1}
