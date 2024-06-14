@@ -5,15 +5,38 @@ import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
 
-
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  
-  
+  const [bgColor, setBgColor] = useState('black');
+  const [textColor, setTextColor] = useState('rgb(161 161 170)');
+  const pathname = usePathname()
+const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const handleRouteChange = (pathname) => {
+
+      console.log(pathname)
+
+      if (pathname === '/Portfolio') {
+        setBgColor('white');
+        setTextColor('rgb(161 161 170)');
+      } else {
+        setBgColor('black'); 
+        setTextColor('gray');
+      }
+    };
+
+    
+    handleRouteChange(pathname);
+
+    
+  }, [pathname, searchParams]);
+ 
   return (
-    <nav className="items-center p-4 bg-black " >
+    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
@@ -43,19 +66,19 @@ const Navbar = () => {
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 justify-left lg:flex-grow">
-            <Link href="/" className="nav-link  block text-zinc-400  hover:text-white mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="nav-link  block text-zinc-400 mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Home
             </Link>
-            <Link href="/" className="nav-link  block text-zinc-400 hover:text-white   mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="nav-link  block text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Services
             </Link>
-            <Link href="/" className="block text-zinc-400 hover:text-white  nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Technologies
             </Link>
-            <Link href="/Portfolio" className="block text-zinc-400 hover:text-white  nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/Portfolio" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Portfolio
             </Link>
-            <Link href="/" className="block nav-link text-zinc-400 hover:text-white   mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/" className="block nav-link text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Blog
             </Link>
           </div>
