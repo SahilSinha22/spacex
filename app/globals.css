@@ -23,6 +23,9 @@ imgx {
 .playfair_display{
   font-family: var(--font-playfair_display);
 }
+.Bebas_Neue{
+  font-family: var(--font-Bebas_Neue);
+}
 .playfair_displays{
   font-family: var(--font-playfair_displays);
 }
@@ -1406,7 +1409,7 @@ height:140px;
     
     
     position: relative;
-    animation: juggle 2s infinite, colorChange 2s infinite;
+    animation:  colorChange 2s infinite;
 }
 
 @keyframes juggle {

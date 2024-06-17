@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Mobi from "@/public/1grow.png";  // Adjust the import path if necessary
-
+import Mobis from "@/public/Image 13.png"
 const Award = () => {
   return (
     <div className="bg-white text-zinc-800 p-8 sm:mx-4 xl:mx-28 mt-10 lg:mt-20">
@@ -14,26 +14,10 @@ const Award = () => {
             We have been featured and certified by recognized authorities Worldwide.
           </p>
         </div>
-        <div className="flex flex-col">
-          <div className="flex flex-row justify-center">
-            <div className="relative -top-2 -left-6 md:-left-16 2xl:-left-24 flex-row flex text-6xl md:text-7xl font-extrabold">
-              C
-              <div className="absolute -top-12 md:-top-12 md:left-4 left-2 text-7xl md:text-8xl font-semibold md:font-extrabold text-red-600">
-                .
-              </div>
-              <div className="absolute left-12 top-2 md:left-20 text-5xl text-center md:text-10xl font-extrabold mb-4 text-red-600">
-                4.9
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center ml-8 md:l-14 2xl:ml-0 2xl:mr-6 space-x-2 mb-2 text-blue-600">
-            <span className="text-3xl md:text-4xl">★</span>
-            <span className="text-3xl md:text-4xl">★</span>
-            <span className="text-3xl md:text-4xl">★</span>
-            <span className="text-3xl md:text-4xl">★</span>
-            <span className="text-3xl md:text-4xl">★</span>
-          </div>
-        </div>
+        <div className=" relative -top-10">
+          <Image src={Mobis} alt="" width={180} height={10}/>
+          
+      </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">

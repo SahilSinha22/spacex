@@ -87,7 +87,7 @@ const FormComponent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed mx-6 lg:my-10 xl:h-[612px] inset-0 h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed mx-6 lg:my-6 xl:h-[612px] inset-0 h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white mx-10 p-8 md:-top-40 lg:top-0 rounded-lg shadow-lg w-full max-w-md relative transform transition-transform duration-300 scale-105">
         <button
           onClick={handleClose}

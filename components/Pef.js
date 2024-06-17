@@ -25,7 +25,7 @@ const Pef = () => {
     const interval = setInterval(() => {
       if (currentValue < targetValue) {
         currentValue++;
-        element.textContent = currentValue;
+        element.textContent = currentValue ;
       } else {
         clearInterval(interval);
       }
@@ -56,38 +56,48 @@ const Pef = () => {
 
   return (
     <div className="bg-black text-white">
-      <div className="flex justify-between lg:h-auto lg:items-center lg:text-center p-5 lg:p-20 bg-black text-white">
-        <div className="text-center px-2 sm:pr-10 md:pr-20 xl:pr-30 lg:px-10 border-r-2">
+      <div className="flex justify-around lg:h-auto lg:items-center lg:text-center p-5  bg-black text-white">
+        <div className="text-center items-center px-2 border-gray-600 sm:pr-10 md:pr-20 xl:pr-30 lg:px-10 border-r-2">
+          <div className="flex flex-row text-center lg:ml-10 m-0 p-0">
           <h1
-            className="number text-2xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8 h-45 font-semibold"
+            className="number Bebas_Neue text-2xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8 "
             data-target="25"
           >
-            0
+            0 
           </h1>
-          <p className="text-sm sm:text-lg font-light lg:text-4xl lg:py-8 mt-2">
+          <span className="Bebas_Neue xl:text-8xl ">+</span>
+          </div>
+          <p className="text-sm sm:text-lg font-light lg:text-4xl lg:pr-16  ">
             PARTNERS
           </p>
         </div>
-        <div className="text-center px-2 sm:pr-10 md:pr-20 lg:px-10 xl:pr-30 border-r-2">
-          <h1
-            className="number text-2xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8 font-semibold"
+        <div className="text-center px-2 sm:pr-10 md:pr-20 lg:px-10 xl:pr-10 border-gray-600 border-r-2">
+         
+         <div className="flex flex-row lg:ml-10 ">
+           <h1
+            className="number Bebas_Neue text-2xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8 "
             data-target="50"
           >
             0
           </h1>
-          <p className="text-sm sm:text-lg font-light lg:text-4xl px-4 sm:px-1 lg:py-8 mt-2">
+          <span className="Bebas_Neue xl:text-8xl ">+</span>
+          </div>
+          <p className="text-sm sm:text-lg font-light lg:text-4xl px-4 sm:px-1 lg:pr-16">
             TEAM SIZE
           </p>
         </div>
-        <div className="text-center lg:pl-1 xl:pl-4">
+        <div className="text-center lg:pl-1 xl:pl-1">
+         <div className="flex flex-row  xl:text-8xl lg:ml-10">
           <h1
-            className="number text-2xl proportional-nums md:text-6xl lining-nums xl:text-8xl lg:text-7xl lg:pt-8 font-bold"
+            className="number Bebas_Neue text-2xl proportional-nums md:text-6xl lining-nums xl:text-8xl lg:text-7xl lg:pt-8 "
             data-target="100"
           >
             0
           </h1>
-          <p className="text-sm sm:text-lg font-light pr-2 lg:text-4xl lg:py-8 mt-2">
-            SUCCESSFUL PRODUCTS
+          <span className="Bebas_Neue xl:text-8xl ">+</span>
+          </div>
+          <p className="text-sm sm:text-lg font-light pr-2 lg:text-4xl lg:pr-16">
+            SUCCESSFUL <br/>PRODUCTS
           </p>
         </div>
       </div>

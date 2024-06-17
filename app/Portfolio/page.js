@@ -1,20 +1,28 @@
 "use client";
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
-import Mobi from "@/public/1pef.png";
-import Mobi1 from "@/public/2pef.png";
-import Tab from "@/public/3pef.png";
-import { FaCheckCircle } from 'react-icons/fa';
+import Mobi from "@/public/CS 01.png";
+import Mobis from "@/public/CS 02.png";
+import Mobi1 from "@/public/CS 03.png";
+import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
+
+import Tab from "@/public/CS 04.png";
+import { FaCheckCircle } from "react-icons/fa";
 
 import Script from "next/script";
 const page = () => {
-
+  const [captcha, setCaptcha] = useState("");
+  const [inputCaptcha, setInputCaptcha] = useState("");
 
   const [errors, setErrors] = useState({});
   const [successBanner, setSuccessBanner] = useState(false);
   const [user, setUser] = useState({
-    Name: '', Email: '', Number: '', message: '', Budget:''
+    Name: "",
+    Email: "",
+    Number: "",
+    message: "",
+    Budget: "",
   });
 
   let name, value;
@@ -26,14 +34,17 @@ const page = () => {
 
   const validate = () => {
     const newErrors = {};
-    if (!user.Name) newErrors.Name = 'Name is required';
-    else if (!/^[A-Za-z\s]+$/.test(user.Name)) newErrors.Name = 'Name can only contain letters and spaces';
-    if (!user.Email) newErrors.Email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
-    if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
-    else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
-    if (!user.message) newErrors.message = 'Message is required';
-    if (!user.Budget) newErrors.File = 'Budget is required';
+    if (!user.Name) newErrors.Name = "Name is required";
+    else if (!/^[A-Za-z\s]+$/.test(user.Name))
+      newErrors.Name = "Name can only contain letters and spaces";
+    if (!user.Email) newErrors.Email = "Email is required";
+    else if (!/\S+@\S+\.\S+/.test(user.Email))
+      newErrors.Email = "Email address is invalid";
+    if (!user.Number.trim()) newErrors.Number = "Phone number is required";
+    else if (!/^\d{7,12}$/.test(user.Number))
+      newErrors.Number = "Phone number must be between 7 to 12 digits";
+    if (!user.message) newErrors.message = "Message is required";
+    if (!user.Budget) newErrors.File = "Budget is required";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -44,36 +55,58 @@ const page = () => {
     const { Name, Email, Number, message, Budget } = user;
 
     const formData = new FormData();
-    formData.append('Name', Name);
-    formData.append('Email', Email);
-    formData.append('Number', Number);
-    formData.append('message', message);
-    formData.append('Budget', Budget);
+    formData.append("Name", Name);
+    formData.append("Email", Email);
+    formData.append("Number", Number);
+    formData.append("message", message);
+    formData.append("Budget", Budget);
 
     const options = {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        Name, Email, Number, message, Budget
-      })
+        Name,
+        Email,
+        Number,
+        message,
+        Budget,
+      }),
     };
 
     const res = await fetch(
-      'https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json',
+      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json",
       options
     );
     if (res) {
       setSuccessBanner(true);
       setTimeout(() => {
         setSuccessBanner(false);
-        
-        
       }, 3000);
     } else {
       alert("Error Occurred");
     }
+  };
+  const [isCaptchaValid, setIsCaptchaValid] = useState(null);
+
+  useEffect(() => {
+    setCaptcha(generateArithmeticCaptcha());
+  }, []);
+
+  const handleCaptchaChange = (e) => {
+    const value = e.target.value;
+    setInputCaptcha(value);
+    setIsCaptchaValid(value === captcha.answer);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (inputCaptcha !== captcha.answer) {
+      return;
+    }
+    // Handle form submission
+    alert("Form submitted successfully!");
   };
 
   return (
@@ -118,13 +151,13 @@ const page = () => {
             </div>
           </div>
           <div className=" animated-image left show mt-10">
-            <div className="bg-blue-600">
+            <div className="  ">
               <Image
                 src={Mobi1}
                 alt="Image 3"
-                className="imgx  h-[300px] xl:h-[500px]"
-                width={400}
-                height={4}
+                className="imgx  h-[300px] object-cover  xl:h-[500px]"
+                width={500}
+                height={5}
               />
             </div>
             <div className=" mt-5 ">
@@ -227,9 +260,9 @@ const page = () => {
           <div className="animated-image right show">
             <div className="bg-black">
               <Image
-                src={Mobi}
+                src={Mobis}
                 alt="Image 2"
-                className="imgx h-[200px] md:h-[230px] lg:h-[240px] xl:h-[400px]"
+                className="imgx h-[200px] object-cover md:h-[230px] lg:h-[240px] xl:h-[400px]"
                 width={600}
                 height={5}
               />
@@ -250,8 +283,8 @@ const page = () => {
               <Image
                 src={Tab}
                 alt="Image 4"
-                className="imgx h-[370px] md:h-[325px] lg:[330px] xl:h-[500px]"
-                width={500}
+                className="imgx h-[370px] object-fill  md:h-[325px] lg:[330px] xl:h-[500px]"
+                width={600}
                 height={5}
               />
             </div>
@@ -272,7 +305,7 @@ const page = () => {
                 src={Mobi1}
                 alt="Image 3"
                 className="imgx h-[380px] md:h-[400px] xl:h-[500px]"
-                width={500}
+                width={600}
                 height={5}
               />
             </div>
@@ -293,7 +326,7 @@ const page = () => {
                 src={Mobi1}
                 alt="Image 3"
                 className="imgx h-[360px] md:h-[380px] lg:h-[420px] xl:h-[500px]"
-                width={500}
+                width={600}
                 height={5}
               />
             </div>
@@ -314,7 +347,7 @@ const page = () => {
                 src={Mobi1}
                 alt="Image 3"
                 className="imgx h-[360px] md:h-[410px] lg:h-[450px] xl:h-[500px]"
-                width={500}
+                width={600}
                 height={5}
               />
             </div>
@@ -335,7 +368,7 @@ const page = () => {
                 src={Mobi1}
                 alt="Image 3"
                 className="imgx h-[380px] md:h-[400px] lg:h-[420px] xl:h-[500px]"
-                width={500}
+                width={600}
                 height={5}
               />
             </div>
@@ -400,159 +433,204 @@ const page = () => {
                 </div>
 
                 <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
-            {successBanner && (
-          <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
-            <FaCheckCircle size={24} className="mr-2" />
-            <span>Query Submitted Successfully!</span>
-          </div>
-        )}
-              <form method='POST' className=" mx-auto  ">
-                <div className="grid w-full md:grid-cols-2 md:gap-6">
-                  <div className="relative z-0 w-full mb-4 group">
-                    <input
-                      type="text"
-                      name="Name"
-                      id="floating_first_name"
-                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      value={user.Name}
-                      autoComplete="off"
-                      required
-                      onChange={data}
-                    />
-                {errors.Name && <p className="text-red-600 text-xs mt-1">{errors.Name}</p>}
+                  {successBanner && (
+                    <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
+                      <FaCheckCircle size={24} className="mr-2" />
+                      <span>Query Submitted Successfully!</span>
+                    </div>
+                  )}
+                  <form method="POST" className=" mx-auto  ">
+                    <div className="grid w-full md:grid-cols-2 md:gap-6">
+                      <div className="relative z-0 w-full mb-4 group">
+                        <input
+                          type="text"
+                          name="Name"
+                          id="floating_first_name"
+                          className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=" "
+                          value={user.Name}
+                          autoComplete="off"
+                          required
+                          onChange={data}
+                        />
+                        {errors.Name && (
+                          <p className="text-red-600 text-xs mt-1">
+                            {errors.Name}
+                          </p>
+                        )}
 
-                    <label
-                      for="Name"
-                      className="peer-focus:font-medium  absolute text-sm  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      Full Name
-                    </label>
-                  </div>
-                  <div className="relative z-0 w-full mb-5 group">
-                    <input
-                      type="text"
-                      name="Email"
-                      id="floating_last_name"
-                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      value={user.Email}
-                      autoComplete="off"
-                      required
-                      onChange={data}
-                    />
-            {errors.Email && <p className="text-red-600 text-xs mt-1">{errors.Email}</p>}
-
-                    <label
-                      for="Email"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      Email*
-                    </label>
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 md:gap-6">
-                  <div className="relative z-0 w-full mb-5 group">
-                    <input
-                      type="tel"
-                      
-                      name="Number"
-                      id="floating_phone"
-                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      value={user.Number}
-                      autoComplete="off"
-                      required
-                      onChange={data}
-                    />
-                 {errors.Number && <p className="text-red-600 text-xs mt-1">{errors.Number}</p>}
-
-                    <label
-                      for="Number"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      <div className="flex flex-row">
-                        
-                        <div className="">
-                          <Image
-                            src="flag.svg"
-                            alt="flag"
-                            width={30}
-                            height={2}
-                          />{" "}
-                        </div>
-                        <div className="">+91</div>
-                      </div>
-                    </label>
-                  </div>
-                  <div className="relative z-0 w-full mb-5 group">
-                    <input
-                      type="text"
-                      name="Budget"
-                      id="floating_company"
-                      className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" "
-                      value={user.Budget}
-                      autoComplete="off"
-                      required
-                      onChange={data}
-                    />
-                {errors.File && <p className="text-red-600 text-xs mt-1">{errors.File}</p>}
-
-                    <label
-                      for="floating_company"
-                      className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                    >
-                      <select
-                        id="question"
-                        className=" peer h-full  text-sm   bg-transparent pb-1.5 font-poppins font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
-                      >
-                        <option
-                          className="peer text-zinc-500  text-xs md:text-sm border-gray-500 bg-transparent  pb-1.5 font-poppins font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
-                          selected
+                        <label
+                          for="Name"
+                          className="peer-focus:font-medium  absolute text-sm  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                         >
-                          Budget (selext a range)
-                        </option>
-                        <option value="option2">option2</option>
-                        <option value="option3">option3</option>
-                        <option value="option4">option4</option>
-                        <option value="option5">option5</option>
-                      </select>
-                    </label>
-                  </div>
+                          Full Name
+                        </label>
+                      </div>
+                      <div className="relative z-0 w-full mb-5 group">
+                        <input
+                          type="text"
+                          name="Email"
+                          id="floating_last_name"
+                          className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=" "
+                          value={user.Email}
+                          autoComplete="off"
+                          required
+                          onChange={data}
+                        />
+                        {errors.Email && (
+                          <p className="text-red-600 text-xs mt-1">
+                            {errors.Email}
+                          </p>
+                        )}
+
+                        <label
+                          for="Email"
+                          className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >
+                          Email*
+                        </label>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 md:gap-6">
+                      <div className="relative z-0 w-full mb-5 group">
+                        <input
+                          type="tel"
+                          name="Number"
+                          id="floating_phone"
+                          className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=" "
+                          value={user.Number}
+                          autoComplete="off"
+                          required
+                          onChange={data}
+                        />
+                        {errors.Number && (
+                          <p className="text-red-600 text-xs mt-1">
+                            {errors.Number}
+                          </p>
+                        )}
+
+                        <label
+                          for="Number"
+                          className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >
+                          <div className="flex flex-row">
+                            <div className="">
+                              <Image
+                                src="flag.svg"
+                                alt="flag"
+                                width={30}
+                                height={2}
+                              />{" "}
+                            </div>
+                            <div className="">+91</div>
+                          </div>
+                        </label>
+                      </div>
+                      <div className="relative z-0 w-full mb-5 group">
+                        <input
+                          type="text"
+                          name="Budget"
+                          id="floating_company"
+                          className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                          placeholder=" "
+                          value={user.Budget}
+                          autoComplete="off"
+                          required
+                          onChange={data}
+                        />
+                        {errors.File && (
+                          <p className="text-red-600 text-xs mt-1">
+                            {errors.File}
+                          </p>
+                        )}
+
+                        <label
+                          for="floating_company"
+                          className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >
+                          <select
+                            id="question"
+                            className=" peer h-full  text-sm   bg-transparent pb-1.5 font-poppins font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
+                          >
+                            <option
+                              className="peer text-zinc-500  text-xs md:text-sm border-gray-500 bg-transparent  pb-1.5 font-poppins font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-500"
+                              selected
+                            >
+                              Budget (selext a range)
+                            </option>
+                            <option value="option2">option2</option>
+                            <option value="option3">option3</option>
+                            <option value="option4">option4</option>
+                            <option value="option5">option5</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div className="relative z-0 w-full mb-5 group">
+                      <input
+                        type="text"
+                        name="message"
+                        id="floating_email"
+                        className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" "
+                        value={user.message}
+                        autoComplete="off"
+                        required
+                        onChange={data}
+                      />
+                      {errors.message && (
+                        <p className="text-red-600 text-xs mt-1">
+                          {errors.message}
+                        </p>
+                      )}
+
+                      <label
+                        for="message"
+                        className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      >
+                        Description
+                      </label>
+                    </div>
+
+                    <div>
+                      <label className="text-green-600 text-xl font-bold">
+                        {captcha.question} ={" "}
+                      </label>
+                      <input
+                        type="text"
+                        className="xl:w-16 text-xl text-center border-b-2 bg-black text-white"
+                        value={inputCaptcha}
+                        onChange={handleCaptchaChange}
+                        required
+                      />
+                      {isCaptchaValid === true && (
+                        <span className="mx-10" style={{ color: "green" }}>
+                          ✔️
+                        </span>
+                      )}
+                      {isCaptchaValid === false && (
+                        <span className="mx-10" style={{ color: "red" }}>
+                          ❌
+                        </span>
+                      )}
+                    </div>
+
+                    <button
+                      onClick={getdata}
+                      className="rounds mt-4 text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      type="submit"
+                      style={{
+                        backgroundColor: isCaptchaValid ? "green" : "black",
+                        color: "white",
+                      }}
+                      disabled={isCaptchaValid === null || !isCaptchaValid}
+                    >
+                      Get a free quote →
+                    </button>
+                  </form>
                 </div>
-                <div className="relative z-0 w-full mb-5 group">
-                  <input
-                    type="text"
-                    name="message"
-                    id="floating_email"
-                    className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                    placeholder=" "
-                    value={user.message}
-                      autoComplete="off"
-                    required
-                    onChange={data}
-                  />
-              {errors.message && <p className="text-red-600 text-xs mt-1">{errors.message}</p>}
-
-                  <label
-                    for="message"
-                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                  >
-                    Description
-                  </label>
-                </div>
-
-                <div
-                  className="g-recaptcha recap"
-                  data-sitekey="6Lc5Od4pAAAAAEr5_MwUj93HLCVogAPipguT96VI"
-                ></div>
-
-                <button onClick={getdata} className="rounds text-white border-white border-2  bg-black hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Get a free quote →
-                </button>
-              </form>
-            </div>
               </div>
             </div>
           </div>
