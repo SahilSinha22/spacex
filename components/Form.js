@@ -332,12 +332,12 @@ const Form = () => {
                       required
                     />
                     {isCaptchaValid === true && (
-                      <span className="mx-10" style={{ color: "green" }}>
+                      <span className="mx-10 text-xl" style={{ color: "green" }}>
                         ✔️
                       </span>
                     )}
                     {isCaptchaValid === false && (
-                      <span className="mx-10" style={{ color: "red" }}>
+                      <span className="mx-10 text-xl" style={{ color: "red" }}>
                         ❌
                       </span>
                     )}
