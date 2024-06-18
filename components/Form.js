@@ -165,7 +165,7 @@ const Form = () => {
                 <form
                   method="POST"
                   onSubmit={handleSubmit}
-                  className=" mx-auto  "
+                  className=" mx-auto   "
                 >
                   <div className="grid w-full md:grid-cols-2 md:gap-6">
                     <div className="relative z-0 w-full mb-4 group">
@@ -326,7 +326,7 @@ const Form = () => {
                     </label>
                     <input
                       type="text"
-                      className="xl:w-16 text-xl text-center  border-b-2 bg-black text-white"
+                      className="xl:w-16  w-28 text-xl text-center  border-b-2 bg-black text-white"
                       value={inputCaptcha}
                       onChange={handleCaptchaChange}
                       required

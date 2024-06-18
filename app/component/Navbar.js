@@ -16,13 +16,13 @@ const Navbar = () => {
     
     const handleTextHover = (event) => {
       event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
-    setTextColor("white");
+    setTextColor("white")
     };
 
     
     const handleTextReset = (event) => {
       event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
-      setTextColor("white");
+      setTextColor("white")
     };
 
     
@@ -43,7 +43,7 @@ const Navbar = () => {
     };
   }, [textColor]);
   return (
-    <nav className="items-center p-4 bg-black" >
+    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>

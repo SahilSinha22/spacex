@@ -14,7 +14,7 @@ const Award = () => {
             We have been featured and certified by recognized authorities Worldwide.
           </p>
         </div>
-        <div className=" relative -top-10">
+        <div className=" relative w-40 left-16 sm:left-0 xl:-top-8 md:top-2 justify-center  -top-10">
           <Image src={Mobis} alt="" width={180} height={10}/>
           
       </div>
