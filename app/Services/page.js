@@ -108,7 +108,7 @@ const page = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center  bg-background text-foreground p-4">
+      <div className="flex flex-col items-center justify-center  bg-background text-foreground mt-10 md:mt-40 p-4">
         <img
           src="https://placehold.co/200x100?text=Logo"
           alt="Liquiclear Logo"
