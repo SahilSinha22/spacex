@@ -18,6 +18,7 @@ const page = () => {
     <Award/>
     <Imgcmp/>
 <Pef/>
+
     <Journey/>
 <Indus/>
 

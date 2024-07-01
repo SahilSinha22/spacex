@@ -26,6 +26,12 @@ imgx {
 .Bebas_Neue{
   font-family: var(--font-Bebas_Neue);
 }
+.Domine{
+  font-family: var(--font-Domine);
+}
+.Montserrat{
+  font-family: var(--font-Montserrat);
+}
 .playfair_displays{
   font-family: var(--font-playfair_displays);
 }
@@ -1503,4 +1509,12 @@ font-size:18px;
 border-radius:4px;
 cursor:pointer;
 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.moon{
+  background:url('../public/moon.png');
+  height:600px;
+}
+.land{
+  background:url('../public/land.png')
 }

@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useEffect, useCallback } from "react";
+import React, { useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import Mobi from "@/public/1pef.png";
 import Mobi1 from "@/public/2pef.png";
 import Tab from "@/public/3pef.png";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 
 const Pef = () => {
+  const ref = useRef();
   // Function to check if an element is in the viewport
   const isInViewport = useCallback((element) => {
     const rect = element.getBoundingClientRect();
@@ -102,28 +105,77 @@ const Pef = () => {
         </div>
       </div>
 
-      <div className="okomo p-10 text-center items-center">
-        <h2 className="text-2xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
-          Okomo
-        </h2>
-        <p className="text-sm text-center md:text-2xl">
-          Welcome to Okomo360, the world's first dedicated 360-degree VR
-          platform. We're redefining
-          <br /> video technology, making immersive VR experiences not just a
-          luxury.
-        </p>
-        <div className="flex justify-center mt-6">
-          <Image
-            src={Mobi}
-            alt="VR Experience"
-            className="mr-4"
-            width={600}
-            height={550}
-          />
-        </div>
-      </div>
+      <div className="h-[500px] xl:h-[600px]
+       w-full">
+      <Parallax pages={3} ref={ref}>
+        {/* <ParallaxLayer speed={1}>
+            <h2>Welcome to my website</h2>
+        </ParallaxLayer>
 
-      <div className="bg-purple-600 text-white text-center p-8">
+        <ParallaxLayer offset={1} speed={0.5}>
+            <h2>Web development is fun!</h2>
+        </ParallaxLayer> */}
+
+        <ParallaxLayer offset={0} speed={1} factor={2} className="okomo" />
+
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          factor={4}
+          className="land"
+        ></ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 0, end: 1.5 }}
+          style={{ textAlign: "center" }}
+        >
+          <div className=" p-10 text-center items-center">
+            <h2 className="text-2xl text-white md:text-6xl pt-8 font-bold mb-4 font-sedan">
+              Okomo
+            </h2>
+            <p className="text-sm text-white text-center md:text-2xl">
+              Welcome to Okomo360, the world's first dedicated 360-degree VR
+              platform. We're redefining
+              <br /> video technology, making immersive VR experiences not just
+              a luxury.
+            </p>
+            <div className="flex justify-center mt-6">
+              <Image
+                src={Mobi}
+                alt="VR Experience"
+                className="mr-4"
+                width={600}
+                height={550}
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+      </Parallax>
+    </div>
+    <div className="h-[500px] xl:h-[600px] w-full">
+      <Parallax pages={3} ref={ref}>
+        {/* <ParallaxLayer speed={1}>
+            <h2>Welcome to my website</h2>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1} speed={0.5}>
+            <h2>Web development is fun!</h2>
+        </ParallaxLayer> */}
+
+        <ParallaxLayer offset={0} speed={1} factor={2} className="bg-purple-600" />
+
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          factor={4}
+          className="land"
+        ></ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 0, end: 1.5 }}
+          style={{ textAlign: "center" }}
+        >
+          <div className=" text-white text-center p-8">
         <div className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
           Netme
         </div>
@@ -144,8 +196,34 @@ const Pef = () => {
           </div>
         </div>
       </div>
+        </ParallaxLayer>
+      </Parallax>
+    </div>
 
-      <div className="bg-teal-400 font-sans">
+    <div className="h-[500px] xl:h-[600px] w-full">
+      <Parallax pages={3} ref={ref}>
+        {/* <ParallaxLayer speed={1}>
+            <h2>Welcome to my website</h2>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={1} speed={0.5}>
+            <h2>Web development is fun!</h2>
+        </ParallaxLayer> */}
+
+        <ParallaxLayer offset={0} speed={1} factor={2} className="bg-teal-400" />
+
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          factor={4}
+          className="land"
+        ></ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 0, end: 1.5 }}
+          style={{ textAlign: "center" }}
+        >
+          <div className=" font-sans">
         <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="">
             <div className="p-5 px-4 items-center justify-center text-center">
@@ -170,6 +248,9 @@ const Pef = () => {
           </div>
         </div>
       </div>
+        </ParallaxLayer>
+      </Parallax>
+    </div>
     </div>
   );
 };

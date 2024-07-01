@@ -5,24 +5,45 @@ import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
 
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const [bgColor, setBgColor] = useState('black');
   const [textColor, setTextColor] = useState('rgb(161 161 170)');
-  
+  const pathname = usePathname();
+const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const handleRouteChange = (pathname) => {
+
+      console.log(pathname)
+
+      if (pathname === '/') {
+        setBgColor('black'); 
+        setTextColor('gray');
+        
+      } else {
+        setBgColor('white');
+        setTextColor('rgb(161 161 170)');
+      }
+    };
+
+    
+    handleRouteChange(pathname);
+
+    
+  }, [pathname, searchParams]);
   useEffect(() => {
     
     const handleTextHover = (event) => {
       event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
-    setTextColor("white")
     };
 
     
     const handleTextReset = (event) => {
       event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
-      setTextColor("white")
     };
 
     
@@ -76,7 +97,7 @@ const Navbar = () => {
             <Link href="/" className="nav-link  block text-zinc-400 mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Home
             </Link>
-            <Link href="/" className="nav-link  block text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/Services" className="nav-link  block text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Services
             </Link>
             <Link href="/" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
