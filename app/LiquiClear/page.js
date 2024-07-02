@@ -1,110 +1,13 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import Image from "next/image";
 import Form from "@/components/Form";
-import { generateArithmeticCaptcha } from "@/app/utils/generateCaptcha";
 
 
-import { FaCheckCircle } from "react-icons/fa";
-import Script from "next/script";
+
 const page = () => {
-    const [captcha, setCaptcha] = useState("");
-    const [inputCaptcha, setInputCaptcha] = useState("");
-  
-    const [errors, setErrors] = useState({});
-    const [successBanner, setSuccessBanner] = useState(false);
-    const [user, setUser] = useState({
-      Name: "",
-      Email: "",
-      Number: "",
-      message: "",
-      Budget: "",
-    });
-  
-    let name, value;
-    const data = (e) => {
-      name = e.target.name;
-      value = e.target.value;
-      setUser({ ...user, [name]: value });
-    };
-  
-    const validate = () => {
-      const newErrors = {};
-      if (!user.Name) newErrors.Name = "Name is required";
-      else if (!/^[A-Za-z\s]+$/.test(user.Name))
-        newErrors.Name = "Name can only contain letters and spaces";
-      if (!user.Email) newErrors.Email = "Email is required";
-      else if (!/\S+@\S+\.\S+/.test(user.Email))
-        newErrors.Email = "Email address is invalid";
-      if (!user.Number.trim()) newErrors.Number = "Phone number is required";
-      else if (!/^\d{7,12}$/.test(user.Number))
-        newErrors.Number = "Phone number must be between 7 to 12 digits";
-      if (!user.message) newErrors.message = "Message is required";
-      if (!user.Budget) newErrors.File = "Budget is required";
-      setErrors(newErrors);
-      return Object.keys(newErrors).length === 0;
-    };
-  
-    const getdata = async (e) => {
-      e.preventDefault();
-      if (!validate()) return;
-      const { Name, Email, Number, message, Budget } = user;
-  
-      const formData = new FormData();
-      formData.append("Name", Name);
-      formData.append("Email", Email);
-      formData.append("Number", Number);
-      formData.append("message", message);
-      formData.append("Budget", Budget);
-  
-      const options = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          Name,
-          Email,
-          Number,
-          message,
-          Budget,
-        }),
-      };
-  
-      const res = await fetch(
-        "https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json",
-        options
-      );
-      if (res) {
-        setSuccessBanner(true);
-        setTimeout(() => {
-          setSuccessBanner(false);
-        }, 3000);
-      } else {
-        alert("Error Occurred");
-      }
-    };
-    const [isCaptchaValid, setIsCaptchaValid] = useState(null);
-  
-    useEffect(() => {
-      setCaptcha(generateArithmeticCaptcha());
-    }, []);
-  
-    const handleCaptchaChange = (e) => {
-      const value = e.target.value;
-      setInputCaptcha(value);
-      setIsCaptchaValid(value === captcha.answer);
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      if (inputCaptcha !== captcha.answer) {
-        return;
-      }
-      // Handle form submission
-      alert("Form submitted successfully!");
-    };
+    
 
   return (
     <div>
