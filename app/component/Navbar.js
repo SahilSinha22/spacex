@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const [bgColor, setBgColor] = useState('black');
-  const [textColor, setTextColor] = useState('white');
+  const [textColor, setTextColor] = useState('black');
   
   useEffect(() => {
     
