@@ -1,5 +1,13 @@
 "use client";
 import React from "react";
+import Mobi from "@/public/Liqiclear.svg"
+import Mobi1 from "@/public/Liquiclear/1.png"
+import Mobi2 from "@/public/Liquiclear/2.png"
+import Mobi3 from "@/public/Liquiclear/3.png"
+import Mobi4 from "@/public/Liquiclear/section.png"
+import Mobi5 from "@/public/Liquiclear/screen.png"
+import Mobi6 from "@/public/Liquiclear/mobile.png"
+import Mobi7 from "@/public/Liquiclear/block.png"
 
 import Image from "next/image";
 import Form from "@/components/Form";
@@ -12,16 +20,18 @@ const page = () => {
   return (
     <div>
       <div className="flex flex-col items-center justify-center  bg-background text-foreground mt-10 md:mt-40 p-4">
-        <img
-          src="https://placehold.co/200x100?text=Logo"
+        <Image
+          src={Mobi}
           alt="Liquiclear Logo"
           className="mb-4"
+          width={300}
+                height={5}
         />
         <h1 className="text-3xl Domine md:text-4xl text-center mb-4">
           Next-Generation Water Purification <br />
           and Water Softening Solutions
         </h1>
-        <button className="bg-yellow-400 text-base font-bold text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
+        <button className="bg-yellow-400 text-base  text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
           Let's talk →
         </button>
         <p className=" text-center Montserrat my-16 text-3xl font-light text-muted-foreground">
@@ -30,14 +40,16 @@ const page = () => {
         </p>
       </div>
       <div className="h-12 md:h-32 xl:h-44"></div>
-      <div class="relative bg-blue-600  h-[600px] py-8">
-        <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-20">
+      <div class="relative bg-[#005AA8]  h-auto py-8">
+        <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
           <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
             <div class="text-center ">
-              <img
+              <Image
                 class="w-full rounded-2xl h-68  object-cover "
-                src="https://placehold.co/300x400"
+                src={Mobi1}
                 alt="Glass of water"
+                width={300}
+                height={5}
               />
               <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                 Maximum Purity
@@ -48,10 +60,12 @@ const page = () => {
             </div>
 
             <div class="text-center">
-              <img
+              <Image
                 class="w-full rounded-2xl h-68 object-cover "
-                src="https://placehold.co/300x400"
+                src={Mobi2}
                 alt="Leaf in water drop"
+                width={300}
+                height={5}
               />
               <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                 Energy Efficient
@@ -63,10 +77,12 @@ const page = () => {
             </div>
 
             <div class="text-center items-center">
-              <img
+              <Image
                 class="w-full rounded-2xl h-68 object-cover "
-                src="https://placehold.co/300x400"
+                src={Mobi3}
                 alt="Plant growing in coins jar"
+                width={300}
+                height={5}
               />
               <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                 Cost Effective
@@ -76,16 +92,26 @@ const page = () => {
                 solutions.
               </p>
             </div>
+            
           </div>
         </div>
+        <div class="text-center mx-32 mt-60 pt-40 items-center">
+              <Image
+                class="w-full rounded-2xl h-68 object-cover "
+                src={Mobi4}
+                alt="Plant growing in coins jar"
+                width={1000}
+                height={10}
+              />
+              </div>
       </div>
 
       <div class="bg-white p-8 py-10">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-3xl  text-zinc-900">
+        <div class="max-w-4xl mx-28">
+          <h2 class="text-5xl  text-zinc-900">
             Benefits of Bathroom Water Softener
           </h2>
-          <p class="mt-4 font-medium text-zinc-700">
+          <p class="mt-4 font-medium text-xl text-zinc-700">
             Reduced Hard Water Effects: Hard water contains high levels of
             minerals like calcium and magnesium, which can cause various issues
             in the bathroom. Installing a water softener specifically for the
@@ -96,163 +122,63 @@ const page = () => {
             scale on bathroom surfaces, making cleaning easier and reducing the
             need for harsh cleaning products.
           </p>
-          <div class="mt-8 flex justify-center">
-            <img
-              class="w-1/2 h-auto"
-              src="https://placehold.co/300x600"
-              alt="Smartphone displaying chat app"
-            />
-            <img
-              class="w-1/2 h-auto"
-              src="https://placehold.co/300x600"
-              alt="Water softener system"
-            />
-          </div>
+          
         </div>
       </div>
-<div className="mx-auto">
+      <div className="mt-40 mb-40">
+          <div class="relative mt-8 flex justify-center">
+            <Image
+              class="absolute -top-28 left-40 "
+              src={Mobi6}
+              alt="Smartphone displaying chat app"
+              width={380}
+                height={4}
+            />
+            <Image
+              class="h-auto w-full "
+              src={Mobi5}
+              alt="Water softener system"
+              width={800}
+                height={8}
+            />
+            </div>
+          </div>
+<div className="mx-auto mt-20">
 <div class="bg-white p-8   py-4 md:py-10">
-        <div class="max-w-4xl mx-auto ">
-          <h2 class="text-3xl  text-zinc-900">
+        <div class="ml-28 mr-6 ">
+          <h2 class="text-4xl  text-zinc-900">
             Features
           </h2>
-          <p class="mt-4 font-medium ">
+          <p class="mt-4 text-xl font-medium ">
             Reduced Hard Water Effects: Hard water contains high levels of
             minerals like calcium and magnesium, which can cause various issues
             in the bathroom. Installing a water softener specifically for the
             bathroom helps alleviate these effects.
           </p>
          
-      <div class="grid mx-auto px-auto py-10  text-center my-10 gap-10  sm:grid-cols-2 lg:grid-cols-4">
-        <div class=" w-54  text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
-          <img
-            
-            alt="water-quality"
-            src="https://openui.fly.dev/openui/64x64.svg?text=💧"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            Improves Water <br/>Quality
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Refines the quality of water by removing harmful contaminants from
-            it.
-          </p>
-        </div>
-        <div class="  w-54  rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="soft-skin-hair"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🧴"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            Soft Skin & Hair
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Nourishes your skin & hair.
-          </p>
-        </div>
-        <div class="   w-54  rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="minimizes-scaling"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🔧"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            Minimizes Scaling
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Reduces scaling on tiles.
-          </p>
-        </div>
-        <div class=" w-54    rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="helps-choked-pipes"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🚰"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            Helps Choked Pipes
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Reduces mineral deposit, leading to choke-free pipes.
-          </p>
-        </div>
-        <div class=" w-54    rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="24-hour-operation"
-            src="https://openui.fly.dev/openui/64x64.svg?text=⏰"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            24 Hour Operation
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Operates smoothly 24x7 for 365 days without stopping.
-          </p>
-        </div>
-        <div class=" w-54    rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="increases-appliance-life"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🔧"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            Increases Appliance Life
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Maximizes the life of appliances by keeping your pipes & geysers
-            rust-free.
-          </p>
-        </div>
-        <div class=" w-54    rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="saves-water"
-            src="https://openui.fly.dev/openui/64x64.svg?text=💧"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">Saves Water</h3>
-          <p class="text-muted-foreground text-sm text-center">
-            Saves more water than other conventional Water Softeners.
-          </p>
-        </div>
-        <div class=" w-54    rounded-2xl  p-4   shadow-zinc-400  shadow-xl">
-          <img
-            aria-hidden="true"
-            alt="multi-port-valve"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🔄"
-            class="mx-auto mb-4"
-          />
-          <h3 class="text-sm font-bold text-center mb-2">
-            Multi Port Valve (MPV)
-          </h3>
-          <p class="text-muted-foreground text-sm text-center">
-            First in segment easy to use, with an excellent sealing mechanism to
-            avoid leaks.
-          </p>
-        </div>
-      </div>
-      </div> 
+      
+      <Image
+              class="h-auto xl:w-full mr-4 "
+              src={Mobi7}
+              alt="Water softener system"
+              width={1000}
+                height={10}
+            />
+     
       </div>
       </div>
+</div>
 
 
-
-      <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl bg-gradient-to-r from-red-400 to-purple-600">
-        <div className=" text-white mt-10 mb-2 mx-5 xl:mt-10 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
-          <h1 className="text-lg mt-4 xl:mt-20  xl:mx-0 lg:text-4xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
+      <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl banner">
+        <div className=" text-white mt-10 mb-2 mx-5 xl:mt-5 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
+          <h1 className="text-lg mt-4 xl:mt-12  xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
             Our Robust Mobile & Web App <br /> Development Solutions Stands Your
             <br />
             Business at the top!
           </h1>
 
-          <button className=" mt-4 mb-6 lg:mb-16 lg:mt-4 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 xl:px-8   text-white lg:mr-10 xl:mr-0">
+          <button className=" mt-4 mb-6 lg:mb-8 lg:mt-4 banner hover:bg-gradient-to-r hover:from-red-400 hover:to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 xl:px-8   text-white lg:mr-10 xl:mr-0">
             Let's Talk
           </button>
         </div>
