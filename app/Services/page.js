@@ -1,32 +1,17 @@
 "use client";
 import React from "react";
 
-
-import Mobi4 from "@/public/section.png";
-
-
-
-import Image from "next/image";
 import Form from "@/components/Form";
 
 const page = () => {
   return (
-   <div>
-        <div class="text-center mt-72 md:pt-20 mx-10 xl:mx-32 xl:mt-60 xl:pt-40 items-center">
-          <Image
-            class="w-full rounded-2xl h-68 object-cover "
-            src={Mobi4}
-            alt="Plant growing in coins jar"
-            width={1000}
-            height={10}
-          />
-        </div>
+   
       
 
       
       
     
-  
+  <div>
       <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl banner">
         <div className=" text-white mt-10 mb-2 mx-5 xl:mt-5 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
           <h1 className="text-lg mt-4 xl:mt-12  xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
