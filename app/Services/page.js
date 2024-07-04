@@ -45,57 +45,7 @@ const page = () => {
         <div class="relative bg-[#005AA8] mt-40 h-auto py-8">
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
-              <div class="text-center ">
-                <Image
-                  class="w-full rounded-2xl h-68  object-cover "
-                  src={Mobi1}
-                  alt="Glass of water"
-                  width={300}
-                  height={5}
-                />
-                <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
-                  Maximum Purity
-                </h3>
-                <p class="mt-2 text-sm md:text-xl xl:text-2xl  text-blue-200">
-                  Our advanced water purification
-                  <br /> solutions for domestic.
-                </p>
-              </div>
-
-              <div class="text-center">
-                <Image
-                  class="w-full rounded-2xl h-68 object-cover "
-                  src={Mobi2}
-                  alt="Leaf in water drop"
-                  width={300}
-                  height={5}
-                />
-                <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
-                  Energy Efficient
-                </h3>
-                <p class="mt-2 text-sm md:text-xl xl:text-2xl text-blue-200">
-                  Liquiclear gives considerable thought
-                  <br /> to sustainability and energy.
-                </p>
-              </div>
-
-              <div class="text-center items-center">
-                <Image
-                  class="w-full rounded-2xl h-68 object-cover "
-                  src={Mobi3}
-                  alt="Plant growing in coins jar"
-                  width={300}
-                  height={5}
-                />
-                <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
-                  Cost Effective
-                </h3>
-                <p class="mt-2 text-sm md:text-xl xl:text-2xl  text-blue-200">
-                  We are committed to delivering best-
-                  <br />
-                  in-class water purification solutions.
-                </p>
-              </div>
+             
             </div>
           </div>
           
