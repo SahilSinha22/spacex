@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Mobi from "@/public/Liqiclear.svg";
+
 
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
@@ -17,7 +19,27 @@ const page = () => {
   return (
    
       <div>
-       
+        <div className="flex flex-col items-center justify-center  bg-background text-foreground mt-10 md:mt-40 p-4">
+          <Image
+            src={Mobi}
+            alt="Liquiclear Logo"
+            className="mb-4"
+            width={300}
+            height={5}
+          />
+          <h1 className="text-3xl Domine md:text-4xl text-center mb-4">
+            Next-Generation Water Purification <br />
+            and Water Softening Solutions
+          </h1>
+          <button className="bg-yellow-400 text-base  text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
+            Let's talk <span className="font-bold">→</span>
+          </button>
+          <p className=" text-center Montserrat my-16 text-3xl font-light text-muted-foreground">
+            Liquiclear is your one-stop solution for all water <br />
+            purification and softening needs.
+          </p>
+        </div>
+        
 
         <div class="bg-white xl:p-8 py-10">
           <div class="max-w-4xl mx-10 xl:mx-28">
