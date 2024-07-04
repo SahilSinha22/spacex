@@ -158,11 +158,13 @@ const page = () => {
 
             <div class="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div class=" w-40 md:w-52 pr-2 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             
             alt="water-quality"
-            src="https://openui.fly.dev/openui/64x64.svg?text=💧"
+            src=""
             class="mx-auto mb-4"
+            width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             Improves Water <br/>Quality
@@ -173,11 +175,13 @@ const page = () => {
           </p>
         </div>
         <div class=" w-40 md:w-52 pr-2 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="soft-skin-hair"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🧴"
+            src=""
             class="mx-auto mb-4"
+             width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             Soft Skin & Hair
@@ -187,11 +191,13 @@ const page = () => {
           </p>
         </div>
         <div class="  w-40 md:w-52 pr-2 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="minimizes-scaling"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🔧"
+            src=""
             class="mx-auto mb-4"
+             width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             Minimizes Scaling
@@ -201,11 +207,13 @@ const page = () => {
           </p>
         </div>
         <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="helps-choked-pipes"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🚰"
+            src=""
             class="mx-auto mb-4"
+             width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             Helps Choked Pipes
@@ -215,11 +223,13 @@ const page = () => {
           </p>
         </div>
         <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="24-hour-operation"
-            src="https://openui.fly.dev/openui/64x64.svg?text=⏰"
+            src=""
             class="mx-auto mb-4"
+             width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             24 Hour Operation
@@ -229,11 +239,13 @@ const page = () => {
           </p>
         </div>
         <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="increases-appliance-life"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🔧"
+            src=""
             class="mx-auto mb-4"
+             width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             Increases Appliance Life
@@ -244,11 +256,13 @@ const page = () => {
           </p>
         </div>
         <div class="w-40 md:w-52 pr-2  rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="saves-water"
-            src="https://openui.fly.dev/openui/64x64.svg?text=💧"
+            src=""
             class="mx-auto mb-4"
+             width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">Saves Water</h3>
           <p class="text-muted-foreground text-sm text-center">
@@ -256,11 +270,13 @@ const page = () => {
           </p>
         </div>
         <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2   border-t-2  p-4   shadow-zinc-400  shadow-xl">
-          <img
+          <Image
             aria-hidden="true"
             alt="multi-port-valve"
-            src="https://openui.fly.dev/openui/64x64.svg?text=🔄"
+            src=""
             class="mx-auto mb-4"
+            width={500}
+            height={5}
           />
           <h3 class="text-sm font-bold text-center mb-2">
             Multi Port Valve (MPV)
