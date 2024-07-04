@@ -3,76 +3,19 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "@/public/logo.png"
 
-<<<<<<< HEAD
-import { usePathname, useSearchParams } from "next/navigation";
-=======
-import { usePathname } from "next/navigation";
->>>>>>> 6f7e7f161dbb717172b62e4b1dd8b2873240890e
-
-const logos = {
-  '/': 'logo.png',
-  '/Portfolio': 'logo1.png',
-  '/LiquiClear': 'logo1.png',
-  
-};
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const [bgColor, setBgColor] = useState('black');
-<<<<<<< HEAD
-  const [textColor, setTextColor] = useState('rgb(161 161 170)');
-  const pathname = usePathname();
-const searchParams = useSearchParams();
-
-  useEffect(() => {
-    const handleRouteChange = (pathname) => {
-
-      console.log(pathname)
-
-      if (pathname === '/') {
-        setBgColor('black'); 
-        setTextColor('gray');
-        
-      } else {
-        setBgColor('white');
-        setTextColor('rgb(161 161 170)');
-      }
-    };
-
-    
-    handleRouteChange(pathname);
-
-    
-  }, [pathname, searchParams]);
-=======
-  const [textColor, setTextColor] = useState ('rgb(161 161 170)');
-  const pathname = usePathname();
-  const [logo, setLogo] = useState(logos[pathname]);
+  const [textColor, setTextColor] = useState('black');
   
->>>>>>> 6f7e7f161dbb717172b62e4b1dd8b2873240890e
+
+ 
   useEffect(() => {
-    const handleRouteChange = (pathname) => {
-
-      console.log(pathname)
-
-      if (pathname === '/') {
-        setBgColor('black'); 
-        setTextColor('gray');
-        setLogo(logos[pathname]);
-        
-      } else {
-        setBgColor('white');
-        setTextColor('rgb(161 161 170)');
-        setLogo(logos[pathname]);
-      }
-    };
-
     
-    handleRouteChange(pathname);
-
-
-    const handleTextHover = (event) => {
+const handleTextHover = (event) => {
       event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
       
     };
@@ -99,13 +42,13 @@ const searchParams = useSearchParams();
         link.removeEventListener('mouseleave', handleTextReset);
       });
     };
-  }, [textColor,pathname]);
+  }, [textColor]);
   return (
     <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
-            <Image src={`/${logo}`} id="navbar-logo" className="sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={200} height={10} />
+            <Image src={logo} id="navbar-logo" className="sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={200} height={10} />
           </span>
         </div>
         <div className="block lg:hidden">
