@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
-import Mobiw from "@/public/water.png";
-import Mobid from "@/public/drop.png";
-import Mobip from "@/public/plant.png";
+
 import Mobi4 from "@/public/section.png";
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
