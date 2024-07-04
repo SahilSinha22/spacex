@@ -2,7 +2,6 @@
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
 
-import Mobi4 from "@/public/section.png";
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
 import Tech1 from "@/public/azure.png";
@@ -42,15 +41,7 @@ const page = () => {
         <div className="h-12 md:h-32 xl:h-44"></div>
         <div class="relative bg-[#005AA8]  h-auto py-8">
           
-          <div class="text-center mt-72 md:pt-20 mx-10 xl:mx-32 xl:mt-60 xl:pt-40 items-center">
-            <Image
-              class="w-full rounded-2xl h-68 object-cover "
-              src={Mobi4}
-              alt="Plant growing in coins jar"
-              width={1000}
-              height={10}
-            />
-          </div>
+          
         </div>
 
         <div class="bg-white xl:p-8 py-10">
