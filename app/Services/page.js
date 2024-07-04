@@ -42,8 +42,8 @@ const page = () => {
           </p>
         </div>
         
-        <div class="relative  mt-40 h-auto py-8">
-          <div class=" absolute    px-4 sm:px-6 lg:px-32">
+        <div class="  mt-40 h-auto py-8">
+          <div class="    px-4 sm:px-6 lg:px-32">
             <div class="   gap-8  ">
              
             </div>
