@@ -33,7 +33,7 @@ const page = () => {
           and Water Softening Solutions
         </h1>
         <button className="bg-yellow-400 text-base  text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
-          Let's talk →
+          Let's talk <span className="font-bold">→</span>
         </button>
         <p className=" text-center Montserrat my-16 text-3xl font-light text-muted-foreground">
           Liquiclear is your one-stop solution for all water <br />

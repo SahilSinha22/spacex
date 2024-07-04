@@ -14,9 +14,6 @@ const Navbar = () => {
   
   
   
-  
-  
- 
   useEffect(() => {
     
     const handleTextHover = (event) => {
@@ -50,7 +47,7 @@ const Navbar = () => {
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
-            <Image src={logo} id="navbar-logo" className="sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={200} height={10} />
+            <Image src={logo}  className="sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={200} height={10} />
           </span>
         </div>
         <div className="block lg:hidden">
