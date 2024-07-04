@@ -7,7 +7,6 @@ import Mobi3 from "@/public/Liquiclear/3.png";
 import Mobi4 from "@/public/Liquiclear/section.png";
 import Mobi5 from "@/public/Liquiclear/screen.png";
 import Mobi6 from "@/public/Liquiclear/mobile.png";
-import Mobi7 from "@/public/Liquiclear/block.png";
 import Tech1 from "@/public/Liquiclear/azure.png";
 import Tech2 from "@/public/Liquiclear/Quickblock.png";
 import Tech3 from "@/public/Liquiclear/angular.png";
