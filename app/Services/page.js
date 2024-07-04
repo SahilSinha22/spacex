@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
-
+import Mobi1 from "@/public/water.png";
+import Mobi2 from "@/public/drop.png";
+import Mobi3 from "@/public/plant.png";
+import Mobi4 from "@/public/section.png";
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
 import Tech1 from "@/public/azure.png";
@@ -17,7 +20,7 @@ import Form from "@/components/Form";
 const page = () => {
   return (
    
-      <div>
+      <>
         <div className="flex flex-col items-center justify-center  bg-background text-foreground mt-10 md:mt-40 p-4">
           <Image
             src={Mobi}
@@ -38,11 +41,43 @@ const page = () => {
             purification and softening needs.
           </p>
         </div>
-        
-        <div class="   py-8">
-          <div class="    px-4 sm:px-6 lg:px-32">
-            <div class="   gap-8  ">
-             
+        <div className="h-12 md:h-32 xl:h-44"></div>
+        <div class="relative bg-[#005AA8]  h-auto py-8">
+          <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
+            <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
+              <div class="text-center ">
+                
+                <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
+                  Maximum Purity
+                </h3>
+                <p class="mt-2 text-sm md:text-xl xl:text-2xl  text-blue-200">
+                  Our advanced water purification
+                  <br /> solutions for domestic.
+                </p>
+              </div>
+
+              <div class="text-center">
+                
+                <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
+                  Energy Efficient
+                </h3>
+                <p class="mt-2 text-sm md:text-xl xl:text-2xl text-blue-200">
+                  Liquiclear gives considerable thought
+                  <br /> to sustainability and energy.
+                </p>
+              </div>
+
+              <div class="text-center items-center">
+                
+                <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
+                  Cost Effective
+                </h3>
+                <p class="mt-2 text-sm md:text-xl xl:text-2xl  text-blue-200">
+                  We are committed to delivering best-
+                  <br />
+                  in-class water purification solutions.
+                </p>
+              </div>
             </div>
           </div>
           
