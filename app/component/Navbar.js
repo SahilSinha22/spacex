@@ -5,13 +5,36 @@ import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
 
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const [bgColor, setBgColor] = useState('black');
-  const [textColor, setTextColor] = useState('white');
-  
+  const [textColor, setTextColor] = useState('rgb(161 161 170)');
+  const pathname = usePathname();
+const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const handleRouteChange = (pathname) => {
+
+      console.log(pathname)
+
+      if (pathname === '/') {
+        setBgColor('black'); 
+        setTextColor('gray');
+        
+      } else {
+        setBgColor('white');
+        setTextColor('rgb(161 161 170)');
+      }
+    };
+
+    
+    handleRouteChange(pathname);
+
+    
+  }, [pathname, searchParams]);
   useEffect(() => {
     
     const handleTextHover = (event) => {
