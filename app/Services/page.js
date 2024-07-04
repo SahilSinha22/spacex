@@ -16,8 +16,8 @@ import Form from "@/components/Form";
 
 const page = () => {
   return (
-   
-      <>
+   <div>
+     
         <div className="flex flex-col items-center justify-center  bg-background text-foreground mt-10 md:mt-40 p-4">
           <Image
             src={Mobi}
