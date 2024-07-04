@@ -9,17 +9,12 @@ import Mobi1 from "@/public/CS 03.png";
 
 import Tab from "@/public/CS 04.png";
 
-import Script from "next/script";
+
 const page = () => {
   
   return (
     <div className="">
-      <Script src="https://www.google.com/recaptcha/api.js" async defer />
-      <Script
-        src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async
-        defer
-      />
+      
       <div className=" m-auto">
         <h1 className="playfair_display text-2xl md:text-4xl ml-8 md:ml-24 xl:text-5xl font-bold mx-20 xl:mx-44 mt-20 md:mt-32">
           Revolutionize with Your Idea,
