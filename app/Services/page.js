@@ -41,8 +41,8 @@ const page = () => {
             purification and softening needs.
           </p>
         </div>
-        <div className="h-12 md:h-32 xl:h-44">
-        <div class="relative bg-[#005AA8] mt-40 h-auto py-8">
+        
+        <div class="relative  mt-40 h-auto py-8">
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3   gap-8 lg:gap-28 ">
              
@@ -50,7 +50,7 @@ const page = () => {
           </div>
           
         </div>
-        </div>
+        
 
         <div class="bg-white xl:p-8 py-10">
           <div class="max-w-4xl mx-10 xl:mx-28">
