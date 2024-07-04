@@ -7,12 +7,7 @@ import Mobi3 from "@/public/plant.png";
 import Mobi4 from "@/public/section.png";
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
-import Tech1 from "@/public/azure.png";
-import Tech2 from "@/public/Quickblock.png";
-import Tech3 from "@/public/angular.png";
-import Tech4 from "@/public/mysql.png";
-import Tech5 from "@/public/nodejs.png";
-import Tech6 from "@/public/react.png";
+
 
 import Image from "next/image";
 import Form from "@/components/Form";
@@ -290,41 +285,7 @@ const page = () => {
         </div>
       </div>
 
-    <div class="flex flex-col items-center p-6">
-  <h2 class="text-2xl font-semibold mb-4">Tech Stacks</h2>
-  <div class="bg-blue-600 p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full px-6 py-10 max-w-4xl">
-    <div class="flex flex-col items-center my-4">
-      <Image src={Tech1} alt="Azure" class="rounded-full w-20 h-20 bg-green-500 p-5" width={100}
-            height={10}/>
-      <span class="mt-2 text-white">Azure</span>
-    </div>
-    <div class="flex flex-col items-center my-4">
-      <Image src={Tech2} alt="Quickblox" class="rounded-full w-20 h-20 xl:w-20 xl:h-20 bg-yellow-500 p-5" width={100}
-            height={10}/>
-      <span class="mt-2 text-white">Quickblox</span>
-    </div>
-    <div class="flex flex-col items-center my-4">
-      <Image src={Tech3} alt="Angular 8" class="rounded-full w-20 h-20 bg-red-500 p-5 xl:w-20 xl:h-20" width={100}
-            height={10}/>
-      <span class="mt-2 text-white">Angular 8</span>
-    </div>
-    <div class="flex flex-col items-center my-4">
-      <Image src={Tech4} alt="MySQL" class="rounded-full w-20 h-20 bg-green-500 p-5 xl:w-20 xl:h-20" width={100}
-            height={10}/>
-      <span class="mt-2 text-white">MySQL</span>
-    </div>
-    <div class="flex flex-col items-center my-4">
-      <Image src={Tech5} alt="Node Js" class="rounded-full w-20 h-20 bg-yellow-500 p-5 xl:w-20 xl:h-20" width={100}
-            height={10}/>
-      <span class="mt-2 text-white">Node Js</span>
-    </div>
-    <div class="flex flex-col items-center my-4">
-      <Image src={Tech6} alt="React Native" class="rounded-full w-20 h-20 bg-red-500 p-5 xl:w-20 xl:h-20" width={100}
-            height={10}/>
-      <span class="mt-2 ml-6 md:ml-8 text-white">React Native</span>
-    </div>
-  </div>
-</div>
+    
   
       <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl banner">
         <div className=" text-white mt-10 mb-2 mx-5 xl:mt-5 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
