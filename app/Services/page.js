@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
-import Mobi1 from "@/public/water.png";
-import Mobi2 from "@/public/drop.png";
-import Mobi3 from "@/public/plant.png";
-import Mobi4 from "@/public/section.png";
+
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
 import Tech1 from "@/public/azure.png";
@@ -41,7 +38,7 @@ const page = () => {
             purification and softening needs.
           </p>
         </div>
-        <div className="h-12 md:h-32 xl:h-44"></div>
+        
         <div class="relative bg-[#005AA8]  h-auto py-8">
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
