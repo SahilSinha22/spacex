@@ -5,12 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo.png"
 
-const logos = {
-  '/': 'logo.png',
-  '/Portfolio': 'logo1.png',
-  '/LiquiClear': 'logo1.png',
-  
-};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
