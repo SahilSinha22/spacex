@@ -1524,3 +1524,20 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 border-radius: 40px;
 opacity: 1;
 }
+
+@media only screen and (min-width: 300px) and  (max-width: 400px) {
+.mobile{
+  height:200px;
+}
+}
+@media only screen and (min-width: 500px) and  (max-width: 600px) {
+  .mobile{
+    height:280px;
+  }
+}
+@media only screen and (min-width: 800px) and  (max-width: 950px) {
+  .mobile{
+    height:400px;
+  }
+  
+  }
