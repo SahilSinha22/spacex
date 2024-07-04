@@ -44,7 +44,7 @@ const page = () => {
         
         <div class="relative  mt-40 h-auto py-8">
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
-            <div class=" grid grid-cols-3   gap-8 lg:gap-28 ">
+            <div class=" grid grid-cols-3   gap-8  ">
              
             </div>
           </div>
