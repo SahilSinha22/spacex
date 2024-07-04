@@ -103,42 +103,7 @@ const page = () => {
         </div>
       </div>
 
-      <div class="bg-white xl:p-8 py-10">
-        <div class="max-w-4xl mx-10 xl:mx-28">
-          <h2 class="text-5xl  text-zinc-900">
-            Benefits of Bathroom Water Softener
-          </h2>
-          <p class="mt-4 font-medium text-xl text-zinc-700">
-            Reduced Hard Water Effects: Hard water contains high levels of
-            minerals like calcium and magnesium, which can cause various issues
-            in the bathroom. Installing a water softener specifically for the
-            bathroom helps alleviate these effects. Softened water prevents the
-            build-up of mineral deposits on bathroom fixtures such as faucets,
-            showerheads, and sinks, reducing the need for frequent cleaning and
-            maintenance. It also helps prevent the formation of soap scum and
-            scale on bathroom surfaces, making cleaning easier and reducing the
-            need for harsh cleaning products.
-          </p>
-        </div>
-      </div>
-      <div className="mt-10 xl:mt-40 lg:mb-28 mb-20 xl:mb-40">
-        <div class="relative mt-8 lg:mt-20 flex justify-center">
-          <Image
-            class="absolute mobile h-[220px] w-20 md:w-40 lg:w-60 xl:h-[740px] lg:h-[540px] lg:-top-20 lg:left-20 md:h-96 md:-top-8 -top-6 xl:-top-28 left-10 xl:left-40 "
-            src={Mobi6}
-            alt="Smartphone displaying chat app"
-            width={1000}
-            height={10}
-          />
-          <Image
-            class="h-auto w-full "
-            src={Mobi5}
-            alt="Water softener system"
-            width={800}
-            height={8}
-          />
-        </div>
-      </div>
+      
       
     
   
