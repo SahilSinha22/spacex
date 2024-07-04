@@ -42,7 +42,7 @@ const page = () => {
           </p>
         </div>
         
-        <div class="  mt-40 h-auto py-8">
+        <div class="   py-8">
           <div class="    px-4 sm:px-6 lg:px-32">
             <div class="   gap-8  ">
              
