@@ -1,7 +1,11 @@
 "use client";
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
-import Mobi1 from "@/public/water.png"
+import Mobi1 from "@/public/water.png";
+import Mobi2 from "@/public/drop.png";
+import Mobi3 from "@/public/plant.png";
+
+
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
 import Tech1 from "@/public/azure.png";
@@ -55,7 +59,7 @@ const page = () => {
               </div>
 
               <div class="text-center">
-              <Image src={Mobi1} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
+              <Image src={Mobi2} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
 
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Energy Efficient
@@ -67,7 +71,7 @@ const page = () => {
               </div>
 
               <div class="text-center items-center">
-              <Image src={Mobi1} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
+              <Image src={Mobi3} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
 
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Cost Effective
