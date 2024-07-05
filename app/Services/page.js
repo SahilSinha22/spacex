@@ -54,7 +54,8 @@ const page = () => {
               </div>
 
               <div class="text-center">
-               
+              <Image src={Mobi1} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
+
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Energy Efficient
                 </h3>
@@ -65,7 +66,8 @@ const page = () => {
               </div>
 
               <div class="text-center items-center">
-                
+              <Image src={Mobi1} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
+
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Cost Effective
                 </h3>
