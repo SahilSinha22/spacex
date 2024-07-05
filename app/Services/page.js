@@ -43,7 +43,7 @@ const page = () => {
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
               <div class="text-center ">
-                <Image src="/public/water.png"  class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
+                <Image src={Mobi6} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Maximum Purity
                 </h3>
