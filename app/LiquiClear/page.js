@@ -9,6 +9,16 @@ import Mobi4 from "@/public/sec.png"
 
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
+import Feature1 from "@/public/quality.png";
+import Feature2 from "@/public/sensitive-skin.png";
+import Feature3 from "@/public/shower.png";
+import Feature4 from "@/public/waters.png";
+import Feature5 from "@/public/24hours.png";
+import Feature6 from "@/public/water-tap.png";
+import Feature7 from "@/public/water-cycle.png";
+import Feature8 from "@/public/steering-wheel.png";
+
+
 import Tech1 from "@/public/azure.png";
 import Tech2 from "@/public/Quickblock.png";
 import Tech3 from "@/public/angular.png";
@@ -145,13 +155,13 @@ const page = () => {
               </p>
 
               <div class="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div class=" w-40 md:w-52 pr-2 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
+                <div class=" w-40 md:w-52 pr-2 xl:pr-4 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
                   <Image
                     alt="water-quality"
-                    src=""
-                    class="mx-auto mb-4"
-                    width={500}
-                    height={5}
+                    src={Feature1}
+                    class="mx-auto mb-4 w-20 h-20 "
+                    width={200}
+                    height={2}
                   />
                   <h3 class="text-sm font-bold text-center mb-2">
                     Improves Water <br />
@@ -166,8 +176,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="soft-skin-hair"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature2}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
@@ -182,8 +192,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="minimizes-scaling"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature3}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
@@ -198,8 +208,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="helps-choked-pipes"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature4}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
@@ -214,8 +224,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="24-hour-operation"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature5}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
@@ -230,8 +240,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="increases-appliance-life"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature6}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
@@ -247,8 +257,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="saves-water"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature7}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
@@ -263,8 +273,8 @@ const page = () => {
                   <Image
                     aria-hidden="true"
                     alt="multi-port-valve"
-                    src=""
-                    class="mx-auto mb-4"
+                    src={Feature8}
+                    class="mx-auto mb-4 w-20 h-20"
                     width={500}
                     height={5}
                   />
