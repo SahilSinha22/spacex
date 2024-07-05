@@ -95,7 +95,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div class="text-center mt-72 md:pt-20 mx-10 xl:mx-32 xl:mt-60 xl:pt-40 items-center">
+          <div class="text-center 2xl:pt-96 mt-72 md:pt-20 mx-10 xl:mx-32 xl:mt-60 xl:pt-40 items-center">
           <Image
             class="w-full rounded-2xl h-68 object-cover "
             src={Mobi4}
