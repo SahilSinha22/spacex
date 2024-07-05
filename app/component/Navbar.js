@@ -115,7 +115,7 @@ const handleTextHover = (event) => {
             <Link href="/" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
               Technologies
             </Link>
-            <Link href="/Portfolio" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/Portfolio" className={`block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${pathname === '/Portfolio'?'text-black':'text-red-500'}`}>
               Portfolio
             </Link>
             <Link href="/" className="block nav-link text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8  ">

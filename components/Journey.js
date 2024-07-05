@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Journey = () => {
   return (
-    <div className="max-w-7xl  px-4 py-12 mx-10 ">
+    <div className="max-w-7xl 2xl:mt-20 px-4 py-12 mx-10 ">
       <div className="mx-5 md:mx-20">
         <h2 className="text-3xl md:text-6xl font-bold playfair text-left">
           Spacetotech journey of <br /> Mobile app development

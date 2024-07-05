@@ -155,7 +155,7 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="mr-4 xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-20  xl:ml-20 md:mx-2 sm:ml-10 ">
+              <div className="mr-4  xl:mr-0 xl:w-[500px] mb-4 lg:ml-20 2xl:ml-60  xl:ml-20 md:mx-2 sm:ml-10 ">
                 {successBanner && (
                   <div className=" translate-x-2 absolute  z-10   xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
                     <FaCheckCircle size={24} className="mr-2" />
