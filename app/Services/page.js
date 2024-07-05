@@ -4,6 +4,7 @@ import Mobi from "@/public/Liqiclear.svg";
 import Mobi1 from "@/public/water.png";
 import Mobi2 from "@/public/drop.png";
 import Mobi3 from "@/public/plant.png";
+import Mobi4 from "@/public/section.png"
 
 
 import Mobi5 from "@/public/screen.png";
@@ -87,7 +88,7 @@ const page = () => {
           <div class="text-center mt-72 md:pt-20 mx-10 xl:mx-32 xl:mt-60 xl:pt-40 items-center">
           <Image
             class="w-full rounded-2xl h-68 object-cover "
-            src={Mobi1}
+            src={Mobi4}
             alt="Plant growing in coins jar"
             width={1000}
             height={10}
