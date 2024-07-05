@@ -90,7 +90,7 @@ const page = () => {
             class="w-full rounded-2xl h-68 object-cover "
             src={Mobi4}
             alt="Plant growing in coins jar"
-            width={1000}
+            width={100}
             height={10}
           />
         </div>
