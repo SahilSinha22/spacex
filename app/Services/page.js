@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
-
+import Mobi1 from "@/public/water.png"
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
 import Tech1 from "@/public/azure.png";
@@ -43,7 +43,7 @@ const page = () => {
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
               <div class="text-center ">
-                <Image src={Mobi6} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
+                <Image src={Mobi1} class="w-full rounded-2xl h-68  object-cover " alt="glass of water" width={300} height={10}/>
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Maximum Purity
                 </h3>
