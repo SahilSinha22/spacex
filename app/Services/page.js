@@ -40,6 +40,7 @@ const page = () => {
         </div>
         <div className="h-12 md:h-32 xl:h-44"></div>
         <div class="relative bg-[#005AA8]  h-auto py-8">
+
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
               <div class="text-center ">
@@ -79,7 +80,15 @@ const page = () => {
               </div>
             </div>
           </div>
-          
+          <div class="text-center mt-72 md:pt-20 mx-10 xl:mx-32 xl:mt-60 xl:pt-40 items-center">
+          <Image
+            class="w-full rounded-2xl h-68 object-cover "
+            src={Mobi1}
+            alt="Plant growing in coins jar"
+            width={1000}
+            height={10}
+          />
+        </div>
         </div>
         
 
