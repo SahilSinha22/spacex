@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
 import Mobi from "@/public/Liqiclear.svg";
-import water from "@/public/water.png";
-import drop from "@/public/drop.png";
-import plant from "@/public/plant.png";
-import Mobi4 from "@/public/section.png";
+
 import Mobi5 from "@/public/screen.png";
 import Mobi6 from "@/public/mobile.png";
 import Tech1 from "@/public/azure.png";
@@ -46,13 +43,7 @@ const page = () => {
           <div class=" absolute  -top-20 md:-top-40 xl:-top-52  px-4 sm:px-6 lg:px-32">
             <div class=" grid grid-cols-3 md:grid-cols-3  gap-8 lg:gap-28 items-center">
               <div class="text-center ">
-                <Image
-                  class="w-full rounded-2xl h-68  object-cover "
-                  src={water}
-                  alt="Glass of water"
-                  width={300}
-                  height={5}
-                />
+                
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Maximum Purity
                 </h3>
@@ -63,13 +54,7 @@ const page = () => {
               </div>
 
               <div class="text-center">
-                <Image
-                  class="w-full rounded-2xl h-68 object-cover "
-                  src={drop}
-                  alt="Leaf in water drop"
-                  width={300}
-                  height={5}
-                />
+               
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Energy Efficient
                 </h3>
@@ -80,13 +65,7 @@ const page = () => {
               </div>
 
               <div class="text-center items-center">
-                <Image
-                  class="w-full rounded-2xl h-68 object-cover "
-                  src={plant}
-                  alt="Plant growing in coins jar"
-                  width={300}
-                  height={5}
-                />
+                
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Cost Effective
                 </h3>
