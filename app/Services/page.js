@@ -4,7 +4,7 @@ import Mobi from "@/public/Liqiclear.svg";
 import Mobi1 from "@/public/water.png";
 import Mobi2 from "@/public/drop.png";
 import Mobi3 from "@/public/plant.png";
-import Mobi4 from "@/public/section.png"
+import Mobi4 from "@/public/sec.png"
 
 
 import Mobi5 from "@/public/screen.png";
