@@ -73,17 +73,17 @@ const Navbar = () => {
             <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Home
             </Link>
-            <Link href="/Services" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Services
             </Link>
-            <Link href="/Technologies" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Technologies
             </Link>
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
               Portfolio
             </Link>
           
-            <Link href="/Blog" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Blog
             </Link>
           </div>
