@@ -1,39 +1,32 @@
-"use client"; 
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { usePathname } from "next/navigation";
 
 const logos = {
   '/': 'logo.png',
   '/Portfolio': 'logo1.png',
   '/LiquiClear': 'logo1.png',
-  '/Services':'logo1.png',
-  
+  '/Services': 'logo1.png',
 };
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
   const [bgColor, setBgColor] = useState('black');
   const [textColor, setTextColor] = useState('black');
-  
   const pathname = usePathname();
   const [logo, setLogo] = useState(logos[pathname]);
- 
-  useEffect(() => {
-   
-const handleRouteChange = (pathname) => {
 
-      console.log(pathname)
+  useEffect(() => {
+    const handleRouteChange = (pathname) => {
+      console.log(pathname);
 
       if (pathname === '/') {
-        setBgColor('black'); 
+        setBgColor('black');
         setTextColor('gray');
         setLogo(logos[pathname]);
-        
       } else {
         setBgColor('white');
         setTextColor('rgb(161 161 170)');
@@ -41,42 +34,13 @@ const handleRouteChange = (pathname) => {
       }
     };
 
-    
     handleRouteChange(pathname);
+  }, [pathname]);
 
-    
-  
-    
-const handleTextHover = (event) => {
-      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'black' : 'white'; 
-      
-    };
+  const isActiveLink = (path) => pathname === path;
 
-    
-    const handleTextReset = (event) => {
-      event.target.style.color = textColor === 'rgb(161 161 170)' ? 'gray' : 'gray'; // Reset to gray
-      
-    };
-
-    
-    const links = document.querySelectorAll('.nav-link');
-
-    
-    links.forEach(link => {
-      link.addEventListener('mouseenter', handleTextHover);
-      link.addEventListener('mouseleave', handleTextReset);
-    });
-
-    
-    return () => {
-      links.forEach(link => {
-        link.removeEventListener('mouseenter', handleTextHover);
-        link.removeEventListener('mouseleave', handleTextReset);
-      });
-    };
-  }, [textColor,pathname]);
   return (
-    <nav className="items-center p-4 " style={{ backgroundColor: bgColor }}>
+    <nav className="items-center p-4" style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
@@ -106,24 +70,25 @@ const handleTextHover = (event) => {
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 justify-left lg:flex-grow">
-            <Link href="/" className="nav-link  block text-zinc-400 mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ">
+            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Home
             </Link>
-            <Link href="/" className="nav-link  block text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/Services" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Services
             </Link>
-            <Link href="/" className="block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8">
+            <Link href="/Technologies" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Technologies
             </Link>
-            <Link href="/Portfolio" className={`block text-zinc-400 nav-link  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${pathname === '/Portfolio'?'text-black':'text-red-500'}`}>
+            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
               Portfolio
             </Link>
-            <Link href="/" className="block nav-link text-zinc-400  mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8  ">
+          
+            <Link href="/Blog" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Blog
             </Link>
           </div>
           <div>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full  inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0">
+            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0">
               Contact Us
             </button>
           </div>
