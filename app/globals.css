@@ -2,6 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  background-color: #8E64F2 ;
+  padding: 20px 0;
+  
+}
+
+.track {
+  display: flex;
+  /* Width of one logo times the number of logos */
+  animation: scroll 5s linear infinite;
+  
+}
+
+.logo {
+  flex: 0 0 250px; /* Adjust according to the size of your logo */
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width:640px) {
+  .track {
+    display: flex;
+    width: calc(100px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 5s linear infinite;
+    
+  }
+  .carousel{
+    height: 140px;
+  }
+  .logo {
+    flex: 0 0 120px;
+  }
+  
+}
+
+@media screen and (min-width:640px) and (max-width:767px){
+  .track {
+    display: flex;
+    width: calc(100px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 5s linear infinite;
+    
+  }
+  .carousel{
+    height: 140px;
+  }
+  .logo {
+    flex: 0 0 120px;
+  }
+  
+}
+@media screen and (min-width:767px) and (max-width:1023px){
+  .track {
+    display: flex;
+    width: calc(150px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 5s linear infinite;
+    
+    
+  }
+  .carousel{
+    height: 140px;
+  }
+  .logo {
+    flex: 0 0 180px;
+  }
+}
+@media screen and (min-width:1023px) and (max-width:1279px){
+  .track {
+    display: flex;
+    width: calc(180px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 5s linear infinite;
+    
+    
+  }
+  .carousel{
+    height: 140px;
+  }
+  .logo {
+    flex: 0 0 300px;
+  }
+  
+}
+@media screen and (min-width:1279px) and (max-width:1529px){
+  .track {
+    display: flex;
+    width: calc(180px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 5s linear infinite;
+    
+    
+  }
+  .carousel{
+    height: 140px;
+  }
+  .logo {
+    flex: 0 0 500px;
+  }
+}
+
+.logoss{
+  background: #8E64F2 0% 0% no-repeat padding-box;
+ 
+
+ }
 /* styles/globals.css */
 .navbar {
   /* Default background */
