@@ -142,7 +142,7 @@ const Pef = () => {
             <ParallaxLayer offset={1} speed={1} factor={4} className="land" />
 
             <ParallaxLayer
-              sticky={{ start: 0, end: 1.5 }}
+              sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
             >
               <div className="p-10 text-center items-center">
@@ -176,7 +176,7 @@ const Pef = () => {
             <ParallaxLayer offset={1} speed={1} factor={4} className="land" />
 
             <ParallaxLayer
-              sticky={{ start: 0, end: 1.5 }}
+              sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
             >
               <div className="text-white text-center p-8">
@@ -212,7 +212,7 @@ const Pef = () => {
             <ParallaxLayer offset={1} speed={1} factor={4} className="land" />
 
             <ParallaxLayer
-              sticky={{ start: 0, end: 1.5 }}
+              sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
             >
               <div className="font-sans">
