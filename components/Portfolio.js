@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Form from "@/components/Form";
+
 import Mobi from "@/public/CS 01.png";
 import Mobis from "@/public/CS 02.png";
 import Mobi1 from "@/public/CS 03.png";
@@ -318,7 +318,7 @@ const Portfolio = () => {
                     </button>
                 </div>
             </div>
-            <Form />
+           
         </div>
     );
 };
