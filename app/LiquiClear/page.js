@@ -63,7 +63,7 @@ const page = () => {
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Maximum Purity
                 </h3>
-                <p class="mt-2 text-sm md:text-xl xl:text-2xl  text-blue-200">
+                <p class="mt-2 text-sm md:text-xl xl:text-2xl px-2 md:px-6 text-blue-200">
                   Our advanced water purification
                   <br /> solutions for domestic.
                 </p>
@@ -75,9 +75,9 @@ const page = () => {
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Energy Efficient
                 </h3>
-                <p class="mt-2 text-sm md:text-xl xl:text-2xl text-blue-200">
+                <p class="mt-2 text-sm md:text-xl xl:text-2xl px-2 lg:px-6 text-blue-200">
                   Liquiclear gives considerable thought
-                  <br /> to sustainability and energy.
+                   to sustainability and energy.
                 </p>
               </div>
 
@@ -87,9 +87,9 @@ const page = () => {
                 <h3 class="mt-4 text-white text-xl xl:text-2xl font-semibold">
                   Cost Effective
                 </h3>
-                <p class="mt-2 text-sm md:text-xl xl:text-2xl  text-blue-200">
+                <p class="mt-2 text-sm md:text-xl xl:text-2xl  lg:px-6 text-blue-200">
                   We are committed to delivering best-
-                  <br />
+                
                   in-class water purification solutions.
                 </p>
               </div>
