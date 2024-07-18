@@ -5,7 +5,7 @@ import Mobis from "@/public/Image 13.png"
 const Award = () => {
   return (
     <div className="bg-white text-zinc-800 p-8 sm:mx-4 xl:mx-28 mt-10 lg:mt-20">
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <div>
           <h1 className="text-2xl font-extrabold mb-2 md:mb-4 sm:text-4xl md:text-5xl playfair_display">
             Awards & Recognition
@@ -14,7 +14,7 @@ const Award = () => {
             We have been featured and certified by recognized authorities Worldwide.
           </p>
         </div>
-        <div className=" relative w-40 left-16 sm:left-0 xl:-top-8 md:top-2 justify-center 2xl:-left-14  -top-10">
+        <div className=" relative w-40 left-16 sm:left-0 sm:top-1 sm:w-52 md:w-40 xl:-top-8 md:top-2 justify-center 2xl:-left-14  -top-10">
           <Image src={Mobis} alt="" width={180} height={10}/>
           
       </div>
@@ -87,8 +87,8 @@ const Award = () => {
               technologies and can help you choose the right tech.
             </div>
           </div>
-          <div className="sm:pl-14 lg:pl-32 xl:mx-2 mt-0 w-full h-full xl:pl-52 xl:justify-right items-right">
-            <Image src={Mobi} alt="Technical Expertise" width={400} height={8} />
+          <div className="sm:pl-14 lg:pl-32 xl:mx-2 mt-0 w-full h-full  xl:pl-52 xl:justify-right items-right">
+            <Image src={Mobi} alt="Technical Expertise" width={500} height={8} />
           </div>
         </div>
       </div>
