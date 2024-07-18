@@ -160,7 +160,7 @@ const Pef = () => {
                     src={Mobi}
                     
                     alt="VR Experience"
-                    className="mr-4 "
+                    className="mr-4 xl:h-[400px] lg:h-[300px] "
                     width={600}
                     height={550}
                   />
@@ -191,11 +191,11 @@ const Pef = () => {
                   life.
                 </p>
                 <div className="flex justify-center space-x-4">
-                  <div className="h-200">
+                  <div className="">
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4"
+                      className="mr-4 lg:h-[300px] xl:h-[400px]"
                       width={400}
                       height={300}
                     />
@@ -216,7 +216,7 @@ const Pef = () => {
               sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
             >
-              <div className="font-sans">
+              <div className="font-sans h-screen">
                 <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
                   <div className="">
                     <div className="p-5 px-4 items-center justify-center text-center">
@@ -233,7 +233,7 @@ const Pef = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto mt-12"
+                        className="mx-auto lg:h-[300px] xl:h-[400px] mt-12"
                         width={600}
                         height={200}
                       />
@@ -250,4 +250,5 @@ const Pef = () => {
 };
 
 export default Pef;
+
 
