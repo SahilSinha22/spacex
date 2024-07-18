@@ -128,18 +128,18 @@ const page = () => {
         <div className="mt-10 xl:mt-40 lg:mb-28 mb-20 xl:mb-40">
           <div class="relative mt-8 lg:mt-20 flex justify-center">
             <Image
-              class="absolute mobile h-[220px] w-32 md:w-60 lg:w-72 xl:w-[420px] 2xl:w-[520px] xl:h-[740px]  2xl:h-[950px] lg:h-[560px] lg:-top-20 lg:left-20 md:h-96 md:left-12 md:-top-8 -top-6 2xl:-top-20 xl:-top-28 left-10 xl:left-40 "
+              class="absolute mobile h-[220px] w-32 md:w-60 lg:w-72 xl:w-[420px] 2xl:w-[520px] xl:h-[740px]  2xl:h-[750px] sm:h-[320px] lg:h-[560px] lg:-top-20 lg:left-20 md:h-96 md:left-12 md:-top-8 -top-6 2xl:-top-20 xl:-top-28 left-10 xl:left-40 "
               src={Mobi6}
               alt="Smartphone displaying chat app"
               width={1000}
               height={10}
             />
             <Image
-              class="h-auto w-full "
+              class="h-auto w-full 2xl:h-[500px] "
               src={Mobi5}
               alt="Water softener system"
-              width={800}
-              height={8}
+              width={1000}
+              height={100}
             />
           </div>
         </div>
@@ -328,7 +328,7 @@ const page = () => {
               <Image
                 src={Tech4}
                 alt="MySQL"
-                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-green-500 p-5 xl:w-20 xl:h-20"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-green-500 object-contain p-2 xl:w-20 xl:h-20"
                 width={100}
                 height={10}
               />
