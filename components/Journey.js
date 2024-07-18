@@ -26,7 +26,7 @@ const Journey = () => {
                 />
               </div>
             </div>
-            <div className="text-xl md:text-xl font-bold">Inception</div>
+            <div className="text-xl md:text-xl 2xl:text-2xl 2xl:ml-20 font-bold">Inception</div>
           </div>
           <div className="text-center lg:mx-2  2xl:mx-4">
             <div className="w-48 h-48 2xl:mx-6   2xl:w-52 2xl:h-52 border-dashed border-2  mx-auto mb-2 flex items-center justify-center  rounded-full">
@@ -40,7 +40,7 @@ const Journey = () => {
                 />
               </div>
             </div>
-            <div className="text-xl md:text-xl font-bold">Design</div>
+            <div className="text-xl md:text-xl 2xl:text-2xl 2xl:ml-20 font-bold">Design</div>
           </div>
           <div className="text-center lg:mx-2 2xl:mx-4">
             <div className="w-48 h-48 2xl:mx-10  2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
@@ -54,7 +54,7 @@ const Journey = () => {
                 />
               </div>
             </div>
-            <div className="text-xl md:text-xl font-bold">Development</div>
+            <div className="text-xl md:text-xl 2xl:text-2xl 2xl:ml-20 font-bold">Development</div>
           </div>
           <div className="text-center lg:mx-2 2xl:mx-4">
             <div className="w-48 h-48 2xl:mx-10  2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
@@ -68,7 +68,7 @@ const Journey = () => {
                 />
               </div>
             </div>
-            <div className="text-xl md:text-xl font-bold">Stabilization</div>
+            <div className="text-xl md:text-xl 2xl:text-2xl 2xl:ml-20 font-bold">Stabilization</div>
           </div>
           <div className="text-center lg:mx-2 2xl:mx-10">
             <div className="w-48 h-48 2xl:mx-10  2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
@@ -82,7 +82,7 @@ const Journey = () => {
                 />
               </div>
             </div>
-            <div className="text-xl md:text-xl font-bold">Deployment</div>
+            <div className="text-xl md:text-xl 2xl:ml-20 2xl:text-2xl font-bold">Deployment</div>
           </div>
         </div>
       </div>
