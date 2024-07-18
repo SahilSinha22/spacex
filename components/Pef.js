@@ -158,8 +158,9 @@ const Pef = () => {
                 <div className="flex justify-center mt-6">
                   <Image
                     src={Mobi}
+                    
                     alt="VR Experience"
-                    className="mr-4"
+                    className="mr-4 "
                     width={600}
                     height={550}
                   />

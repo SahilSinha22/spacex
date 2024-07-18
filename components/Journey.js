@@ -13,7 +13,7 @@ const Journey = () => {
           businesses in numerous sectors to engage customers, optimize
           operations, and unlock new opportunities for growth.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2   space-y-5 lg:grid-cols-3 xl:grid-cols-5  justify-center items-center space-x-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2   space-y-5 lg:grid-cols-3 xl:grid-cols-5  justify-center items-center 2xl:gap-10 space-x-8 mt-8">
           <div className="text-center   mt-4 ml-10">
             <div className="w-48 h-48 2xl:w-52 2xl:h-52  border-dashed mb-4 border-2  mx-auto  flex items-center justify-center rounded-full">
               <div className="relative hover:bg-slate-600 transform hover:scale-110 transition duration-300 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
@@ -28,7 +28,7 @@ const Journey = () => {
             </div>
             <div className="text-xl md:text-xl font-bold">Inception</div>
           </div>
-          <div className="text-center lg:mx-2  ">
+          <div className="text-center lg:mx-2  2xl:mx-4">
             <div className="w-48 h-48 2xl:mx-6   2xl:w-52 2xl:h-52 border-dashed border-2  mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative  hover:bg-slate-600 transform hover:scale-110 transition duration-300  2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
@@ -42,8 +42,8 @@ const Journey = () => {
             </div>
             <div className="text-xl md:text-xl font-bold">Design</div>
           </div>
-          <div className="text-center lg:mx-2">
-            <div className="w-48 h-48 2xl:mx-6 2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
+          <div className="text-center lg:mx-2 2xl:mx-4">
+            <div className="w-48 h-48 2xl:mx-10  2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative hover:bg-slate-600 transform hover:scale-110 transition duration-300 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
                   className="absolute top-10 left-10 2xl:top-14 2xl:left-14"
@@ -56,8 +56,8 @@ const Journey = () => {
             </div>
             <div className="text-xl md:text-xl font-bold">Development</div>
           </div>
-          <div className="text-center lg:mx-2">
-            <div className="w-48 h-48 2xl:mx-6 2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
+          <div className="text-center lg:mx-2 2xl:mx-4">
+            <div className="w-48 h-48 2xl:mx-10  2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative  hover:bg-slate-600 transform hover:scale-110 transition duration-300 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
                   className="absolute top-10 left-10 2xl:top-14 2xl:left-14"
@@ -70,8 +70,8 @@ const Journey = () => {
             </div>
             <div className="text-xl md:text-xl font-bold">Stabilization</div>
           </div>
-          <div className="text-center lg:mx-2">
-            <div className="w-48 h-48 2xl:mx-6 2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
+          <div className="text-center lg:mx-2 2xl:mx-10">
+            <div className="w-48 h-48 2xl:mx-10  2xl:w-52 2xl:h-52  border-dashed border-2 mx-auto mb-2 flex items-center justify-center  rounded-full">
               <div className="relative hover:bg-slate-600 transform hover:scale-110 transition duration-300 2xl:w-48 2xl:h-48 w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
                   className="absolute top-8 left-6 2xl:top-12 2xl:left-10"

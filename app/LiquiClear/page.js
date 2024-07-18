@@ -155,88 +155,88 @@ const page = () => {
               </p>
 
               <div class="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div class=" w-40 md:w-52 pr-2 xl:pr-4 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
+                <div class=" w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 xl:pr-4 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
                   <Image
                     alt="water-quality"
                     src={Feature1}
-                    class="mx-auto mb-4 w-20 h-20 "
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20 "
                     width={200}
                     height={2}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm  2xl:text-2xl font-bold text-center mb-2">
                     Improves Water <br />
                     Quality
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     Refines the quality of water by removing harmful
                     contaminants from it.
                   </p>
                 </div>
-                <div class=" w-40 md:w-52 pr-2 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div class=" w-40 md:w-52 2xl:w-72 2xl:pr-8 pr-2 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="soft-skin-hair"
                     src={Feature2}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm 2xl:text-2xl font-bold text-center mb-2">
                     Soft Skin & Hair
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     Nourishes your skin & hair.
                   </p>
                 </div>
-                <div class="  w-40 md:w-52 pr-2 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
+                <div class="  w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="minimizes-scaling"
                     src={Feature3}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Minimizes Scaling
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     Reduces scaling on tiles.
                   </p>
                 </div>
-                <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
+                <div class="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="helps-choked-pipes"
                     src={Feature4}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Helps Choked Pipes
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl  text-sm text-center">
                     Reduces mineral deposit, leading to choke-free pipes.
                   </p>
                 </div>
-                <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div class="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="24-hour-operation"
                     src={Feature5}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     24 Hour Operation
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     Operates smoothly 24x7 for 365 days without stopping.
                   </p>
                 </div>
-                <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
+                <div class="w-40 md:w-52 pr-2   2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2 p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="increases-appliance-life"
@@ -245,43 +245,43 @@ const page = () => {
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Increases Appliance Life
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     Maximizes the life of appliances by keeping your pipes &
                     geysers rust-free.
                   </p>
                 </div>
-                <div class="w-40 md:w-52 pr-2  rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div class="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 rounded-2xl mb-2  border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="saves-water"
                     src={Feature7}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Saves Water
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     Saves more water than other conventional Water Softeners.
                   </p>
                 </div>
-                <div class="w-40 md:w-52 pr-2   rounded-2xl mb-2   border-t-2  p-4   shadow-zinc-400  shadow-xl">
+                <div class="w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8  rounded-2xl mb-2   border-t-2  p-4   shadow-zinc-400  shadow-xl">
                   <Image
                     aria-hidden="true"
                     alt="multi-port-valve"
                     src={Feature8}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
-                  <h3 class="text-sm font-bold text-center mb-2">
+                  <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Multi Port Valve (MPV)
                   </h3>
-                  <p class="text-muted-foreground text-sm text-center">
+                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
                     First in segment easy to use, with an excellent sealing
                     mechanism to avoid leaks.
                   </p>
@@ -293,12 +293,12 @@ const page = () => {
 
         <div class="flex flex-col items-center p-6">
           <h2 class="text-2xl font-semibold mb-4">Tech Stacks</h2>
-          <div class="bg-blue-600 p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full px-6 py-10 max-w-4xl">
+          <div class="bg-blue-600 p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full 2xl:max-w-[1600px] px-6 py-10 max-w-4xl">
             <div class="flex flex-col items-center my-4">
               <Image
                 src={Tech1}
                 alt="Azure"
-                class="rounded-full w-20 h-20 bg-green-500 p-5"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-green-500 p-5"
                 width={100}
                 height={10}
               />
@@ -308,7 +308,7 @@ const page = () => {
               <Image
                 src={Tech2}
                 alt="Quickblox"
-                class="rounded-full w-20 h-20 xl:w-20 xl:h-20 bg-yellow-500 p-5"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 xl:w-20 xl:h-20 bg-yellow-500 p-5"
                 width={100}
                 height={10}
               />
@@ -318,7 +318,7 @@ const page = () => {
               <Image
                 src={Tech3}
                 alt="Angular 8"
-                class="rounded-full w-20 h-20 bg-red-500 p-5 xl:w-20 xl:h-20"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-red-500 p-5 xl:w-20 xl:h-20"
                 width={100}
                 height={10}
               />
@@ -328,7 +328,7 @@ const page = () => {
               <Image
                 src={Tech4}
                 alt="MySQL"
-                class="rounded-full w-20 h-20 bg-green-500 p-5 xl:w-20 xl:h-20"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-green-500 p-5 xl:w-20 xl:h-20"
                 width={100}
                 height={10}
               />
@@ -338,7 +338,7 @@ const page = () => {
               <Image
                 src={Tech5}
                 alt="Node Js"
-                class="rounded-full w-20 h-20 bg-yellow-500 p-5 xl:w-20 xl:h-20"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-yellow-500 p-5 xl:w-20 xl:h-20"
                 width={100}
                 height={10}
               />
@@ -348,7 +348,7 @@ const page = () => {
               <Image
                 src={Tech6}
                 alt="React Native"
-                class="rounded-full w-20 h-20 bg-red-500 p-5 xl:w-20 xl:h-20"
+                class="rounded-full w-20 h-20 2xl:w-28 2xl:h-28 bg-red-500 p-5 xl:w-20 xl:h-20"
                 width={100}
                 height={10}
               />

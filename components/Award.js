@@ -14,7 +14,7 @@ const Award = () => {
             We have been featured and certified by recognized authorities Worldwide.
           </p>
         </div>
-        <div className=" relative w-40 left-16 sm:left-0 xl:-top-8 md:top-2 justify-center  -top-10">
+        <div className=" relative w-40 left-16 sm:left-0 xl:-top-8 md:top-2 justify-center 2xl:-left-14  -top-10">
           <Image src={Mobis} alt="" width={180} height={10}/>
           
       </div>
@@ -25,6 +25,7 @@ const Award = () => {
             <Image
               src="/TopDevelopers 1.svg"  // Updated to public directory path
               alt="Top Developer"
+              className="2xl:h-40 2xl:w-60" 
               width={150}
               height={10}
             />
@@ -33,9 +34,10 @@ const Award = () => {
           <p className="text-sm text-center">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
-          <div className="rounded-xl px-2 py-6 lg:px-2 lg:py-7 xl:py-9 xl:px-4 sm:p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
+          <div className="rounded-xl px-2 py-6 lg:px-2 lg:py-7 xl:py-9  xl:px-4 sm:p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
             <Image
-              src="/freelancer-1.svg"  // Updated to public directory path
+              src="/freelancer-1.svg" 
+              className="2xl:h-36 2xl:w-60" // Updated to public directory path
               alt="Freelancer"
               width={150}
               height={10}
@@ -48,6 +50,7 @@ const Award = () => {
           <div className="rounded-xl p-6 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
             <Image
               src="/AppFutura-1.svg"  // Updated to public directory path
+              className="2xl:h-40 2xl:w-60" 
               alt="AppFutura"
               width={150}
               height={10}
@@ -58,14 +61,14 @@ const Award = () => {
         </div>
         <div className="flex grayscale hover:grayscale-0 flex-col text-center items-center">
           <div className="rounded-xl p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
-            <Image src="/GoodFirms.svg" alt="GoodFirms" width={150} height={10} />
+            <Image src="/GoodFirms.svg" className="2xl:h-36 2xl:w-60"  alt="GoodFirms" width={150} height={10} />
           </div>
           <p className="mt-2 font-semibold">GoodFirms</p>
           <p className="text-sm text-center">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
           <div className="rounded-xl p-7 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
-            <Image src="/Clutch-1.svg" alt="Clutch" width={150} height={10} />
+            <Image src="/Clutch-1.svg" className="2xl:h-40 2xl:w-60"   alt="Clutch" width={150} height={10} />
           </div>
           <p className="mt-2 font-semibold">Clutch</p>
           <p className="text-sm">Top Mobile App<br/> Developers</p>

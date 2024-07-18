@@ -43,12 +43,12 @@ const Portfolio = () => {
                 </p>
             </div>
             <div className=" mt-20 mx-8 md:mx-20 xl:mx-40 mb-20 xl:mb-0 flex md:justify-center">
-                <div className="left-column mr-2 lg:mr-5 md:mx-5 w-full md:w-auto">
+                <div className="left-column mr-1 lg:mr-5 md:mx-5 w-full md:w-auto">
                     <div className="animated-image left show">
                         <div className="bg-black">
                             <Image
                                 src={Mobi}
-                                className="imgx h-[400px] xl:h-[550px]"
+                                className="imgx  w-62 h-[400px] xl:h-[550px]"
                                 alt="Image 1"
                                 width={500}
                                 height={500}
@@ -172,7 +172,7 @@ const Portfolio = () => {
           </div>
                     {/* Other left show column items... */}
                 </div>
-                <div className="right-column">
+                <div className="right-column ml-1">
                     <div className="animated-image right show">
                         <div className="bg-black">
                             <Image
