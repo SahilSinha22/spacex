@@ -128,7 +128,7 @@ const page = () => {
         <div className="mt-10 xl:mt-40 lg:mb-28 mb-20 xl:mb-40">
           <div class="relative mt-8 lg:mt-20 flex justify-center">
             <Image
-              class="absolute mobile h-[220px] w-20 md:w-40 lg:w-60 xl:h-[740px] lg:h-[540px] lg:-top-20 lg:left-20 md:h-96 md:-top-8 -top-6 xl:-top-28 left-10 xl:left-40 "
+              class="absolute mobile h-[220px] w-32 md:w-60 lg:w-72 xl:w-[420px] 2xl:w-[520px] xl:h-[740px]  2xl:h-[950px] lg:h-[560px] lg:-top-20 lg:left-20 md:h-96 md:left-12 md:-top-8 -top-6 2xl:-top-20 xl:-top-28 left-10 xl:left-40 "
               src={Mobi6}
               alt="Smartphone displaying chat app"
               width={1000}
