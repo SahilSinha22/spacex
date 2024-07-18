@@ -14,12 +14,12 @@ const Award = () => {
             We have been featured and certified by recognized authorities Worldwide.
           </p>
         </div>
-        <div className=" relative w-40 left-16 sm:left-0 sm:top-1 sm:w-52 md:w-40 xl:-top-8 md:top-2 justify-center 2xl:-left-14  -top-10">
-          <Image src={Mobis} alt="" width={180} height={10}/>
+        <div className=" relative w-40 2xl:w-60 left-16 sm:left-0 sm:top-1 sm:w-52 md:w-40 xl:-top-8 md:top-2 justify-center 2xl:left-6  -top-10">
+          <Image src={Mobis} alt="" className="" width={180} height={10}/>
           
       </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
           <div className="rounded-xl p-6 hover:drop-shadow-lg bg-gray-200 hover:bg-white hover:shadow">
             <Image
@@ -37,10 +37,10 @@ const Award = () => {
           <div className="rounded-xl px-2 py-6 lg:px-2 lg:py-7 xl:py-9  xl:px-4 sm:p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
             <Image
               src="/freelancer-1.svg" 
-              className="2xl:h-36 2xl:w-60" // Updated to public directory path
+              className="2xl:h-36 md:h-32 xl:h-28 2xl:w-60" // Updated to public directory path
               alt="Freelancer"
               width={150}
-              height={10}
+              height={12}
             />
           </div>
           <p className="mt-2 font-semibold">Freelancer</p>
