@@ -160,7 +160,7 @@ const Pef = () => {
                     src={Mobi}
                     
                     alt="VR Experience"
-                    className="mr-4 xl:h-[400px] lg:h-[300px] "
+                    className="mr-4 xl:h-[400px] lg:h-[300px] 2xl:h-full "
                     width={600}
                     height={550}
                   />
@@ -195,7 +195,7 @@ const Pef = () => {
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4 lg:h-[300px] xl:h-[400px]"
+                      className="mr-4 lg:h-[300px] xl:h-[400px] 2xl:h-full"
                       width={400}
                       height={300}
                     />
@@ -233,7 +233,7 @@ const Pef = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto lg:h-[300px] xl:h-[400px] mt-12"
+                        className="mx-auto lg:h-[300px] xl:h-[400px] mt-12 2xl:h-full"
                         width={600}
                         height={200}
                       />
@@ -250,5 +250,3 @@ const Pef = () => {
 };
 
 export default Pef;
-
-
