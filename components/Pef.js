@@ -146,10 +146,10 @@ const Pef = () => {
               style={{ textAlign: "center" }}
             >
               <div className="p-10 text-center items-center">
-                <h2 className="text-2xl text-white md:text-6xl pt-8 font-bold mb-4 font-sedan">
+                <h2 className="text-4xl text-white md:text-6xl pt-8 font-bold mb-4 font-sedan">
                   Okomo
                 </h2>
-                <p className="text-sm text-white text-center md:text-2xl">
+                <p className="text-xl text-white text-center md:text-2xl">
                   Welcome to Okomo360, the world's first dedicated 360-degree VR
                   platform. We're redefining
                   <br /> video technology, making immersive VR experiences not
@@ -184,7 +184,7 @@ const Pef = () => {
                 <div className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
                   Netme
                 </div>
-                <p className="md:text-2xl text-sm text-center mb-8">
+                <p className="md:text-2xl text-xl text-center mb-8">
                   NETME does not swipe, chat or judge by look - instead, we are
                   old school and believe <br />
                   that the best acquaintance comes from meeting people in real
@@ -223,7 +223,7 @@ const Pef = () => {
                       <h1 className="text-4xl text-white md:text-6xl pt-8 font-sedan font-bold mb-4">
                         Liquiclear
                       </h1>
-                      <p className="text-white text-center text-sm md:text-2xl">
+                      <p className="text-white text-center text-xl md:text-2xl">
                         Liquiclear is your one-stop solution for all water
                         purification and softening needs. We bring you a wide
                         range of water purifiers and softeners for commercial and
