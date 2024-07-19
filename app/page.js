@@ -5,7 +5,7 @@ import Imgcmp from '@/components/Imgcmp'
 import Journey from '@/components/Journey'
 import Indus from '@/components/Indus'
 import Intros from '@/components/Intros'
-import Gone from "@/components/gone"
+
 import DumyForm from "@/components/dumyForm";
 import Pef from '@/components/Pef'
 const page = () => {
@@ -18,7 +18,7 @@ const page = () => {
     <Award/>
     <Imgcmp/>
 <Pef/>
-<Gone/>
+
     <Journey/>
 <Indus/>
 
