@@ -79,7 +79,7 @@ const dumyForm = () => {
         const timer = setTimeout(() => {
             setVisible(true);
             document.body.style.overflow = 'hidden';
-        }, 3000);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -175,9 +175,10 @@ const dumyForm = () => {
                                             value={user.File ? user.File.name : ''}
                                             readOnly
                                             onClick={handleFileClick}
-                                            className="peer w-full h-full border-b-2 bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all  placeholder-shown:border-blue-gray-200 text-sm pt-4 pb-1.5 border-blue-gray-200 focus:border-gray-500"
+                                            onChange={value => setUser({ ...user, File: value })}
+                                            className="peer w-full h-full border-b-2 bg-transparent text-blue-gray-700 font-sans font-normal peer-placeholder-shown:text-blue-gray-500 outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all  placeholder-shown:border-blue-gray-500 text-sm pt-4 pb-1.5 border-blue-gray-200 focus:border-gray-500"
                                         />
-                                        <label onClick={handleFileClick} className="absolute right-2 top-4 cursor-pointer text-gray-500 peer-placeholder-shown:text-blue-gray-500 after:border-gray-500 peer-focus:after:border-gray-900">
+                                        <label onClick={handleFileClick} className="absolute right-2 top-4 cursor-pointer text-gray-500 placeholder:text-gray-500 after:border-gray-500 peer-focus:after:border-gray-900">
                                             <div class=" rounded-full text-center flex justify-center items-center  h-4 w-4 bg-gradient-to-r from-[#056BA7] to-[#30B0FA] ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 7 8" fill="none"><path d="M3.07819 -0.000384092C3.03769 -0.000618219 2.99755 0.00714302 2.96006 0.0224555C2.92258 0.0377676 2.88848 0.0603297 2.85973 0.0888472L0.09049 2.85808C0.0325502 2.91602 0 2.99461 0 3.07655C0 3.15849 0.0325502 3.23707 0.09049 3.29501C0.14843 3.35295 0.227013 3.3855 0.308952 3.3855C0.390891 3.3855 0.469474 3.35295 0.527414 3.29501L3.07819 0.741156L5.62897 3.29501C5.65765 3.3237 5.69171 3.34645 5.7292 3.36198C5.76668 3.37751 5.80685 3.3855 5.84743 3.3855C5.888 3.3855 5.92817 3.37751 5.96566 3.36198C6.00314 3.34645 6.0372 3.3237 6.06589 3.29501C6.09458 3.26632 6.11734 3.23226 6.13286 3.19478C6.14839 3.15729 6.15638 3.11712 6.15638 3.07655C6.15638 3.03597 6.14839 2.9958 6.13286 2.95832C6.11734 2.92083 6.09458 2.88677 6.06589 2.85808L3.29665 0.0888472C3.2679 0.0603297 3.2338 0.0377676 3.19632 0.0224555C3.15883 0.00714302 3.11868 -0.000618219 3.07819 -0.000384092Z" fill="white">
                                                 </path>
