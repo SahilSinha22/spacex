@@ -190,6 +190,10 @@ const FormComponent = () => {
             {errors.message && <p className="text-red-600 text-xs mt-1">{errors.message}</p>}
             
           </div>
+
+
+
+
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="file"
@@ -201,17 +205,17 @@ const FormComponent = () => {
             {errors.File && <p className="text-red-600 text-xs mt-1">{errors.File}</p>}
           </div>
           <div className="flex  justify-between ">
-          <button type="submit" className="rounds  text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <button type="submit" className="rounded-full  text-white border-white border-2 bg-blue-500 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-3xl w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Submit →
           </button>
           
           <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-green-500 hover:text-green-600 transition-colors">
             <FaWhatsapp size={40} />
-            <span>Whatsapp</span>
+          
           </a>
           <a href="tel:YOURNUMBER" className="flex items-center space-x-2 text-blue-500 hover:text-blue-600 transition-colors">
             <FaPhone size={40} />
-            <span>Call</span>
+            
             </a>
            
             </div>

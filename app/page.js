@@ -5,8 +5,8 @@ import Imgcmp from '@/components/Imgcmp'
 import Journey from '@/components/Journey'
 import Indus from '@/components/Indus'
 import Intros from '@/components/Intros'
-import FormComponent from "@/components/FormComponent"
-
+import Gone from "@/components/gone"
+import DumyForm from "@/components/dumyForm";
 import Pef from '@/components/Pef'
 const page = () => {
   
@@ -14,16 +14,16 @@ const page = () => {
   return (
 <div className="w-full items-center ">
     <Intros/>
-  
+ <DumyForm/>
     <Award/>
     <Imgcmp/>
 <Pef/>
-
+<Gone/>
     <Journey/>
 <Indus/>
 
     <Form/>
-    <FormComponent />
+   
     </div>
   )
 }
