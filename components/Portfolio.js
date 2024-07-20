@@ -195,7 +195,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <Link href="/LiquiClear">
-                        <div className="animated-image right show mt-10 lg:mt-9 xl:mt-10">
+                        <div className="animated-image right  show mt-10 lg:mt-9 xl:mt-10">
                             <div className="bg-black">
                                 <Image
                                     src={Tab}
@@ -207,12 +207,13 @@ const Portfolio = () => {
                             </div>
                             <div className="mt-5">
                                 <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
-                                    Water Purifier App
+                                    Water Purifier App <span className="rounded-full hover:bg-blue-600 hover:text-white text-sm md:text-lg p-1 border-blue-600 border-2">Read more </span>
                                 </h2>
+                                
                                 <p className="outfit_dispalys text-base lg:text-2xl md:text-xl">
                                     Lorem Epsom is dummy text for the
                                     <br />
-                                    print and digital
+                                    print and digital 
                                 </p>
                             </div>
                         </div>
