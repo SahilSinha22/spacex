@@ -48,7 +48,7 @@ const page = () => {
           <button className="bg-yellow-400 text-base  text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
             Let's talk <span className="font-bold">→</span>
           </button>
-          <p className=" text-center Montserrat my-16 text-3xl font-light text-muted-foreground">
+          <p className=" text-center Montserrat my-16 text-3xl font-light ">
             Liquiclear is your one-stop solution for all water <br />
             purification and softening needs.
           </p>
@@ -167,7 +167,7 @@ const page = () => {
                     Improves Water <br />
                     Quality
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     Refines the quality of water by removing harmful
                     contaminants from it.
                   </p>
@@ -184,7 +184,7 @@ const page = () => {
                   <h3 class="text-sm 2xl:text-2xl font-bold text-center mb-2">
                     Soft Skin & Hair
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     Nourishes your skin & hair.
                   </p>
                 </div>
@@ -200,7 +200,7 @@ const page = () => {
                   <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Minimizes Scaling
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     Reduces scaling on tiles.
                   </p>
                 </div>
@@ -216,7 +216,7 @@ const page = () => {
                   <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Helps Choked Pipes
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl  text-sm text-center">
+                  <p class=" 2xl:text-xl  text-sm text-center">
                     Reduces mineral deposit, leading to choke-free pipes.
                   </p>
                 </div>
@@ -232,7 +232,7 @@ const page = () => {
                   <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     24 Hour Operation
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     Operates smoothly 24x7 for 365 days without stopping.
                   </p>
                 </div>
@@ -248,7 +248,7 @@ const page = () => {
                   <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Increases Appliance Life
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     Maximizes the life of appliances by keeping your pipes &
                     geysers rust-free.
                   </p>
@@ -265,7 +265,7 @@ const page = () => {
                   <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Saves Water
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     Saves more water than other conventional Water Softeners.
                   </p>
                 </div>
@@ -281,7 +281,7 @@ const page = () => {
                   <h3 class="text-sm font-bold 2xl:text-2xl text-center mb-2">
                     Multi Port Valve (MPV)
                   </h3>
-                  <p class="text-muted-foreground 2xl:text-xl text-sm text-center">
+                  <p class=" 2xl:text-xl text-sm text-center">
                     First in segment easy to use, with an excellent sealing
                     mechanism to avoid leaks.
                   </p>
