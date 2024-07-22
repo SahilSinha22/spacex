@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+
+
+
+
 .animated-image {
   opacity: 0;
   transform: translateX(100px);

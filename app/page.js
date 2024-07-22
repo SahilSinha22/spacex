@@ -14,6 +14,7 @@ const page = () => {
   return (
 <div className="w-full items-center ">
     <Intros/>
+   
  <DumyForm/>
     <Award/>
     <Imgcmp/>

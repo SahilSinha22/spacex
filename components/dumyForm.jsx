@@ -1,6 +1,6 @@
 
 "use client";
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect }  from 'react'; 
 import { FaCheckCircle } from 'react-icons/fa';
 
 import PhoneInput from 'react-phone-input-2';
@@ -69,7 +69,7 @@ const dumyForm = () => {
                 setSuccessBanner(false);
                 setVisible(false);
                 document.body.style.overflow = 'auto';
-            }, 3000);
+            }, 1000);
         } else {
             alert("Error Occurred");
         }
