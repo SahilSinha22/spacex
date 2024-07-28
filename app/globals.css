@@ -5,7 +5,10 @@
 
 
 
+.blended{
+  background: transparent linear-gradient(113deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
 
+}
 
 .animated-image {
   opacity: 0;

@@ -10,6 +10,7 @@ const logos = {
   '/Portfolio': 'logo1.png',
   '/LiquiClear': 'logo1.png',
   '/Services': 'logo1.png',
+  '/Technology': 'logo1.png'
 };
 
 const Navbar = () => {
@@ -69,14 +70,14 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
-          <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 justify-left lg:flex-grow">
+          <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0   open_sans_display font-semibold justify-left lg:flex-grow">
             <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Home
             </Link>
             <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
               Services
             </Link>
-            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+            <Link href="/Technology" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Technology') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}   `}>
               Technologies
             </Link>
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
