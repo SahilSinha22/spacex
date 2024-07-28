@@ -201,6 +201,11 @@ imgx {
   font-family: var(--font-open_sans);
 
 }
+.open_sans_displays{
+  font-family: var(--font-open_sanss);
+
+}
+
 .container{
     width:100%;
     display:flex;

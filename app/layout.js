@@ -47,6 +47,11 @@ const open_sans_init=Open_Sans({
   weight: '400' ,
   variable: '--font-open_sans',
 });
+const open_sans_inits=Open_Sans({
+  subsets: ['latin'],
+  weight: '300' ,
+  variable: '--font-open_sanss',
+});
 export const metadata = {
   title: "Space To Tech",
   description: "Space To Tech",
@@ -58,7 +63,7 @@ export default function RootLayout({   children }) {
   return (
     <html lang="en">
       
-      <body className={`${inter.className} ${open_sans_init.variable} ${Playfair_Display_init.variable} ${Playfair_Display_inits.variable} ${outfit_init.variable} ${outfit_inits.variable} ${Bebas_Neue_init.variable} ${Montserrat_init.variable} ${Domine_init.variable}`}>
+      <body className={`${inter.className} ${open_sans_init.variable} ${open_sans_inits.variable} ${Playfair_Display_init.variable} ${Playfair_Display_inits.variable} ${outfit_init.variable} ${outfit_inits.variable} ${Bebas_Neue_init.variable} ${Montserrat_init.variable} ${Domine_init.variable}`}>
       
 
        <Navbar/>
