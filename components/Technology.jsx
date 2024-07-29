@@ -123,7 +123,7 @@ const Technology = () => {
         <h2 class="text-3xl  2xl:text-4xl   mb-4">Our Offerings</h2>
         <p class="mb-16 md:text-lg 2xl:text-2xl xl:pr-60 xl:mr-10 2xl:pr-60 2xl:mr-96">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 2xl:pr-60 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:pr-60 w-full">
           <div class="p-4  w-auto 2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 class="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">React Native UI/UX Design</h3>
             <p class=" xl:text-base  2xl:pr-6  ">

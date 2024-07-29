@@ -124,8 +124,8 @@ const Form = () => {
       </div>
       <div className="md:relative  -top-2 w-full h-92 ">
         <div className="  flex flex-col  ">
-          <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-14 sm:ml-12 md:ml-40 2xl:ml-48 lg:ml-28 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
-            Get in touch with us today to see how we can help <br /> you develop
+          <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-5  sm:ml-12 md:mx-20 2xl:ml-48 2xl:mr-96  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
+            Get in touch with us today to see how we can help you develop
             the right product - faster.
           </h1>
 
@@ -133,7 +133,7 @@ const Form = () => {
             <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:mx-4 ">
               <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
                 <div className="m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
-                  <h1 className="md:text-2xl 2xl:text-3xl font-semibold">
+                  <h1 className="md:text-2xl text-2xl 2xl:text-3xl font-semibold">
                     Hello now !
                   </h1>
                   <div className="flex flex-row my-2">
@@ -142,16 +142,16 @@ const Form = () => {
                       +91 88 820 76 755{" "}
                     </div>{" "}
                   </div>
-                  <h1 className="md:text-2xl 2xl:text-3xl font-semibold mt-2 xl:mt-4">
+                  <h1 className="md:text-2xl 2xl:text-3xl text-2xl font-semibold mt-2 xl:mt-4">
                     Connect with us
                   </h1>
-                  <p className="text-xl lg:text-base open_sans_display xl:text-[17px] 2xl:text-2xl ">
-                    Email : amit@spacetotech.com
-                    <br />
-                    office : C-171 Sector-63 Noida,
-                    <br />
-                    Uttar Pradesh 201301
-                  </p>
+                  <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
+                    <span> Email : amit@spacetotech.com </span>
+                    
+                    <span>office : C-171 Sector-63 Noida,</span>
+                 
+                    <span> Uttar Pradesh 201301 </span>
+                  </div>
                 </div>
               </div>
 
