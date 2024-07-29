@@ -39,7 +39,7 @@ const Indus = () => {
         <h2 className="text-3xl font-bold playfair md:text-6xl text-zinc-900">
           Industries we serve
         </h2>
-        <p className="mt-2 text-lg md:text-xl text-zinc-600 ">
+        <p className="mt-2 text-lg xl:mr-20 md:text-xl text-zinc-600 ">
           Our top mobile app development company proudly serves a diverse range
           of industries. Through innovative technology solutions, we empower
           businesses in numerous sectors to engage customers, optimize
