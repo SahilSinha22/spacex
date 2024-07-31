@@ -11,7 +11,7 @@ import mobi8 from "@/public/8imgcmp.png";
 const Imgcmp = () => {
   return (
     <div className="mx-4 md:mx-8 xl:mx-36 grid  mb-10 items-center   justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-      <div className="hover:bg-zinc-800 imgco xl:max-w-screen-xl xl:h-44 2xl:h-48 lg:h-48 lg:max-h-44 xl:min-h-48 bg-black  2xl:w-72 h-44 px-6  rounded-xl space-y-2">
+      <div className="hover:bg-zinc-800 imgco xl:max-w-screen-xl xl:h-44 2xl:h-48 lg:h-48 lg:max-h-44  bg-black  2xl:w-72 h-44 px-6  rounded-xl space-y-2">
         <div className="text-zinc-400 mt-2  flex flex-row justify-between">
           <div className="">01</div>
           <div className="opacity-0 ">
