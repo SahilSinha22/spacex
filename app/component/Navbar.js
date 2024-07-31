@@ -40,9 +40,26 @@ const Navbar = () => {
 
   const isActiveLink = (path) => pathname === path;
 
+  const linkStyles = (path) => {
+    const isActive = pathname === path;
+    let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-8 ';
+    
+    if (path === '/') {
+      baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black ';
+    }
+    else if (path === '/Technology') {
+      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
+    }
+    else {
+      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
+    }
+
+    return baseStyle;
+  };
+
   return (
     <nav className="items-center p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40 flex items-center justify-between flex-wrap">
+      <div className="md:px-10 xl:px-40  max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
             <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
@@ -70,21 +87,20 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
-          <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0   open_sans_display font-semibold justify-left lg:flex-grow">
-            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+          <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 open_sans_display font-semibold justify-left lg:flex-grow">
+            <Link href="/" className={linkStyles('/')}>
               Home
             </Link>
-            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+            <Link href="/Services" className={linkStyles('/')}>
               Services
             </Link>
-            <Link href="/Technology" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Technology') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}   `}>
+            <Link href="/Technology" className={linkStyles('/Technology')}>
               Technologies
             </Link>
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
               Portfolio
             </Link>
-          
-            <Link href="/" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/') ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black'}`}>
+            <Link href="/Blog"  className={linkStyles('/')}>
               Blog
             </Link>
           </div>

@@ -11,7 +11,6 @@ const Pef = () => {
   const parallaxRef = useRef();
   const [pages, setPages] = useState(3);
 
-  // Function to check if an element is in the viewport
   const isInViewport = useCallback((element) => {
     const rect = element.getBoundingClientRect();
     return (
@@ -22,7 +21,6 @@ const Pef = () => {
     );
   }, []);
 
-  // Function to update the number to its correct value
   const updateNumber = useCallback((element) => {
     const targetValue = parseInt(element.dataset.target);
     let currentValue = 0;
@@ -33,7 +31,7 @@ const Pef = () => {
       } else {
         clearInterval(interval);
       }
-    }, 50); // Adjust interval duration as needed
+    }, 50);
   }, []);
 
   const animateNumbers = useCallback(() => {
@@ -47,12 +45,9 @@ const Pef = () => {
   }, [isInViewport, updateNumber]);
 
   useEffect(() => {
-    // Add event listener for scroll
     document.addEventListener("scroll", animateNumbers);
-    // Initial check for elements in viewport on page load
     animateNumbers();
 
-    // Cleanup function to remove event listener on component unmount
     return () => {
       document.removeEventListener("scroll", animateNumbers);
     };
@@ -69,20 +64,16 @@ const Pef = () => {
       }
     };
 
-    // Set initial pages value
     updateParallaxPages();
-
-    // Add resize listener
     window.addEventListener("resize", updateParallaxPages);
 
-    // Cleanup on unmount
     return () => {
       window.removeEventListener("resize", updateParallaxPages);
     };
   }, []);
 
   return (
-    <div className="bg-black text-white h-full w-full">
+    <div className="bg-black text-white h-full w-full overflow-hidden">
       <div className="flex justify-around lg:h-auto lg:items-center lg:text-center p-5 bg-black text-white">
         <div className="text-center items-center px-2 border-gray-600 sm:pr-10 md:pr-20 xl:pr-30 lg:px-10 border-r-2">
           <div className="flex flex-row text-center ml-6 lg:ml-10 m-0 p-0">
@@ -136,16 +127,17 @@ const Pef = () => {
       </div>
       <div className="h-full w-full">
         <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef}>
-            <ParallaxLayer offset={0} speed={1} factor={2} className="okomo" />
+          <Parallax pages={pages} ref={parallaxRef} className="parallax">
+            <ParallaxLayer offset={0} speed={1} factor={2} className="okomo parallax-layer" />
 
-            <ParallaxLayer offset={1} speed={1} factor={4} className="land" />
+            <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
 
             <ParallaxLayer
               sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
+              className="parallax-layer"
             >
-              <div className="p-10 text-center items-center">
+              <div className="p-10 text-center mx-auto max-w-screen-2xl max-h-screen items-center">
                 <h2 className="text-4xl text-white md:text-6xl pt-8 font-bold mb-4 font-sedan">
                   Okomo
                 </h2>
@@ -155,14 +147,13 @@ const Pef = () => {
                   <br /> video technology, making immersive VR experiences not
                   just a luxury.
                 </p>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center max-h-screen mt-6">
                   <Image
                     src={Mobi}
-                    
                     alt="VR Experience"
-                    className="mr-4 xl:h-[400px] lg:h-[300px] 2xl:h-full "
-                    width={600}
-                    height={550}
+                    className="mr-4 xl:h-[400px] h-full lg:max-w-xl lg:max-h-screen lg:h-[300px] 2xl:h-full"
+                    width={1000}
+                    height={300}
                   />
                 </div>
               </div>
@@ -171,14 +162,15 @@ const Pef = () => {
         </div>
 
         <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef}>
-            <ParallaxLayer offset={0} speed={1} factor={2} className="bg-purple-600" />
+          <Parallax pages={pages} ref={parallaxRef} className="parallax">
+            <ParallaxLayer offset={0} speed={1} factor={2} className="bg-purple-600 parallax-layer" />
 
-            <ParallaxLayer offset={1} speed={1} factor={4} className="land" />
+            <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
 
             <ParallaxLayer
               sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
+              className="parallax-layer"
             >
               <div className="text-white text-center p-8">
                 <div className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
@@ -195,7 +187,7 @@ const Pef = () => {
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4 lg:h-[300px] xl:h-[400px] 2xl:h-full"
+                      className="mr-4 lg:h-[300px] lg:max-w-xl lg:max-h-screen xl:h-[400px] 2xl:h-full"
                       width={400}
                       height={300}
                     />
@@ -207,16 +199,17 @@ const Pef = () => {
         </div>
 
         <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef}>
-            <ParallaxLayer offset={0} speed={1} factor={2} className="bg-teal-400" />
+          <Parallax pages={pages} ref={parallaxRef} className="parallax">
+            <ParallaxLayer offset={0} speed={1} factor={2} className="bg-teal-400 parallax-layer" />
 
-            <ParallaxLayer offset={1} speed={1} factor={4} className="land" />
+            <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
 
             <ParallaxLayer
               sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
+              className="parallax-layer"
             >
-              <div className="font-sans h-screen">
+              <div className="font-sans h-screen max-h-screen">
                 <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
                   <div className="">
                     <div className="p-5 px-4 items-center justify-center text-center">
@@ -233,7 +226,7 @@ const Pef = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto lg:h-[300px] xl:h-[400px] mt-12 2xl:h-full"
+                        className="mx-auto lg:h-[300px] lg:max-w-xl lg:max-h-96 xl:h-[400px] mt-12 2xl:h-full"
                         width={600}
                         height={200}
                       />

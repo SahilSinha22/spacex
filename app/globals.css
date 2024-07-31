@@ -4,6 +4,24 @@
 
 
 
+body {
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Parallax containers */
+.parallax {
+  overflow-y: hidden;
+}
+
+.parallax-layer {
+  overflow: hidden !important;
+}
 
 .blended{
   background: transparent linear-gradient(113deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
