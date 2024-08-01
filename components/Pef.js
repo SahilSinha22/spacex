@@ -153,7 +153,7 @@ const Pef = () => {
                   <Image
                     src={Mobi}
                     alt="VR Experience"
-                    className="mr-4 xl:h-[500px]  mx-auto h-full lg:w-[400px] xl:w-[500px] lg:max-w-xl lg:max-h-screen lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]"
+                    className="mr-4 xl:h-[400px]  mx-auto h-full lg:w-[400px] xl:w-[400px] lg:max-w-xl lg:max-h-screen lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]"
                     width={1000}
                     height={300}
                   />
@@ -176,10 +176,10 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="text-white text-center max-h-screen p-8">
-                <h2 className="text-center text-4xl md:text-6xl pt-2 font-bold mb-4 font-sedan">
+                <h2 className="text-center text-4xl md:text-5xl pt-2 font-bold mb-4 font-sedan">
                   Netme
                 </h2>
-                <p className="md:text-2xl text-xl text-center mb-8">
+                <p className="md:text-xl text-xl text-center mb-8">
                   NETME does not swipe, chat or judge by look - instead, we are
                   old school and believe <br />
                   that the best acquaintance comes from meeting people in real
@@ -213,13 +213,13 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="font-sans h-screen max-h-screen">
-                <div className="max-w-screen-lg mx-auto py-2 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-screen-lg mx-auto py-2 px-4 sm:px-6 lg:px-8 xl:px-6 ">
                   <div className="">
                     <div className="p-5 px-4 items-center justify-center text-center">
-                      <h1 className="text-4xl text-white md:text-6xl pt-8 font-sedan font-bold mb-4">
+                      <h1 className="text-4xl text-white md:text-5xl pt-8 font-sedan font-bold mb-4">
                         Liquiclear
                       </h1>
-                      <p className="text-white text-center text-xl md:text-2xl">
+                      <p className="text-white text-center text-xl md:text-xl">
                         Liquiclear is your one-stop solution for all water
                         purification and softening needs. We bring you a wide
                         range of water purifiers and softeners for commercial and
