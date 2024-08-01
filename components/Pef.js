@@ -60,7 +60,7 @@ const Pef = () => {
       } else if (window.innerWidth >= 768) {
         setPages(2);
       } else {
-        setPages(1.5);
+        setPages(2);
       }
     };
 
@@ -175,10 +175,10 @@ const Pef = () => {
               style={{ textAlign: "center" }}
               className="parallax-layer"
             >
-              <div className="text-white text-center max-h-screen p-8">
-                <div className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
+              <div className="text-white text-center max-h-screen p-10">
+                <h2 className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
                   Netme
-                </div>
+                </h2>
                 <p className="md:text-2xl text-xl text-center mb-8">
                   NETME does not swipe, chat or judge by look - instead, we are
                   old school and believe <br />
@@ -190,8 +190,8 @@ const Pef = () => {
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4 lg:h-[300px] h-full mx-auto lg:max-w-xl lg:max-h-screen xl:h-[400px] 2xl:h-full"
-                      width={400}
+                      className="mr-4 lg:h-[300px] h-full mx-auto lg:max-w-xl lg:max-h-screen xl:h-[400px] 2xl:h-[600px]"
+                      width={1000}
                       height={300}
                     />
                   </div>
@@ -229,9 +229,9 @@ const Pef = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto lg:h-[300px] lg:max-w-xl lg:max-h-96 xl:h-[400px] mt-12 2xl:h-full"
-                        width={600}
-                        height={200}
+                        className="mx-auto lg:h-[300px] h-full lg:max-w-xl lg:max-h-96 xl:h-[400px] mt-12 2xl:h-full"
+                        width={1000}
+                        height={300}
                       />
                     </div>
                   </div>
