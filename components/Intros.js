@@ -45,7 +45,7 @@ const Intros = () => {
                 Let's Talk!
               </button>
             </div>
-            <div className=" relative   h-24 md:h-48 -top-10 2xl:px-20  sm:h-32 lg:h-56 mx-auto max-w-screen-xl 2xl:max-w-screen-3xl xl:h-52 2xl:h-56 ">
+            <div className=" relative   h-24 md:h-48 -top-10 2xl:px-20  sm:h-32 lg:h-56 mx-auto max-w-screen-4xl 2xl:max-w-screen-3xl xl:h-52 2xl:h-56 ">
               <div className="absolute bottom-0    xl:mx-20  2xl:mx-72  max-w-screen-2xl 2xl:max-w-screen-lg   2xl:left-40  2xl:right-40  md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:-top-4  2xl:top-6 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-5 ">
                 <div className="relative ">
                   <Image
