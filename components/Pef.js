@@ -60,7 +60,7 @@ const Pef = () => {
       } else if (window.innerWidth >= 768) {
         setPages(2);
       } else {
-        setPages(2);
+        setPages(1.5);
       }
     };
 
@@ -127,7 +127,7 @@ const Pef = () => {
       </div>
       <div className="h-full w-full">
         <div className="h-screen w-full">
-          <Parallax pages={2} ref={parallaxRef}   className="parallax">
+          <Parallax pages={2} ref={parallaxRef}  className="parallax">
             <ParallaxLayer offset={0} speed={1} factor={2} className="okomo parallax-layer" />
               
 
@@ -139,7 +139,7 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="p-10 text-center mx-auto max-w-screen-2xl max-h-screen items-center">
-                <h2 className="text-4xl text-white md:text-6xl pt-8 font-bold mb-4 font-sedan">
+                <h2 className="text-4xl text-white md:text-6xl pt-2 font-bold mb-4 font-sedan">
                   Okomo
                 </h2>
                 <p className="text-xl text-white text-center md:text-2xl">
@@ -176,7 +176,7 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="text-white text-center max-h-screen p-8">
-                <h2 className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
+                <h2 className="text-center text-4xl md:text-6xl pt-2 font-bold mb-4 font-sedan">
                   Netme
                 </h2>
                 <p className="md:text-2xl text-xl text-center mb-8">
@@ -213,7 +213,7 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="font-sans h-screen max-h-screen">
-                <div className="max-w-screen-lg mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-screen-lg mx-auto py-2 px-4 sm:px-6 lg:px-8">
                   <div className="">
                     <div className="p-5 px-4 items-center justify-center text-center">
                       <h1 className="text-4xl text-white md:text-6xl pt-8 font-sedan font-bold mb-4">
@@ -229,7 +229,7 @@ const Pef = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto lg:h-[300px] h-full lg:max-w-xl lg:max-h-96 xl:h-[400px] mt-12 2xl:h-full"
+                        className="mx-auto lg:h-[300px] lg:w-[500px] xl:w-[700px] h-full lg:max-w-xl lg:max-h-96 xl:h-[400px] mt-12 2xl:h-full"
                         width={1000}
                         height={300}
                       />
