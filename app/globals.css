@@ -14,14 +14,17 @@ html, body {
   scrollbar-width: none;  /* Firefox */
 }
 
-/* Hide scrollbar for Parallax containers */
-.parallax {
-  overflow-y: hidden;
+/*
+/* Hide scrollbar for Chrome, Safari and Opera */
+.parallax::-webkit-scrollbar {
+  display: none;
 }
 
-.parallax-layer {
-  overflow-y: hidden !important;
+/* Hide scrollbar for IE and Edge */
+.parallax {
+  -ms-overflow-style: none;
 }
+
 
 .blended{
   background: transparent linear-gradient(113deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
