@@ -142,7 +142,7 @@ const Pef = () => {
                 <h2 className="text-4xl text-white md:text-5xl pt-2 font-bold mb-4 font-sedan">
                   Okomo
                 </h2>
-                <p className="text-lg lg:mx-10 xl:mx-44 2xl:mx-60 text-white text-center md:text-xl">
+                <p className="text-lg lg:mx-10 xl:mx-44 2xl:mx-72 text-white text-center md:text-xl">
                   Welcome to Okomo360, the world's first dedicated 360-degree VR
                   platform. We're redefining
                   video technology, making immersive VR experiences not
