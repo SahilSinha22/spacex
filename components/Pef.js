@@ -139,10 +139,10 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="p-10 text-center mx-auto max-w-screen-2xl max-h-screen items-center">
-                <h2 className="text-4xl text-white md:text-6xl pt-2 font-bold mb-4 font-sedan">
+                <h2 className="text-4xl text-white md:text-5xl pt-2 font-bold mb-4 font-sedan">
                   Okomo
                 </h2>
-                <p className="text-xl text-white text-center md:text-2xl">
+                <p className="text-xl text-white text-center md:text-xl">
                   Welcome to Okomo360, the world's first dedicated 360-degree VR
                   platform. We're redefining
                   <br /> video technology, making immersive VR experiences not
