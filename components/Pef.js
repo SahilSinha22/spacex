@@ -153,7 +153,7 @@ const Pef = () => {
                   <Image
                     src={Mobi}
                     alt="VR Experience"
-                    className="mr-4 xl:h-[500px]  mx-auto h-full lg:w-[500px] xl:w-[400px] lg:max-w-xl lg:max-h-screen lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]"
+                    className="mr-4 xl:h-[300px]  mx-auto h-full lg:w-[500px] xl:w-[400px] lg:max-w-xl lg:max-h-screen lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]"
                     width={1000}
                     height={300}
                   />
