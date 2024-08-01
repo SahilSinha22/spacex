@@ -153,7 +153,7 @@ const Pef = () => {
                   <Image
                     src={Mobi}
                     alt="VR Experience"
-                    className="mr-4 xl:h-[400px] h-full lg:max-w-xl lg:max-h-screen lg:h-[300px] 2xl:h-full"
+                    className="mr-4 xl:h-[500px]  mx-auto h-full lg:w-[400px] xl:w-[500px] lg:max-w-xl lg:max-h-screen lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]"
                     width={1000}
                     height={300}
                   />
@@ -175,7 +175,7 @@ const Pef = () => {
               style={{ textAlign: "center" }}
               className="parallax-layer"
             >
-              <div className="text-white text-center max-h-screen p-10">
+              <div className="text-white text-center max-h-screen p-8">
                 <h2 className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
                   Netme
                 </h2>
@@ -190,8 +190,8 @@ const Pef = () => {
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4 lg:h-[300px] h-full mx-auto lg:max-w-xl lg:max-h-screen xl:h-[400px] 2xl:h-[600px]"
-                      width={1000}
+                      className="mr-4  lg:h-[400px] lg:w-[400px] h-full md:h-[700px] md:w-[600px] lg:max-w-xl lg:max-h-screen xl:h-[500px] 2xl:w-[500px] 2xl:h-[500px]"
+                      width={400}
                       height={300}
                     />
                   </div>
