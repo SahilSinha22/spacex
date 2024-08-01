@@ -127,8 +127,9 @@ const Pef = () => {
       </div>
       <div className="h-full w-full">
         <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef} className="parallax">
+          <Parallax pages={2} ref={parallaxRef}   className="parallax">
             <ParallaxLayer offset={0} speed={1} factor={2} className="okomo parallax-layer" />
+              
 
             <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
 
@@ -148,6 +149,7 @@ const Pef = () => {
                   just a luxury.
                 </p>
                 <div className="flex justify-center max-h-screen mt-6">
+                <div className="max-h-screen">
                   <Image
                     src={Mobi}
                     alt="VR Experience"
@@ -155,6 +157,7 @@ const Pef = () => {
                     width={1000}
                     height={300}
                   />
+                </div>
                 </div>
               </div>
             </ParallaxLayer>
@@ -172,7 +175,7 @@ const Pef = () => {
               style={{ textAlign: "center" }}
               className="parallax-layer"
             >
-              <div className="text-white text-center p-8">
+              <div className="text-white text-center max-h-screen p-8">
                 <div className="text-center text-4xl md:text-6xl pt-8 font-bold mb-4 font-sedan">
                   Netme
                 </div>
@@ -182,12 +185,12 @@ const Pef = () => {
                   that the best acquaintance comes from meeting people in real
                   life.
                 </p>
-                <div className="flex justify-center space-x-4">
-                  <div className="">
+                <div className="flex justify-center max-h-screen space-x-4">
+                  <div className="max-h-screen">
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4 lg:h-[300px] lg:max-w-xl lg:max-h-screen xl:h-[400px] 2xl:h-full"
+                      className="mr-4 lg:h-[300px] h-full mx-auto lg:max-w-xl lg:max-h-screen xl:h-[400px] 2xl:h-full"
                       width={400}
                       height={300}
                     />

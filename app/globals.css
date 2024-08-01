@@ -20,7 +20,7 @@ html, body {
 }
 
 .parallax-layer {
-  overflow: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .blended{
