@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Technology = () => {
   return (
     <div className='open_sans_display'>
-      <div class="flex flex-col items-center justify-center md:mx-20 lg:mx-28 xl:mx-36 2xl:mx-72  xl:px-10 mt-10  lg:mt-40 text-center p-6">
+      <div class="flex flex-col items-center justify-center md:mx-20 lg:mx-28 xl:mx-36 2xl:mx-72  xl:px-10 mt-10  lg:mt-32 text-center p-6">
         <h1 class="text-2xl md:text-4xl  xl:text-5xl 2xl:text-6xl  font-bold playfair_display">React Native is an open-source framework that has transformed the landscape</h1>
         <p class="mt-4  md:mx-16 xl:mx-24 2xl:mx-32 text-base md:text-lg lg:text-2xl font-semibold  open_sans_display">The core concept driving the framework’s creation was to streamline the process of developing cross-platform mobile applications.</p>
         <div class="mt-8">
