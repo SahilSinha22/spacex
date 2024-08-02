@@ -17,7 +17,7 @@ module.exports = {
         '7xl': '6rem',
        '8xl': '8rem',
        '10xl': '5rem',
-       '12xl': '10rem',
+       '12xl': '11rem',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
