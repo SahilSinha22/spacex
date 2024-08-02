@@ -127,7 +127,7 @@ const Pef = () => {
       </div>
       <div className="h-full w-full">
         <div className="h-screen w-full">
-          <Parallax pages={2} ref={parallaxRef}  className="parallax">
+          <Parallax pages={pages} ref={parallaxRef}  className="parallax">
             <ParallaxLayer offset={0} speed={1} factor={2} className="okomo parallax-layer" />
               
 
