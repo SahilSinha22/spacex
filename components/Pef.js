@@ -74,52 +74,52 @@ const Pef = () => {
 
   return (
     <div className="bg-black text-white h-full w-full overflow-hidden">
-      <div className="flex justify-around lg:h-auto lg:items-center lg:text-center p-5 bg-black text-white">
-        <div className="text-center items-center px-2 border-gray-600 sm:pr-10 md:pr-20 xl:pr-30 lg:px-10 border-r-2">
+      <div className="flex justify-around lg:h-auto lg:items-center lg:text-center p-5 2xl:p-10 bg-black text-white">
+        <div className="text-center items-center px-2 border-gray-600 sm:pr-10 md:pr-20 xl:pr-30 2xl:pr-40 lg:px-10 border-r-2">
           <div className="flex flex-row text-center ml-6 lg:ml-10 m-0 p-0">
             <h1
-              className="number Bebas_Neue text-4xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8"
+              className="number Bebas_Neue text-4xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl  2xl:text-12xl lg:pt-8"
               data-target="25"
             >
               0
             </h1>
-            <span className="Bebas_Neue text-4xl lg:text-7xl lg:pt-8 md:text-6xl xl:text-8xl">
+            <span className="Bebas_Neue text-4xl lg:text-7xl lg:pt-8 md:text-6xl xl:text-8xl   2xl:text-12xl">
               +
             </span>
           </div>
-          <p className="text-sm sm:text-lg font-light lg:text-4xl lg:pr-16">
+          <p className="text-sm sm:text-lg font-light lg:text-4xl 2xl:text-5xl lg:pr-16">
             PARTNERS
           </p>
         </div>
-        <div className="text-center px-2 sm:pr-10 md:pr-20 lg:px-10 xl:pr-10 border-gray-600 border-r-2">
+        <div className="text-center px-2 sm:pr-10 md:pr-20 lg:px-10 xl:pr-10 border-gray-600 2xl:pr-40 border-r-2">
           <div className="flex flex-row ml-8 lg:ml-10">
             <h1
-              className="number Bebas_Neue text-4xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl lg:pt-8"
+              className="number Bebas_Neue text-4xl proportional-nums md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-12xl lg:pt-8"
               data-target="50"
             >
               0
             </h1>
-            <span className="Bebas_Neue text-4xl lg:text-7xl lg:pt-8 md:text-6xl xl:text-8xl">
+            <span className="Bebas_Neue text-4xl lg:text-7xl lg:pt-8 md:text-6xl xl:text-8xl 2xl:text-12xl">
               +
             </span>
           </div>
-          <p className="text-sm sm:text-lg font-light lg:text-4xl px-4 sm:px-1 lg:pr-16">
+          <p className="text-sm sm:text-lg font-light lg:text-4xl px-4  2xl:text-5xl sm:px-1 lg:pr-16">
             TEAM SIZE
           </p>
         </div>
         <div className="text-center lg:pl-1 xl:pl-1">
-          <div className="flex flex-row ml-8 xl:text-8xl lg:ml-10">
+          <div className="flex flex-row ml-8 xl:text-8xl 2xl:text-12xl lg:ml-10">
             <h1
-              className="number Bebas_Neue text-4xl proportional-nums md:text-6xl lining-nums xl:text-8xl lg:text-7xl lg:pt-8"
+              className="number Bebas_Neue text-4xl proportional-nums md:text-6xl lining-nums xl:text-8xl 2xl:text-12xl lg:text-7xl lg:pt-8"
               data-target="100"
             >
               0
             </h1>
-            <span className="Bebas_Neue text-4xl lg:text-7xl lg:pt-8 md:text-6xl xl:text-8xl">
+            <span className="Bebas_Neue text-4xl lg:text-7xl lg:pt-8 md:text-6xl xl:text-8xl 2xl:text-12xl">
               +
             </span>
           </div>
-          <p className="text-sm sm:text-lg font-light pr-2 lg:text-4xl lg:pr-16">
+          <p className="text-sm sm:text-lg font-light pr-2 lg:text-4xl 2xl:text-5xl lg:pr-16">
             SUCCESSFUL <br />
             PRODUCTS
           </p>
@@ -139,7 +139,7 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="p-10 text-center mx-auto max-w-screen-2xl max-h-screen items-center">
-                <h2 className="text-4xl text-white md:text-5xl pt-2 font-bold mb-4 font-sedan">
+                <h2 className="text-4xl text-white md:text-5xl 2xl:text-6xl  pt-2 font-bold mb-4 font-sedan">
                   Okomo
                 </h2>
                 <p className="text-lg text-white text-center 2xl:text-2xl md:text-xl">
@@ -176,10 +176,10 @@ const Pef = () => {
               className="parallax-layer"
             >
               <div className="text-white text-center max-h-screen p-8">
-                <h2 className="text-center text-4xl md:text-5xl pt-2 font-bold mb-4 font-sedan">
+                <h2 className="text-center text-4xl md:text-5xl 2xl:text-6xl pt-2 font-bold mb-4 font-sedan">
                   Netme
                 </h2>
-                <p className="md:text-xl text-lg text-center mb-8">
+                <p className="md:text-xl text-lg text-center 2xl:text-2xl mb-8">
                   NETME does not swipe, chat or judge by look - instead, we are
                   old school and believe <br />
                   that the best acquaintance comes from meeting people in real
@@ -216,10 +216,10 @@ const Pef = () => {
                 <div className="max-w-screen-lg mx-auto py-2 px-4 sm:px-6 lg:px-8 xl:px-6 ">
                   <div className="">
                     <div className="p-5 px-4 items-center justify-center text-center">
-                      <h1 className="text-4xl text-white md:text-5xl pt-8 font-sedan font-bold mb-4">
+                      <h1 className="text-4xl text-white md:text-5xl pt-8 2xl:text-6xl font-sedan font-bold mb-4">
                         Liquiclear
                       </h1>
-                      <p className="text-white text-center text-lg md:text-xl">
+                      <p className="text-white text-center 2xl:text-2xl text-lg md:text-xl">
                         Liquiclear is your one-stop solution for all water
                         purification and softening needs. We bring you a wide
                         range of water purifiers and softeners for commercial and
@@ -229,7 +229,7 @@ const Pef = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto lg:h-[300px] lg:w-[500px] xl:w-[700px] h-full lg:max-w-xl lg:max-h-96 xl:h-[500px] mt-12 2xl:h-full"
+                        className="mx-auto lg:h-[300px] lg:w-[500px] xl:w-[700px] h-full lg:max-w-xl lg:max-h-96 xl:h-[500px] mt-12 2xl:w-[900px] 2xl:max-w-4xl 2xl:max-h-[600px] 2xl:h-full"
                         width={1000}
                         height={300}
                       />
