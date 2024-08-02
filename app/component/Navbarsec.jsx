@@ -48,7 +48,7 @@ const Navbar = ({ role }) => {
       baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black ';
     }
     else if (path === '/Technology') {
-      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
+      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
     }
     else {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
@@ -97,7 +97,7 @@ const Navbar = ({ role }) => {
             <Link href="/Technology" className={linkStyles('/Technology')}>
               Technologies
             </Link>
-            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
+            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-black'}`}>
               Portfolio
             </Link>
             <Link href="/Blog"  className={linkStyles('/')}>

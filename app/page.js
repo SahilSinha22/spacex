@@ -8,11 +8,13 @@ import Intros from '@/components/Intros'
 
 import DumyForm from "@/components/dumyForm";
 import Pef from '@/components/Pef'
+import Navbar from './component/Navbar'
 const page = () => {
   
 
   return (
 <div className="w-full items-center ">
+  <Navbar  />
     <Intros/>
    
  <DumyForm/>

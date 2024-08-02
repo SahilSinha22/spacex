@@ -28,10 +28,12 @@ import Tech6 from "@/public/react.png";
 
 import Image from "next/image";
 import Form from "@/components/Form";
+import Navbar from "../component/Navbarsec";
 
 const page = () => {
   return (
-   
+   <>
+   <Navbar/>
       <div>
         <div className="flex flex-col items-center justify-center  bg-background text-foreground mt-10 md:mt-40 p-4">
           <Image
@@ -373,6 +375,7 @@ const page = () => {
         </div>
         <Form />
       </div>
+      </>
     
   );
 };
