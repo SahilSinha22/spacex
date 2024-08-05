@@ -9,6 +9,10 @@ import Intros from '@/components/Intros'
 import DumyForm from "@/components/dumyForm";
 import Pef from '@/components/Pef'
 import Navbar from './component/Navbar'
+import Okomo from "@/components/ParallaxExample";
+import Netme from "@/components/Netme";
+import Liqui from "@/components/Liqui";
+
 const page = () => {
   
 
@@ -21,6 +25,9 @@ const page = () => {
     <Award/>
     <Imgcmp/>
 <Pef/>
+<Okomo/>
+<Netme/>
+<Liqui/>
 
     <Journey/>
 <Indus/>
