@@ -1,15 +1,10 @@
 "use client";
 
-import React, { useEffect, useCallback, useRef, useState } from "react";
-import Image from "next/image";
-import Mobi from "@/public/1pef.png";
-import Mobi1 from "@/public/2pef.png";
-import Tab from "@/public/3pef.png";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import React, { useEffect, useCallback } from "react";
+
 
 const Pef = () => {
-  const parallaxRef = useRef();
-  const [pages, setPages] = useState(3);
+  
 
   const isInViewport = useCallback((element) => {
     const rect = element.getBoundingClientRect();
@@ -53,34 +48,7 @@ const Pef = () => {
     };
   }, [animateNumbers]);
 
-  useEffect(() => {
-    const updateParallaxPages = () => {
-      if (window.innerWidth >= 1024) {
-        setPages(3);
-      } else if (window.innerWidth >= 768) {
-        setPages(2);
-      } else {
-        setPages(1.5);
-      }
-    };
-
-    updateParallaxPages();
-    window.addEventListener("resize", updateParallaxPages);
-
-    return () => {
-      window.removeEventListener("resize", updateParallaxPages);
-    };
-  }, []);
-
-  useEffect(() => {
-  window.addEventListener('scroll', function() {
-    var scrolledHeight= window.pages;
-    var parallax = document.querySelector('.parallax-layer');
-    // Adjust the background position based on the scroll position
-    parallax.style.backgroundPositionY = -(scrolledHeight * 0.5) + 'px';
-  });
-
-}, []);
+ 
 
   return (
     <div className="bg-black text-white h-full w-full overflow-hidden">
@@ -135,122 +103,7 @@ const Pef = () => {
           </p>
         </div>
       </div>
-      <div className="h-full w-full">
-        <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef}  className="parallax">
-            <ParallaxLayer offset={0} speed={1} factor={2} className="okomo parallax-layer" />
-              
-
-            <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
-
-            <ParallaxLayer
-              sticky={{ start: 0, end: 2 }}
-              style={{ textAlign: "center" }}
-              className=""
-            >
-              <div className="p-10 text-center mx-auto max-w-screen-2xl max-h-screen items-center">
-                <h2 className="text-4xl text-white md:text-5xl 2xl:text-6xl  pt-2 font-bold mb-4 font-sedan">
-                  Okomo
-                </h2>
-                <p className="text-lg text-white text-center 2xl:text-2xl md:text-xl">
-                  Welcome to Okomo360, the world's first dedicated 360-degree VR
-                  platform. We're redefining
-                  <br /> video technology, making immersive VR experiences not
-                  just a luxury.
-                </p>
-                <div className="flex justify-center max-h-screen mt-6">
-                <div className="max-h-screen">
-                  <Image
-                    src={Mobi}
-                    alt="VR Experience"
-                    className="mr-4 xl:h-[350px]  mx-auto h-full lg:w-[500px] xl:w-[400px] lg:max-w-xl lg:max-h-screen lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]"
-                    width={1000}
-                    height={300}
-                  />
-                </div>
-                </div>
-              </div>
-            </ParallaxLayer>
-          </Parallax>
-        </div>
-
-        <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef} className="parallax">
-            <ParallaxLayer offset={0} speed={1} factor={2} className="bg-purple-600 parallax-layer" />
-
-            <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
-
-            <ParallaxLayer
-              sticky={{ start: 0, end: 2 }}
-              style={{ textAlign: "center" }}
-              className="parallax-layer"
-            >
-              <div className="text-white text-center max-h-screen p-8">
-                <h2 className="text-center text-4xl md:text-5xl 2xl:text-6xl pt-2 font-bold mb-4 font-sedan">
-                  Netme
-                </h2>
-                <p className="md:text-xl text-lg text-center 2xl:text-2xl mb-8">
-                  NETME does not swipe, chat or judge by look - instead, we are
-                  old school and believe <br />
-                  that the best acquaintance comes from meeting people in real
-                  life.
-                </p>
-                <div className="flex justify-center max-h-screen space-x-4">
-                  <div className="max-h-screen">
-                    <Image
-                      src={Mobi1}
-                      alt="VR Experience"
-                      className="mr-4  lg:h-[400px] lg:w-[400px] h-full md:h-[700px] md:w-[600px]  lg:max-h-screen xl:w-[300px] xl:h-[400px] 2xl:w-[400px] 2xl:h-[500px]"
-                      width={400}
-                      height={300}
-                    />
-                  </div>
-                </div>
-              </div>
-            </ParallaxLayer>
-          </Parallax>
-        </div>
-
-        <div className="h-screen w-full">
-          <Parallax pages={pages} ref={parallaxRef} className="parallax">
-            <ParallaxLayer offset={0} speed={1} factor={2} className="bg-teal-400 parallax-layer" />
-
-            <ParallaxLayer offset={1} speed={1} factor={4} className="land parallax-layer" />
-
-            <ParallaxLayer
-              sticky={{ start: 0, end: 2 }}
-              style={{ textAlign: "center" }}
-              className="parallax-layer"
-            >
-              <div className="font-sans h-screen max-h-screen">
-                <div className="max-w-screen-lg mx-auto py-2 px-4 sm:px-6 lg:px-8 xl:px-6 ">
-                  <div className="">
-                    <div className="p-5 px-4 items-center justify-center text-center">
-                      <h1 className="text-4xl text-white md:text-5xl pt-8 2xl:text-6xl font-sedan font-bold mb-4">
-                        Liquiclear
-                      </h1>
-                      <p className="text-white text-center 2xl:text-2xl text-lg md:text-xl">
-                        Liquiclear is your one-stop solution for all water
-                        purification and softening needs. We bring you a wide
-                        range of water purifiers and softeners for commercial and
-                        domestic use.
-                      </p>
-
-                      <Image
-                        src={Tab}
-                        alt="VR Experience"
-                        className="mx-auto lg:h-[300px] lg:w-[500px] xl:w-[700px] h-full lg:max-w-xl lg:max-h-96 xl:h-[500px] mt-12 2xl:w-[900px] 2xl:max-w-4xl 2xl:max-h-[600px] 2xl:h-full"
-                        width={1000}
-                        height={300}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ParallaxLayer>
-          </Parallax>
-        </div>
-      </div>
+      
     </div>
   );
 };
