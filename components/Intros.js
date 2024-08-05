@@ -29,7 +29,7 @@ const Intros = () => {
     <div className=" text-white   h-full w-full  ">
       <div className="intros w-full xl:h-[680px] 2xl:h-[760px] h-full  ">
        
-        <div className=" ">
+        <div className="items-center justify-center ">
           <div className="pt-40 md:pt-60 lg:pt-48 xl:pt-20 ">
             <div className=" mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
               <h1 className="text-2xl xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
@@ -45,7 +45,7 @@ const Intros = () => {
                 Let's Talk!
               </button>
             </div>
-            <div className=" relative   h-24 md:h-48 -top-10 2xl:px-20 place-items-center items-center content-center sm:h-32 lg:h-56  2xl:max-w-screen-3xl xl:h-52 2xl:h-56 ">
+            <div className=" relative   h-24 md:h-48 -top-10 2xl:px-20  justify-center items-center content-center sm:h-32 lg:h-56  2xl:max-w-screen-3xl xl:h-52 2xl:h-56 ">
               <div className="absolute bottom-0    xl:mx-20  2xl:mx-72    max-w-screen-lg xl:max-w-4xl 2xl:max-w-screen-lg   2xl:left-40  2xl:right-40  md:mx-4    lg:mx-20 xl:left-36  xl:right-36 lg:top-1 xl:-top-4  2xl:top-6 top-1 left-7 right-7 mt-12  grid grid-cols-5  lg:grid-cols-5 gap-1 md:gap-2  xl:gap-3 2xl:gap-5 ">
                 <div className="relative ">
                   <Image

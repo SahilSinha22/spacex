@@ -27,7 +27,7 @@ const ParallaxComponent = () => {
                     <Image
                       src={Mobi1}
                       alt="VR Experience"
-                      className="mr-4  lg:h-[400px] lg:w-[400px] h-full md:h-[700px] md:w-[600px]  lg:max-h-screen xl:w-[300px] xl:h-[400px] 2xl:w-[400px] 2xl:h-[500px]"
+                      className="mr-4  lg:h-[400px] lg:w-[400px] h-full md:h-[700px] md:w-[600px]  lg:max-h-screen xl:w-[350px] xl:h-[400px] 2xl:w-[430px] 2xl:h-[500px]"
                       width={400}
                       height={300}
                     />
