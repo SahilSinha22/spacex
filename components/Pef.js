@@ -136,7 +136,7 @@ const Pef = () => {
             <ParallaxLayer
               sticky={{ start: 0, end: 2 }}
               style={{ textAlign: "center" }}
-              className="parallax-layer"
+              className=""
             >
               <div className="p-10 text-center mx-auto max-w-screen-2xl max-h-screen items-center">
                 <h2 className="text-4xl text-white md:text-5xl 2xl:text-6xl  pt-2 font-bold mb-4 font-sedan">
