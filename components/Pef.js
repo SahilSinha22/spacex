@@ -72,12 +72,15 @@ const Pef = () => {
     };
   }, []);
 
+  useEffect(() => {
   window.addEventListener('scroll', function() {
     var scrolledHeight= window.pageYOffset;
     var parallax = document.querySelector('.parallax-layer');
     // Adjust the background position based on the scroll position
     parallax.style.backgroundPositionY = -(scrolledHeight * 0.5) + 'px';
   });
+
+}, []);
 
   return (
     <div className="bg-black text-white h-full w-full overflow-hidden">
