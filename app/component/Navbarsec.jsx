@@ -58,9 +58,9 @@ const Navbar = ({ role }) => {
   };
 
   return (
-    <nav className="items-center p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40  max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
-        <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-8 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
+    <nav className="items-center text-center p-4" style={{ backgroundColor: bgColor }}>
+      <div className="md:px-10 xl:px-40   max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
+        <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
             <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
           </span>
@@ -105,7 +105,7 @@ const Navbar = ({ role }) => {
             </Link>
           </div>
           <div>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0">
+            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0 xl:ml-20 2xl:ml-40 lg:ml-20">
               Contact Us
             </button>
           </div>
