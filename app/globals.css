@@ -1566,6 +1566,10 @@ height:140px;
   opacity: 100;
 }
 
+.logo-img >div:hover {
+  
+  filter: invert(100%);
+}
 /*
 .imgx {
   

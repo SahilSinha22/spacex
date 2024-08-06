@@ -1,12 +1,21 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react';
+import FormComponent from '@/components/dumyForm';
 import Techno1 from "@/public/Techno11.png"
 import Techno2 from "@/public/Techno2.png"
 import Techno3 from "@/public/Techno3.png"
-
 import Image from 'next/image'
+
 const Technology = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  const handleClick = () => {
+    console.log("open");
+    setShowForm(true);
+  };
   return (
-    <div className='open_sans_display'>
+    <div className='open_sans_display cursor-default '>
+  {showForm && <FormComponent />}
       <div class="flex flex-col items-center justify-center md:mx-20 lg:mx-28 xl:mx-36 2xl:mx-72  xl:px-10 mt-10  lg:mt-32 text-center p-6">
         <h1 class="text-2xl md:text-4xl  xl:text-5xl 2xl:text-6xl  font-bold playfair_display">React Native is an open-source framework that has transformed the landscape</h1>
         <p class="mt-4  md:mx-16 xl:mx-24 2xl:mx-32 text-base md:text-lg lg:text-2xl font-semibold  open_sans_display">The core concept driving the framework’s creation was to streamline the process of developing cross-platform mobile applications.</p>
@@ -30,7 +39,7 @@ const Technology = () => {
         <h2 class="text-2xl md:text-3xl  text-foreground mb-4">Advantages of React Native For Mobile App Development</h2>
         <p class="text-base md:text-xl xl:pr-72 2xl:mr-96 mb-6">React Native is a premier front-end framework for developing cross-platform apps with a native interface and other features like:</p>
         <div class="grid grid-cols-1 md:grid-cols-2 mb-6 lg:grid-cols-3 gap-4">
-          <div class="p-4  xl:pt-8 bg-[#F8F8F8] 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
+          <div class="p-4 c xl:pt-8 bg-[#F8F8F8] 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
             <h3 class="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">Cross-Platform Development</h3>
             <p class="xl:text-base xl:pr-2 2xl:pr-20">Developers can build apps across multiple platforms through a single React Native codebase.</p>
           </div>
@@ -67,7 +76,7 @@ const Technology = () => {
               <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Mobile App</span>
               <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Development?</span>
             </div>
-            <button class=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
+            <button   onClick={handleClick} class=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
 
           </div>
           <div class=" mt-10 md:mt-6 2xl:mr-20 mb-6">

@@ -34,7 +34,7 @@ const Indus = () => {
   }, []); // Empty dependency array means this runs once after initial render
 
   return (
-    <div className=" md:mx-20 2xl:max-w-7xl lg:mx-24 2xl:mx-52 bg-background open_sans_display  pr-10 ">
+    <div className=" md:mx-20 2xl:max-w-7xl lg:mx-24 2xl:mx-52 bg-background open_sans_display  py-12 pr-10 ">
       <div className="text-left ml-10 md:mx-10">
         <h2 className="text-3xl font-bold playfair md:text-6xl text-zinc-900">
           Industries we serve

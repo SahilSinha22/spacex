@@ -161,7 +161,7 @@ const page = () => {
                   <Image
                     alt="water-quality"
                     src={Feature1}
-                    class="mx-auto mb-4 w-20 2xl:h-24 h-20 "
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20 "
                     width={200}
                     height={2}
                   />
@@ -179,7 +179,7 @@ const page = () => {
                     aria-hidden="true"
                     alt="soft-skin-hair"
                     src={Feature2}
-                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
@@ -211,7 +211,7 @@ const page = () => {
                     aria-hidden="true"
                     alt="helps-choked-pipes"
                     src={Feature4}
-                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
@@ -227,7 +227,7 @@ const page = () => {
                     aria-hidden="true"
                     alt="24-hour-operation"
                     src={Feature5}
-                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
@@ -243,7 +243,7 @@ const page = () => {
                     aria-hidden="true"
                     alt="increases-appliance-life"
                     src={Feature6}
-                    class="mx-auto mb-4 w-20 h-20"
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
@@ -260,7 +260,7 @@ const page = () => {
                     aria-hidden="true"
                     alt="saves-water"
                     src={Feature7}
-                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
@@ -276,7 +276,7 @@ const page = () => {
                     aria-hidden="true"
                     alt="multi-port-valve"
                     src={Feature8}
-                    class="mx-auto mb-4 w-20 2xl:h-24 h-20"
+                    class="mx-auto mb-4 w-20 2xl:w-24 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />
