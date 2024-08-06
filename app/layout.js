@@ -63,7 +63,7 @@ export default function RootLayout({   children }) {
   return (
     <html lang="en">
       
-      <body className={`${inter.className} ${open_sans_init.variable} ${open_sans_inits.variable} ${Playfair_Display_init.variable} ${Playfair_Display_inits.variable} ${outfit_init.variable} ${outfit_inits.variable} ${Bebas_Neue_init.variable} ${Montserrat_init.variable} ${Domine_init.variable}`}>
+      <body className={`${inter.className} cursor-default  ${open_sans_init.variable} ${open_sans_inits.variable} ${Playfair_Display_init.variable} ${Playfair_Display_inits.variable} ${outfit_init.variable} ${outfit_inits.variable} ${Bebas_Neue_init.variable} ${Montserrat_init.variable} ${Domine_init.variable}`}>
       
 
       
