@@ -7,28 +7,26 @@ const Indus = () => {
   useEffect(() => {
     console.log("hello");
     const panels = document.querySelectorAll(".panel");
-    
+
     panels.forEach((panel) => {
-      panel.addEventListener("click", () => {
-        removeActiveClasses();
-        panel.classList.add("active");
-      });
+      panel.addEventListener("mouseover", handleMouseEnter);
     });
+
+    function handleMouseEnter(event) {
+      removeActiveClasses();
+      event.currentTarget.classList.add("active");
+    }
 
     function removeActiveClasses() {
       panels.forEach((panel) => {
         panel.classList.remove("active");
       });
     }
-    console.log("hellow1");
 
     // Cleanup event listeners on component unmount
     return () => {
       panels.forEach((panel) => {
-        panel.removeEventListener("click", () => {
-          removeActiveClasses();
-          panel.classList.add("active");
-        });
+        panel.removeEventListener("mouseover", handleMouseEnter);
       });
     };
   }, []); // Empty dependency array means this runs once after initial render

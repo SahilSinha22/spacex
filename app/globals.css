@@ -601,7 +601,7 @@ imgx {
   flex:0.5s;
   margin:3px;
   position:relative;
-  transition: transform 700ms ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+  transition: transform 700ms ease-in; /* Smooth transition for transform and opacity */
   transform: scale(1);
   opacity: 0.8;
 }
@@ -620,7 +620,7 @@ imgx {
   left:40px;
   right:30px;
   font-size:13px;
- 
+  transition:opacity 0.3s  ease-in 0.4;
 }
 
 
@@ -1051,7 +1051,7 @@ imgx {
         flex:0.5s;
         margin:3px;
         position:relative;
-        transition: all 700ms ease-in;
+        transition: all 700ms ease-in ;
       }
     
       .panel.active .img-boxs{
