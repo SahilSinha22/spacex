@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_89" data-name="Group 89" transform="translate(-1109 -249)">
+    <circle id="Ellipse_5468" data-name="Ellipse 5468" cx="15" cy="15" r="15" transform="translate(1109 249)" fill="#484848"/>
+    <g id="Group_1044" data-name="Group 1044" transform="translate(813.281 73)">
+      <g id="Group_1037" data-name="Group 1037" transform="translate(304.719 185.013)">
+        <path id="Path_2510" data-name="Path 2510" d="M314.775,196.987h-7.826a2.235,2.235,0,0,1-2.23-2.23v-8.226a.587.587,0,1,1,1.174,0v8.226a1.058,1.058,0,0,0,1.056,1.056h7.826a1.058,1.058,0,0,0,1.056-1.056v-8.57H307.77v7.663a.587.587,0,1,1-1.174,0V185.7a.688.688,0,0,1,.687-.687h9.035a.688.688,0,0,1,.687.687v9.057a2.235,2.235,0,0,1-2.23,2.23Z" transform="translate(-304.719 -185.013)" fill="#fff"/>
+      </g>
+      <g id="Group_1038" data-name="Group 1038" transform="translate(311.802 189.084)">
+        <path id="Path_2511" data-name="Path 2511" d="M337.2,201.911v1.144h-1.374v-1.144H337.2m.651-.939h-2.676a.289.289,0,0,0-.289.289v2.446a.289.289,0,0,0,.289.288h2.676a.289.289,0,0,0,.289-.288v-2.446a.289.289,0,0,0-.291-.289Z" transform="translate(-334.885 -200.972)" fill="#fff"/>
+      </g>
+      <g id="Group_1039" data-name="Group 1039" transform="translate(308.378 186.937)">
+        <path id="Path_2512" data-name="Path 2512" d="M326.857,194.147h-6.085a.47.47,0,0,1,0-.939h6.085a.47.47,0,1,1,0,.939Z" transform="translate(-320.302 -193.208)" fill="#fff"/>
+      </g>
+      <g id="Group_1041" data-name="Group 1041" transform="translate(308.378 193.174)">
+        <path id="Path_2514" data-name="Path 2514" d="M325.672,224.849h-4.9a.47.47,0,1,1,0-.939h4.9a.47.47,0,1,1,0,.939Z" transform="translate(-320.302 -223.91)" fill="#fff"/>
+      </g>
+      <g id="Group_1042" data-name="Group 1042" transform="translate(308.378 189.15)">
+        <path id="Path_2515" data-name="Path 2515" d="M322.524,202.2h-1.752a.47.47,0,0,1,0-.939h1.752a.47.47,0,1,1,0,.939Z" transform="translate(-320.302 -201.256)" fill="#fff"/>
+      </g>
+      <g id="Group_1043" data-name="Group 1043" transform="translate(308.378 190.746)">
+        <path id="Path_2516" data-name="Path 2516" d="M322.524,208.992h-1.752a.47.47,0,0,1,0-.939h1.752a.47.47,0,1,1,0,.939Z" transform="translate(-320.302 -208.053)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -4,14 +4,51 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Induspic from "@/public/Induspic.png"
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
 const logos = {
   '/': 'logo.png',
   '/Portfolio': 'logo1.png',
   '/LiquiClear': 'logo1.png',
   '/Services': 'logo1.png',
-  '/Technology': 'logo1.png'
+  '/Technology': 'logo1.png',
+  '/Blog': 'logo1.png',
 };
+const services = [
+
+  { name: "On Demand", logo: "/OnDemand.svg" },
+  { name: "eCommerce", logo: "/Ecommerce.svg" },
+  { name: "Real Estate", logo: "/Realestate.svg" },
+  { name: "Healthcare", logo: "/Healthcare.svg" },
+  { name: "SaaS", logo: "/Saas.svg" },
+  { name: "Education", logo: "/Education.svg" },
+  { name: "Restaurant", logo: "/Restaurant.svg" },
+  { name: "Games", logo: "/Games.svg" },
+  { name: "News", logo: "/News.svg" },
+  { name: "Entertainment", logo: "/Entertainment.svg" },
+  { name: "Wellness", logo: "/Wellness.svg" },
+  { name: "Logistics", logo: "/Logistics.svg" },
+  { name: "Travel", logo: "/Travel.svg" },
+  { name: "Finance", logo: "/Finance.svg" },
+  { name: "Aviation", logo: "/Travel.svg" },
+  { name: "E-Scooter", logo: "/Escooter.svg" },
+  { name: "Politics", logo: "/Politics.svg" },
+  { name: "Agriculture", logo: "/Agriculture.svg" },
+  { name: "Events", logo: "/Events.svg" },
+  { name: "Social Networking", logo: "/SocialN.svg" },
+  { name: "EV", logo: "/EV.svg" },
+  { name: "Oil and Gas", logo: "/Oil&gas.svg" },
+  { name: "Banking", logo: "/Banking.svg" },
+  { name: "Automotive", logo: "/Automotive.svg" },
+  { name: "Telecom", logo: "/Telecom.svg" },
+  { name: "Insurance", logo: "/Insurance.svg" },
+  { name: "Manufacturing", logo: "/Manufacturing.svg" },
+
+  { name: "Construction", logo: "/Construction.svg" },
+
+
+];
 
 const Navbar = ({ role }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +56,9 @@ const Navbar = ({ role }) => {
   const [textColor, setTextColor] = useState('black');
   const pathname = usePathname();
   const [logo, setLogo] = useState(logos[pathname]);
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenMenuT, setIsOpenMenuT] = useState(false);
+
 
   useEffect(() => {
     const handleRouteChange = (pathname) => {
@@ -59,7 +99,7 @@ const Navbar = ({ role }) => {
 
   return (
     <nav className="items-center text-center p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40   max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
+      <div className="md:px-10 xl:px-40  relative max-w-screen-xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
             <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
@@ -89,14 +129,105 @@ const Navbar = ({ role }) => {
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-10 xl:mr-0 open_sans_display font-semibold justify-left lg:flex-grow">
             <Link href="/" className={linkStyles('/')}>
-              Home
+              About
             </Link>
-            <Link href="/Services" className={linkStyles('/')}>
-              Services
-            </Link>
-            <Link href="/Technology" className={linkStyles('/Technology')}>
-              Technologies
-            </Link>
+
+
+            <div className=" lg:inline-block  group"
+             onMouseEnter={() => setIsOpenMenu(true)}
+             onMouseLeave={() => setIsOpenMenu(false)}>
+
+              <Link
+                href="/Industries"
+                className={` ${linkStyles('/')} nav-link block lg:inline-block group `}
+                aria-haspopup="true"
+                aria-expanded={isOpenMenu ? true : false}
+                onClick={() => setIsOpenMenu(!isOpenMenu)}
+              >
+                Industries
+                {isOpenMenu ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}
+              </Link>
+
+              <div
+                className={`absolute md:mx-10 xl:mx-40 left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto text-black bg-white rounded-md z-50 transition-all duration-300 ${isOpenMenu ? 'opacity-100 visible' : 'opacity-0 invisible'
+                  }`}
+              >
+                <section className="grid grid-rows-2 md:flex open_sans_display font-light">
+                  <div>
+                    <div className="md:text-xs lg:text-sm text-left xl:text-sm 2xl:text-lg">
+                      <h2 className=" text-2xl xl:text-3xl">Industries</h2>
+                      <p className="leading-relaxed text-left my-6">
+                        Space to Tech offers 360° custom <br />
+                        software development services that<br />
+                        fit your needs for short and long-term growth.
+                      </p>
+                    </div>
+                    <div className="mt-8 text-left block">
+                      <Image
+                        src={Induspic}
+                        className="md:w-60 lg:w-96 xl:w-[350px] 2xl:w-[500px]"
+                        alt=""
+                        width={1000}
+                        height={1000}
+                      />
+                      <h2 className="mt-5 md:text-xs lg:text-sm xl:text-xs 2xl:text-lg leading-relaxed font-light">
+                        Read our developments that have helped <br />
+                        the industry boom in India
+                      </h2>
+                    </div>
+                  </div>
+                  <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-3">
+                    {services.map((service, index) => (
+                      <li
+                        key={index}
+                        className="flex items-center mr-4 dropslash md:mr-2 w-20 md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] custom-filter"
+                      >
+                        <Image
+                          src={service.logo}
+                          alt={`${service.name} logo`}
+                          className="lg:h-8 lg:w-8 h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-6 2xl:h-6"
+                          width={100}
+                          height={100}
+                        />
+                        <Link
+                          href={`/services/${service.name
+                            .toLowerCase()
+                            .replace(/\s+/g, "")}`}
+                          className="block lg:px-1 py-2 md:py-1 lg:py-0 2xl:py-1"
+                        >
+                          {service.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              </div>
+            </div>
+
+            <div className=" lg:inline-block  group"
+             onMouseEnter={() => setIsOpenMenuT(true)}
+             onMouseLeave={() => setIsOpenMenuT(false)}>
+
+              <Link
+                href="/Technology"
+                className={` ${linkStyles('/Technology')} nav-link block lg:inline-block group `}
+                aria-haspopup="true"
+                aria-expanded={isOpenMenuT ? true : false}
+                onClick={() => setIsOpenMenuT(!isOpenMenuT)}
+              >
+                Technology
+                {isOpenMenuT ? (
+                  <FaChevronUp className="inline-flex ml-2" size={14} />
+                ) : (
+                  <FaChevronDown className="inline-flex ml-2" size={14} />
+                )}
+              </Link>
+
+            </div>
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
               Portfolio
             </Link>
@@ -105,7 +236,7 @@ const Navbar = ({ role }) => {
             </Link>
           </div>
           <div>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-10 xl:mr-0 xl:ml-20 2xl:ml-40 lg:ml-20">
+            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-0 xl:mr-0 xl:ml-20 2xl:ml-40 lg:ml-0">
               Contact Us
             </button>
           </div>

@@ -1747,3 +1747,94 @@ opacity: 1;
   }
   
   }
+
+
+
+
+
+  /*Coming soon */
+
+
+.containerx {
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.containerx .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.containerx header {
+  font-size: 60px;
+ 
+  font-weight: 600;
+  text-align: center;
+}
+.containerx p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 550px;
+  text-align: center;
+}
+.containerx .time-content {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.time-content .time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.time .number,
+.time .text {
+  font-weight: 500;
+  color: #fff;
+}
+.time .number {
+  font-size: 40px;
+}
+.time .text {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 300px) {
+  .containerx header {
+    font-size: 50px;
+  }
+}
+
+
+
+
+
+.Glassy{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+
+.dropslash:hover::after{
+  content:"";
+  background-color:#C9784F;
+ 
+
+  height:3px;
+  width:30px;
+
+
+}
