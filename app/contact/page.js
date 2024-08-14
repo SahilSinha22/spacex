@@ -25,10 +25,10 @@ const page = () => {
         <div>
           <div className="logoss  ">
             <div className="carouselx md:px-10 xl:px-40 ">
-              <div className=" flex gap-10 2xl:gap-20  pt-10 justify-center items-center text-center">
+              <div className=" flex gap-4 md:gap-10 2xl:gap-20  pt-10 justify-center items-center text-center">
                 {logos.map((logo, index) => (
                   <div key={index} className=" ">
-                    <Image src={logo} className='w-56' alt={`Logo ${index % logos.length + 1}`} width={280} height={100} />
+                    <Image src={logo} className='w-20 md:w-56' alt={`Logo ${index % logos.length + 1}`} width={280} height={100} />
                   </div>
                 ))}
               </div>
