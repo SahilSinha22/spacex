@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../component/Navbar'
-import Contact from "@/components/contact"
+import Contact from "@/components/Contact"
 import Image from 'next/image'
 import Award from '@/components/Award'
 import Form from '@/components/Form'
