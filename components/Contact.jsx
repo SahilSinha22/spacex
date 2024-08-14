@@ -105,7 +105,7 @@ const Contact = () => {
       alert("Form submitted successfully!");
     };
   return (
-    <div className=" px-8 md:px-10 xl:px-40">
+    <div className=" px-8  xl:px-40">
       <section className="flex flex-row md:gap-10 justify-center xl:gap-20 2xl:gap-20 w-full h-auto lg:h-full mt-10">
         <div>
 
@@ -131,7 +131,7 @@ const Contact = () => {
                         type="text"
                         name="Name"
                         id="floating_first_name"
-                        className="block py-2.5 px-0 w-48 md:w-28  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Name}
                         autoComplete="off"
@@ -156,7 +156,7 @@ const Contact = () => {
                         type="text"
                         name="Email"
                         id="floating_last_name"
-                        className="block py-2.5 px-0 w-48 md:w-28  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Email}
                         autoComplete="off"
@@ -183,7 +183,7 @@ const Contact = () => {
                         type="tel"
                         name="Number"
                         id="floating_phone"
-                        className="block py-2.5 px-0 w-48 md:w-28  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Number}
                         autoComplete="off"
@@ -211,7 +211,7 @@ const Contact = () => {
                         type="text"
                         name="Budget"
                         id="floating_company"
-                        className="block py-2.5 px-0 w-48 md:w-28  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Budget}
                         autoComplete="off"
