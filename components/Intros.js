@@ -11,24 +11,24 @@ import Mobi2 from "@/public/4intro.jpg";
 import Mobi22 from "@/public/5intro.jpg";
 
 const Intros = () => {
- const logos = [
+  const logos = [
     "/6intro.png",
     "/7intro.png",
     "/8intro.png",
     "/9intro.png",
-   "/6intro.png",
+    "/6intro.png",
     "/7intro.png",
     "/8intro.png",
     "/9intro.png"
 
   ];
-  
-  
-  
+
+
+
   return (
     <div className=" text-white   h-full w-full  ">
       <div className="intros w-full xl:h-[680px] 2xl:h-[760px] h-full  ">
-       
+
         <div className="items-center justify-center ">
           <div className="pt-40 md:pt-60 lg:pt-48 xl:pt-20 ">
             <div className=" mt-10 mb-2 mx-5 xl:mt-32 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
@@ -98,19 +98,19 @@ const Intros = () => {
           </div>
         </div>
       </div>
-  <div className="logoss  ">
+      <div className="logoss  ">
         <div className="carousel lg:h-auto">
           <div className="track  ">
             {logos.concat(logos).map((logo, index) => (
               <div key={index} className="logo  ">
-                <Image src={logo} alt={`Logo ${index % logos.length + 1}`}  width={250} height={100} />
+                <Image src={logo} alt={`Logo ${index % logos.length + 1}`} width={250} height={100} />
               </div>
             ))}
           </div>
 
         </div>
       </div>
-      
+
     </div>
   );
 };

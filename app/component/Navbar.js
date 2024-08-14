@@ -14,6 +14,7 @@ const logos = {
   '/Services': 'logo1.png',
   '/Technology': 'logo1.png',
   '/Blog': 'logo1.png',
+  '/contact': 'logo.png',
 };
 const services = [
 
@@ -64,11 +65,12 @@ const Navbar = ({ role }) => {
     const handleRouteChange = (pathname) => {
       console.log(pathname);
 
-      if (pathname === '/') {
+      if (pathname === '/' || pathname === '/contact') {
         setBgColor('black');
         setTextColor('gray');
         setLogo(logos[pathname]);
-      } else {
+      } 
+     else {
         setBgColor('white');
         setTextColor('rgb(161 161 170)');
         setLogo(logos[pathname]);
@@ -85,9 +87,12 @@ const Navbar = ({ role }) => {
     let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-8 ';
     
     if (path === '/') {
-      baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black ';
+      baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-white ';
     }
     else if (path === '/Technology') {
+      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
+    }
+    else if (path === '/contact') {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
     }
     else {
@@ -236,9 +241,11 @@ const Navbar = ({ role }) => {
             </Link>
           </div>
           <div>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-0 xl:mr-0 xl:ml-20 2xl:ml-40 lg:ml-0">
+            <Link href="/contact" className={linkStyles('/contact')}>
+            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-0 xl:mr-0 xl:ml-10 2xl:ml-40 lg:ml-0">
               Contact Us
             </button>
+            </Link>
           </div>
         </div>
       </div>

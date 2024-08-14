@@ -107,6 +107,10 @@ html, body {
     animation: scroll 15s linear infinite;
     
   }
+  .carouselx{
+    height: 120px;
+    
+  }
   .carousel{
     height: 140px;
   }
@@ -124,6 +128,10 @@ html, body {
     
     
   }
+  .carouselx{
+    height: 160px;
+    
+  }
   .carousel{
     height: 140px;
   }
@@ -138,6 +146,10 @@ html, body {
     width: calc(420px * 8); /* Width of one logo times the number of logos */
     animation: scroll 15s linear infinite;
     
+    
+  }
+  .carouselx{
+    height: 160px;
     
   }
   .carousel{
@@ -159,6 +171,10 @@ html, body {
   .carousel{
     height: 140px;
   }
+  .carouselx{
+    height: 160px;
+    
+  }
   .logo {
     flex: 0 0 500px;
   }
@@ -169,6 +185,10 @@ html, body {
     width: calc(530px * 8); /* Width of one logo times the number of logos */
     animation: scroll 15s linear infinite;
     
+    
+  }
+  .carouselx{
+    height: 160px;
     
   }
 
@@ -1724,7 +1744,11 @@ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 
+.bannerx{
+  background: transparent linear-gradient(180deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
 
+opacity: 1;
+}
 .banner{
   background: transparent linear-gradient(180deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;
 border-radius: 40px;
@@ -1837,4 +1861,8 @@ opacity: 1;
   width:30px;
 
 
+}
+
+.custom-filter:hover img {
+  filter: sepia(100%) saturate(5399%) hue-rotate(2360deg) brightness(100%) contrast(800%)
 }

@@ -15,6 +15,7 @@ const logos = {
   '/Technology': 'logo1.png',
   '/Blog': 'logo1.png',
   '/Industries': 'logo1.png',
+  
 };
 const services = [
 
@@ -240,9 +241,11 @@ const Navbar = ({ role }) => {
             </Link>
           </div>
           <div>
+          <Link href="/contact" className={linkStyles('/contact')}>
             <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-0 xl:mr-0 xl:ml-20 2xl:ml-40 lg:ml-0">
               Contact Us
             </button>
+          </Link>
           </div>
         </div>
       </div>

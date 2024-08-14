@@ -15,7 +15,7 @@ const Journey = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2   space-y-5 lg:grid-cols-3 xl:grid-cols-5  justify-center items-center 2xl:gap-10 space-x-8 mt-8">
           <div className="text-center  justify-center mt-4 ml-10">
-            <div className="w-48 h-48  logo-img  logo-img 2xl:w-52 2xl:h-52  border-dashed mb-4 border-2  mx-auto  flex items-center justify-center rounded-full">
+            <div className="w-48 h-48  logo-img  2xl:w-52 2xl:h-52  border-dashed mb-4 border-2  mx-auto  flex items-center justify-center rounded-full">
               <div className="relative hover:bg-amber-100 transform hover:scale-110 transition duration-300 2xl:w-48 2xl:h-48  w-40 h-40    bg-gray-200 rounded-full items-center">
                 <Image
                   className="absolute top-12  left-12 fill-white stroke-cyan-500 2xl:top-14 2xl:left-16 "
