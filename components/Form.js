@@ -70,7 +70,7 @@ const Form = () => {
     };
 
     const res = await fetch(
-      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/UserData.json",
+      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/Query.json",
       options
     );
     if (res) {
@@ -148,9 +148,10 @@ const Form = () => {
                   <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
                     <span> Email : amit@spacetotech.com </span>
                     
-                    <span>office : C-171 Sector-63 Noida,</span>
+                    <span>office : Platina Heights, C24, C Block,<br/>Phase 2, Industrial Area, Sector 62,  </span>
                  
-                    <span> Uttar Pradesh 201301 </span>
+                    
+                 <span> Noida, Uttar Pradesh 201309, </span>
                   </div>
                 </div>
               </div>

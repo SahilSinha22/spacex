@@ -1,5 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/dumyForm';
 import Mobi from "@/public/Liqiclear.svg";
 import Mobi1 from "@/public/water.png";
 import Mobi2 from "@/public/drop.png";
@@ -30,7 +32,16 @@ import Image from "next/image";
 import Form from "@/components/Form";
 import Navbar from "../component/Navbarsec";
 
-const page = () => {
+const Page = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
    <>
    <Navbar/>
@@ -47,7 +58,7 @@ const page = () => {
             Next-Generation Water Purification <br />
             and Water Softening Solutions
           </h1>
-          <button className="bg-yellow-400 text-base  text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
+          <button onClick={handleButtonClick} className="bg-yellow-400 text-base  text-primary-foreground hover:bg-yellow/80 py-2 px-4 rounded-full mb-4">
             Let's talk <span className="font-bold">→</span>
           </button>
           <p className=" text-center Montserrat my-16 text-3xl font-light ">
@@ -373,6 +384,9 @@ const page = () => {
             </button>
           </div>
         </div>
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm />
+      </Modal>
         <Form />
       </div>
       </>
@@ -380,4 +394,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

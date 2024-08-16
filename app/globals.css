@@ -1866,3 +1866,7 @@ opacity: 1;
 .custom-filter:hover img {
   filter: sepia(100%) saturate(5399%) hue-rotate(2360deg) brightness(100%) contrast(800%)
 }
+
+.aspect > div{
+  aspect-ratio: 50%;
+}

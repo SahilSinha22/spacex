@@ -6,11 +6,22 @@ import Image from "next/image";
 import Mobi1 from "@/public/1intro.jpg";
 import Mobi11 from "@/public/2intro.jpg";
 import Mobi111 from "@/public/3intro.jpg";
+import { useRouter } from 'next/navigation';
 
 import Mobi2 from "@/public/4intro.jpg";
 import Mobi22 from "@/public/5intro.jpg";
-
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/dumyForm';
 const Intros = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   const logos = [
     "/6intro.png",
     "/7intro.png",
@@ -23,7 +34,7 @@ const Intros = () => {
 
   ];
 
-
+ 
 
   return (
     <div className=" text-white   h-full w-full  ">
@@ -41,7 +52,7 @@ const Intros = () => {
                 Partner with us &<br /> drive digitization to your business with
                 innovation and technology
               </p>
-              <button className="border-2  border-solid rounded-full text-white  py-2 px-4  hover:bg-blue-700  transition duration-300">
+              <button  onClick={handleButtonClick} className="border-2  border-solid rounded-full text-white  py-2 px-4  hover:bg-blue-700  transition duration-300">
                 Let's Talk!
               </button>
             </div>
@@ -110,7 +121,9 @@ const Intros = () => {
 
         </div>
       </div>
-
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm />
+      </Modal>
     </div>
   );
 };

@@ -1,13 +1,23 @@
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 import Navbar from '../component/Navbar'
 import Contact from "@/components/Contact"
 import Image from 'next/image'
 import Award from '@/components/Award'
 import Form from '@/components/Form'
 import Mobis from "@/public/Image 13.png"
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/dumyForm';
+const Page = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-const page = () => {
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   const logos = [
     "/6intro.png",
     "/7intro.png",
@@ -116,7 +126,7 @@ const page = () => {
           Get your ideas validated. <br/> Let’s give you an honest opinion.!
           </h1>
 
-          <button className=" mt-4 mb-6 lg:mb-8 lg:mt-4 text-black bg-white hover:bg-gradient-to-r hover:from-red-400 hover:to-purple-600 rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
+          <button onClick={handleButtonClick} className=" mt-4 mb-6 lg:mb-8 lg:mt-4 text-black bg-white hover:bg-gradient-to-r hover:from-red-400 hover:to-purple-600 rounded-full  inline-flex items-center md:text-base  py-2 px-4 xl:px-8    lg:mr-10 xl:mr-0">
             Let's Talk
           </button>
         </div>
@@ -127,9 +137,12 @@ const page = () => {
           Find us on Google Maps 
         </h1>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm />
+      </Modal>
       <Form />
     </>
   )
 }
 
-export default page
+export default Page
