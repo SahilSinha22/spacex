@@ -7,7 +7,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
 
-const dumyForm = () => {
+const DumyForm = () => {
     const [visible, setVisible] = useState(false);
     const [errors, setErrors] = useState({});
     const [successBanner, setSuccessBanner] = useState(false);
@@ -245,4 +245,4 @@ const dumyForm = () => {
     )
 }
 
-export default dumyForm
+export default DumyForm
