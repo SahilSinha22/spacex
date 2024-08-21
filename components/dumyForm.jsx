@@ -69,6 +69,11 @@ const DumyForm = () => {
         );
         if (res) {
             setSuccessBanner(true);
+            setTimeout(() => {
+                setSuccessBanner(false);
+                setVisible(false);
+                document.body.style.overflow = 'auto';
+              }, 2000);
 
         } else {
             alert("Error Occurred");

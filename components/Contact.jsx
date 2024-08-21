@@ -325,7 +325,7 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <div className="w-full xl:w-[400px] 2xl:w-[600px] h-full 2xl:h-[700px]">
+          <div className="w-full lg:w-[400px] xl:w-[500px] 2xl:w-[600px] h-full 2xl:h-[700px]">
             <Image src={Contactimg} alt='Contactimg' className="w-40  md:w-72 lg:w-[400px] 2xl:w-[700px] xl:w-full md:h-full" width={1000} height={1000} />
           </div>
         </div>
