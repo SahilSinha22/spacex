@@ -137,16 +137,16 @@ const Form = () => {
                     Hello now !
                   </h1>
                   <div className="flex flex-row my-2">
-                    <Image src="flag.svg" alt="logo" width={40} height={4} />{" "}
+                   <a href="tel:+91 88 820 76 755" ><Image src="flag.svg" alt="logo" width={40} height={4} />{" "}</a> 
                     <div className="ml-4 2xl:text-3xl md:text-xl">
-                      +91 88 820 76 755{" "}
+                    <a href="tel:+91 88 820 76 755" >  +91 88 820 76 755{" "}</a>
                     </div>{" "}
                   </div>
                   <h1 className="md:text-2xl 2xl:text-3xl text-2xl font-semibold mt-2 xl:mt-4">
                     Connect with us
                   </h1>
                   <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
-                    <span> Email : amit@spacetotech.com </span>
+                  <a href= "mailto: amit@spacetotech.com  ">   <span> Email : amit@spacetotech.com </span> </a>
                     
                     <span>office : Platina Heights, C24, C Block,<br/>Phase 2, Industrial Area, Sector 62,  </span>
                  

@@ -104,7 +104,7 @@ const DumyForm = () => {
         const timer = setTimeout(() => {
             setVisible(true);
             document.body.style.overflow = 'hidden';
-        }, 1000);
+        }, 4000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -118,7 +118,7 @@ const DumyForm = () => {
     if (!visible) return null;
     return (
         <div className=''>
-            <div class="justify-center items-center flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div class="justify-center items-center  Glassys flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className='relative'>
                 <div class=" grid md:grid-cols-2  w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
@@ -328,10 +328,11 @@ const DumyForm = () => {
                                         Submit
                                     </button>
                                     </div>
-                                    <div className='justify-end mt-10 xl:mt-16'>
+                                    <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 2xl:mt-8'>
 
                                    
-                                    <h2 className='text-black z-20 text-sm md:text-lg lg:text-xl xl:text-2xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <h2 className='text-black z-20 text-sm md:text-lg lg:text-xl xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <Image src="/whatsapp.svg" className=" mr-10" alt="" width={40} height={40} />
                                     </div>
                                     </div>
                                     

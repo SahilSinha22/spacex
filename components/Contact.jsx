@@ -105,13 +105,13 @@ const Contact = () => {
     alert("Form submitted successfully!");
   };
   return (
-    <div className=" px-8  xl:px-40">
+    <div className=" px-10 lg:px-0  xl:px-40">
       <section className="flex flex-row md:gap-10 justify-center xl:gap-20 2xl:gap-20 w-full h-auto lg:h-full mt-10">
         <div>
 
 
 
-          <div className="mr-4  xl:mr-0 xl:w-[420px] mb-4 lg:ml-20   xl:ml-0 md:mx-2 sm:ml-10 ">
+          <div className="mr-4  xl:mr-0 lg:w-[400px] xl:w-[400px] 2xl:w-[450px] mb-4 lg:ml-20   xl:ml-0 md:mx-2 sm:ml-10 ">
             <h1 className="text-white text-3xl md:text-6xl playfair_display">Let's Work</h1>
             <h1 className="text-white text-sm md:text-2xl my-8">Consult over experts!</h1>
             {successBanner && (
@@ -131,7 +131,7 @@ const Contact = () => {
                     type="text"
                     name="Name"
                     id="floating_first_name"
-                    className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Name}
                     autoComplete="off"
@@ -156,7 +156,7 @@ const Contact = () => {
                     type="text"
                     name="Email"
                     id="floating_last_name"
-                    className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Email}
                     autoComplete="off"
@@ -183,7 +183,7 @@ const Contact = () => {
                     type="tel"
                     name="Number"
                     id="floating_phone"
-                    className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Number}
                     autoComplete="off"
@@ -211,7 +211,7 @@ const Contact = () => {
                     type="text"
                     name="Budget"
                     id="floating_company"
-                    className="block py-2.5 px-0 w-48 md:w-32  lg:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Budget}
                     autoComplete="off"
@@ -243,7 +243,7 @@ const Contact = () => {
                   </label>
                 </div>
               </div>
-              <div className="relative z-0 w-full mb-5 mt-10 group">
+              <div className="relative z-0 w-full mb-5 mt-6 group">
                 <input
                   type="text"
                   name="message"
@@ -309,24 +309,27 @@ const Contact = () => {
                 </div>
               </div>
             </form>
-            <div className="flex flex-col space-y-6 lg:space-y-0 my-6 lg:flex-row justify-between text-base md:text-lg  lg:my-20 text-white">
-              <div className='flex justify-left py-3 items-center gap-4 leading-loose'>
-                <div >
-                  <Image src="./Mailbox.svg" alt="./Mailbox.svg" width={24} height={24} />
+            
+            <div className="flex flex-col space-y-6 lg:space-y-0 my-6 lg:flex-row justify-around text-base md:text-lg  lg:my-20 text-white">
+              <div className='flex justify-left py-3 items-center gap-2 leading-loose'>
+                <div>
+                <a href= "mailto: amit@spacetotech.com  "> <Image src="./Mailbox.svg" alt="./Mailbox.svg" width={24} height={24} /> </a>
                 </div>
-                <span className='text-base'>  sales@techlerate.com </span>
+                <a href= "mailto: amit@spacetotech.com  ">  <span className='text-base'>  amit@spacetotech.com </span> </a>
 
               </div>
-              <div className='flex justify-left items-center gap-4'>
-                <div> <Image src="./Calling.svg" alt="./Calling.svg" width={24} height={24} /> </div>
-                <span className='text-base'>  +91 88 820 76 755 </span>
+              <div className='flex justify-left items-center gap-2'>
+                <div> 
+                  <a href="tel:+91 88 820 76 755" ><Image src="./Calling.svg" alt="./Calling.svg" width={24} height={24} /> </a>
+                </div>
+                <a href="tel:+91 88 820 76 755" className='text-base'>  +91 88 820 76 755 </a>
               </div>
             </div>
-          </div>
+            </div>
         </div>
         <div>
-          <div className="w-full lg:w-[400px] xl:w-[500px] 2xl:w-[600px] h-full 2xl:h-[700px]">
-            <Image src={Contactimg} alt='Contactimg' className="w-40  md:w-72 lg:w-[400px] 2xl:w-[700px] xl:w-full md:h-full" width={1000} height={1000} />
+          <div className="w-full lg:w-[500px] xl:w-[500px] 2xl:w-[600px] h-full 2xl:h-[700px]">
+            <Image src={Contactimg} alt='Contactimg' className="w-40 md:w-60   lg:w-full 2xl:w-[700px] xl:w-full lg:h-full" width={1000} height={1000} />
           </div>
         </div>
       </section>

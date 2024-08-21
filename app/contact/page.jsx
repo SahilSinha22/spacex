@@ -132,10 +132,16 @@ const Page = () => {
         </div>
       </div>
 
-      <div>
-        <h1>
-          Find us on Google Maps 
-        </h1>
+      <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto">
+      <div className="flex text-2xl text-black font-semibold gap-4 py-16 ">
+          <h2>Find us on Google Maps</h2>
+          <Image src="/Path.svg" alt="" width={20} height={20} />
+        </div>
+
+        <p className="w-full">
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>   
+             </p>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm />
