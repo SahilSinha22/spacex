@@ -125,7 +125,7 @@ const DumyForm = () => {
                         <div className='relative '>
 
 
-                            <Image src="/FormImg.png" className="-z-20 w-[300px] lg:w-[400px] xl:w-[500px] h-[550px] xl:h-[650px]" alt="" width={1000} height={1000} />
+                            <Image src="/FormImg.png" className="-z-20 w-[300px] lg:w-[400px] xl:w-[500px] h-[550px] lg:h-[500px] xl:h-[600px]" alt="" width={1000} height={1000} />
                             <div className='z-20 absolute justify-center top-6  text-white'>
                                 <div className='px-5'>
 
@@ -172,7 +172,7 @@ const DumyForm = () => {
                             className="    "
                         >
                             <div class="flex flex-col  gap-10  w-full">
-                                <div class="lg:w-[450px] md:w-[400px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[650px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div class="lg:w-[450px] md:w-[400px] lg:h-[500px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div class="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -328,11 +328,11 @@ const DumyForm = () => {
                                         Submit
                                     </button>
                                     </div>
-                                    <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 2xl:mt-8'>
+                                    <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 lg:mt-6 2xl:mt-8'>
 
                                    
-                                    <h2 className='text-black z-20 text-sm md:text-lg lg:text-xl xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <Image src="/whatsapp.svg" className=" mr-10" alt="" width={40} height={40} />
+                                    <h2 className='text-black z-20 text-sm md:text-lg lg:text-sm xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <a href="https://api.whatsapp.com/send?phone=8882076755">  <Image src="/whatsapp.svg" className=" mr-10" alt="" width={40} height={40} /></a>
                                     </div>
                                     </div>
                                     

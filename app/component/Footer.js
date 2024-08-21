@@ -34,7 +34,7 @@ const Footer = () => {
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               <Image
-                src="twitter.svg"
+                src="/twitter.svg"
                 alt="logo"
                 className="h-4 w-4 2xl:w-12 2xl:h-12 sm:h-10 sm:w-12"
                 width={30}
@@ -43,7 +43,7 @@ const Footer = () => {
             </a>
             <a href="#" className=" hover:text-white dark:hover:text-blue-500">
               <Image
-                src="facebook.svg"
+                src="/facebook.svg"
                 alt="logo"
                 className="h-4 w-4 2xl:w-12 2xl:h-12 sm:h-10 sm:w-12"
                 width={30}

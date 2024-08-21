@@ -13,6 +13,7 @@ const logos = {
   '/LiquiClear': 'logo1.png',
   '/Services': 'logo1.png',
   '/Technology/reactnative': 'logo1.png',
+  '/Technology/flutter': 'logo1.png',
   '/Blog': 'logo1.png',
   '/Industries': 'logo1.png',
   
