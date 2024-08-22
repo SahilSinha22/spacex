@@ -216,7 +216,17 @@ imgx {
  
   background-color: #f0f0f0;
 }
+.boxes:hover {
+  background: transparent linear-gradient(180deg, #4779D7 0%, #6AACEF 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+color: #ffff;
+}
 
+.boxshad{
+  background: transparent linear-gradient(148deg, #47AED7 0%, #6AEFE0 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+}
 .playfair_display{
   font-family: var(--font-playfair_display);
 }

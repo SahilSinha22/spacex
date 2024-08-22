@@ -15,7 +15,7 @@ const Technology = () => {
   };
   return (
     <div className='open_sans_display cursor-default '>
-  {showForm && <FormComponent />}
+      {showForm && <FormComponent />}
       <div class="flex flex-col items-center justify-center md:mx-20 lg:mx-28 xl:mx-36 2xl:mx-72  xl:px-10 mt-10  lg:mt-32 text-center p-6">
         <h1 class="text-2xl md:text-4xl  xl:text-5xl 2xl:text-6xl  font-bold playfair_display">React Native is an open-source framework that has transformed the landscape</h1>
         <p class="mt-4  md:mx-16 xl:mx-24 2xl:mx-32 text-base md:text-lg lg:text-2xl font-semibold  open_sans_display">The core concept driving the framework’s creation was to streamline the process of developing cross-platform mobile applications.</p>
@@ -76,7 +76,7 @@ const Technology = () => {
               <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Mobile App</span>
               <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Development?</span>
             </div>
-            <button   onClick={handleClick} class=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
+            <button onClick={handleClick} class=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
 
           </div>
           <div class=" mt-10 md:mt-6 2xl:mr-20 mb-6">
@@ -150,7 +150,7 @@ const Technology = () => {
           <div class="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 class="font-semibold text-lg xl:text-lg lg:text-xl text-foreground"> Enterprise-oriented Solutions</h3>
             <p class="xl:text-base  2xl:pr-6">
-            Our specialized react native app development services are tailored for corporate environments.We inherently build enterprise-oriented solutions using the versatility of React Native to create robust, scalable, and secure applications.            </p>
+              Our specialized react native app development services are tailored for corporate environments.We inherently build enterprise-oriented solutions using the versatility of React Native to create robust, scalable, and secure applications.            </p>
           </div>
 
           <div class="p-4 2xl:w-[400px]  bg-[#F8F8F8] xl:pt-6 2xl:p-8 hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
@@ -164,7 +164,7 @@ const Technology = () => {
             <h3 class="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">React Native Support & Maintenance</h3>
             <p class="xl:text-base  2xl:pr-6">Longevity is the cornerstone of any business product. Our Support and Maintenance services tick this box to deliver optimal performance to your users.</p>
           </div>
-         
+
         </div>
       </section>
 

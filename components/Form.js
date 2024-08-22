@@ -113,7 +113,7 @@ const Form = () => {
         defer
       />
 
-      <div className="  m-1  pt-2  ">
+      <div className="   pt-2  ">
         <Image
           src={Mobi}
           alt="picture"

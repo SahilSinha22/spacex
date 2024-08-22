@@ -120,11 +120,11 @@ const Navbar = ({ role }) => {
   };
 
   return (
-    <nav className="items-center text-center p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40 relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
+    <nav className="items-center text-center p-2 md:p-4" style={{ backgroundColor: bgColor }}>
+      <div className="md:px-10 xl:px-20 relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <Link href="/"><span>
-            <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44  lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
+            <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-36 xl:w-44  lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
           </span>
           </Link>
         </div>
