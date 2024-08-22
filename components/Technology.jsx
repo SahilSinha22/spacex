@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import FormComponent from '@/components/dumyForm';
+import FormComponent from '@/components/Popups';
 import Techno1 from "@/public/Techno11.png"
 import Techno2 from "@/public/Techno2.png"
 import Techno3 from "@/public/Techno3.png"

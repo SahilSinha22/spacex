@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation';
 import Mobi2 from "@/public/4intro.jpg";
 import Mobi22 from "@/public/5intro.jpg";
 import Modal from '@/components/Model'; // Assuming Modal is in the same directory
-import ContactForm from '@/components/dumyForm';
+import ContactForm from '@/components/Popups';
 const Intros = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 

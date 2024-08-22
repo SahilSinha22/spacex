@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Modal from '@/components/Model'; // Assuming Modal is in the same directory
-import ContactForm from '@/components/dumyForm';
+import ContactForm from '@/components/Popups';
 import Mobi from "@/public/Liqiclear.svg";
 import Mobi1 from "@/public/water.png";
 import Mobi2 from "@/public/drop.png";
@@ -120,7 +120,7 @@ const Page = () => {
         </div>
         
 
-        <div class="bg-white xl:p-8 py-10">
+        <div class="bg-white xl:p-8 py-16 2xl:py-20">
           <div class="max-w-4xl mx-10 xl:mx-28">
             <h2 class="text-5xl  text-zinc-900">
               Benefits of Bathroom Water Softener
@@ -306,7 +306,8 @@ const Page = () => {
 
         <div class="flex flex-col items-center p-6">
           <h2 class="text-2xl font-semibold mb-4">Tech Stacks</h2>
-          <div class="bg-blue-600 p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full 2xl:max-w-[1600px] px-6 py-10 max-w-4xl">
+          <div className="w-full  bori 2xl:max-w-[1600px] rounded-xl p-1 max-w-4xl">
+          <div class="bg-[#000000]  p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full 2xl:max-w-[1600px] px-6 py-10 max-w-4xl">
             <div class="flex flex-col items-center my-4">
               <Image
                 src={Tech1}
@@ -368,6 +369,7 @@ const Page = () => {
               <span class="mt-2 ml-6 md:ml-8 text-white">React Native</span>
             </div>
           </div>
+          </div>
         </div>
 
         <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl banner">
@@ -379,7 +381,7 @@ const Page = () => {
               Business at the top!
             </h1>
 
-            <button className="border-white border mt-4 mb-6 lg:mb-8 lg:mt-4 banner hover:bg-gradient-to-r hover:from-red-400 hover:to-purple-600 rounded-full  inline-flex items-center md:text-base bg-amber-500  py-2 px-4 xl:px-8   text-white lg:mr-10 xl:mr-0">
+            <button onClick={handleButtonClick} className="border-white border mt-4 mb-6 lg:mb-8 lg:mt-4 banner hover:bg-gradient-to-r hover:from-red-400 hover:to-purple-600 rounded-full  inline-flex items-center md:text-base bg-amber-500  py-2 px-4 xl:px-8   text-white lg:mr-10 xl:mr-0">
               Let's Talk
             </button>
           </div>

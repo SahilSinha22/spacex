@@ -248,7 +248,14 @@ imgx {
   font-family: var(--font-open_sanss);
 
 }
+.bori{
+  
+  background: linear-gradient(180deg, #00dbd9, #4186fe) ;
+}
 
+.card:hover .viewMore {
+  display: block;
+}
 .container{
     width:100%;
     display:flex;
@@ -1360,6 +1367,7 @@ height:140px;
   }
   iframe{
     width:460px;
+    max-width: 500px;
     }
 }
 @media only screen and (min-width: 640px) and (max-width: 769px) {
@@ -1394,7 +1402,8 @@ height:140px;
     margin-top:52px;
   }
   iframe{
-    width:700px;
+    width:557px;
+    max-width: 700px;
     }
 }
 
@@ -1438,6 +1447,7 @@ height:140px;
   }
   iframe{
     width:700px;
+    max-width: 1200px;
     }
   }
 @media only screen and (min-width: 1024px) and  (max-width: 1240px) {
