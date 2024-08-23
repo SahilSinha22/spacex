@@ -1,25 +1,34 @@
 "use client";
 import Image from 'next/image'
 import React from 'react';
-import FormComponent from '@/components/Popups';
 
 import { useState } from 'react';
-import Form from './Form';
 import Indus from './Indus';
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/Popups';
 const Flutter = () => {
-    const [showForm, setShowForm] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleClick = () => {
-        console.log("open");
-        setShowForm(true);
+    const handleButtonClick = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+      
     };
     // State to keep track of the currently open question
-    const [openQuestion, setOpenQuestion] = useState(0); // Initially, the first question is open
+    const [openQuestion, setOpenQuestion] = useState(0); // Initially, no question is open
 
-    // Function to handle question click
-    const handleQuestionClick = (index) => {
-        setOpenQuestion((prev) => (prev === index ? -1 : index)); // Toggle the clicked question
-    };
+  // Function to handle question hover
+  const handleQuestionHover = (index) => {
+    setOpenQuestion(index); // Open the hovered question
+  };
+
+  // Function to handle mouse leave (to close the question when not hovering)
+  const handleMouseLeave = () => {
+    setOpenQuestion(-1); // Close the question when mouse leaves
+  };
 
     // FAQ content
     const faqContent = [
@@ -307,7 +316,7 @@ const Flutter = () => {
                         </p>
                     </div>
                 </div>
-                {showForm && <FormComponent />}
+         
                 <div className='bg-[#5F2AE2] mt-20 xl:px-20'>
 
 
@@ -317,7 +326,7 @@ const Flutter = () => {
                         </div>
                         <div className='place-content-center'>
                             <h2 className='text-xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-snug lg:leading-normal xl:leading-snug open_sans_displays font-light text-white '> What is Flutter App <br /> Development?</h2>
-                            <button onClick={handleClick} class="text-white mt-4  max-w-xl text-xs md:text-sm lg:text-base xl:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
+                            <button onClick={handleButtonClick} class="text-white mt-4  max-w-xl text-xs md:text-sm lg:text-base xl:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
 
                         </div>
                     </div>
@@ -334,7 +343,8 @@ const Flutter = () => {
                                 <div key={index} className='xl:py-4'>
                                     <h3
                                         className="font-semibold border-b border-gray-700 xl:text-xl pb-2 cursor-pointer"
-                                        onClick={() => handleQuestionClick(index)}
+                                        onMouseEnter={() => handleQuestionHover(index)}
+                                        onMouseLeave={handleMouseLeave}
                                     >
                                         {item.question}
                                     </h3>
@@ -348,7 +358,9 @@ const Flutter = () => {
                         </div>
                     </div>
                 </div>
-                
+                <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm onClose={closeModal} />
+      </Modal>
             </div>
         </>
     )

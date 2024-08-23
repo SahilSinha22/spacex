@@ -17,7 +17,7 @@ const Page = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    r
+    
   };
   const logos = [
     "/6intro.png",
@@ -145,7 +145,7 @@ const Page = () => {
              </p>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ContactForm />
+        <ContactForm onClose={closeModal} />
       </Modal>
       <Form />
     </>

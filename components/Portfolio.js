@@ -7,12 +7,22 @@ import Mobi from "@/public/CS 01.png";
 import Mobis from "@/public/CS 02.png";
 import Mobi1 from "@/public/CS 03.png";
 import Tab from "@/public/CS 04.png";
-
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/Popups'
 const Portfolio = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    
+  };
   const handleMouseEnter = (index) => {
     setHoveredCard(index);
   };
@@ -540,12 +550,15 @@ const Portfolio = () => {
             <br />
             Business at the top!
           </h1>
-          <button className="mt-4 mb-6 lg:mb-16 lg:mt-4 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 xl:px-8 text-white lg:mr-10 xl:mr-0">
+          <button onClick={handleButtonClick} className="mt-4 mb-6 lg:mb-16 lg:mt-4 bg-gradient-to-r from-red-400 to-purple-600 rounded-full text-whiteinline-flex items-center bg-amber-500 border-0 py-2 px-4 xl:px-8 text-white lg:mr-10 xl:mr-0">
             Let's Talk
           </button>
         </div>
       </div>
-
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm onClose={closeModal} />
+      </Modal>
+     
     </div>
   );
 };

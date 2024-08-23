@@ -5,17 +5,22 @@ import Techno1 from "@/public/Techno11.png"
 import Techno2 from "@/public/Techno2.png"
 import Techno3 from "@/public/Techno3.png"
 import Image from 'next/image'
-
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/Popups';
 const Technology = () => {
-  const [showForm, setShowForm] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleClick = () => {
-    console.log("open");
-    setShowForm(true);
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    
   };
   return (
     <div className='open_sans_display cursor-default '>
-      {showForm && <FormComponent />}
+   
       <div class="flex flex-col items-center justify-center md:mx-20 lg:mx-28 xl:mx-36 2xl:mx-72  xl:px-10 mt-10  lg:mt-32 text-center p-6">
         <h1 class="text-2xl md:text-4xl  xl:text-5xl 2xl:text-6xl  font-bold playfair_display">React Native is an open-source framework that has transformed the landscape</h1>
         <p class="mt-4  md:mx-16 xl:mx-24 2xl:mx-32 text-base md:text-lg lg:text-2xl font-semibold  open_sans_display">The core concept driving the framework’s creation was to streamline the process of developing cross-platform mobile applications.</p>
@@ -76,7 +81,7 @@ const Technology = () => {
               <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Mobile App</span>
               <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Development?</span>
             </div>
-            <button onClick={handleClick} class=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
+            <button onClick={handleButtonClick}  class=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
 
           </div>
           <div class=" mt-10 md:mt-6 2xl:mr-20 mb-6">
@@ -167,7 +172,9 @@ const Technology = () => {
 
         </div>
       </section>
-
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm onClose={closeModal} />
+      </Modal>
 
     </div>
   )

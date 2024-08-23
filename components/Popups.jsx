@@ -8,7 +8,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
 
-const DumyForm = () => {
+const DumyForm = ({ onClose }) => {
     const [captcha, setCaptcha] = useState("");
     const [inputCaptcha, setInputCaptcha] = useState("");
 
@@ -72,6 +72,7 @@ const DumyForm = () => {
             setTimeout(() => {
                 setSuccessBanner(false);
                 setVisible(false);
+                onClose();
                 document.body.style.overflow = 'auto';
               }, 2000);
 
@@ -98,6 +99,7 @@ const DumyForm = () => {
         // Handle form submission
         alert("Form submitted successfully!");
         setVisible(false);
+        onClose();
     };
 
    
@@ -105,7 +107,7 @@ const DumyForm = () => {
     const handleClose = () => {
         setVisible(false);
         document.body.style.overflow = 'auto';
-       
+        onClose();
     };
     
 
