@@ -1,5 +1,6 @@
 import Navbar from '@/app/component/Navbarsec'
 import Flutter from '@/components/Flutter'
+import Form from '@/components/Form'
 import React from 'react'
 
 const page = () => {
@@ -7,6 +8,7 @@ const page = () => {
     <div>
         <Navbar/>
       <Flutter/>
+      <Form/>
     </div>
   )
 }

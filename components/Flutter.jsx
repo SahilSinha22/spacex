@@ -63,25 +63,32 @@ const Flutter = () => {
         <>
             <div className='mx-auto'>
                 <div class="max-w-7xl items-center text-center mx-auto px-2 md:px-10 xl:px-20 2xl:px-10 py-16 md:py-20 lg:pt-28 lg:pb-10 ">
-                    <h1 class="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-loose font-bold playfair_displays mb-4">Flutter App Development Company Helps You Build Applications for Multiple Screens!</h1>
-                    <p class=" md:text-2xl lg:text-xl xl:text-2xl   text-muted-foreground mb-6">Introducing big waves in modern cross-platform app development, Flutter tech <br /> builds exquisite, high-performing, and flawless mobile apps.</p>
+                    <h1 class="text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal   font-bold playfair_displays mb-4">Flutter App Development Company Helps <br/>You Build Applications for Multiple Screens!</h1>
+                    <p class="  lg:text-xl xl:text-2xl   text-muted-foreground mb-6">Introducing big waves in modern cross-platform app development, Flutter tech <br /> builds exquisite, high-performing, and flawless mobile apps.</p>
 
                 </div>
-                <div class="flex relative flex-wrap justify-center gap-4  px-2 md:px-10 max-w-7xl mx-auto ">
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        className="inset-0  object-cover"
-                    >
-                        <source src="/Intro.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <div className="flex relative flex-wrap justify-center gap-4 px-2 md:px-10 max-w-7xl mx-auto">
+    <video
+        autoPlay
+        muted
+        loop
+        className="inset-0 object-cover w-full h-auto"
+    >
+        <source src="/Intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 
-                    <div className='absolute z-50 w-screen  -bottom-12 md:-bottom-16  bg-[#0062FF]   -rotate-6'>
-                        <Image src="/bannerxlogo.png" className='w-[1290px] p-4 rotate-2 mx-auto '
-                            alt='' width={1000} height={1000} />               </div>
-                </div>  
+    <div className="absolute z-50 w-[100vw] -bottom-12 md:-bottom-16 bg-[#0062FF] -rotate-6 left-1/2 transform -translate-x-1/2">
+        <Image
+            src="/bannerxlogo.png"
+            className="w-[1290px] p-4 rotate-2 mx-auto"
+            alt=""
+            width={1000}
+            height={1000}
+        />
+    </div>
+</div>
+ 
 
                 <div class=" max-w-7xl mx-auto my-10 mt-40 open_sans_display px-2 md:px-10 xl:px-20 ">
                     <h1 class="text-3xl md:text-5xl  text-primary mb-4">Introduction to <span class="text-blue-500">Flutter</span></h1>
@@ -337,9 +344,7 @@ const Flutter = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-black'>
-                    <Form />
-                </div>
+                
             </div>
         </>
     )
