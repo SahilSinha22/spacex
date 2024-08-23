@@ -1916,3 +1916,13 @@ opacity: 1;
   aspect-ratio: 50%;
 }
 
+/*----------------Flutter page ------------------*/
+@media screen and (min-width:720px) {
+  
+
+.cont:nth-child(even){
+  position: relative;
+top: 20px;
+
+}
+}
