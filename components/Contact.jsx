@@ -111,7 +111,7 @@ const Contact = () => {
 
 
 
-          <div className="mr-4  xl:mr-0 lg:w-[400px] xl:w-[400px] 2xl:w-[450px] mb-4 lg:ml-20   xl:ml-0 md:mx-2 sm:ml-10 ">
+          <div className="mr-4  xl:mr-0 lg:w-[400px] xl:w-[400px] 2xl:w-[400px] mb-4 lg:ml-20   xl:ml-0 md:mx-2 sm:ml-10 ">
             <h1 className="text-white text-3xl md:text-6xl playfair_display">Let's Work</h1>
             <h1 className="text-white text-sm md:text-2xl my-8">Consult over experts!</h1>
             {successBanner && (
@@ -131,7 +131,7 @@ const Contact = () => {
                     type="text"
                     name="Name"
                     id="floating_first_name"
-                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 xl:w-48 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Name}
                     autoComplete="off"
@@ -156,7 +156,7 @@ const Contact = () => {
                     type="text"
                     name="Email"
                     id="floating_last_name"
-                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 xl:w-48  text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Email}
                     autoComplete="off"
@@ -183,7 +183,7 @@ const Contact = () => {
                     type="tel"
                     name="Number"
                     id="floating_phone"
-                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 xl:w-48  text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Number}
                     autoComplete="off"
@@ -211,7 +211,7 @@ const Contact = () => {
                     type="text"
                     name="Budget"
                     id="floating_company"
-                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-48 md:w-40  lg:w-44 xl:w-48  text-base text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" "
                     value={user.Budget}
                     autoComplete="off"
@@ -329,7 +329,7 @@ const Contact = () => {
         </div>
         <div>
           <div className="w-full lg:w-[500px] xl:w-[500px] 2xl:w-[600px] h-full 2xl:h-[700px]">
-            <Image src={Contactimg} alt='Contactimg' className="w-40 md:w-60   lg:w-full 2xl:w-[700px] xl:w-full lg:h-full" width={1000} height={1000} />
+            <Image src={Contactimg} alt='Contactimg' className="w-40 md:w-60   lg:w-full 2xl:w-[700px]  lg:h-full" width={1000} height={1000} />
           </div>
         </div>
       </section>

@@ -124,7 +124,7 @@ const Form = () => {
       </div>
       <div className="md:relative  -top-2 w-full h-92 ">
         <div className="  flex flex-col  ">
-          <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-5  sm:ml-12 md:mx-20 2xl:ml-48 2xl:mr-96  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
+          <h1 className="md:absolute md:-top-16 lg:-top-20 text-left mx-5  sm:ml-12 md:mx-20 2xl:ml-48 2xl:mr-0  2xl:pr-60 lg:ml-28 lg:mr-20  xl:mr-60 xl:ml-48 sm:text-2xl 2xl:text-5xl items-center text-white text-lg lg:text-4xl  playfair_display">
             Get in touch with us today to see how we can help you develop
             the right product - faster.
           </h1>
