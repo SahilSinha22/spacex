@@ -1935,3 +1935,8 @@ transform: matrix(1, -0.03, 0.03, 1, 0, 0);
 background: #0062FF 0% 0% no-repeat padding-box;
 opacity: 1;
 }
+
+
+.card:hover .viewMore {
+  display: block;
+}

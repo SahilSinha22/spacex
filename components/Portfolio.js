@@ -23,35 +23,7 @@ const Portfolio = () => {
     setIsModalOpen(false);
     
   };
-  const handleMouseEnter = (index) => {
-    setHoveredCard(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredCard(null);
-  };
-
-  const handleMouseMove = (event) => {
-    setCursorPosition({ x: event.clientX, y: event.clientY });
-  };
-
-  const handleViewMoreClick = () => {
-    router.push('/introduction');
-  };
-
-  useEffect(() => {
-    if (hoveredCard !== null) {
-      document.addEventListener('mousemove', handleMouseMove);
-    } else {
-      document.removeEventListener('mousemove', handleMouseMove);
-    }
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, [hoveredCard]);
-
-  const textRef = useRef(null);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -99,11 +71,7 @@ const Portfolio = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const cards = [
-    { image: Mobi  },
-   
-  ];
-  let index;
+ 
   return (
     <div>
       <div className="m-auto">
@@ -123,8 +91,7 @@ const Portfolio = () => {
           <div className="animated-image left show" >
           
          
-            <div className="bg-black"  onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi}
                 className="imgx  w-62 h-[400px] xl:h-[550px]"
@@ -132,18 +99,7 @@ const Portfolio = () => {
                 width={500}
                 height={500}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+               
             </div>
         
             <div className="mt-5">
@@ -159,8 +115,7 @@ const Portfolio = () => {
            
           </div>
           <div className="animated-image left show mt-10">
-            <div    onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div    >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -168,18 +123,7 @@ const Portfolio = () => {
                 width={500}
                 height={500}
               />
-              {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+             
             </div>
             <div className="mt-5">
               <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -193,8 +137,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image left show mt-10">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -202,18 +145,7 @@ const Portfolio = () => {
                 width={500}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+               
             </div>
             <div className=" mt-5 ">
               <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -227,8 +159,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image left show mt-10">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -236,18 +167,7 @@ const Portfolio = () => {
                 width={500}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+               
             </div>
             <div className=" mt-5 ">
               <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -261,8 +181,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image left show mt-10">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -270,18 +189,7 @@ const Portfolio = () => {
                 width={500}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+               
             </div>
             <div className=" mt-5 ">
               <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl  lg:text-4xl">
@@ -295,8 +203,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image left show mt-10">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -304,18 +211,7 @@ const Portfolio = () => {
                 width={500}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+               
             </div>
             <div className=" mt-5 ">
               <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -332,8 +228,7 @@ const Portfolio = () => {
         </div>
         <div className="right-column ml-1">
           <div className="animated-image right show">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobis}
                 alt="Image 2"
@@ -341,18 +236,7 @@ const Portfolio = () => {
                 width={600}
                 height={600}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+              
             </div>
             <div className="mt-5">
               <h2 className="lg:playfair_display playfair_displays font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -367,8 +251,7 @@ const Portfolio = () => {
           </div>
           <Link href="/LiquiClear">
             <div className="animated-image right  show mt-10 lg:mt-9 xl:mt-10">
-              <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+              <div className="bg-black" >
                 <Image
                   src={Tab}
                   alt="Image 4"
@@ -376,18 +259,7 @@ const Portfolio = () => {
                   width={600}
                   height={600}
                 />
-                 {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+                 
               </div>
               <div className="mt-5">
                 <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -403,8 +275,7 @@ const Portfolio = () => {
             </div>
           </Link>
           <div className=" animated-image right show show mt-10">
-            <div className="bg-black"  onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black"  >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -412,18 +283,7 @@ const Portfolio = () => {
                 width={600}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+             
             </div>
             <div className=" mt-5 ">
               <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -437,8 +297,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image right show show mt-10">
-            <div className="bg-black"  onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -446,18 +305,7 @@ const Portfolio = () => {
                 width={600}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+             
             </div>
             <div className=" mt-5 ">
               <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -471,8 +319,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image right show show mt-10">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -480,18 +327,7 @@ const Portfolio = () => {
                 width={600}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+              
             </div>
             <div className=" mt-5 ">
               <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -505,8 +341,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="animated-image right show show mt-10">
-            <div className="bg-black" onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}>
+            <div className="bg-black" >
               <Image
                 src={Mobi1}
                 alt="Image 3"
@@ -514,18 +349,7 @@ const Portfolio = () => {
                 width={600}
                 height={5}
               />
-               {hoveredCard === index && (
-                <div
-                  className=" absolute z-10 Poppin text-xs sm:text-lg lg:text-xl  text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
-                  style={{
-                    top: `${cursorPosition.y - 10}px`,
-                    left: `${cursorPosition.x + 20}px`,
-                  }}
-                  onClick={handleViewMoreClick}
-                >
-                  Read<br/> More...
-                </div>
-              )}
+               
             </div>
             <div className=" mt-5 ">
               <h2 className="playfair_display font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -564,4 +388,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-

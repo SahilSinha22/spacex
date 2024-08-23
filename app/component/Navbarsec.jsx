@@ -163,7 +163,7 @@ const Navbar = ({ role }) => {
              onMouseLeave={() => setIsOpenMenu(false)}>
 
               <Link
-                href="/Industries"
+                href="#"
                 className={` ${linkStyles('/')} nav-link block lg:inline-block group `}
                 aria-haspopup="true"
                 aria-expanded={isOpenMenu ? true : false}
@@ -283,7 +283,7 @@ const Navbar = ({ role }) => {
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-black'}`}>
               Portfolio
             </Link>
-            <Link href="/Blog" className={linkStyles('/')}>
+            <Link href="#" className={linkStyles('/')}>
               Blog
             </Link>
           </div>
