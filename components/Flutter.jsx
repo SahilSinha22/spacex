@@ -67,7 +67,7 @@ const Flutter = () => {
                     <p class="  lg:text-xl xl:text-2xl   text-muted-foreground mb-6">Introducing big waves in modern cross-platform app development, Flutter tech <br /> builds exquisite, high-performing, and flawless mobile apps.</p>
 
                 </div>
-                <div className="flex relative flex-wrap justify-center gap-4 px-2 sm:px-10 max-w-7xl mx-auto">
+                <div className="flex  flex-wrap justify-center gap-4 px-2 sm:px-10 max-w-7xl mx-auto">
     <video
         autoPlay
         muted
@@ -78,14 +78,18 @@ const Flutter = () => {
         Your browser does not support the video tag.
     </video>
 
-    <div className="absolute z-50 w-[100vw] -bottom-12 md:-bottom-16 bg-[#0062FF] -rotate-6 left-1/2 transform -translate-x-1/2">
-        <Image
+   
+</div>
+<div className='relative bg-[#0062FF]'>
+<div className="absolute z-50  w-screen  -bottom-[54px] md:-bottom-20 lg:-bottom-[92px] xl:-bottom-[107px] bg-[#0062FF] bani  transform -translate-x-1/2">
+       <Image
             src="/bannerxlogo.png"
             className="w-[1290px] p-4 rotate-2 mx-auto"
             alt=""
             width={1000}
             height={1000}
         />
+       
     </div>
 </div>
  
@@ -123,14 +127,14 @@ const Flutter = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='mt-5 lg:mt-10'>
+                        <div className='mt-5 lg:mt-10 '>
                             <video
                                 autoPlay
                                 muted
                                 loop
-                                className="inset-0  object-cover"
+                                className="inset-0  object-cover "
                             >
-                                <source src="/music learning application tubik ui design (1).mp4" type="video/mp4" />
+                                <source src="/music learning application tubik ui design (1).mp4"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <div>

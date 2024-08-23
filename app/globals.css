@@ -1926,3 +1926,12 @@ top: 20px;
 
 }
 }
+
+
+.bani {
+  
+transform: matrix(1, -0.03, 0.03, 1, 0, 0);
+/* UI Properties */
+background: #0062FF 0% 0% no-repeat padding-box;
+opacity: 1;
+}

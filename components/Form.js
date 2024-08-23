@@ -137,7 +137,7 @@ const Form = () => {
                     Hello now !
                   </h1>
                   <div className="flex flex-row my-2">
-                   <a href="tel:+91 88 820 76 755" ><Image src="flag.svg" alt="logo" width={40} height={4} />{" "}</a> 
+                   <a href="tel:+91 88 820 76 755" ><Image src="/flag.svg" alt="logo" width={40} height={4} />{" "}</a> 
                     <div className="ml-4 2xl:text-3xl md:text-xl">
                     <a href="tel:+91 88 820 76 755" >  +91 88 820 76 755{" "}</a>
                     </div>{" "}
@@ -246,7 +246,7 @@ const Form = () => {
                         <div className="flex flex-row">
                           <div className="">
                             <Image
-                              src="flag.svg"
+                              src="/flag.svg"
                               alt="flag"
                               width={30}
                               height={2}
