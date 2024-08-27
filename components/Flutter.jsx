@@ -90,7 +90,7 @@ const Flutter = () => {
    
 </div>
 <div className='relative '>
-<div className="absolute   w-screen  -bottom-[54px] md:-bottom-20  h-auto lg:-bottom-[92px] xl:-bottom-[107px] bg-[#0062FF] bani  transform -translate-x-1/2">
+<div className="absolute   w-screen  -bottom-[50px] md:-bottom-16  h-14 md:h-20 lg:h-28 lg:-bottom-[96px] xl:-bottom-[90px] bg-[#0062FF] bani  transform -translate-x-1/2">
        <Image
             src="/bannerxlogo.webp"
             className="w-[1290px]  p-4 rotate-2 mx-auto"
