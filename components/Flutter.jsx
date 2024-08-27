@@ -143,7 +143,7 @@ const Flutter = () => {
                                 loop
                                 className="inset-0  object-cover "
                             >
-                                <source src="/music learning application tubik ui design (1).mp4"  type="video/mp4" />
+                                <source src="/music learning application tubik ui design (1).webm"  type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <div>

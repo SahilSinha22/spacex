@@ -117,7 +117,7 @@ const DumyForm = () => {
 
     if (!visible) return null;
     return (
-        <div className=''>
+        <div className='m-auto'>
             <div className="justify-center items-center  Glassys flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className='relative'>
                 <div className=" grid md:grid-cols-2  w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
