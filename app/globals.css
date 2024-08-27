@@ -1947,3 +1947,20 @@ opacity: 1;
   position: absolute;
   border: 0;
 }
+
+
+
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.view-more {
+  position: fixed;
+  opacity: 0.5;
+  background-color: black;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

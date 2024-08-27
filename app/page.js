@@ -12,6 +12,7 @@ import Navbar from './component/Navbar'
 import Okomo from "@/components/ParallaxExample";
 import Netme from "@/components/Netme";
 import Liqui from "@/components/Liqui";
+import Sucess from '@/components/sucess'
 
 const page = () => {
   

@@ -221,9 +221,10 @@ const Navbar = ({ role }) => {
                           height={100}
                         />
                         <Link
-                          href={`/services/${service.name
+                         /* href={`/services/${service.name
                             .toLowerCase()
-                            .replace(/\s+/g, "")}`}
+                            .replace(/\s+/g, "")}`}*/
+                            href="#"
                           className="block lg:px-1 py-2 md:py-1 lg:py-0 2xl:py-1"
                         >
                           {service.name}
@@ -269,7 +270,10 @@ const Navbar = ({ role }) => {
                           height={100}
                         />
                         <Link
-                          href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}
+                      /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
+                      href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
+
+                        
                           className="block lg:px-2 py-2 md:py-4 lg:py-0 "
                         >
                           {service.name}
