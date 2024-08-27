@@ -118,14 +118,14 @@ const DumyForm = () => {
     if (!visible) return null;
     return (
         <div className=''>
-            <div class="justify-center items-center  Glassys flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="justify-center items-center  Glassys flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className='relative'>
-                <div class=" grid md:grid-cols-2  w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
+                <div className=" grid md:grid-cols-2  w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
 
-                            <Image src="/FormImg.png" className="-z-20 w-[300px] lg:w-[400px] xl:w-[500px] h-[550px] lg:h-[500px] xl:h-[600px]" priority alt="" width={1000} height={1000} />
+                            <Image src="/FormImg.png" className="-z-20 w-[300px] lg:w-[400px] xl:w-[500px] h-[550px] lg:h-[500px] xl:h-[600px]" priority alt="hey" width={500} height={300} />
                             <div className='z-20 absolute justify-center top-6  text-white'>
                                 <div className='px-5'>
 
@@ -141,13 +141,13 @@ const DumyForm = () => {
                                     <h1 className='text-2xl leading-snug  open_sans_displays inline-block border-b'>Explore our works —</h1>
                                     <div className='grid  aspect grid-cols-3 items-center py-4 gap-4 xl:gap-4'>
                                         <div className='border-r-2 pr-4'>
-                                            <Image src="/premio.png" alt='' className="" width={100} height={100} />
+                                            <Image src="/premio.png" alt='premio'  width={100} height={100} />
                                         </div>
                                         <div className='border-r-2 pr-4 inline-block'>
-                                            <Image src="/Dominos.png"  className="" alt='' width={120} height={120} />
+                                            <Image src="/Dominos.png"  alt='Domios' width={120} height={120} />
                                         </div>
                                         <div className=''>
-                                            <Image src="/Okmox.png" className="" alt='' width={100} height={100} />
+                                            <Image src="/Okmox.png"  alt='pkomo' width={100} height={100} />
 
                                         </div>
                                     </div>
@@ -158,7 +158,7 @@ const DumyForm = () => {
 
 
 
-                    <div class="w-full flex  md:w-[500px]  2xl:w-[650px]   items-center ">
+                    <div className="w-full flex  md:w-[500px]  2xl:w-[650px]   items-center ">
 
                         {successBanner && (
                             <div className=" translate-x-2 absolute  z-10 top-10  xl:w-[500px] mb-4 lg:ml-40 2xl:ml-20  xl:ml-60 md:mx-2 sm:ml-10 bg-green-500 text-white p-4 rounded-lg">
@@ -171,11 +171,11 @@ const DumyForm = () => {
                             onSubmit={handleSubmit}
                             className="    "
                         >
-                            <div class="flex flex-col  gap-10  w-full">
-                                <div class="lg:w-[450px] md:w-[400px] lg:h-[500px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
-                                    <div class="flex pt-10  justify-end ">
+                            <div className="flex flex-col  gap-10  w-full">
+                                <div className="lg:w-[450px] md:w-[400px] lg:h-[500px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                    <div className="flex pt-10  justify-end ">
 
-                                        <svg onClick={handleClose} class="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M1 1L19 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         </path>
                                             <path d="M1 19L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -202,7 +202,7 @@ const DumyForm = () => {
                                         )}
 
                                         <label
-                                            for="Name"
+                                            htmlFor="Name"
                                             className="peer-focus:font-medium  absolute text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Full Name*
@@ -229,7 +229,7 @@ const DumyForm = () => {
                                         )}
 
                                         <label
-                                            for="Email"
+                                            htmlFor="Email"
                                             className="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             E-Mail ID*
@@ -256,7 +256,7 @@ const DumyForm = () => {
                                         )}
 
                                         <label
-                                            for="Number"
+                                            htmlFor="Number"
                                             className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Contact Number*
@@ -283,7 +283,7 @@ const DumyForm = () => {
                                         )}
 
                                         <label
-                                            for="message"
+                                            htmlFor="message"
                                             className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Message (Optional)
