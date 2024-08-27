@@ -26,8 +26,8 @@ const Portfolio = () => {
     setCursorPosition({ x: event.clientX, y: event.clientY });
   };
 
-  const handleViewMoreClick = () => {
-    router.push("/LiquiClear");
+  const handleViewMoreClick = (navigate) => {
+    router.push(navigate);
   };
 
   useEffect(() => {
@@ -49,18 +49,18 @@ const Portfolio = () => {
    
   ];
   const cards = [
-    { image: Mobi, title: "Cris - Indian Railway", description: "We tackled operational and data ", descriptionx:"challenges at CRIS" },
-    { image: Mobi1, title: "Dating App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Siidcul UI Design", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Find the Doctors Online", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Clothes Store", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Generative AI", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital"},
-    { image: Mobis, title: "VR Platform App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Tab, title: "Water Purifier App", description: "Lorem Epsom is dummy text for the ", link:"LiquiClear", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Gaming App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Gaming App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Free Game Online", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital" },
-    { image: Mobi1, title: "Fit with App", description: "Lorem Epsom is dummy text for the ",descriptionx:"print and digital" },
+    { image: Mobi, title: "Cris - Indian Railway", description: "We tackled operational and data ", descriptionx:"challenges at CRIS",  },
+    { image: Mobi1, title: "Dating App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Siidcul UI Design", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Find the Doctors Online", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Clothes Store", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Generative AI", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital", },
+    { image: Mobis, title: "VR Platform App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Tab, title: "Water Purifier App", description: "Lorem Epsom is dummy text for the ", link:"LiquiClear", descriptionx:"print and digital",alt:"LiquiClear",  },
+    { image: Mobi1, title: "Gaming App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Gaming App", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Free Game Online", description: "Lorem Epsom is dummy text for the ", descriptionx:"print and digital",  },
+    { image: Mobi1, title: "Fit with App", description: "Lorem Epsom is dummy text for the ",descriptionx:"print and digital",  },
   ];
 
   return (
@@ -107,13 +107,13 @@ const Portfolio = () => {
 
               {hoveredCard === index && (
                   <div
-                    className=" bg-black opacity-40  absolute z-10 Poppin text-xs sm:text-lg viewMore lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
+                    className=" bg-black opacity-40  block absolute z-10 Poppin text-xs sm:text-lg viewMore lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
                     style={{
                       top: `${cursorPosition.y - 200}px`,
                       left: `${cursorPosition.x - 400}px`,
                       
                     }}
-                    onClick={handleViewMoreClick}
+                    onClick={() => handleViewMoreClick(card.alt)}
                   >
                     Read<br /> More...
                   </div>
@@ -137,13 +137,13 @@ const Portfolio = () => {
                 />
                 {hoveredCard === index + 6 && (
                   <div
-                    className=" bg-black opacity-40 absolute z-10 Poppin text-xs sm:text-lg lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
+                    className=" bg-black block opacity-40 absolute z-10 Poppin text-xs sm:text-lg lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
                     style={{
                       top: `${cursorPosition.y - 160}px`,
                       left: `${cursorPosition.x - 1000}px`,
                      
                     }}
-                    onClick={handleViewMoreClick}
+                    onClick={() => handleViewMoreClick(card.alt)}
                   >
                     Read<br /> More...
                   </div>
