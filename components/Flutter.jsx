@@ -83,7 +83,7 @@ const Flutter = () => {
         loop
         className="inset-0 object-cover w-full h-auto"
     >
-        <source src="/Intro.mp4" type="video/mp4" />
+        <source src="/Intro.webm" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
 
@@ -92,7 +92,7 @@ const Flutter = () => {
 <div className='relative '>
 <div className="absolute   w-screen  -bottom-[54px] md:-bottom-20  h-auto lg:-bottom-[92px] xl:-bottom-[107px] bg-[#0062FF] bani  transform -translate-x-1/2">
        <Image
-            src="/bannerxlogo.png"
+            src="/bannerxlogo.webp"
             className="w-[1290px]  p-4 rotate-2 mx-auto"
             alt=""
             width={1000}

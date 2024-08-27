@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import FormComponent from '@/components/Popups';
-import Techno1 from "@/public/Techno11.png"
+import Techno1 from "@/public/Techno11.webp"
 import Techno2 from "@/public/Techno2.png"
 import Techno3 from "@/public/Techno3.png"
 import Image from 'next/image'
