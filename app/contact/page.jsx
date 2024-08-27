@@ -139,10 +139,10 @@ const Page = () => {
           <Image src="/Path.svg" alt="" width={20} height={20} />
         </div>
 
-        <p className="w-full max-w-4xl">
-        <iframe  className="w-72  md:w-[750px] max-w-screen-xl  sm:w-[600px] lg:w-[1000px] lg:max-w-6xl  2xl:w-[1600px] 2xl:max-w-[1960px] xl:max-w-screen-xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin" width="950" height="400"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <div className="map-responsive">
+        <iframe   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>   
-             </p>
+             </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ContactForm onClose={closeModal} />

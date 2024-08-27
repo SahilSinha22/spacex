@@ -19,9 +19,10 @@ const page = () => {
   return (
 <div className="w-full items-center ">
   <Navbar  />
+  <DumyForm/>
     <Intros/>
    
- <DumyForm/>
+
     <Award/>
     <Imgcmp/>
 <Pef/>

@@ -1320,9 +1320,7 @@ height:140px;
     margin-top:0px;
   height:60px;
   }
-  iframe{
-    width:300px;
-    }
+ 
 
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) {
@@ -1375,10 +1373,7 @@ height:140px;
     margin-top:45px;
     height:50px;
   }
-  iframe{
-    width:460px;
-    max-width: 500px;
-    }
+ 
 }
 @media only screen and (min-width: 640px) and (max-width: 769px) {
   .intros{
@@ -1411,10 +1406,7 @@ height:140px;
     flex: 1 1 100px;
     margin-top:52px;
   }
-  iframe{
-    width:557px;
-    max-width: 700px;
-    }
+ 
 }
 
 @media only screen and (min-width: 769px) and  (max-width: 1023px) {
@@ -1455,10 +1447,7 @@ height:140px;
     text-align: center;  
     margin-top:50px;
   }
-  iframe{
-    width:700px;
-    max-width: 1200px;
-    }
+
   }
 @media only screen and (min-width: 1024px) and  (max-width: 1240px) {
   .intros{
@@ -1533,9 +1522,7 @@ height:140px;
       text-align: center;  
       margin-top:90px;
     }
-    iframe{
-      width:970px;
-      }
+   
     }
   
     @media only screen and (min-width: 1530px)  {
@@ -1572,9 +1559,7 @@ height:140px;
         text-align: center;  
         margin-top:90px;
       }
-      iframe{
-        width:1600px;
-        }
+   
       }
 
      
@@ -1939,4 +1924,26 @@ opacity: 1;
 
 .card:hover .viewMore {
   display: block;
+}
+
+
+
+
+/*--------------------Map responsove------------------*/
+
+.map-responsive{
+  overflow: hidden;
+  /*padding-bottom: 56.25%;*/
+  position: relative;
+  height: 410px;
+
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
 }
