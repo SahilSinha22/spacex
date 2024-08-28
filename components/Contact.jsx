@@ -277,7 +277,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="xl:w-28 ml-4 2xl:w-28  w-10 md:w-28  text-xl text-center  border-b-2 bg-black text-white"
+                    className="xl:w-20 ml-4   w-10 md:w-28  text-xl text-center  border-b-2 bg-black text-white"
                     value={inputCaptcha}
                     onChange={handleCaptchaChange}
                     required
