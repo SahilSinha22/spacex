@@ -39,7 +39,7 @@ const services = [
   { name: "Events", logo: "/Industries/Events.svg" },
   { name: "Social Networking", logo: "/Industries/SocialN.svg" },
   { name: "EV", logo: "/Industries/EV.svg" },
-  { name: "Oil and Gas", logo: "/Industries/Oil&gas.svg" },
+  { name: "Oil and Gas", logo: "/Industries/Oilgas.svg" },
   { name: "Banking", logo: "/Industries/Banking.svg" },
   { name: "Automotive", logo: "/Industries/Automotive.svg" },
   { name: "Telecom", logo: "/Industries/Telecom.svg" },
