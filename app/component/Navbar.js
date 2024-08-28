@@ -53,20 +53,20 @@ const services = [
 const technology = [
 
   { name: "React Native", logo: "/Industries/OnDemand.svg" },
-  { name: "Android", logo: "/Industries/Ecommerce.svg" },
-  { name: "PHP/Node JS Development", logo: "/Industries/Realestate.svg" },
-  { name: "ionic", logo: "/Industries/Healthcare.svg" },
-  { name: "IOT", logo: "/Saas.svg" },
-  { name: "Ui/UX Design", logo: "/Industries/Education.svg" },
-  { name: "IOS App", logo: "/Industries/Restaurant.svg" },
-  { name: "Quality Analyst", logo: "/Industries/Games.svg" },
-  { name: "VR Development", logo: "/Industries/News.svg" },
-  { name: "AI", logo: "/Industries/Entertainment.svg" },
-  { name: "Blockchain", logo: "/Industries/Wellness.svg" },
+  { name: "AI Development", logo: "/Industries/Ecommerce.svg" },
+  { name: "Chatbot", logo: "/Industries/Realestate.svg" },
+  { name: "IOT", logo: "/Industries/Healthcare.svg" },
+  { name: "Augmented Reality", logo: "/Saas.svg" },
+  { name: "Ionic", logo: "/Industries/Education.svg" },
+  { name: "VR Development", logo: "/Industries/Restaurant.svg" },
+  { name: "PHP/Nodes JS", logo: "/Industries/Games.svg" },
+  { name: "Quality Analyst", logo: "/Industries/News.svg" },
+  { name: "Wearable", logo: "/Industries/Entertainment.svg" },
+  { name: "iOS App", logo: "/Industries/Wellness.svg" },
   { name: "Flutter", logo: "/Industries/Logistics.svg" },
-  { name: "wearables", logo: "/Industries/Travel.svg" },
-  { name: "Argumented Reality", logo: "/Industries/Finance.svg" },
-  { name: "Chatbots", logo: "/Industries/Travel.svg" },
+  { name: "Android App", logo: "/Industries/Travel.svg" },
+  { name: "Blockchain", logo: "/Industries/Finance.svg" },
+  { name: "UI/UX Designing", logo: "/Industries/Travel.svg" },
 
 
 ];
@@ -89,8 +89,8 @@ const Navbar = ({ role }) => {
         setBgColor('black');
         setTextColor('gray');
         setLogo(logos[pathname]);
-      } 
-     else {
+      }
+      else {
         setBgColor('white');
         setTextColor('rgb(161 161 170)');
         setLogo(logos[pathname]);
@@ -105,7 +105,7 @@ const Navbar = ({ role }) => {
   const linkStyles = (path) => {
     const isActive = pathname === path;
     let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-8 ';
-    
+
     if (path === '/') {
       baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-white ';
     }
@@ -124,11 +124,11 @@ const Navbar = ({ role }) => {
 
   return (
     <nav className="items-center text-center  p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40  relative max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
+      <div className="md:px-10 xl:px-40  relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
             <Link href="/" >
-            <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
+              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
             </Link>
           </span>
         </div>
@@ -161,8 +161,8 @@ const Navbar = ({ role }) => {
 
 
             <div className=" lg:inline-block  group"
-             onMouseEnter={() => setIsOpenMenu(true)}
-             onMouseLeave={() => setIsOpenMenu(false)}>
+              onMouseEnter={() => setIsOpenMenu(true)}
+              onMouseLeave={() => setIsOpenMenu(false)}>
 
               <Link
                 href="#"
@@ -215,20 +215,20 @@ const Navbar = ({ role }) => {
                       >
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
-                       
-                        <Image
-                          src={service.logo}
-                          alt={`${service.name} logo`}
-                          
-                          width={100}
-                          height={100}
-                        />
-                         </div>
+
+                          <Image
+                            src={service.logo}
+                            alt={`${service.name} logo`}
+
+                            width={100}
+                            height={100}
+                          />
+                        </div>
                         <Link
-                         /* href={`/services/${service.name
-                            .toLowerCase()
-                            .replace(/\s+/g, "")}`}*/
-                            href="#"
+                          /* href={`/services/${service.name
+                             .toLowerCase()
+                             .replace(/\s+/g, "")}`}*/
+                          href="#"
                           className="block lg:px-1 py-2 md:py-1 lg:py-0 2xl:py-1"
                         >
                           {service.name}
@@ -241,8 +241,8 @@ const Navbar = ({ role }) => {
             </div>
 
             <div className=" lg:inline-block  group"
-             onMouseEnter={() => setIsOpenMenuT(true)}
-             onMouseLeave={() => setIsOpenMenuT(false)}>
+              onMouseEnter={() => setIsOpenMenuT(true)}
+              onMouseLeave={() => setIsOpenMenuT(false)}>
 
               <Link
                 href="#"
@@ -259,27 +259,31 @@ const Navbar = ({ role }) => {
                 )}
               </Link>
               <div
-                className={`absolute left-0  mt-10 w-auto h-full md:h-auto md:px-10 xl:px-20 2xl:px-60 text-black  bg-white rounded-md z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute  max-w-7xl left-0 xl:left-28 2xl:left-40  justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
-                <div className="grid grid-rows-2 justify-center  md:flex Poppinx ">
 
+
+                <section className="flex flex-row justify-between rounded-3xl w-full pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
+                  <div className="max-w-5xl mt-6 lg:mt-0 w-60 lg:w-96 hidden md:block">
+                    <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
+                  </div>
                   <ul className="py-1 text-xs md:text-base  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
                     {technology.map((service, index) => (
-                      <li key={index} className="flex items-center  dropslash lg:mr-2 xl:mr-10 p-2 hover:text-[#C9784F] custom-filter">
-                                                <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+                      <li key={index} className="flex items-center w-[200px] lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                        <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
-                        <Image
-                          src={service.logo}
-                          alt={`${service.name} logo`}
-                          width={100}
-                          height={100}
-                        />
+                          <Image
+                            src={service.logo}
+                            alt={`${service.name} logo`}
+                            width={100}
+                            height={100}
+                          />
                         </div>
                         <Link
-                      /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
-                      href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
+                          /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
+                          href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
 
-                        
+
                           className="block lg:px-2 py-2 md:py-4 lg:py-0 "
                         >
                           {service.name}
@@ -287,25 +291,25 @@ const Navbar = ({ role }) => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </section>
               </div>
             </div>
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
               Portfolio
             </Link>
-            <Link href="#"  className={linkStyles('/')}>
+            <Link href="#" className={linkStyles('/')}>
               Blog
             </Link>
           </div>
           <div>
             <Link href="/contact" className={linkStyles('/contact')}>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white  xl:ml-10 2xl:ml-40 ">
-              Contact Us
-            </button>
+              <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white  xl:ml-10 2xl:ml-40 ">
+                Contact Us
+              </button>
             </Link>
           </div>
         </div>
-        
+
       </div>
     </nav>
   );

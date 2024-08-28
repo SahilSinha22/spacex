@@ -77,7 +77,7 @@ const Portfolio = () => {
           the future of innovation and technology.
         </p>
       </div>
-      <div className="mt-20 mx-8 md:mx-20 xl:mx-40  2xl:mx-20 mb-20 xl:gap-1  xl:mb-0 flex md:justify-center">
+      <div className="mt-20 mx-8 md:mx-20 xl:mx-40  2xl:mx-20 mb-20 gap-2 md:gap-0 xl:gap-1  xl:mb-0 flex md:justify-center">
         <div className="left-column  md:mx-5 w-full md:w-auto 2xl:w-[650px]">
           {cards.slice(0, 6).map((card, index) => (
             <div key={index} className="animated-image relative pb-10 left show "
@@ -86,7 +86,7 @@ const Portfolio = () => {
                    onMouseLeave={handleMouseLeave}>
                 <Image
                   src={card.image}
-                  className="imgx w-full h-[400px] xl:h-[550px]"
+                  className="imgx w-full h-[280px] md:h-[400px] xl:h-[550px]"
                   alt="Image 1"
                   width={500}
                   height={500}
@@ -124,14 +124,14 @@ const Portfolio = () => {
 
         <div className="right-column ">
           {cards.slice(6).map((card, index) => (
-            <div key={index} className="animated-image  mb-20 right show 2xl:w-[650px]">
+            <div key={index} className="animated-image  mb-10 md:mb-20 right show 2xl:w-[650px]">
               <div className="relative "
                    onMouseEnter={() => handleMouseEnter(index + 6)}
                    onMouseLeave={handleMouseLeave}>
                 <Image
                   src={card.image}
                   alt="Image 2"
-                  className="imgx w-full h-[300px] xl:h-[480px] "
+                  className="imgx w-full h-[250px] md:h-[300px] xl:h-[480px] "
                   width={600}
                   height={600}
                 />
