@@ -10,25 +10,25 @@ const Flutter = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleButtonClick = () => {
-      setIsModalOpen(true);
+        setIsModalOpen(true);
     };
-  
+
     const closeModal = () => {
-      setIsModalOpen(false);
-      
+        setIsModalOpen(false);
+
     };
     // State to keep track of the currently open question
     const [openQuestion, setOpenQuestion] = useState(0); // Initially, no question is open
 
-  // Function to handle question hover
-  const handleQuestionHover = (index) => {
-    setOpenQuestion(index); // Open the hovered question
-  };
+    // Function to handle question hover
+    const handleQuestionHover = (index) => {
+        setOpenQuestion(index); // Open the hovered question
+    };
 
-  // Function to handle mouse leave (to close the question when not hovering)
-  const handleMouseLeave = () => {
-    setOpenQuestion(-1); // Close the question when mouse leaves
-  };
+    // Function to handle mouse leave (to close the question when not hovering)
+    const handleMouseLeave = () => {
+        setOpenQuestion(-1); // Close the question when mouse leaves
+    };
 
     // FAQ content
     const faqContent = [
@@ -72,36 +72,36 @@ const Flutter = () => {
         <>
             <div className='mx-auto'>
                 <div className="max-w-7xl items-center text-center mx-auto px-2 md:px-10 xl:px-20 2xl:px-10 py-16 md:py-20 lg:pt-28 lg:pb-10 ">
-                    <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal   font-bold playfair_displays mb-4">Flutter App Development Company Helps <br/>You Build Applications for Multiple Screens!</h1>
+                    <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal   font-bold playfair_displays mb-4">Flutter App Development Company Helps <br />You Build Applications for Multiple Screens!</h1>
                     <p className="  lg:text-xl xl:text-2xl   text-muted-foreground mb-6">Introducing big waves in modern cross-platform app development, Flutter tech <br /> builds exquisite, high-performing, and flawless mobile apps.</p>
 
                 </div>
                 <div className="flex  flex-wrap justify-center gap-4 px-2 sm:px-10 max-w-7xl mx-auto">
-    <video
-        autoPlay
-        muted
-        loop
-        className="inset-0 object-cover w-full h-auto"
-    >
-        <source src="/Intro.webm" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        className="inset-0 object-cover w-full h-auto"
+                    >
+                        <source src="/Intro.webm" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
 
-   
-</div>
-<div className='relative '>
-<div className="absolute   w-screen  -bottom-[50px] md:-bottom-16  h-14 md:h-20 lg:h-28 lg:-bottom-[96px] xl:-bottom-[90px] bg-[#0062FF] bani  transform -translate-x-1/2">
-       <Image
-            src="/bannerxlogo.webp"
-            className="w-[1290px]  p-4 rotate-2 mx-auto"
-            alt=""
-            width={1000}
-            height={1000}
-        />
-       
-    </div>
-</div>
- 
+
+                </div>
+                <div className='relative '>
+                    <div className="absolute   w-screen  -bottom-[50px] md:-bottom-16  h-14 md:h-20 lg:h-28 lg:-bottom-[96px] xl:-bottom-[90px] bg-[#0062FF] bani  transform -translate-x-1/2">
+                        <Image
+                            src="/bannerxlogo.webp"
+                            className="w-[1290px]  p-4 rotate-2 mx-auto"
+                            alt=""
+                            width={1000}
+                            height={1000}
+                        />
+
+                    </div>
+                </div>
+
 
                 <div className=" max-w-7xl mx-auto my-10 mt-40 open_sans_display px-2 sm:px-10 xl:px-20 ">
                     <h1 className="text-3xl md:text-5xl  text-primary mb-4">Introduction to <span className="text-blue-500">Flutter</span></h1>
@@ -143,7 +143,7 @@ const Flutter = () => {
                                 loop
                                 className="inset-0  object-cover "
                             >
-                                <source src="/music learning application tubik ui design (1).webm"  type="video/mp4" />
+                                <source src="/music learning application tubik ui design (1).webm" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <div>
@@ -316,7 +316,7 @@ const Flutter = () => {
                         </p>
                     </div>
                 </div>
-         
+
                 <div className='bg-[#5F2AE2] mt-20 xl:px-20'>
 
 
@@ -359,8 +359,8 @@ const Flutter = () => {
                     </div>
                 </div>
                 <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ContactForm onClose={closeModal} />
-      </Modal>
+                    <ContactForm onClose={closeModal} />
+                </Modal>
             </div>
         </>
     )

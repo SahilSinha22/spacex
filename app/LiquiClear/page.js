@@ -206,7 +206,7 @@ const Page = () => {
                     aria-hidden="true"
                     alt="minimizes-scaling"
                     src={Feature3}
-                    className="mx-auto mb-4 w-20 2xl:h-24 h-20"
+                    className="mx-auto mb-4 2xl:w-24 w-20 2xl:h-24 h-20"
                     width={500}
                     height={5}
                   />

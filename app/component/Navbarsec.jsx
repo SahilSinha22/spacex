@@ -20,55 +20,55 @@ const logos = {
 };
 const technology = [
 
-  { name: "React Native", logo: "/OnDemand.svg" },
-  { name: "Android", logo: "/Ecommerce.svg" },
-  { name: "PHP/Node JS Development", logo: "/Realestate.svg" },
-  { name: "ionic", logo: "/Healthcare.svg" },
-  { name: "IOT", logo: "/Saas.svg" },
-  { name: "Ui/UX Design", logo: "/Education.svg" },
-  { name: "IOS App", logo: "/Restaurant.svg" },
-  { name: "Quality Analyst", logo: "/Games.svg" },
-  { name: "VR Development", logo: "/News.svg" },
-  { name: "AI", logo: "/Entertainment.svg" },
-  { name: "Blockchain", logo: "/Wellness.svg" },
-  { name: "Flutter", logo: "/Logistics.svg" },
-  { name: "wearables", logo: "/Travel.svg" },
-  { name: "Argumented Reality", logo: "/Finance.svg" },
-  { name: "Chatbots", logo: "/Travel.svg" },
+  { name: "React Native", logo: "/Industries/OnDemand.svg" },
+  { name: "Android", logo: "/Industries/Ecommerce.svg" },
+  { name: "PHP/Node JS Development", logo: "/Industries/Realestate.svg" },
+  { name: "ionic", logo: "/Industries/Healthcare.svg" },
+  { name: "IOT", logo: "/Industries/Saas.svg" },
+  { name: "Ui/UX Design", logo: "/Industries/Education.svg" },
+  { name: "IOS App", logo: "/Industries/Restaurant.svg" },
+  { name: "Quality Analyst", logo: "/Industries/Games.svg" },
+  { name: "VR Development", logo: "/Industries/News.svg" },
+  { name: "AI", logo: "/Industries/Entertainment.svg" },
+  { name: "Blockchain", logo: "/Industries/Wellness.svg" },
+  { name: "Flutter", logo: "/Industries/Logistics.svg" },
+  { name: "wearables", logo: "/Industries/Travel.svg" },
+  { name: "Argumented Reality", logo: "/Industries/Finance.svg" },
+  { name: "Chatbots", logo: "/Industries/Travel.svg" },
 
 
 ];
 const services = [
 
-  { name: "On Demand", logo: "/OnDemand.svg" },
-  { name: "eCommerce", logo: "/Ecommerce.svg" },
-  { name: "Real Estate", logo: "/Realestate.svg" },
-  { name: "Healthcare", logo: "/Healthcare.svg" },
-  { name: "SaaS", logo: "/Saas.svg" },
-  { name: "Education", logo: "/Education.svg" },
-  { name: "Restaurant", logo: "/Restaurant.svg" },
-  { name: "Games", logo: "/Games.svg" },
-  { name: "News", logo: "/News.svg" },
-  { name: "Entertainment", logo: "/Entertainment.svg" },
-  { name: "Wellness", logo: "/Wellness.svg" },
-  { name: "Logistics", logo: "/Logistics.svg" },
-  { name: "Travel", logo: "/Travel.svg" },
-  { name: "Finance", logo: "/Finance.svg" },
-  { name: "Aviation", logo: "/Travel.svg" },
-  { name: "E-Scooter", logo: "/Escooter.svg" },
-  { name: "Politics", logo: "/Politics.svg" },
-  { name: "Agriculture", logo: "/Agriculture.svg" },
-  { name: "Events", logo: "/Events.svg" },
-  { name: "Social Networking", logo: "/SocialN.svg" },
-  { name: "EV", logo: "/EV.svg" },
-  { name: "Oil and Gas", logo: "/Oil&gas.svg" },
-  { name: "Banking", logo: "/Banking.svg" },
-  { name: "Automotive", logo: "/Automotive.svg" },
-  { name: "Telecom", logo: "/Telecom.svg" },
-  { name: "Insurance", logo: "/Insurance.svg" },
-  { name: "Manufacturing", logo: "/Manufacturing.svg" },
+  { name: "On Demand", logo: "/Industries/OnDemand.svg" },
+  { name: "eCommerce", logo: "/Industries/Ecommerce.svg" },
+  { name: "Real Estate", logo: "/Industries/Realestate.svg" },
+  { name: "Healthcare", logo: "/Industries/Healthcare.svg" },
+  { name: "SaaS", logo: "/Industries/Saas.svg" },
+  { name: "Education", logo: "/Industries/Education.svg" },
+  { name: "Restaurant", logo: "/Industries/Restaurant.svg" },
+  { name: "Games", logo: "/Industries/Games.svg" },
+  { name: "News", logo: "/Industries/News.svg" },
+  { name: "Entertainment", logo: "/Industries/Entertainment.svg" },
+  { name: "Wellness", logo: "/Industries/Wellness.svg" },
+  { name: "Logistics", logo: "/Industries/Logistics.svg" },
+  { name: "Travel", logo: "/Industries/Travel.svg" },
+  { name: "Finance", logo: "/Industries/Finance.svg" },
+  { name: "Aviation", logo: "/Industries/Travel.svg" },
+  { name: "E-Scooter", logo: "/Industries/Escooter.svg" },
+  { name: "Politics", logo: "/Industries/Politics.svg" },
+  { name: "Agriculture", logo: "/Industries/Agriculture.svg" },
+  { name: "Events", logo: "/Industries/Events.svg" },
+  { name: "Social Networking", logo: "/Industries/SocialN.svg" },
+  { name: "EV", logo: "/Industries/EV.svg" },
+  { name: "Oil and Gas", logo: "/Industries/Oil&gas.svg" },
+  { name: "Banking", logo: "/Industries/Banking.svg" },
+  { name: "Automotive", logo: "/Industries/Automotive.svg" },
+  { name: "Telecom", logo: "/Industries/Telecom.svg" },
+  { name: "Insurance", logo: "/Industries/Insurance.svg" },
+  { name: "Manufacturing", logo: "/Industries/Manufacturing.svg" },
 
-  { name: "Construction", logo: "/Construction.svg" },
+  { name: "Construction", logo: "/Industries/Construction.svg" },
 
 
 ];
@@ -211,13 +211,15 @@ const Navbar = ({ role }) => {
                         key={index}
                         className="flex items-center mr-4 dropslash md:mr-2 w-20 md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] custom-filter"
                       >
+                                                <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+
                         <Image
                           src={service.logo}
                           alt={`${service.name} logo`}
-                          className="lg:h-8 lg:w-8 h-4 w-4 md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-6 2xl:h-6"
                           width={100}
                           height={100}
                         />
+                        </div>
                         <Link
                           /*href={`/services/${service.name
                             .toLowerCase()
@@ -261,13 +263,15 @@ const Navbar = ({ role }) => {
                   <ul className="py-1 text-xs md:text-base  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
                     {technology.map((service, index) => (
                       <li key={index} className="flex items-center  dropslash lg:mr-2 xl:mr-10 p-2 hover:text-[#C9784F] custom-filter">
+                                               <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+
                         <Image
                           src={service.logo}
                           alt={`${service.name} logo`}
-                          className="lg:h-8 lg:w-8 h-6 w-6 mr-1 md:mr-2 xl:h-8 xl:w-8 2xl:w-10 2xl:h-10"
                           width={100}
                           height={100}
                         />
+                        </div>
                         <Link
                           /*href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")} `}*/
                           href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}

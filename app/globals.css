@@ -1964,3 +1964,10 @@ opacity: 1;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
+
+
+
+/*-------------------dropmenu--------------*/
+.dropslash:hover>div{
+background: transparent linear-gradient(113deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;;
+}
