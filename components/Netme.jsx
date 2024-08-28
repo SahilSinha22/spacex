@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 import Background1 from '@/public/land.png'; // replace with your image path
-import Mobi1 from '@/public/2pef.png'; // replace with your image path
+import Mobi1 from '@/public/2pef.webp'; // replace with your image path
 
 const ParallaxComponent = () => {
     return (
