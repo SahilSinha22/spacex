@@ -20,21 +20,21 @@ const logos = {
 };
 const technology = [
 
-  { name: "React Native", logo: "/Industries/OnDemand.svg" },
-  { name: "AI Development", logo: "/Industries/Ecommerce.svg" },
-  { name: "Chatbot", logo: "/Industries/Realestate.svg" },
-  { name: "IOT", logo: "/Industries/Healthcare.svg" },
-  { name: "Augmented Reality", logo: "/Saas.svg" },
-  { name: "Ionic", logo: "/Industries/Education.svg" },
-  { name: "VR Development", logo: "/Industries/Restaurant.svg" },
-  { name: "PHP/Nodes JS", logo: "/Industries/Games.svg" },
-  { name: "Quality Analyst", logo: "/Industries/News.svg" },
-  { name: "Wearable", logo: "/Industries/Entertainment.svg" },
-  { name: "iOS App", logo: "/Industries/Wellness.svg" },
-  { name: "Flutter", logo: "/Industries/Logistics.svg" },
-  { name: "Android App", logo: "/Industries/Travel.svg" },
-  { name: "Blockchain", logo: "/Industries/Finance.svg" },
-  { name: "UI/UX Designing", logo: "/Industries/Travel.svg" },
+  { name: "React Native", logo: "/Technology/reactNative.svg" },
+  { name: "AI Development", logo: "/Technology/Ai.svg" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg" },
+  { name: "IOT", logo: "/Technology/IOT.svg" },
+  { name: "Augmented Reality", logo: "/Technology/AR.svg" },
+  { name: "Ionic", logo: "/Technology/Ionic.svg" },
+  { name: "VR Development", logo: "/Technology/VR.svg" },
+  { name: "PHP/Nodes JS", logo: "/Technology/Php.svg" },
+  { name: "Quality Analyst", logo: "/Technology/Quality.svg" },
+  { name: "Wearable", logo: "/Technology/Wearable.svg" },
+  { name: "iOS App", logo: "/Technology/IOS.svg" },
+  { name: "Flutter", logo: "/Technology/Flutter.svg" },
+  { name: "Android App", logo: "/Technology/Android.svg" },
+  { name: "Blockchain", logo: "/Technology/Blockchain.svg" },
+  { name: "UI/UX Designing", logo: "/Technology/Ui.svg" },
 
 
 ];
@@ -260,13 +260,15 @@ const Navbar = ({ role }) => {
               >
 
 
-                <section className="flex flex-row justify-between rounded-3xl w-full pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
-                  <div className="max-w-5xl mt-6 lg:mt-0 w-60 lg:w-96 hidden md:block">
+                <section className="flex flex-row justify-between rounded-3xl w-full md:gap-6 pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px] mt-6 lg:mt-0 w-60 lg:w-96 hidden md:block">
                     <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
+                    <Image src="/Technology/Technologyimg.png" className=" m-6 " alt="" width={400} height={400} />
+
                   </div>
                   <ul className="py-1 text-xs md:text-base  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
                     {technology.map((service, index) => (
-                      <li key={index} className="flex items-center w-[200px] lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
                           <Image
