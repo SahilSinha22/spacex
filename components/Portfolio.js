@@ -33,6 +33,7 @@ const Portfolio = () => {
   useEffect(() => {
     if (hoveredCard !== null) {
       document.addEventListener('mousemove', handleMouseMove);
+      
     } else {
       document.removeEventListener('mousemove', handleMouseMove);
     }
@@ -42,7 +43,7 @@ const Portfolio = () => {
     };
   }, [hoveredCard]);
 
-
+  
   
   const cardx = [
     {  title: "LiquiClear" }
@@ -80,13 +81,14 @@ const Portfolio = () => {
       <div className="mt-20 mx-8 md:mx-20 xl:mx-40  2xl:mx-20 mb-20 gap-2 md:gap-0 xl:gap-1  xl:mb-0 flex md:justify-center">
         <div className="left-column  md:mx-5 w-full md:w-auto 2xl:w-[650px]">
           {cards.slice(0, 6).map((card, index) => (
-            <div key={index} className="animated-image relative pb-10 left show "
+            <div key={index} className=" relative pb-10 "
              
                    onMouseEnter={() => handleMouseEnter(index)}
-                   onMouseLeave={handleMouseLeave}>
+                   onMouseLeave={handleMouseLeave}
+                   onClick={() => handleViewMoreClick(card.alt)}>
                 <Image
                   src={card.image}
-                  className="imgx w-full h-[280px] md:h-[400px] xl:h-[550px]"
+                  className="cardxx w-full h-[280px]   md:h-[400px] xl:h-[550px]"
                   alt="Image 1"
                   width={500}
                   height={500}
@@ -107,13 +109,13 @@ const Portfolio = () => {
 
               {hoveredCard === index && (
                   <div
-                    className=" bg-black opacity-40  block absolute z-10 Poppin text-xs sm:text-lg viewMore lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
+                    className=" bg-black view-more opacity-40  absolute z-10 Poppin text-xs sm:text-lg viewMore lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
                     style={{
-                      top: `${cursorPosition.y - 200}px`,
-                      left: `${cursorPosition.x - 400}px`,
+                      top: `${cursorPosition.y - 5}px`,
+                      left: `${cursorPosition.x + 20}px`,
                       
                     }}
-                    onClick={() => handleViewMoreClick(card.alt)}
+                  
                   >
                     Read<br /> More...
                   </div>
@@ -124,26 +126,27 @@ const Portfolio = () => {
 
         <div className="right-column ">
           {cards.slice(6).map((card, index) => (
-            <div key={index} className="animated-image  mb-10 md:mb-20 right show 2xl:w-[650px]">
+            <div key={index} className=" mb-10 md:mb-20  2xl:w-[650px]">
               <div className="relative "
                    onMouseEnter={() => handleMouseEnter(index + 6)}
-                   onMouseLeave={handleMouseLeave}>
+                   onMouseLeave={handleMouseLeave}
+                   onClick={() => handleViewMoreClick(card.alt)}>
                 <Image
                   src={card.image}
                   alt="Image 2"
-                  className="imgx w-full h-[250px] md:h-[300px] xl:h-[480px] "
+                  className="cardxx w-full  h-[250px] md:h-[300px] xl:h-[480px] "
                   width={600}
                   height={600}
                 />
                 {hoveredCard === index + 6 && (
                   <div
-                    className=" bg-black block opacity-40 absolute z-10 Poppin text-xs sm:text-lg lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
+                    className=" bg-black view-more opacity-40 absolute z-10 Poppin text-xs sm:text-lg lg:text-xl text-white px-2 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-6 rounded-full cursor-pointer"
                     style={{
-                      top: `${cursorPosition.y - 160}px`,
-                      left: `${cursorPosition.x - 1000}px`,
+                      top: `${cursorPosition.y - 5}px`,
+                      left: `${cursorPosition.x + 20}px`,
                      
                     }}
-                    onClick={() => handleViewMoreClick(card.alt)}
+                    
                   >
                     Read<br /> More...
                   </div>

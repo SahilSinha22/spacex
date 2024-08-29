@@ -1950,7 +1950,7 @@ opacity: 1;
 
 
 
-
+/*-------------------portfolio card -----------*/
 .visible {
   opacity: 1;
   transform: translateY(0);
@@ -1965,6 +1965,10 @@ opacity: 1;
   transform: translate(-50%, -50%);
 }
 
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 /*-------------------dropmenu--------------*/
