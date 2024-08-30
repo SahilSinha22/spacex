@@ -152,7 +152,7 @@ const Navbar = ({ role }) => {
        
         <div className={`w-full block flex-grow lg:flex  text-center lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-0 xl:mr-0 open_sans_display font-semibold justify-left lg:flex-grow">
-            <Link href="/" className={linkStyles('/')}>
+            <Link href="/About" className={linkStyles('/')}>
               About
             </Link>
 

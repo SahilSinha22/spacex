@@ -15,6 +15,7 @@ const logos = {
   '/Technology': 'logo1.png',
   '/Blog': 'logo1.png',
   '/contact': 'logo.png',
+  '/About': 'logo1.png',
 };
 const services = [
 
@@ -115,6 +116,9 @@ const Navbar = ({ role }) => {
     else if (path === '/contact') {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
     }
+    else if (path === '/About') {
+      baseStyle += isActive ? 'text-orange-600 ' : 'text-zinc-400 hover:text-white ';
+    }
     else {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
     }
@@ -155,7 +159,7 @@ const Navbar = ({ role }) => {
         </div>
         <div className={`w-full block flex-grow lg:flex  text-center lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm  open_sans_display font-semibold justify-left lg:flex-grow">
-            <Link href="/" className={linkStyles('/')}>
+            <Link href="/About" className={linkStyles('/About')}>
               About
             </Link>
 
