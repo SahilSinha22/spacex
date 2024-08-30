@@ -157,7 +157,7 @@ const Page = () => {
           </div>
         </div>
         <div className="mx-auto mt-20">
-          <div className="bg-white p-8   py-4 md:py-10">
+          <div className="bg-white p-8   py-4 md:py-0">
             <div className="ml-4 xl:ml-28 mr-2 xl:mr-6 ">
               <h2 className="text-4xl  text-zinc-900">Features</h2>
               <p className="mt-4 text-xl font-medium ">
@@ -167,7 +167,7 @@ const Page = () => {
                 for the bathroom helps alleviate these effects.
               </p>
 
-              <div className="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div className="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 md:my-4 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div className=" w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 xl:pr-4 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
                   <Image
                     alt="water-quality"
@@ -305,7 +305,7 @@ const Page = () => {
         </div>
 
         <div className="flex flex-col items-center p-6">
-          <h2 className="text-2xl font-semibold mb-4">Tech Stacks</h2>
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4">Tech Stacks</h2>
           <div className="w-full  bori 2xl:max-w-[1600px] rounded-xl p-1 max-w-4xl">
           <div className="bg-[#000000]  p-6 rounded-xl grid grid-cols-3 md:grid-cols-6 justify-around w-full 2xl:max-w-[1600px] px-6 py-10 max-w-4xl">
             <div className="flex flex-col items-center my-4">
