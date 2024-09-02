@@ -181,7 +181,7 @@ const Navbar = ({ role }) => {
                 className={`absolute md:mx-10 xl:mx-40 left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto text-black bg-white rounded-md z-50 transition-all duration-300 ${isOpenMenu ? 'opacity-100 visible' : 'opacity-0 invisible'
                   }`}
               >
-                <section className="grid grid-rows-2 md:flex open_sans_display font-light">
+                <section className="flex flex-col md:flex-row md:flex open_sans_display font-light">
                   <div>
                     <div className="md:text-xs lg:text-sm text-left xl:text-sm 2xl:text-lg">
                       <h2 className=" text-2xl xl:text-3xl">Industries</h2>
@@ -205,11 +205,11 @@ const Navbar = ({ role }) => {
                       </h2>
                     </div>
                   </div>
-                  <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-3">
+                  <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-2 md:grid-cols-3">
                     {services.map((service, index) => (
                       <li
                         key={index}
-                        className="flex items-center mr-4 dropslash md:mr-2 w-20 md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] custom-filter"
+                        className="flex items-center mr-2 dropslash md:mr-2 w-auto md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] custom-filter"
                       >
                                                 <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
@@ -256,17 +256,16 @@ const Navbar = ({ role }) => {
                 )}
               </Link>
               <div
-                className={`absolute  max-w-7xl left-0 xl:left-28 2xl:left-32  justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute  max-w-7xl left-0 xl:left-28 2xl:left-40  justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
 
 
-                <section className="flex flex-row justify-between rounded-3xl w-full md:gap-6 pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
-                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px] mt-6 lg:mt-0 w-60 lg:w-96 hidden md:block">
+                <section className="flex flex-col md:flex-row justify-between rounded-3xl w-full md:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
                     <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
-                    <Image src="/Technology/Technologyimg.png" className=" m-6 " alt="" width={400} height={400} />
-
+                    <Image src="/Technology/Technologyimg.png" className=" m-6 w-72 md:w-auto " alt="" width={400} height={400} />
                   </div>
-                  <ul className="py-1 text-xs md:text-base  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
+                  <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
                     {technology.map((service, index) => (
                       <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">

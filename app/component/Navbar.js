@@ -187,8 +187,8 @@ const Navbar = ({ role }) => {
                 className={`absolute md:mx-10 xl:mx-40 left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto text-black bg-white rounded-md z-50 transition-all duration-300 ${isOpenMenu ? 'opacity-100 visible' : 'opacity-0 invisible'
                   }`}
               >
-                <section className="grid grid-rows-2 md:flex open_sans_display font-light">
-                  <div>
+                <section className="flex flex-col md:flex-row  md:flex open_sans_display font-light">
+                  <div >
                     <div className="md:text-xs lg:text-sm text-left xl:text-sm 2xl:text-lg">
                       <h2 className=" text-2xl xl:text-3xl">Industries</h2>
                       <p className="leading-relaxed text-left my-6">
@@ -211,11 +211,11 @@ const Navbar = ({ role }) => {
                       </h2>
                     </div>
                   </div>
-                  <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-3">
+                  <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-2 md:grid-cols-3">
                     {services.map((service, index) => (
                       <li
                         key={index}
-                        className="flex items-center mr-4  dropslash md:mr-2 w-20 md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] "
+                        className="flex items-center mr-2  dropslash md:mr-2 w-auto md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] "
                       >
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
@@ -267,12 +267,12 @@ const Navbar = ({ role }) => {
               >
 
 
-                <section className="flex flex-row justify-between rounded-3xl w-full md:gap-6 pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
-                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px]  mt-6 lg:mt-0  hidden md:block">
-                    <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
-                    <Image src="/Technology/Technologyimg.png" className=" m-6 " alt="" width={400} height={400} />
+                <section className="flex flex-col md:flex-row justify-between rounded-3xl w-full md:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx p-6 ">
+                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
+                    <h2 className="text-xl lg:text-4xl text-left  md:pl-6 open_sans_displays">Technologies</h2>
+                    <Image src="/Technology/Technologyimg.png" className=" md:m-6 my-6 w-72 md:w-auto " alt="" width={400} height={400} />
                   </div>
-                  <ul className="py-1 text-xs md:text-base  lg:text-base xl:text-lg  Poppin grid grid-cols-3">
+                  <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
                     {technology.map((service, index) => (
                       <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
@@ -289,7 +289,7 @@ const Navbar = ({ role }) => {
                           href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
 
 
-                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                          className="block lg:px-2 py-2 md:py-4 lg:py-0  "
                         >
                           {service.name}
                         </Link>
