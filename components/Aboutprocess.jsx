@@ -6,7 +6,7 @@ const Journey = () => {
 
       
         <div className=" max-w-7xl 2xl:max-w-[1530px] 2xl:mt-20 px-4 py-12 m-auto text-white ">
-            <div className="mx-5 md:mx-10 lg:mx-20 2xl:px-20">
+            <div className="mx-5 md:mx-10 xl:mx-20 2xl:px-20">
                 <h2 className="text-3xl md:text-5xl font-bold playfair text-left">
                     Process of Development
                 </h2>

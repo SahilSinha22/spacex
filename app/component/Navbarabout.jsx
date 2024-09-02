@@ -127,8 +127,8 @@ const Navbar = ({ role }) => {
   };
 
   return (
-    <nav className="items-center text-center  p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40  relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
+    <nav className="absolute z-10 items-center text-center  p-4" style={{ backgroundColor: bgColor }}>
+      <div className="  md:px-10 xl:px-40  relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
           <span>
             <Link href="/" >

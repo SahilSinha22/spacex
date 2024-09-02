@@ -1,62 +1,43 @@
 import Image from 'next/image'
 import React from 'react'
+const Leadership = [
 
+  { name: "Amit Singh", logo: "/Leader2.png", subname:"Co-Founder" },
+  { name: "Monika Chawala", logo: "/Leader2.png", subname:"Creative Head" },
+  { name: "Abhinav Baisley", logo: "/Leader2.png", subname:"Creative Head" },
+ 
+
+
+];
 const Leader = () => {
+
   return (
-    <div className='flex flex-col max-w-[1530px] m-auto p-4'>
-      <div class=" mx-auto xl:mx-20 2xl:px-20 py-10">
-        <h2 class="text-2xl md:text-3xl font-bold text-left mb-4">Leadership That Inspires</h2>
-        <p class=" text-muted-foreground  text-left mb-8">Here’s our leadership team that is driving our purpose to help our clients succeed.</p>
+    <div className='flex flex-col max-w-[1530px] m-auto p-4 playfair_displays'>
+      <div class="  xl:mx-20 2xl:px-20 py-10">
+        <h2 class="text-2xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
+        <p class=" text-xl  text-left mb-8 open_sans_display">Here’s our leadership team that is driving our purpose to help<br /> our clients succeed.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="text-center">
-            <div className='bg-[#F2F2F2] inline-block place-content-center items-center'>
+        {Leadership.map((leader, index) => (
+          <div  key={index} class="text-center">
+            <div className=' inline-block place-content-center  mt-10 items-center'>
 
-           
-            <Image class="" src="/Leader.png" alt="Amit Singh" width={300} height={300} />
+              <div className=' relative  '>
+                <div className='bannerx w-72 h-72  rounded-full'>
+
+                </div>
+                <div className='absolute -top-12 place-content-center '>
+
+
+                  <Image className=" w-full h-full rounded-full " src={leader.logo} alt={leader.subname} width={600} height={600} />
+                </div>
+              </div>
             </div>
-            <h3 class="mt-2 font-semibold">Amit Singh</h3>
-            <p class="text-muted-foreground">Co-Founder</p>
+            <h3 class="mt-2 text-3xl font-semibold">{leader.name}</h3>
+            <p class="text-xl open_sans_display">{leader.subname}</p>
           </div>
-          <div class="text-center">
-          <div className='bg-[#F2F2F2] inline-block place-content-center items-center'>
+          
+        ))}
 
-           
-<Image class="" src="/Leader.png" alt="Amit Singh" width={300} height={300} />
-</div>            <h3 class="mt-2 font-semibold">Name Here</h3>
-            <p class="text-muted-foreground">Position Here</p>
-          </div>
-          <div class="text-center">
-          <div className='bg-[#F2F2F2] inline-block place-content-center items-center'>
-
-           
-<Image class="" src="/Leader.png" alt="Amit Singh" width={300} height={300} />
-</div>            <h3 class="mt-2 font-semibold">Name Here</h3>
-            <p class="text-muted-foreground">Position Here</p>
-          </div>
-          <div class="text-center">
-          <div className='bg-[#F2F2F2] inline-block place-content-center items-center'>
-
-           
-<Image class="" src="/Leader.png" alt="Amit Singh" width={300} height={300} />
-</div>            <h3 class="mt-2 font-semibold">Name Here</h3>
-            <p class="text-muted-foreground">Position Here</p>
-          </div>
-          <div class="text-center">
-          <div className='bg-[#F2F2F2] inline-block place-content-center items-center'>
-
-           
-<Image class="" src="/Leader.png" alt="Amit Singh" width={300} height={300} />
-</div>            <h3 class="mt-2 font-semibold">Name Here</h3>
-            <p class="text-muted-foreground">Position Here</p>
-          </div>
-          <div class="text-center">
-          <div className='bg-[#F2F2F2] inline-block place-content-center items-center'>
-
-           
-<Image class="" src="/Leader.png" alt="Amit Singh" width={300} height={300} />
-</div>            <h3 class="mt-2 font-semibold">Name Here</h3>
-            <p class="text-muted-foreground">Position Here</p>
-          </div>
         </div>
       </div>
     </div>

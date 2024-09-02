@@ -76,12 +76,12 @@ const Award = () => {
       </div>
       <div className="w-full">
         <div className="flex flex-col sm:flex-row lg:flex-row xl:justify-between w-full">
-          <div className="xl:mt-2 text-4xl w-full  flex flex-col sm:text-4xl md:text-5xl xl:text-5xl lg:text-5xl mb-4">
+          <div className="xl:mt-2 text-4xl w-full  flex flex-col sm:text-3xl md:text-3xl xl:text-5xl lg:text-5xl mb-4">
             <div className="font-bold playfair">
               Grow with our
               <br /> technical expertise
             </div>
-            <div className="text-lg outfit_dispaly font-light  sm:text-lg lg:text-xl 2xl:text-2xl md:text-3xl">
+            <div className="text-lg outfit_dispaly font-light  sm:text-lg lg:text-xl 2xl:text-2xl md:text-xl">
               Our team is experienced with various different mobile
               
               technologies and can help you choose the right tech.
