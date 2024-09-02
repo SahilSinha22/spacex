@@ -327,7 +327,7 @@ const About1 = () => {
 
                     </div>
                 </nav>
-                <div className=' absolute z-10 p-4 bottom-20 xl:bottom-40 text-white  m-auto max-w-screen-7xl 2xl:max-w-screen-7xl mx-6 md:px-10 xl:px-32     2xl:mx-auto flex items-center text-center'>
+                <div className=' absolute z-10 p-4 bottom-20 xl:bottom-40 text-white flex justify-center  m-auto max-w-screen-7xl 2xl:max-w-screen-7xl mx-6 md:px-10 xl:px-32 lg:px-32    2xl:mx-auto  items-center text-center'>
 
                     <div class="flex  flex-col max-w-7xl text-center justify-center place-content-center leading-relaxed ">
 

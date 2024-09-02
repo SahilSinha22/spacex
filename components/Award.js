@@ -37,7 +37,7 @@ const Award = () => {
           <div className="rounded-xl px-2 py-6 lg:px-2 lg:py-7 xl:py-9  xl:px-4 sm:p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white hover:shadow">
             <Image
               src="/freelancer-1.svg" 
-              className="2xl:h-36 md:h-32 xl:h-28 2xl:w-60" // Updated to public directory path
+              className="2xl:h-36 md:h-32  lg:h-28 xl:h-28 2xl:w-60" // Updated to public directory path
               alt="Freelancer"
               width={150}
               height={12}

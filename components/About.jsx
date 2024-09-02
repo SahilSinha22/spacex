@@ -67,13 +67,13 @@ const About = () => {
             </div>
 
 
-            <div class="flex flex-col md:flex-row gap-4 items-center bg-card p-6 m-auto max-w-7xl open_sans_display">
+            <div class="flex flex-col md:flex-row gap-4 items-center bg-card p-6 m-auto max-w-7xl px-10 xl:px-20 2xl:px-0 open_sans_display">
             <div class="md:w-1/2 mt-4 md:mt-0">
 <Image src="/About1.png" alt="" width={1000} height={10000} />
   </div>
   <div class="md:w-1/2 text-left">
-    <h2 class="text-4xl font-bold text-primary text-black mb-4">About our Mission</h2>
-    <p class="text-2xl text-semibold leading-relaxed">
+    <h2 class="text-4xl md:text-2xl lg:text-4xl font-bold text-primary text-black mb-4">About our Mission</h2>
+    <p class="text-2xl md:text-lg lg:text-2xl  text-semibold leading-relaxed">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
       type and scrambled it to make a type specimen book. It has survived not only five centuries.
     </p>
@@ -82,10 +82,10 @@ const About = () => {
 </div>
 
             <div className='bg-black w-screen  p-4 '>
-                <div className='max-w-[1530px] m-auto'>
+                <div className='max-w-7xl 2xl:max-w-[1530px] m-auto'>
 
 
-                    <div className="bg-black   flex flex-col lg:flex-row gap-6 mx-auto py-10 xl:py-20 xl:px-20  2xl:mx-20 text-white h-full w-full overflow-hidden">
+                    <div className="bg-black   flex flex-col lg:flex-row gap-6 mx-auto py-10 xl:py-20 lg:px-10 xl:px-20  2xl:mx-20 text-white h-full w-full overflow-hidden">
 
                         <div class=" text-center lg:text-left ">
                             <div className='border-b py-6 inline-block border-white'>

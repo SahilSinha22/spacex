@@ -13,8 +13,8 @@ const Leader = () => {
 
   return (
     <div className='flex flex-col max-w-[1530px] m-auto p-4 playfair_displays'>
-      <div class="  xl:mx-20 2xl:px-20 py-10">
-        <h2 class="text-2xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
+      <div class=" md:px-10 xl:mx-20 2xl:px-20 py-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
         <p class=" text-xl  text-left mb-8 open_sans_display">Here’s our leadership team that is driving our purpose to help<br /> our clients succeed.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {Leadership.map((leader, index) => (

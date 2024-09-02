@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Navbar from '../component/Navbar'
 import Contact from "@/components/Contact"
 import Image from 'next/image'
-import Award from '@/components/Award'
 import Form from '@/components/Form'
 import Mobis from "@/public/Image 13.png"
 import Modal from '@/components/Model'; // Assuming Modal is in the same directory
