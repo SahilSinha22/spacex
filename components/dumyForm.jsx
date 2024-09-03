@@ -104,7 +104,7 @@ const DumyForm = () => {
         const timer = setTimeout(() => {
             setVisible(true);
             document.body.style.overflow = 'hidden';
-        }, 4000);
+        }, 7000);
 
         return () => clearTimeout(timer);
     }, []);
