@@ -16,7 +16,7 @@ const logos = {
   '/Technology/flutter': 'logo1.png',
   '/Blog': 'logo1.png',
   '/Industries': 'logo1.png',
-  
+
 };
 const technology = [
 
@@ -149,7 +149,7 @@ const Navbar = ({ role }) => {
             </svg>
           </button>
         </div>
-       
+
         <div className={`w-full block flex-grow lg:flex  text-center lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
           <div className="text-sm lg:mr-8 xl:ml-0 xl:mr-0 open_sans_display font-semibold justify-left lg:flex-grow">
             <Link href="/About" className={linkStyles('/')}>
@@ -159,8 +159,8 @@ const Navbar = ({ role }) => {
 
 
             <div className=" lg:inline-block  group"
-             onMouseEnter={() => setIsOpenMenu(true)}
-             onMouseLeave={() => setIsOpenMenu(false)}>
+              onMouseEnter={() => setIsOpenMenu(true)}
+              onMouseLeave={() => setIsOpenMenu(false)}>
 
               <Link
                 href="#"
@@ -211,20 +211,20 @@ const Navbar = ({ role }) => {
                         key={index}
                         className="flex items-center mr-2 dropslash md:mr-2 w-auto md:w-auto xl:mr-0 xl:w-60 hover:text-[#C9784F] custom-filter"
                       >
-                                                <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+                        <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
-                        <Image
-                          src={service.logo}
-                          alt={`${service.name} logo`}
-                          width={100}
-                          height={100}
-                        />
+                          <Image
+                            src={service.logo}
+                            alt={`${service.name} logo`}
+                            width={100}
+                            height={100}
+                          />
                         </div>
                         <Link
                           /*href={`/services/${service.name
                             .toLowerCase()
                             .replace(/\s+/g, "")}`}*/
-                            href="#"
+                          href="#"
                           className="block lg:px-1 py-2 md:py-1 lg:py-0 2xl:py-1"
                         >
                           {service.name}
@@ -238,8 +238,8 @@ const Navbar = ({ role }) => {
 
 
             <div className=" lg:inline-block  group"
-             onMouseEnter={() => setIsOpenMenuT(true)}
-             onMouseLeave={() => setIsOpenMenuT(false)}>
+              onMouseEnter={() => setIsOpenMenuT(true)}
+              onMouseLeave={() => setIsOpenMenuT(false)}>
 
               <Link
                 href="#"
@@ -260,14 +260,14 @@ const Navbar = ({ role }) => {
               >
 
 
-                <section className="flex flex-col md:flex-row justify-between rounded-3xl w-full md:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
-                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
+                <section className="flex flex-col md:flex-row justify-between xl:justify-around rounded-3xl w-full md:gap-6 xl:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-auto  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
                     <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
-                    <Image src="/Technology/Technologyimg.png" className=" m-6 w-72 md:w-auto " alt="" width={400} height={400} />
+                    <Image src="/Technology/Technologyimg.png" className=" m-6 w-72 md:w-auto xl:w-72 2xl:w-96 " alt="" width={400} height={400} />
                   </div>
                   <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
                     {technology.map((service, index) => (
-                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-auto 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
                           <Image
@@ -301,11 +301,11 @@ const Navbar = ({ role }) => {
             </Link>
           </div>
           <div>
-          <Link href="/contact" className={linkStyles('/contact')}>
-            <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-0 xl:mr-0 xl:ml-10 2xl:ml-40 lg:ml-0">
-              Contact Us
-            </button>
-          </Link>
+            <Link href="/contact" className={linkStyles('/contact')}>
+              <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white lg:mr-0 xl:mr-0 xl:ml-10 2xl:ml-40 lg:ml-0">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>

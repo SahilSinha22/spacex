@@ -267,14 +267,14 @@ const Navbar = ({ role }) => {
               >
 
 
-                <section className="flex flex-col md:flex-row justify-between rounded-3xl w-full md:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx p-6 ">
-                  <div className="max-w-5xl xl:w-1/2  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
-                    <h2 className="text-xl lg:text-4xl text-left  md:pl-6 open_sans_displays">Technologies</h2>
-                    <Image src="/Technology/Technologyimg.png" className=" md:m-6 my-6 w-72 md:w-auto " alt="" width={400} height={400} />
+                <section className="flex flex-col md:flex-row justify-between xl:justify-around rounded-3xl w-full md:gap-6 xl:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-auto  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
+                    <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
+                    <Image src="/Technology/Technologyimg.png" className=" m-6 w-72 md:w-auto xl:w-72 2xl:w-96 " alt="" width={400} height={400} />
                   </div>
                   <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
                     {technology.map((service, index) => (
-                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-auto 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
                           <Image
@@ -289,7 +289,7 @@ const Navbar = ({ role }) => {
                           href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
 
 
-                          className="block lg:px-2 py-2 md:py-4 lg:py-0  "
+                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
                         >
                           {service.name}
                         </Link>
