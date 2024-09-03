@@ -134,7 +134,7 @@ const About1 = () => {
                     loop
                     className="absolute -z-10 inset-0 w-screen h-full lg:h-screen object-cover"
                 >
-                    <source src="/About.mp4" type="video/mp4" />
+                    <source src="/About.webm" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <nav className=" items-center left-0 right-0 text-center  p-4" >
@@ -329,10 +329,10 @@ const About1 = () => {
                 </nav>
                 <div className='  z-10 p-4 bottom-40 lg:bottom-20 xl:bottom-40 h-full lg:h-screen text-white flex justify-center  m-auto max-w-screen-7xl 2xl:max-w-screen-7xl mx-6 md:mx-10 md:px-10  xl:px-32 lg:px-32    2xl:mx-auto  items-center text-center'>
 
-                    <div class="flex  flex-col max-w-7xl text-center justify-center place-content-center leading-relaxed m-auto ">
+                    <div className="flex  flex-col max-w-7xl text-center justify-center place-content-center leading-relaxed m-auto ">
 
-                        <h2 class="text-lg md:text-2xl lg:text-3xl xl:text-4xl  2xl:text-5xl font-bold text-center text-primary playfair_display">Know our team who is putting day & night for your<br /> wonderful digital experience</h2>
-                        <p class="mt-4 text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl text-muted-foreground text-center pen_sans_display m-auto">
+                        <h2 className="text-lg md:text-2xl lg:text-3xl xl:text-4xl  2xl:text-5xl font-bold text-center text-primary playfair_display">Know our team who is putting day & night for your<br /> wonderful digital experience</h2>
+                        <p className="mt-4 text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl text-muted-foreground text-center pen_sans_display m-auto">
                             Spacetotech is turning ideas into reality for a decade now. Partner with us & drive<br /> digitization to your business with innovation and technology.
                         </p>
                     </div>

@@ -62,18 +62,18 @@ const About = () => {
                 <div className='place-content-center py-10 items-center flex justify-center'>
 
 
-                    <Image src="/World.png" alt="" width={1000} height={1000} />
+                    <Image src="/World.webp" alt="" width={1000} height={1000} />
                 </div>
             </div>
 
 
-            <div class="flex flex-col md:flex-row gap-4 items-center bg-card p-6 m-auto max-w-7xl px-10 xl:px-20 2xl:px-0 open_sans_display">
-            <div class="md:w-1/2 mt-4 md:mt-0">
-<Image src="/About1.png" alt="" width={1000} height={10000} />
+            <div className="flex flex-col md:flex-row gap-4 items-center bg-card p-6 m-auto max-w-7xl px-10 xl:px-20 2xl:px-0 open_sans_display">
+            <div className="md:w-1/2 mt-4 md:mt-0">
+<Image src="/About1.webp" alt="" width={1000} height={10000} />
   </div>
-  <div class="md:w-1/2 text-left">
-    <h2 class="text-3xl md:text-2xl lg:text-4xl font-bold text-primary text-black mb-4">About our Mission</h2>
-    <p class="text-xl md:text-lg lg:text-2xl  text-semibold leading-relaxed">
+  <div className="md:w-1/2 text-left">
+    <h2 className="text-3xl md:text-2xl lg:text-4xl font-bold text-primary text-black mb-4">About our Mission</h2>
+    <p className="text-xl md:text-lg lg:text-2xl  text-semibold leading-relaxed">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
       type and scrambled it to make a type specimen book. It has survived not only five centuries.
     </p>
@@ -87,18 +87,18 @@ const About = () => {
 
                     <div className="bg-black   flex flex-col lg:flex-row gap-6 mx-auto py-10 xl:py-20 lg:px-10 xl:px-20 2xl:px-40 text-white h-full w-full overflow-hidden">
 
-                        <div class=" text-center lg:text-left ">
+                        <div className=" text-center lg:text-left ">
                             <div className='border-b py-6 inline-block border-white'>
 
 
-                                <h2 class="text-4xl  mb-4">With the Best</h2>
-                                <p class="text-4xl mb-4">Services & Quality Always</p>
+                                <h2 className="text-4xl  mb-4">With the Best</h2>
+                                <p className="text-4xl mb-4">Services & Quality Always</p>
                             </div>
-                            <div class="flex items-center justify-center lg:justify-start  mb-1 mt-4">
-                                <span class="text-yellow-500 text-4xl">★ ★ ★ ★ ★</span>
-                                <span class="ml-2 text-4xl open_sans_displays font-semibold px-4">5.0</span>
+                            <div className="flex items-center justify-center lg:justify-start  mb-1 mt-4">
+                                <span className="text-yellow-500 text-4xl">★ ★ ★ ★ ★</span>
+                                <span className="ml-2 text-4xl open_sans_displays font-semibold px-4">5.0</span>
                             </div>
-                            <p class="text-[#656565] mt-2 text-2xl">A five-star rating company</p>
+                            <p className="text-[#656565] mt-2 text-2xl">A five-star rating company</p>
                         </div>
                         <div className="flex justify-around pt-6 lg:h-auto lg:items-center lg:text-center p-5 2xl:p-10 bg-black text-white">
                             <div className="text-center items-center px-4 md:px-10 lg:px-4 border-gray-600  border-r-2">

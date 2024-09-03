@@ -13,12 +13,12 @@ const Leader = () => {
 
   return (
     <div className='flex flex-col max-w-[1530px] m-auto p-4 playfair_displays'>
-      <div class=" md:px-10 xl:mx-20 2xl:px-20 py-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
-        <p class=" text-xl  text-left mb-8 open_sans_display">Here’s our leadership team that is driving our purpose to help<br /> our clients succeed.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className=" md:px-10 xl:mx-20 2xl:px-20 py-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-left mb-4 ">Leadership That Inspires</h2>
+        <p className=" text-xl  text-left mb-8 open_sans_display">Here’s our leadership team that is driving our purpose to help<br /> our clients succeed.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {Leadership.map((leader, index) => (
-          <div  key={index} class="text-center">
+          <div  key={index} className="text-center">
             <div className=' inline-block place-content-center  mt-10 items-center'>
 
               <div className=' relative  '>
@@ -32,8 +32,8 @@ const Leader = () => {
                 </div>
               </div>
             </div>
-            <h3 class="mt-2 text-3xl font-semibold">{leader.name}</h3>
-            <p class="text-xl open_sans_display">{leader.subname}</p>
+            <h3 className="mt-2 text-3xl font-semibold">{leader.name}</h3>
+            <p className="text-xl open_sans_display">{leader.subname}</p>
           </div>
           
         ))}
