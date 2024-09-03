@@ -15,7 +15,7 @@ const logos = {
     '/Technology': 'logo1.png',
     '/Blog': 'logo1.png',
     '/contact': 'logo.png',
-    '/About': 'logo1.png',
+    '/About': 'logo.png',
 };
 const services = [
 
@@ -127,16 +127,17 @@ const About1 = () => {
     };
     return (
         <div className='h-[600px] md:h-[800px] lg:h-screen  relative w-screen m-auto '>
-            <div className=' h-[600px] md:h-[800px] lg:h-screen  max-w-7xl 2xl:max-w-[1530px] m-auto  '>
+            <div className=' h-[600px] md:h-[800px] lg:h-screen  max-w-7xl 2xl:max-w-full m-auto relative'>
                 <video
                     autoPlay
                     muted
                     loop
-                    className="absolute -z-10 inset-0 w-screen h-full lg:h-screen object-cover"
+                    className="absolute about -z-10 inset-0 w-screen h-full lg:h-screen object-cover"
                 >
                     <source src="/About.webm" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <div class="video-overlay"></div>
                 <nav className=" items-center left-0 right-0 text-center  p-4" >
                     <div className="  md:px-10 xl:px-40  relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
                         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
@@ -327,11 +328,11 @@ const About1 = () => {
 
                     </div>
                 </nav>
-                <div className='  z-10 p-4 bottom-40 lg:bottom-20 xl:bottom-40 h-full lg:h-screen text-white flex justify-center  m-auto max-w-screen-7xl 2xl:max-w-screen-7xl mx-6 md:mx-10 md:px-10  xl:px-32 lg:px-32    2xl:mx-auto  items-center text-center'>
+                <div className='  z-50 p-4 bottom-40 lg:bottom-20 xl:bottom-40 h-full lg:h-screen text-white flex justify-center  m-auto max-w-screen-7xl 2xl:max-w-screen-7xl mx-6 md:mx-10 md:px-10  xl:px-32 lg:px-32    2xl:mx-auto  items-center text-center'>
 
                     <div className="flex  flex-col max-w-7xl text-center justify-center place-content-center leading-relaxed m-auto ">
 
-                        <h2 className="text-lg md:text-2xl lg:text-3xl xl:text-4xl  2xl:text-5xl font-bold text-center text-primary playfair_display">Know our team who is putting day & night for your<br /> wonderful digital experience</h2>
+                        <h2 className="text-lg md:text-2xl lg:text-3xl xl:text-4xl  2xl:text-5xl font-bold text-center text-white playfair_display">Know our team who is putting day & night for your<br /> wonderful digital experience</h2>
                         <p className="mt-4 text-xs md:text-sm lg:text-base xl:text-xl 2xl:text-2xl text-muted-foreground text-center pen_sans_display m-auto">
                             Spacetotech is turning ideas into reality for a decade now. Partner with us & drive<br /> digitization to your business with innovation and technology.
                         </p>

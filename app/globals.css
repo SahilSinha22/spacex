@@ -1975,3 +1975,19 @@ opacity: 1;
 .dropslash:hover>div{
 background: transparent linear-gradient(113deg, #C9784F 0%, #A06A7B 51%, #6C506F 100%) 0% 0% no-repeat padding-box;;
 }
+
+
+
+
+
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  pointer-events: none; /* Ensures the overlay doesn't interfere with video controls */
+}
