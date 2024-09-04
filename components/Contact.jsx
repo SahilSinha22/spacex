@@ -243,7 +243,7 @@ const Contact = () => {
                   </label>
                 </div>
               </div>
-              <div className="relative z-0 w-full mb-5 mt-6 group">
+              <div className="relative z-0 w-48 md:w-full mb-5 mt-6 group">
                 <input
                   type="text"
                   name="message"
@@ -310,10 +310,10 @@ const Contact = () => {
               </div>
             </form>
             
-            <div className="flex flex-col space-y-6 lg:space-y-0 my-6 lg:flex-row justify-around text-base md:text-lg  lg:my-20 text-white">
-              <div className='flex justify-left py-3 items-center gap-2 leading-loose'>
+            <div className="flex flex-col space-y-6 lg:space-y-0 my-6 lg:flex-row justify-around  text-base md:text-lg  lg:my-20 text-white">
+              <div className='flex justify-left my-3 items-center gap-2  w-52 leading-loose'>
                 <div>
-                <a href= "mailto: amit@spacetotech.com  "> <Image src="./Mailbox.svg" alt="./Mailbox.svg" width={24} height={24} /> </a>
+                <a href= "mailto: amit@spacetotech.com  "> <Image src="./Mailbox.svg" alt="./Mailbox.svg"  width={24} height={24} /> </a>
                 </div>
                 <a href= "mailto: amit@spacetotech.com  ">  <span className='text-base'>  amit@spacetotech.com </span> </a>
 
