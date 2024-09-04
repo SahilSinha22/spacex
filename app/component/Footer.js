@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
 import Mobi from "@/public/instagram.svg"
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -13,11 +14,13 @@ const Footer = () => {
         >
           <li>
           <span className=" space-y-4   ">
+            <Link href="/" >
             <Image src={Logo} className="xl:w-80 xl:h-12 h-4 w-28 imgx  sm:w-72 sm:h-10" alt="Logo" width={600} height={10} />
+            </Link>
           </span>
           </li>
           <li className="xl:text-xl  pb-28 2xl:text-2xl  flex flex-row text-xl space-x-2">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl    hover:text-white dark:hover:text-blue-500"
             >
@@ -28,8 +31,8 @@ const Footer = () => {
                 width={30}
                 height={1}
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
@@ -40,8 +43,8 @@ const Footer = () => {
                 width={30}
                 height={1}
               />
-            </a>
-            <a href="#" className=" hover:text-white dark:hover:text-blue-500">
+            </Link>
+            <Link href="#" className=" hover:text-white dark:hover:text-blue-500">
               <Image
                 src="/facebook.svg"
                 alt="logo"
@@ -49,7 +52,7 @@ const Footer = () => {
                 width={30}
                 height={1}
               />
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -59,52 +62,52 @@ const Footer = () => {
             Services
           </h1>
           <li className="xl:text-lg 2xl:text-xl  text-sm sm:text-lg">
-            <a
-              href="#"
+            <Link
+              href=""
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Expertise
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl  text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Web development
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Mobile App development
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               UI/UX design
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Hire Developer
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Become a Partner
-            </a>
+            </Link>
           </li>
         </ul>
         <ul className="mb-4  md:mb-0">
@@ -112,36 +115,36 @@ const Footer = () => {
             Expertise
           </h1>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Blockchain App Developmen
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               AI App Development
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               IoT App development
-            </a>
+            </Link>
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
-            <a
+            <Link
               href="#"
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Blockchain App Development
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

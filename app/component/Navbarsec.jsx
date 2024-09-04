@@ -20,21 +20,21 @@ const logos = {
 };
 const technology = [
 
-  { name: "React Native", logo: "/Technology/reactNative.svg" },
-  { name: "AI Development", logo: "/Technology/Ai.svg" },
-  { name: "Chatbot", logo: "/Technology/Chatbot.svg" },
-  { name: "IOT", logo: "/Technology/IOT.svg" },
-  { name: "Augmented Reality", logo: "/Technology/AR.svg" },
-  { name: "Ionic", logo: "/Technology/Ionic.svg" },
-  { name: "VR Development", logo: "/Technology/VR.svg" },
-  { name: "PHP/Nodes JS", logo: "/Technology/Php.svg" },
-  { name: "Quality Analyst", logo: "/Technology/Quality.svg" },
-  { name: "Wearable", logo: "/Technology/Wearable.svg" },
-  { name: "iOS App", logo: "/Technology/IOS.svg" },
-  { name: "Flutter", logo: "/Technology/Flutter.svg" },
-  { name: "Android App", logo: "/Technology/Android.svg" },
-  { name: "Blockchain", logo: "/Technology/Blockchain.svg" },
-  { name: "UI/UX Designing", logo: "/Technology/Ui.svg" },
+  { name: "React Native", logo: "/Technology/reactNative.svg", link:"/Technology/reactnative" },
+  { name: "AI Development", logo: "/Technology/Ai.svg", link:"#" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"#" },
+  { name: "IOT", logo: "/Technology/IOT.svg", link:"#" },
+  { name: "Augmented Reality", logo: "/Technology/AR.svg", link:"#" },
+  { name: "Ionic", logo: "/Technology/Ionic.svg", link:"#" },
+  { name: "VR Development", logo: "/Technology/VR.svg", link:"#" },
+  { name: "PHP/Nodes JS", logo: "/Technology/Php.svg", link:"#" },
+  { name: "Quality Analyst", logo: "/Technology/Quality.svg", link:"#" },
+  { name: "Wearable", logo: "/Technology/Wearable.svg", link:"#" },
+  { name: "iOS App", logo: "/Technology/IOS.svg", link:"#" },
+  { name: "Flutter", logo: "/Technology/Flutter.svg", link:"/Technology/flutter" },
+  { name: "Android App", logo: "/Technology/Android.svg", link:"#" },
+  { name: "Blockchain", logo: "/Technology/Blockchain.svg", link:"#" },
+  { name: "UI/UX Designing", logo: "/Technology/Ui.svg", link:"#" },
 
 
 ];
@@ -279,8 +279,7 @@ const Navbar = ({ role }) => {
                         </div>
                         <Link
                           /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
-                          href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}${service.name.toLowerCase() === 'flutter' || service.name.toLowerCase() === 'reactnative' ? '' : '#'}`}
-
+                          href={`${service.link}`}
 
                           className="block lg:px-2 py-2 md:py-4 lg:py-0 "
                         >
