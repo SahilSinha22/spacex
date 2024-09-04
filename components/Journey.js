@@ -4,8 +4,8 @@ const Journey = () => {
   return (
     <div className="max-w-7xl 2xl:mt-20 px-4 py-12 md:mx-10 ">
       <div className="mx-5 xl:mx-20">
-        <h2 className="text-3xl md:text-6xl font-bold playfair text-left">
-          Spacetotech journey of <br /> Mobile app development
+        <h2 className="text-3xl md:text-6xl font-bold playfair lg:w-[650px] text-left">
+          Spacetotech journey of  Mobile app development
         </h2>
         <p className="text-left md:text-2xl text-zinc-600 mt-4">
           Our top mobile app development company proudly serves a diverse range
