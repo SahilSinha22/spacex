@@ -67,18 +67,18 @@ const Portfolio = () => {
   return (
     <div>
       <div className="m-auto">
-        <h1 className="playfair_display text-2xl md:text-4xl ml-8 md:ml-24 xl:text-5xl font-bold mx-20 xl:mx-44 2xl:mx-80 mt-20 md:mt-32">
+        <h1 className="playfair_display w-[300px] sm:w-[500px] xl:w-[700px] text-2xl sm:text-4xl ml-8 md:ml-24 xl:text-5xl font-bold mx-20 xl:mx-44 2xl:mx-80 mt-20 xl:mt-32">
           Revolutionize with Your Idea,
-          <br />
+     
           Transforming the World
         </h1>
-        <p className="xl:mx-44 2xl:mx-80 mr-5 md:ml-24 md:mr-20 ml-8 text-lg mt-4 md:mt-6 outfit_dispalys md:text-2xl">
+        <p className="xl:mx-44 2xl:mx-80 mr-5 w-[300px] sm:w-[500px] md:ml-24 md:mr-20 ml-8 text-lg mt-4 md:mt-6 outfit_dispalys sm:text-2xl">
           From dream to reality, we proudly contribute to transforming apps shaping
-          <br />
+         
           the future of innovation and technology.
         </p>
       </div>
-      <div className="mt-20 mx-8 md:mx-20 xl:mx-40  2xl:mx-20 mb-20 gap-2 md:gap-0 xl:gap-1  xl:mb-0 flex md:justify-center">
+      <div className="mt-20 mx-8 md:mx-20 lg:mx-20 xl:mx-40  2xl:mx-20 lg:mb-20 gap-2 md:gap-0 xl:gap-1  xl:mb-0 flex md:justify-left 2xl:justify-center">
         <div className="left-column  md:mx-5 w-full md:w-auto 2xl:w-[650px]">
           {cards.slice(0, 6).map((card, index) => (
             <div key={index} className=" relative pb-10 "
@@ -124,7 +124,7 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="right-column ">
+        <div className="right-column w-full md:w-auto">
           {cards.slice(6).map((card, index) => (
             <div key={index} className=" mb-10 md:mb-20  2xl:w-[650px]">
               <div className="relative "

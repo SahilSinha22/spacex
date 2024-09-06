@@ -71,8 +71,8 @@ const Flutter = () => {
     return (
         <>
             <div className='mx-auto'>
-                <div className="max-w-7xl items-center text-center mx-auto px-2 md:px-10 xl:px-20 2xl:px-10 py-16 md:py-20 lg:pt-28 lg:pb-10 ">
-                    <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal   font-bold playfair_displays mb-4">Flutter App Development Company Helps <br />You Build Applications for Multiple Screens!</h1>
+                <div className="max-w-7xl items-center text-center flex flex-col justify-center mx-auto px-2 md:px-10 xl:px-20 2xl:px-10 py-16 md:py-20 lg:pt-28 lg:pb-10 ">
+                    <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl md:leading-snug xl:leading-normal sm:w-[600px] md:w-[600px] lg:w-[720px] xl:w-[950px] 2xl:w-[1200px] font-bold playfair_displays mb-4">Flutter App Development Company Helps You Build Applications for Multiple Screens!</h1>
                     <p className="  lg:text-xl xl:text-2xl   text-muted-foreground mb-6">Introducing big waves in modern cross-platform app development, Flutter tech <br /> builds exquisite, high-performing, and flawless mobile apps.</p>
 
                 </div>
@@ -103,7 +103,7 @@ const Flutter = () => {
                 </div>
 
 
-                <div className=" max-w-7xl mx-auto my-10 mt-40 open_sans_display px-2 sm:px-10 xl:px-20 ">
+                <div className=" max-w-7xl mx-auto my-10 mt-40 open_sans_display px-4 sm:px-10 xl:px-20 ">
                     <h1 className="text-3xl md:text-5xl  text-primary mb-4">Introduction to <span className="text-blue-500">Flutter</span></h1>
                     <p className=" text-xl md:text-2xl leading-relaxed  mb-1">
                         Initially released by Google in 2017, it is an app framework rapidly amplified with yearly improvements and alterations. The tech is well-known for providing charismatic, distinctive, and natively
@@ -156,7 +156,7 @@ const Flutter = () => {
                     </div>
                 </div>
 
-                <div className=" bg-background max-w-7xl mx-auto pt-10 text-foreground px-2 sm:px-10 xl:px-20 ">
+                <div className=" bg-background max-w-7xl mx-auto pt-10 text-foreground px-4 sm:px-10 xl:px-20 ">
                     <h1 className="text-2xl md:text-4xl  mb-4">Trump Card Played By Flutter App Development Company</h1>
                     <p className="mb-6 md:text-xl leading-normal">The flutter mechanism comes along with a number of benefits, and the best flutter <br />app development company in India, UK & USA helps you bag the same.</p>
                     <div className="grid gap-4 md:grid-cols-2 open_sans_display">
@@ -197,7 +197,7 @@ const Flutter = () => {
                     </div>
                 </div>
 
-                <div className=' my-16 boxshad open_sans_display p-8'>
+                <div className=' my-16 boxshad open_sans_display p-4 md:p-8'>
 
 
                     <div className="max-w-7xl mx-auto sm:px-6 xl:px-20 ">
@@ -209,9 +209,9 @@ const Flutter = () => {
                         <div className='flex flex-col gap-4 mt-10'>
 
 
-                            <div className="mb-4 gap-2 flex ">
+                            <div className="mb-4 gap-2 flex justify-between align-top">
 
-                                <div className="lg:mt-1 "> <Image className='w-12 h-12 md:w-10 md:h-10 lg:w-6 lg:h-6 ' src="/arrowd.svg" alt="" width={16} height={16} />  </div>
+                                <div className="lg:mt-1  h-auto"> <Image className='w-16 h-10  md:w-10 md:h-10 lg:w-6 lg:h-6 ' src="/arrowd.svg" alt="" width={100} height={100} />  </div>
 
                                 <div>
 
@@ -226,7 +226,7 @@ const Flutter = () => {
 
                             <div className="mb-4 gap-2 flex ">
 
-                                <div className="lg:mt-1 "> <Image className='w-12 h-12 md:w-10 md:h-10 lg:w-6 lg:h-6' src="/arrowd.svg" alt="" width={24} height={24} />  </div>
+                                <div className="lg:mt-1 "> <Image className='w-20 h-10 md:w-12 md:h-12 lg:w-8 lg:h-8' src="/arrowd.svg" alt="" width={100} height={100} />  </div>
 
                                 <div>
                                     <h3 className="text-xl font-semibold text-white flex items-center"> Businesses Working on MVPs</h3>
@@ -239,7 +239,7 @@ const Flutter = () => {
 
                             <div className="mb-4 gap-2 flex ">
 
-                                <div className=" lg:mt-1"> <Image className='w-12 h-12 md:w-10 md:h-10 lg:w-6 lg:h-6' src="/arrowd.svg" alt="" width={20} height={20} />  </div>
+                                <div className=" lg:mt-1"> <Image className='w-[65px] h-10 md:w-10 md:h-10 lg:w-7 lg:h-7' src="/arrowd.svg" alt="" width={100} height={100} />  </div>
 
                                 <div>
                                     <h3 className="text-xl font-semibold text-white flex items-center"> Businesses with Limited Resources</h3>
@@ -252,7 +252,7 @@ const Flutter = () => {
 
                             <div className="mb-4 gap-2 flex ">
 
-                                <div className="lg:mt-1 "> <Image className='w-12 h-12 md:w-10 md:h-10 lg:w-6 lg:h-6' src="/arrowd.svg" alt="" width={16} height={16} />  </div>
+                                <div className="lg:mt-1 "> <Image className='w-16 h-10 md:w-10 md:h-10 lg:w-6 lg:h-6' src="/arrowd.svg" alt="" width={16} height={16} />  </div>
 
                                 <div>
                                     <h3 className="text-xl font-semibold text-white flex items-center"> Other Well-Established Businesses</h3>
@@ -265,7 +265,7 @@ const Flutter = () => {
                     </div>
                 </div>
 
-                <div className="max-w-7xl mx-auto  bg-background text-foreground open-sans_display px-2 sm:px-10 xl:px-20  ">
+                <div className="max-w-7xl mx-auto  bg-background text-foreground open-sans_display px-4 sm:px-10 xl:px-20  ">
                     <h1 className="text-2xl md:text-3xl font-bold mb-4">Space to Tech : Your One-Stop-Shop To Success</h1>
                     <p className="mb-6  xl:text-xl ">
                         Evidently, you’re planning to build a mobile app to push your business ahead of the competition.<br /> Must be giddy with enthusiasm? But have you figured out the way to get kickstarted?

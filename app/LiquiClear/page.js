@@ -121,7 +121,7 @@ const Page = () => {
         
 
         <div className="bg-white xl:p-8 py-16 2xl:py-20">
-          <div className="max-w-4xl mx-10 xl:mx-28">
+          <div className="max-w-4xl mx-4 sm:mx-10 xl:mx-28">
             <h2 className="text-5xl  text-zinc-900">
               Benefits of Bathroom Water Softener
             </h2>
@@ -157,8 +157,8 @@ const Page = () => {
           </div>
         </div>
         <div className="mx-auto mt-20">
-          <div className="bg-white p-8   py-4 md:py-0">
-            <div className="ml-4 xl:ml-28 mr-2 xl:mr-6 ">
+          <div className="bg-white p-4 md:p-8   py-4 md:py-0">
+            <div className="md:ml-4 xl:ml-28 md:mr-2  xl:mr-6 ">
               <h2 className="text-4xl  text-zinc-900">Features</h2>
               <p className="mt-4 text-xl font-medium ">
                 Reduced Hard Water Effects: Hard water contains high levels of
@@ -167,7 +167,7 @@ const Page = () => {
                 for the bathroom helps alleviate these effects.
               </p>
 
-              <div className="grid md:mx-5 xl:mx-20 px-auto py-10  text-center my-10 md:my-4 gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div className="grid md:mx-5 xl:mx-20 px-auto pt-4 md:py-10  text-center my-6 md:my-4 gap-4 md:gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <div className=" w-40 md:w-52 pr-2 2xl:w-72 2xl:pr-8 xl:pr-4 h-auto mb-2 border-t-2 text-center  rounded-2xl  p-4 shadow-zinc-400  shadow-xl">
                   <Image
                     alt="water-quality"
@@ -372,7 +372,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto  rounded-2xl banner">
+        <div className="xl:mx-40 mx-4 md:mx-10 mb-20 w-auto h-auto  rounded-2xl banner">
           <div className=" text-white mt-10 mb-2 mx-5 xl:mt-5 lg:mb-8   md:mx-auto flex flex-col items-center text-center">
             <h1 className="text-lg mt-4 xl:mt-12  xl:mx-0 lg:text-5xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
               Our Robust Mobile & Web App <br /> Development Solutions Stands

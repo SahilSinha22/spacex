@@ -21,11 +21,11 @@ const Award = () => {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
-          <div className="rounded-xl p-6 hover:drop-shadow-lg bg-gray-200 hover:bg-white ">
+          <div className="rounded-xl p-4 md:p-6 hover:drop-shadow-lg bg-gray-200 hover:bg-white ">
             <Image
               src="/TopDevelopers 1.svg"  // Updated to public directory path
               alt="Top Developer"
-              className="2xl:h-40 2xl:w-60" 
+              className="2xl:h-40 2xl:w-60 contrast-100" 
               width={150}
               height={10}
             />
@@ -47,10 +47,10 @@ const Award = () => {
           <p className="text-sm">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
-          <div className="rounded-xl p-6 bg-gray-200 hover:drop-shadow-lg hover:bg-white ">
+          <div className="rounded-xl p-4 md:p-6 bg-gray-200 hover:drop-shadow-lg hover:bg-white ">
             <Image
               src="/AppFutura-1.svg"  // Updated to public directory path
-              className="2xl:h-40 2xl:w-60" 
+              className="2xl:h-40 2xl:w-60 contrast-100" 
               alt="AppFutura"
               width={150}
               height={10}
@@ -60,15 +60,15 @@ const Award = () => {
           <p className="text-sm">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale hover:grayscale-0 flex-col text-center items-center">
-          <div className="rounded-xl p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white ">
-            <Image src="/GoodFirms.svg" className="2xl:h-36 2xl:w-60"  alt="GoodFirms" width={150} height={10} />
+          <div className="rounded-xl p-4 md:p-8 bg-gray-200 hover:drop-shadow-lg hover:bg-white ">
+            <Image src="/GoodFirms.svg" className="2xl:h-36 2xl:w-60 contrast-100"  alt="GoodFirms" width={150} height={10} />
           </div>
           <p className="mt-2 font-semibold">GoodFirms</p>
           <p className="text-sm text-center">Top Mobile App<br/> Developers</p>
         </div>
         <div className="flex grayscale text-center hover:grayscale-0 flex-col items-center">
-          <div className="rounded-xl p-7 bg-gray-200 hover:drop-shadow-lg hover:bg-white ">
-            <Image src="/Clutch-1.svg" className="2xl:h-40 2xl:w-60"   alt="Clutch" width={150} height={10} />
+          <div className="rounded-xl p-4 md:p-7 bg-gray-200 hover:drop-shadow-lg hover:bg-white ">
+            <Image src="/Clutch-1.svg" className="2xl:h-40 2xl:w-60 contrast-100"   alt="Clutch" width={150} height={10} />
           </div>
           <p className="mt-2 font-semibold">Clutch</p>
           <p className="text-sm">Top Mobile App<br/> Developers</p>

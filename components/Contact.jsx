@@ -328,8 +328,8 @@ const Contact = () => {
             </div>
         </div>
         <div>
-          <div className="w-full lg:w-[500px] xl:w-[500px] 2xl:w-[600px] h-full 2xl:h-[700px]">
-            <Image src={Contactimg} alt='Contactimg' className="w-40 md:w-60   lg:w-full 2xl:w-[700px]  lg:h-full" width={1000} height={1000} />
+          <div className="w-full lg:w-[500px] xl:w-[500px] 2xl:w-[600px] h-full  2xl:h-[700px]">
+            <Image src={Contactimg} alt='Contactimg' className="w-40 md:w-60    lg:w-full 2xl:w-[700px]  lg:h-full" width={1000} height={1000} />
           </div>
         </div>
       </section>

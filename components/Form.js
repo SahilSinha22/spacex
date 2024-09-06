@@ -131,8 +131,8 @@ const Form = () => {
 
           <div className="sm:mx-10 lg:mx-20 xl:mx-40 ">
             <div className="border-b flex  2xl:mt-6 flex-col lg:flex-row items-center m-auto 2xl:h-auto  md:mx-4 ">
-              <div className=" 2xl:w-auto md:ml-2 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
-                <div className="m-8 lg:m-6 2xl:text-4xl md:text-2xl ">
+              <div className=" 2xl:w-auto md:ml-2 mx-4 md:mx-0 2xl:pr-8 xl:ml-4 xl:pr-8 py-4 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 border  border-rounded pl-2 bg-blue-500 text-white my-8  ">
+                <div className="sm:m-8 m-2 lg:m-6 2xl:text-4xl md:text-2xl ">
                   <h1 className="md:text-2xl text-2xl 2xl:text-3xl font-semibold">
                     Hello now !
                   </h1>
