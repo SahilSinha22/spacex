@@ -10,20 +10,20 @@ const Benefit = [
     { title: "Training And Mentorship", para: "Once you start working with us learning becomes a lifestyle." },
 ]
 const Tech = [
-    { title: "React Native Developer", para: "Experience - 2-5 yrs", img: "/career/React.png" },
-    { title: "UI/UX Designer", para: "Experience - 3-4 yrs", img: "/career/UIUX.png" },
-    { title: "Flutter Developer", para: "Experience - 2-5 yrs", img: "/career/Flutter.png" },
-    { title: "Python Developer", para: "Experience - 3-4 yrs", img: "/career/Python.png" },
+    { title: "React Native Developer", para: "Experience - 2-5 yrs", img: "/Career/React.png" },
+    { title: "UI/UX Designer", para: "Experience - 3-4 yrs", img: "/Career/UIUX.png" },
+    { title: "Flutter Developer", para: "Experience - 2-5 yrs", img: "/Career/Flutter.png" },
+    { title: "Python Developer", para: "Experience - 3-4 yrs", img: "/Career/Python.png" },
 ]
 const logos = [
-    "/career/Experience1.png",
-    "/career/Experience2.png",
-    "/career/Experience3.png",
-    "/career/Experience4.png",
-    "/career/Experience1.png",
-    "/career/Experience2.png",
-    "/career/Experience3.png",
-    "/career/Experience4.png",
+    "/Career/Experience1.png",
+    "/Career/Experience2.png",
+    "/Career/Experience3.png",
+    "/Career/Experience4.png",
+    "/Career/Experience1.png",
+    "/Career/Experience2.png",
+    "/Career/Experience3.png",
+    "/Career/Experience4.png",
 
 ];
 const Career = () => {
@@ -83,7 +83,7 @@ const Career = () => {
                     company culture.        </p>
 
                 <div className='w-full mt-10'>
-                    <Image className='w-full' src="/career/OurCulture.png" alt="" width={1000} height={1000} />
+                    <Image className='w-full' src="/Career/OurCulture.png" alt="" width={1000} height={1000} />
                 </div>
 
                 </div>
@@ -118,7 +118,7 @@ const Career = () => {
                     </div>
                     <div className='flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row text-black h-auto mt-8 gap-6 justify-around  '>
                         <div className='flex flex-col bg-[#E3E3E3] rounded-3xl p-4 md:p-6'>
-                            <Image src="/career/Application.png" alt="" width={50} height={50} />
+                            <Image src="/Career/Application.png" alt="" width={50} height={50} />
                             <h1 className='text-xl lg:text-2xl playfair_displays font-bold my-3 '>
                                 Application       </h1>
                             <p className=' text-base xl:text-lg open_sans_display'>
@@ -126,14 +126,14 @@ const Career = () => {
                             </p>
                         </div>
                         <div className='flex flex-col bg-[#E3E3E3] rounded-3xl p-4 md:p-6'>
-                            <Image src="/career/Message.png" alt="" width={50} height={50} />
+                            <Image src="/Career/Message.png" alt="" width={50} height={50} />
                             <h1 className='text-xl lg:text-2xl playfair_displays font-bold my-3 '>
                                 Interview      </h1>
                             <p className='  text-base xl:text-lg open_sans_display'>
                                 A face-to-face interview will follow so<br /> that we can familiarize you with your <br />expertise and experience in the field.                            </p>
                         </div>
                         <div className='flex flex-col bg-[#E3E3E3] rounded-3xl p-6'>
-                            <Image src="/career/Office.png" alt="" width={50} height={50} />
+                            <Image src="/Career/Office.png" alt="" width={50} height={50} />
                             <h1 className='text-xl lg:text-2xl playfair_displays font-bold my-3 '>
                                 Decision & Offer     </h1>
                             <p className='  text-base xl:text-lg open_sans_display'>
