@@ -50,6 +50,13 @@ html, body {
   padding: 20px 0;
   
 }
+.carouselxx {
+  overflow: hidden;
+  width: 100%;
+ 
+  padding: 20px 0;
+  
+}
 .carousel:hover .track {
   animation-play-state: paused;
 }
@@ -91,11 +98,32 @@ html, body {
     animation: scroll 15s linear infinite;
     
   }
+  .trackx{
+    display: flex;
+    width: calc(400px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 15s linear infinite;
+  }
   .carousel{
     height: 140px;
   }
   .logo {
     flex: 0 0 120px;
+  }
+  .logox{
+    flex:1 1 80px
+  }
+  .logox:nth-child(odd){
+    height: 300px;
+    width: 70px;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .logox:nth-child(even){
+    height: 200px;
+    width: 500px;
+    justify-content: center;
+    margin:auto;
   }
   
 }
@@ -107,9 +135,30 @@ html, body {
     animation: scroll 15s linear infinite;
     
   }
+  .trackx{
+    display: flex;
+    width: calc(600px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 15s linear infinite;
+  }
   .carouselx{
     height: 120px;
     
+  }
+  .logox{
+    flex: 1 1 100px;
+  }
+  .logox:nth-child(odd){
+    height: 400px;
+   
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .logox:nth-child(even){
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+    margin:auto;
   }
   .carousel{
     height: 140px;
@@ -128,6 +177,11 @@ html, body {
     
     
   }
+  .trackx{
+    display: flex;
+    width: calc(650px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 15s linear infinite;
+  }
   .carouselx{
     height: 160px;
     
@@ -137,6 +191,22 @@ html, body {
   }
   .logo {
     flex: 0 0 180px;
+  }
+  .logox{
+    flex: 1 1 100px;
+  }
+  .logox:nth-child(odd){
+    height: 400px;
+   
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .logox:nth-child(even){
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+    margin:auto;
   }
 }
 
@@ -148,6 +218,11 @@ html, body {
     
     
   }
+  .trackx{
+    display: flex;
+    width: calc(700px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 15s linear infinite;
+  }
   .carouselx{
     height: 160px;
     
@@ -157,6 +232,22 @@ html, body {
   }
   .logo {
     flex: 0 0 300px;
+  }
+  .logox{
+    flex: 1 1 100px;
+  }
+  .logox:nth-child(odd){
+    height: 500px;
+   
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .logox:nth-child(even){
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    margin:auto;
   }
   
 }
@@ -168,6 +259,11 @@ html, body {
     
     
   }
+  .trackx{
+    display: flex;
+    width: calc(700px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 15s linear infinite;
+  }
   .carousel{
     height: 140px;
   }
@@ -178,6 +274,22 @@ html, body {
   .logo {
     flex: 0 0 500px;
   }
+  .logox{
+    flex: 1 1 100px;
+  }
+  .logox:nth-child(odd){
+    height: 500px;
+   
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .logox:nth-child(even){
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    margin:auto;
+  }
 }
 @media only screen and (min-width: 1530px)  {
   .track {
@@ -187,8 +299,19 @@ html, body {
     
     
   }
+  .trackx{
+    display: flex;
+    width: calc(800px * 8); /* Width of one logo times the number of logos */
+    animation: scroll 15s linear infinite;
+  }
   .carouselx{
     height: 160px;
+    
+  }
+  .carouselxx{
+    height: 160px;
+    justify-content: center;
+   align-items: center;
     
   }
 
@@ -199,6 +322,7 @@ html, body {
  
 
  }
+ 
 /* styles/globals.css */
 .navbar {
   /* Default background */
@@ -1510,6 +1634,14 @@ height:140px;
     margin-right: 40px;
    
     }
+    .logox{
+      flex: 1 1 40px;  
+      overflow: hidden;  
+      text-align: center;  
+    margin-top:10px;
+    margin-right: 40px;
+   
+    }
     .logo3 {
       flex: 1 1 10px;  
       overflow: hidden;  
@@ -1546,6 +1678,28 @@ height:140px;
         text-align: center;  
       margin-top:102px;
       margin-right: 60px;
+      }
+      .logox{
+        flex: 1 1 100px;  
+        overflow: hidden;  
+        text-align: center;  
+     justify-content:space-around;
+     gap: 100px;
+    
+     
+      }
+      .logox:nth-child(odd){
+        height: 550px;
+        width: 70px;
+        justify-content: center;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .logox:nth-child(even){
+        height: 400px;
+        width: 500px;
+        justify-content: center;
+        margin:auto;
       }
       .logo3 {
         flex: 1 1 10px;  

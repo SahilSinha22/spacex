@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../component/Navbarsec'
-import Comingsoon from '@/components/Comingsoon'
+import Career from '@/components/Career'
+import Form from '@/components/Form'
 
 const page = () => {
   return (
     <div>
       <Navbar/>
-      <Comingsoon/>
+    <Career/>
+    <Form/>
     </div>
   )
 }
