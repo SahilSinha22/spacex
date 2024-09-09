@@ -313,7 +313,7 @@ const About1 = () => {
                                 <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-white hover:text-orange-600'}`}>
                                     Portfolio
                                 </Link>
-                                <Link href="#" className={linkStyles('/')}>
+                                <Link href="/Blog" className={linkStyles('/')}>
                                     Blog
                                 </Link>
                             </div>
