@@ -106,7 +106,7 @@ const Navbar = ({ role }) => {
   const linkStyles = (path) => {
     const isActive = pathname === path;
     let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-8 ';
-
+    let baseStyles='nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-4 lg:mr-0 ';
     if (path === '/') {
       baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-white ';
     }
@@ -129,7 +129,7 @@ const Navbar = ({ role }) => {
   return (
     <nav className="items-center text-center  p-4" style={{ backgroundColor: bgColor }}>
       <div className="md:px-10 xl:px-40  relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
-        <div className="flex items-center flex-shrink-0 text-white mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-20">
+        <div className="flex items-center flex-shrink-0 text-white mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-18">
           <span>
             <Link href="/" >
               <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
