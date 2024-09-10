@@ -142,7 +142,7 @@ const Form = () => {
                     <a href="tel:+91 88 820 76 755" >  +91 88 820 76 755{" "}</a>
                     </div>{" "}
                   </div>
-                  <h1 className="md:text-2xl 2xl:text-3xl text-2xl font-semibold mt-2 xl:mt-4">
+                  <h1 className="md:text-xl 2xl:text-2xl text-xl font-semibold mt-2 xl:mt-4">
                     Connect with us
                   </h1>
                   <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">

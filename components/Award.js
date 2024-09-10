@@ -81,7 +81,7 @@ const Award = () => {
               Grow with our
               <br /> technical expertise
             </div>
-            <div className="text-lg outfit_dispaly font-light  sm:text-lg lg:text-xl 2xl:text-2xl md:text-xl">
+            <div className="text-lg outfit_dispalys  font-light  sm:text-lg lg:text-xl 2xl:text-2xl md:text-xl">
               Our team is experienced with various different mobile
               
               technologies and can help you choose the right tech.

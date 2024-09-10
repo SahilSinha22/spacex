@@ -14,7 +14,7 @@ const logos = {
   '/Services': 'logo1.png',
   '/Technology/reactnative': 'logo1.png',
   '/Technology/flutter': 'logo1.png',
-  '/Blog': 'logo1.png',
+  '/Career': 'logo1.png',
   '/Industries': 'logo1.png',
 
 };
@@ -295,8 +295,8 @@ const Navbar = ({ role }) => {
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-black'}`}>
               Portfolio
             </Link>
-            <Link href="#" className={linkStyles('/')}>
-              Blog
+            <Link href="/Career" className={linkStyles('/')}>
+             Career
             </Link>
           </div>
           <div>
