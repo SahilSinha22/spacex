@@ -3,7 +3,7 @@ import Image from "next/image";
 const Journey = () => {
   return (
     <div className="max-w-7xl 2xl:mt-20 px-4 py-12 md:mx-10 ">
-      <div className="mx-5 xl:mx-20">
+      <div className="mx-5 md:mx-0 xl:mx-20">
         <h2 className="text-3xl md:text-6xl font-bold playfair lg:w-[650px] text-left">
           Spacetotech journey of  Mobile app development
         </h2>

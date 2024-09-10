@@ -11,8 +11,8 @@ const ParallaxComponent = () => {
             <div className="relative bg-teal-400">
            
                 {/* First Section with Red Background */}
-                <div className="h-screen sticky top-0 z-10  flex items-center justify-center text-white">
-                <div className="font-sans h-screen max-h-screen">
+                <div className="h-auto sticky top-0 z-10  flex items-center justify-center text-white">
+                <div className="font-sans h-auto">
                 <div className="max-w-screen-lg mx-auto py-2 px-4 sm:px-6 lg:px-8 xl:px-6 ">
                   <div className="">
                     <div className="p-5 px-4 items-center justify-center text-center">
@@ -29,9 +29,9 @@ const ParallaxComponent = () => {
                       <Image
                         src={Tab}
                         alt="VR Experience"
-                        className="mx-auto lg:h-[300px] lg:w-[500px] xl:w-[700px] h-full lg:max-w-xl lg:max-h-96 xl:h-[500px] mt-12 2xl:w-[900px] 2xl:max-w-4xl 2xl:max-h-[600px] 2xl:h-full"
-                        width={1000}
-                        height={300}
+                        className="m-auto w-full sm:w-3/4 lg:w-1/2 xl:w-3/5 2xl:w-3/4 h-auto  max-w-7xl my-20 lg:my-10"
+                        width={800}
+                        height={1000}
                       />
                     </div>
                   </div>
