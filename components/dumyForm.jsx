@@ -35,7 +35,7 @@ const DumyForm = () => {
         else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
         if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
         else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
-       /* if (!user.message) newErrors.message = 'Message is a required ';*/
+        if (!user.message) newErrors.message = 'Message is a required ';
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -172,10 +172,10 @@ const DumyForm = () => {
                             className="    "
                         >
                             <div className="flex flex-col  gap-10  w-full">
-                                <div className="lg:w-[450px] md:w-[400px] lg:h-[500px] rounded-2xl md:rounded-none xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div className="lg:w-[450px] md:w-[400px] lg:h-[500px] rounded-2xl md:rounded-none xl:w-[550px] xl:max-w-4xl h-auto bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div className="flex pt-10  justify-end ">
 
-                                        <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="none">
                                         <path d="M1 1L19 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         </path>
                                             <path d="M1 19L19 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -188,7 +188,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Name"
                                             id="floating_first_name"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Name}
                                             autoComplete="off"
@@ -203,7 +203,7 @@ const DumyForm = () => {
 
                                         <label
                                             htmlFor="Name"
-                                            className="peer-focus:font-medium  absolute text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium  absolute text-sm md:text-lg  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Full Name*
                                         </label>
@@ -215,7 +215,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Email"
                                             id="floating_last_name"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Email}
                                             autoComplete="off"
@@ -230,7 +230,7 @@ const DumyForm = () => {
 
                                         <label
                                             htmlFor="Email"
-                                            className="peer-focus:font-medium absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             E-Mail ID*
                                         </label>
@@ -242,7 +242,7 @@ const DumyForm = () => {
                                             type="tel"
                                             name="Number"
                                             id="floating_phone"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Number}
                                             autoComplete="off"
@@ -257,7 +257,7 @@ const DumyForm = () => {
 
                                         <label
                                             htmlFor="Number"
-                                            className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Contact Number*
                                         </label>
@@ -269,22 +269,22 @@ const DumyForm = () => {
                                             type="text"
                                             name="message"
                                             id="floating_email"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.message}
                                             autoComplete="off"
                                             required
                                             onChange={data}
                                         />
-                                      {/*}  {errors.message && (
+                                       {errors.message && (
                                             <p className="text-red-600 text-xs mt-1">
                                                 {errors.message}
                                             </p>
-                                        )}*/}
+                                        )}
 
                                         <label
                                             htmlFor="message"
-                                            className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                                            className="peer-focus:font-medium absolute text-sm md:text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 md:top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                                         >
                                             Message (Optional)
                                         </label>
