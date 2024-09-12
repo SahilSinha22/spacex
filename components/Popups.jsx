@@ -184,7 +184,7 @@ const DumyForm = ({ onClose }) => {
                                             type="text"
                                             name="Name"
                                             id="floating_first_name"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Name}
                                             autoComplete="off"
@@ -211,7 +211,7 @@ const DumyForm = ({ onClose }) => {
                                             type="text"
                                             name="Email"
                                             id="floating_last_name"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Email}
                                             autoComplete="off"
@@ -238,7 +238,7 @@ const DumyForm = ({ onClose }) => {
                                             type="tel"
                                             name="Number"
                                             id="floating_phone"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Number}
                                             autoComplete="off"
@@ -265,7 +265,7 @@ const DumyForm = ({ onClose }) => {
                                             type="text"
                                             name="message"
                                             id="floating_email"
-                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-sm md:text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.message}
                                             autoComplete="off"
