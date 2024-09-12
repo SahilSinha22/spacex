@@ -188,7 +188,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Name"
                                             id="floating_first_name"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Name}
                                             autoComplete="off"
@@ -215,7 +215,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="Email"
                                             id="floating_last_name"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Email}
                                             autoComplete="off"
@@ -242,7 +242,7 @@ const DumyForm = () => {
                                             type="tel"
                                             name="Number"
                                             id="floating_phone"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.Number}
                                             autoComplete="off"
@@ -269,7 +269,7 @@ const DumyForm = () => {
                                             type="text"
                                             name="message"
                                             id="floating_email"
-                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            className="block py-2.5 px-0 w-full text-lg text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                             placeholder=" "
                                             value={user.message}
                                             autoComplete="off"
@@ -331,8 +331,8 @@ const DumyForm = () => {
                                     <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 lg:mt-6 2xl:mt-8'>
 
                                    
-                                    <h2 className='text-black z-20 text-sm md:text-lg lg:text-sm xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <a href="https://api.whatsapp.com/send?phone=918882076755">  <Image src="/whatsapp.svg" className=" mr-10" alt="" width={40} height={40} /></a>
+                                    <h2 className='text-black z-20 text-xs md:text-lg lg:text-sm xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <a href="https://api.whatsapp.com/send?phone=918882076755">  <Image src="/whatsapp.svg" className=" md:mr-10" alt="" width={40} height={40} /></a>
                                     </div>
                                     </div>
                                     

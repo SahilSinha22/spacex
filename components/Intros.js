@@ -55,7 +55,7 @@ const Intros = () => {
                  drive digitization to your business with
                 innovation and technology
               </p>
-              <button  onClick={handleButtonClick} className="border-2 z-50  border-solid rounded-full text-white  py-2 px-4  hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
+              <button  onClick={handleButtonClick} className="border-2 z-20  border-solid rounded-full text-white  py-2 px-4  hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
                 Let's Talk!
               </button>
             </div>

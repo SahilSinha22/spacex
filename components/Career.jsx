@@ -194,7 +194,7 @@ const Career = () => {
                                 </button>
                             </div>
                             <div className=''>
-                                <Image src={tech.img} alt="" className="w-auto h-20" width={100} height={100} />
+                                <Image src={tech.img} alt="" className="w-auto h-14 lg:h-20" width={100} height={100} />
                             </div>
 
                         </div>
