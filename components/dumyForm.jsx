@@ -35,7 +35,7 @@ const DumyForm = () => {
         else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
         if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
         else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
-        if (!user.message) newErrors.message = 'description is a required ';
+       /* if (!user.message) newErrors.message = 'Message is a required ';*/
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -276,11 +276,11 @@ const DumyForm = () => {
                                             required
                                             onChange={data}
                                         />
-                                        {errors.message && (
+                                      {/*}  {errors.message && (
                                             <p className="text-red-600 text-xs mt-1">
                                                 {errors.message}
                                             </p>
-                                        )}
+                                        )}*/}
 
                                         <label
                                             htmlFor="message"
@@ -317,7 +317,7 @@ const DumyForm = () => {
 
                                     <button
                                         onClick={getdata}
-                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]   hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  text-lg w-full sm:w-auto px-8 py-3 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]   hover:bg-zinc-700 focus:ring-4 focus:outline-none  open_sans_display  text-lg w-full sm:w-auto px-8 py-3 text-center  "
                                         type="submit"
                                         style={{
                                             backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",

@@ -35,7 +35,7 @@ const DumyForm = ({ onClose }) => {
         else if (!/\S+@\S+\.\S+/.test(user.Email)) newErrors.Email = 'Email address is invalid';
         if (!user.Number.trim()) newErrors.Number = 'Phone number is required';
         else if (!/^\d{7,12}$/.test(user.Number)) newErrors.Number = 'Phone number must be between 7 to 12 digits';
-        if (!user.message) newErrors.message = 'description is a required ';
+        /*if (!user.message) newErrors.message = 'Message is a required ';*/
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -114,9 +114,9 @@ const DumyForm = ({ onClose }) => {
     if (!visible) return null;
     return (
         <div className='m-auto'>
-            <div className="justify-center items-center  Glassys flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="md:justify-center px-4 md:px-0 items-center  Glassys flex m-auto   duration-1000 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                 <div className='relative'>
-                <div className=" grid md:grid-cols-2  w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
+                <div className=" grid md:grid-cols-2 w-auto md:w-[600px] lg:w-[800px] lg:top-10 xl:top-0 xl:w-auto my-6 mx-auto justify-center place-content-center xl:max-w-4xl ">
                     <div className=' hidden md:block'>
                         <div className='relative '>
 
@@ -272,11 +272,11 @@ const DumyForm = ({ onClose }) => {
                                             required
                                             onChange={data}
                                         />
-                                        {errors.message && (
+                                      { /* {errors.message && (
                                             <p className="text-red-600 text-xs mt-1">
                                                 {errors.message}
                                             </p>
-                                        )}
+                                        )}*/}
 
                                         <label
                                             htmlFor="message"
@@ -313,7 +313,7 @@ const DumyForm = ({ onClose }) => {
 
                                     <button
                                         onClick={getdata}
-                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]   hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  text-lg w-full sm:w-auto px-8 py-3 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        className="rounded-full rounds t-4 text-white border-white border-2 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]   hover:bg-zinc-700 focus:ring-4  open_sans_display  text-lg w-full sm:w-auto px-8 py-3 text-center  "
                                         type="submit"
                                         style={{
                                             backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",
@@ -327,8 +327,8 @@ const DumyForm = ({ onClose }) => {
                                     <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 lg:mt-6 2xl:mt-8'>
 
                                    
-                                    <h2 className='text-black z-20 text-sm md:text-lg lg:text-sm xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
-                                    <a href="https://api.whatsapp.com/send?phone=918882076755">  <Image src="/whatsapp.svg" className=" mr-10" alt="" width={40} height={40} /></a>
+                                    <h2 className='text-black z-20 text-xs md:text-lg lg:text-sm xl:text-xl open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                    <a href="https://api.whatsapp.com/send?phone=918882076755">  <Image src="/whatsapp.svg" className=" md:mr-10" alt="" width={40} height={40} /></a>
                                     </div>
                                     </div>
                                     
