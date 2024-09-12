@@ -323,7 +323,7 @@ const DumyForm = ({ onClose }) => {
                                 <div className=' flex justify-between items-center pb-6 md:pb-0 mt-6 md:mt-12 2xl:mt-8'>
 
                                
-                                <h2 className='text-[#000000] z-20 text-xs md:text-sm lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
+                                <h2 className='text-[#000000] z-20 text-xs md:text-xs lg:text-base xl:text-lg open_sans_display '>In Just <b> 10 min</b> You Will Get A Response</h2>
                                 <a href="https://api.whatsapp.com/send?phone=918882076755">   <Image src="/whatsapp.svg" className="" alt="" width={40} height={40} /> </a>
 
                                 </div>
