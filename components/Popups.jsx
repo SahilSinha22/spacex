@@ -168,7 +168,7 @@ const DumyForm = ({ onClose }) => {
                             className="    "
                         >
                             <div className="flex flex-col  gap-10  w-full">
-                                <div className="lg:w-[450px] md:w-[400px] lg:h-[500px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
+                                <div className="lg:w-[450px] md:w-[400px] rounded-2xl md:rounded-none lg:h-[500px] xl:w-[550px] xl:max-w-4xl h-[550px] bg-[#FFF]  md:h-[550px] xl:h-[600px]  2xl:w-[650px] w-[calc(100vw-10%)] px-6 lg:px-10 flex flex-col   ">
                                     <div className="flex pt-10  justify-end ">
 
                                         <svg onClick={handleClose} className="font-bold cursor-pointer hover:red-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

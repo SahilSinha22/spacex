@@ -16,6 +16,7 @@ const Intros = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleButtonClick = () => {
+    console.log("heyyyy");
     setIsModalOpen(true);
   };
 
@@ -37,6 +38,7 @@ const Intros = () => {
  
 
   return (
+    <>
     <div className=" text-white   h-full w-full  ">
       <div className="intros w-full xl:h-[680px] 2xl:h-[760px] h-full  ">
 
@@ -47,12 +49,13 @@ const Intros = () => {
                 Transforming Business with <br />
                 Digital Innovation & Data-driven Apps
               </h1>
-              <p className=" text-sm open_sans_display  px-8 sm:px-24 md:px-32 lg:px-1 xl:px-64 xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
+              <p className="lg:w-[750px] xl:w-[1250px] 2xl:w-[1400px] text-sm open_sans_display  px-8 sm:px-24 md:px-32 lg:px-1 xl:px-64 xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
                 Spacetotech is turning ideas into reality for a decade now.
-                Partner with us &<br /> drive digitization to your business with
+                Partner with us &
+                 drive digitization to your business with
                 innovation and technology
               </p>
-              <button  onClick={handleButtonClick} className="border-2  border-solid rounded-full text-white  py-2 px-4  hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] transition duration-300">
+              <button  onClick={handleButtonClick} className="border-2 z-50  border-solid rounded-full text-white  py-2 px-4  hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
                 Let's Talk!
               </button>
             </div>
@@ -121,10 +124,12 @@ const Intros = () => {
 
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ContactForm onClose={closeModal}/>
-      </Modal>
+     
     </div>
+     <Modal isOpen={isModalOpen} onClose={closeModal}>
+     <ContactForm onClose={closeModal}/>
+   </Modal>
+   </>
   );
 };
 
