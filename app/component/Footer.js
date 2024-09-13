@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
@@ -21,7 +22,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl  pb-28 2xl:text-2xl  flex flex-row text-xl space-x-2">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl    hover:text-white dark:hover:text-blue-500"
             >
               <Image
@@ -33,7 +34,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               <Image
@@ -44,7 +45,7 @@ const Footer = () => {
                 height={1}
               />
             </Link>
-            <Link href="#" className=" hover:text-white dark:hover:text-blue-500">
+            <Link href="#" onClick={(e) => e.preventDefault()} className=" hover:text-white dark:hover:text-blue-500">
               <Image
                 src="/facebook.svg"
                 alt="logo"
@@ -63,7 +64,7 @@ const Footer = () => {
           </h1>
           <li className="xl:text-lg 2xl:text-xl  text-sm sm:text-lg">
             <Link
-              href=""
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Expertise
@@ -71,7 +72,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl  text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Web development
@@ -79,7 +80,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Mobile App development
@@ -87,7 +88,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               UI/UX design
@@ -95,7 +96,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Hire Developer
@@ -103,7 +104,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Become a Partner
@@ -116,7 +117,7 @@ const Footer = () => {
           </h1>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Blockchain App Developmen
@@ -124,7 +125,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               AI App Development
@@ -132,7 +133,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               IoT App development
@@ -140,7 +141,7 @@ const Footer = () => {
           </li>
           <li className="xl:text-xl 2xl:text-2xl   text-sm sm:text-lg">
             <Link
-              href="#"
+              href="#" onClick={(e) => e.preventDefault()}
               className="xl:text-xl 2xl:text-2xl   hover:text-white dark:hover:text-blue-500"
             >
               Blockchain App Development

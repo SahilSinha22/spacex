@@ -84,7 +84,7 @@ const Navbar = ({ role }) => {
 
   useEffect(() => {
     const handleRouteChange = (pathname) => {
-      console.log(pathname);
+     
 
       if (pathname === '/') {
         setBgColor('black');
@@ -110,6 +110,9 @@ const Navbar = ({ role }) => {
       baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-black ';
     }
     else if (path === '/Technology') {
+      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
+    }
+    else if (path === '/Career') {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
     }
     else {
@@ -267,7 +270,7 @@ const Navbar = ({ role }) => {
                   </div>
                   <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
                     {technology.map((service, index) => (
-                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-auto 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-60 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
                           <Image
@@ -295,7 +298,7 @@ const Navbar = ({ role }) => {
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-black'}`}>
               Portfolio
             </Link>
-            <Link href="/Career" className={linkStyles('/')}>
+            <Link href="/Career" className={linkStyles('/Career')}>
              Career
             </Link>
           </div>

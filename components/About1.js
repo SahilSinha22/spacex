@@ -127,14 +127,14 @@ const About1 = () => {
     };
     return (
         <div className='h-[600px] md:h-[800px] lg:h-screen  relative w-screen m-auto '>
-            <div className=' h-[600px] md:h-[800px] lg:h-screen  max-w-7xl 2xl:max-w-full m-auto relative'>
+            <div className=' h-[600px] md:h-[800px] lg:h-screen  w-screen 2xl:max-w-full m-auto relative'>
                 <video
                     autoPlay
                     muted
                     loop
                     className="absolute about -z-10 inset-0 w-screen h-full lg:h-screen object-cover"
                 >
-                    <source src="/About.webm" type="video/mp4" />
+                    <source src="/About.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-overlay"></div>
@@ -285,7 +285,7 @@ const About1 = () => {
                                             </div>
                                             <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
                                                 {technology.map((service, index) => (
-                                                    <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-auto 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                                                    <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-60 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
                                                         <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
                                                             <Image

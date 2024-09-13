@@ -105,13 +105,13 @@ const Contact = () => {
     alert("Form submitted successfully!");
   };
   return (
-    <div className=" px-10 lg:px-0  xl:px-40">
-      <section className="flex flex-row md:gap-10 justify-center xl:gap-20 2xl:gap-20 w-full h-auto lg:h-full mt-10">
+    <div className=" px-4 md:px-10 lg:px-0  xl:px-40">
+      <section className="flex flex-row md:gap-10  md:px-10 lg:px-0 m-auto max-w-5xl xl:max-w-7xl 2xl:max-w-[1530px] 2xl:justify-center xl:gap-20 2xl:gap-20 w-full h-auto lg:h-full mt-10">
         <div>
 
 
 
-          <div className="mr-4  xl:mr-0 lg:w-[400px] xl:w-[400px] 2xl:w-[400px] mb-4 lg:ml-20   xl:ml-0 md:mx-2 sm:ml-10 ">
+          <div className="mr-4  xl:mr-0 lg:w-[400px] xl:w-[400px] 2xl:w-[400px] mb-4    xl:ml-0 md:mx-2 sm:ml-10 ">
             <h1 className="text-white text-3xl md:text-6xl playfair_display">Let's Work</h1>
             <h1 className="text-white text-sm md:text-2xl my-8">Consult over experts!</h1>
             {successBanner && (
@@ -145,7 +145,7 @@ const Contact = () => {
                   )}
 
                   <label
-                    htmlhtmlFor="Name"
+                   htmlFor="Name"
                     className="peer-focus:font-medium  absolute text-base  text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Full Name*
@@ -328,8 +328,8 @@ const Contact = () => {
             </div>
         </div>
         <div>
-          <div className="w-full lg:w-[500px] xl:w-[500px] 2xl:w-[600px] h-full  2xl:h-[700px]">
-            <Image src={Contactimg} alt='Contactimg' className="w-40 md:w-60    lg:w-full 2xl:w-[700px]  lg:h-full" width={1000} height={1000} />
+          <div className="w-auto lg:w-auto xl:w-auto 2xl:w-[600px] h-full  2xl:h-[700px]">
+            <Image src={Contactimg} alt='Contactimg' className="w-60 md:w-60    lg:w-full 2xl:w-[700px]  lg:h-full" width={1000} height={1000} />
           </div>
         </div>
       </section>

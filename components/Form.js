@@ -148,7 +148,7 @@ const Form = () => {
                   <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
                   <a href= "mailto: amit@spacetotech.com  ">   <span> Email : amit@spacetotech.com </span> </a>
                     
-                    <span className="w-[300px] 2xl:w-[450px] leading-7">office : Platina Heights, C24, C Block,
+                    <span className="w-[300px] 2xl:w-[450px] leading-7">Office : Platina Heights, C24, C Block,
                       Phase 2, Industrial Area, Sector 62,
                       Noida, Uttar Pradesh 201309, </span>
                   </div>

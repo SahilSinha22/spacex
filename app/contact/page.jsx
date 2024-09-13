@@ -120,7 +120,7 @@ const Page = () => {
         </div>
 
       </div>
-      <div className="xl:mx-40 mx-10 mb-6 w-auto h-auto  rounded-2xl md:rounded-none bannerx">
+      <div className="xl:mx-40 mx-10  w-auto h-auto  rounded-2xl md:rounded-none bannerx">
         <div className=" text-white mt-10 mb-2 mx-4 xl:mt-5  leading-loose lg:mb-8   md:mx-auto flex flex-col items-center text-center">
           <h1 className="text-lg mt-4 xl:mt-12 leading-loose  xl:mx-0 lg:text-4xl md:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
           Get your ideas validated. <br/> Let’s give you an honest opinion.!
@@ -133,7 +133,7 @@ const Page = () => {
       </div>
 
       <div className="xl:mx-40 mx-10 mb-20 w-auto h-auto">
-      <div className="flex text-2xl text-black font-semibold gap-4 py-16 ">
+      <div className="flex text-2xl text-black font-semibold gap-4 py-10 ">
           <h2>Find us on Google Maps</h2>
           <Image src="/Path.svg" alt="" width={20} height={20} />
         </div>

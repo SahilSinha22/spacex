@@ -4,7 +4,7 @@ import Mobi from "@/public/1grow.png";  // Adjust the import path if necessary
 import Mobis from "@/public/Image 13.png"
 const Award = () => {
   return (
-    <div className="bg-white text-zinc-800 p-8 sm:mx-4 xl:mx-28 my-10 lg:mt-20">
+    <div className="bg-white text-zinc-800 p-8 sm:mx-4 xl:mx-28 mt-10 lg:mt-20">
       <div className="flex flex-col sm:flex-row justify-between">
         <div>
           <h1 className="text-2xl font-extrabold mb-2 md:mb-4 sm:text-4xl md:text-5xl playfair_display">

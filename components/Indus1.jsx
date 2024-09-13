@@ -1,11 +1,11 @@
 'use client'
 
 import React ,{ useEffect } from "react";
-
+import Link from "next/link";
 
 const Indus = () => {
   useEffect(() => {
-    console.log("hello");
+    
     const panels = document.querySelectorAll(".panel");
 
     panels.forEach((panel) => {
@@ -55,9 +55,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className=" mt-5  lg:mt-5 xl:mt-10">
-                  <a href="#" className="round  ">
+                  <Link href="#" onClick={(e) => e.preventDefault()} className="round  ">
                    <span  className=" px-1 md:px-2 py-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -71,9 +71,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
                     <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -87,9 +87,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
                     <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -103,9 +103,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
                     <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,9 +119,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
                     <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -135,9 +135,9 @@ const Indus = () => {
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
-                  <a href="#" className=" round    ">
+                  <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
                     <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
