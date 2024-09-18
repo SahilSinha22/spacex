@@ -55,7 +55,7 @@ const FormComponent = () => {
     };
 
     const res = await fetch(
-      'https://nextfirebase-fab92-default-rtdb.firebaseio.com/Query.json',
+      'https://nextfirebase-fab92-default-rtdb.firebaseio.com/SpacetoTech.json',
       options
     );
     if (res) {

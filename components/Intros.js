@@ -16,7 +16,7 @@ const Intros = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleButtonClick = () => {
-    console.log("heyyyy");
+   
     setIsModalOpen(true);
   };
 

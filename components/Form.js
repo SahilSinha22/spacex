@@ -70,7 +70,7 @@ const Form = () => {
     };
 
     const res = await fetch(
-      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/Query.json",
+      "https://nextfirebase-fab92-default-rtdb.firebaseio.com/SpacetoTech.json",
       options
     );
     if (res) {
@@ -228,7 +228,7 @@ const Form = () => {
                         className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" "
                         value={user.Number}
-                        autoComplete="off"
+                        
                         required
                         onChange={data}
                       />
@@ -243,15 +243,8 @@ const Form = () => {
                         className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         <div className="flex flex-row">
-                          <div className="">
-                            <Image
-                              src="/flag.svg"
-                              alt="flag"
-                              width={30}
-                              height={2}
-                            />{" "}
-                          </div>
-                          <div className="">+91</div>
+                          
+                          <div className="">Contact no*</div>
                         </div>
                       </label>
                     </div>
