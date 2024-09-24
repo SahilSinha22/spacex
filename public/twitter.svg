@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"></path></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="69.769" height="69.769" viewBox="0 0 69.769 69.769">
+  <g id="Group_7" data-name="Group 7" transform="translate(0)">
+    <circle id="BG" cx="34.884" cy="34.884" r="34.884" transform="translate(0)" fill="#fff" opacity="0.102"/>
+    <path id="Path_159578" data-name="Path 159578" d="M33.885,5.978a1.744,1.744,0,0,0-2.467-2.467L21.049,13.88,13.593,3.713A1.744,1.744,0,0,0,12.187,3H4.744A1.744,1.744,0,0,0,3.338,5.776L14.26,20.67,3.511,31.418a1.744,1.744,0,0,0,2.467,2.467L16.347,23.516,23.8,33.683a1.745,1.745,0,0,0,1.407.713h7.443a1.744,1.744,0,0,0,1.407-2.776L23.136,16.726ZM19.344,17.453a1.736,1.736,0,0,0,.188.257l9.678,13.2H26.093L8.186,6.488H11.3Z" transform="translate(16.187 16.03)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

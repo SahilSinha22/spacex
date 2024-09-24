@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69.769" height="69.769" viewBox="0 0 69.769 69.769">
+  <g id="Group_9" data-name="Group 9" transform="translate(0)">
+    <circle id="BG" cx="34.884" cy="34.884" r="34.884" transform="translate(0)" fill="#fff" opacity="0.102"/>
+    <g id="Group_6" data-name="Group 6" transform="translate(24.349 22.099)">
+      <rect id="Op_component_2" data-name="Op component 2" width="4.361" height="15.995" transform="translate(0.366 6.977)" fill="#fff"/>
+      <ellipse id="Op_component_3" data-name="Op component 3" cx="2.547" cy="2.564" rx="2.547" ry="2.564" fill="#fff"/>
+      <path id="Op_component_4" data-name="Op component 4" d="M208.869,7693.746h-4.361V7685.6c0-4.894-5.815-4.522-5.815,0v8.146h-4.361v-15.988h4.361v2.566c2.029-3.76,10.176-4.037,10.176,3.6Z" transform="translate(-186.706 -7670.786)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

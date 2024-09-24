@@ -6,6 +6,8 @@ import React, { useEffect, useCallback } from "react";
 const Pef = () => {
   
 
+
+
   const isInViewport = useCallback((element) => {
     const rect = element.getBoundingClientRect();
     return (
@@ -32,21 +34,29 @@ const Pef = () => {
   const animateNumbers = useCallback(() => {
     const numberElements = document.querySelectorAll(".number");
     numberElements.forEach((element) => {
-      if (isInViewport(element)) {
-        element.classList.add("fall-in");
+      // Check if element is in the viewport and hasn't been animated yet
+      if (isInViewport(element) && !element.classList.contains("animated")) {
+        element.classList.add("fall-in", "animated"); // Add 'animated' class to prevent rerun
         updateNumber(element);
       }
     });
   }, [isInViewport, updateNumber]);
 
   useEffect(() => {
-    document.addEventListener("scroll", animateNumbers);
-    animateNumbers();
+    const handleScroll = () => {
+      animateNumbers();
+    };
+
+    document.addEventListener("scroll", handleScroll);
+    animateNumbers(); // Trigger animation on page load in case the elements are already in view
 
     return () => {
-      document.removeEventListener("scroll", animateNumbers);
+      document.removeEventListener("scroll", handleScroll);
     };
   }, [animateNumbers]);
+
+
+
 
  
 

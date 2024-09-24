@@ -309,7 +309,9 @@ const DumyForm = ({ onClose }) => {
 
                                 <button
                                     onClick={getdata}
-                                    className="rounded-full rounds t-4 text-white border-white border-2 bannerx  hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display  xl:text-lg w-full sm:w-auto xl:px-8 xl:py-3 px-4 py-2.5 text-center  dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                    className={`rounded-full  t-4 text-white border-white border-2 hover:bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 open_sans_display xl:text-lg w-full sm:w-auto xl:px-8 xl:py-3 px-4 py-2.5 text-center transition-opacity duration-300 ${
+                                        isCaptchaValid ? 'bannerx' : 'bg-[#7b61ff] opacity-50 cursor-not-allowed'}`}
+                                  
                                     type="submit"
                                     style={{
                                         backgroundColor: isCaptchaValid ? "green" : "[#7b61ff]",

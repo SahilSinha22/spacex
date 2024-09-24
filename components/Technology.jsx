@@ -100,31 +100,34 @@ const Technology = () => {
           <div className="p-6   shadow-lg shadow-[#E9A0FF4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">Ideation</h3>
             <p className="text-muted-foreground ">
-              The first phase in our blueprint is that of ideation. We put clients at the forefront and give their vision a ground to flourish. Our developers understand the goals of businesses by studying
-              their target audience and ensuring they
+            The first phase in our blueprint is that of ideation. We put clients at the forefront and give their vision a ground to flourish. 
+            Our developers understand the goals of businesses by studying their target audience and ensuring they align with market trends and user needs.
             </p>
           </div>
 
           <div className="p-6 shadow-lg shadow-[#FFD7A04D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">Planning</h3>
             <p className="text-muted-foreground  2xl:pr-10">
-              This is where we dexterously chart the course for the project. Our team develops a comprehensive roadmap, defining features, timelines, and resource requirements. We prioritize goals and do
-              what must be done in the short
+            This is where we dexterously chart the course for the project. Our team develops a comprehensive roadmap, defining features, timelines, and resource requirements. 
+            We prioritise goals and do what must be done in the short term before setting a base for long term functionalities.
+             This strategic planning ensures a smooth development process, minimizes risks, and provides clients with a transparent overview of the project's trajectory.
             </p>
           </div>
 
           <div className="p-6 shadow-lg shadow-[#A0C5FF4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">Workflow</h3>
             <p className="text-muted-foreground xl:pr-24 2xl:pr-36">
-              No React Native App Development company can run without a proper workflow. Our operation cycle is characterized by agile methodologies with flexibility and adaptability at the core.
-            </p>
+            No React Native App Development company can run without a proper workflow. 
+            Our operation cycle is characterized by agile methodologies with flexibility and adaptability at the core. We break down the marathon development process into sprints, fostering incremental progress. Nothing is done without a proper analysis of the consequences.
+             Each step is broken into a compact set of pros and cons. Regular feedback loops with clients ensure alignment with expectations            </p>
           </div>
 
           <div className="p-6 shadow-lg shadow-[#A0FFDE4D]   rounded-lg bg-muted">
             <h3 className="text-xl font-semibold mb-2">Execution</h3>
             <p className="text-muted-foreground xl:pr-20 2xl:pr-28">
-              With a well-defined plan in place, our execution phase kicks into gear. Our adept developers make the best use of React Native's capabilities to bring your application to life.
-            </p>
+            With a well-defined plan in place, our execution phase kicks into gear. 
+            Our adept developers make the best use of React Native's capabilities to bring your application to life. With relentless integration and testing, we guarantee code stability while prioritizing user-centric design for a seamless and engaging experience. 
+            Consistent updates and progress reports serve as evidence of our unwavering dedication to maintaining transparency throughout the entire development process. It is our duty to make sure our clients stay well-informed at every stage of the journey.            </p>
           </div>
         </div>
       </section>
@@ -141,33 +144,40 @@ const Technology = () => {
           <div className="p-4  w-auto 2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">React Native UI/UX Design</h3>
             <p className=" xl:text-base  2xl:pr-6  ">
-              We combine “What wins the eyes, wins the heart” with “the smoother it runs, the better it performs.” As a react native app development company in India, our goal is to deliver customized UI/UX
-              designs.
+            We combine “What wins the eyes, wins the heart” with “the smoother it runs, the better it performs.” 
+            As a react native app development company in India, our goal is to deliver customized UI/UX designs. 
+            Our design team brings innovation and usability to the forefront to trigger a seamless and visually engaging interface.
             </p>
           </div>
 
           <div className="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">Migration & Upgradation</h3>
             <p className="xl:text-base  2xl:pr-6">
-              Technological advancements are unavoidable. It is essential to keep up with our Migration and Upgradation services will put you ahead of your competitors by ensuring seamless transitions.
-            </p>
+            Technological advancements are unavoidable. It is essential to keep up with them. Our Migration and Upgradation services will put you ahead of your competitors by ensuring seamless transitions.
+            Whether migrating from a different platform to React Native or upgrading your existing React Native application, our experts secure a smooth and efficient process.            </p>
           </div>
           <div className="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground"> Enterprise-oriented Solutions</h3>
             <p className="xl:text-base  2xl:pr-6">
-              Our specialized react native app development services are tailored for corporate environments.We inherently build enterprise-oriented solutions using the versatility of React Native to create robust, scalable, and secure applications.            </p>
-          </div>
+            Our specialized react native app development services are tailored for corporate environments.We inherently build enterprise-oriented solutions using the versatility of React Native to create robust, scalable, and secure applications.
+            The developers at Space to Tech address the unique challenges of large-scale operations by prioritising efficiency, data security, and cohesive integration.     
+            </p>     </div>
 
           <div className="p-4 2xl:w-[400px]  bg-[#F8F8F8] xl:pt-6 2xl:p-8 hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">QA & Testing Services</h3>
             <p className="xl:text-base  2xl:pr-6">
-              Regular tests are the only way to keep issues at bay. When you choose our React Native app development company, our QA & Testing Services work as a shield for your application.
+            Regular tests are the only way to keep issues at bay. 
+            When you choose our React Native app development company, our QA & Testing Services work as a shield for your application.We have dedicated quality assurance teams that employ a rigorous testing framework to identify and rectify potential issues.
+            It guarantees a robust and error-free user experience 
             </p>
           </div>
 
           <div className="p-4  2xl:w-[400px] bg-[#F8F8F8] xl:pt-6 2xl:p-8  hover:text-white hover:bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F]">
             <h3 className="font-semibold text-lg xl:text-lg lg:text-xl text-foreground">React Native Support & Maintenance</h3>
-            <p className="xl:text-base  2xl:pr-6">Longevity is the cornerstone of any business product. Our Support and Maintenance services tick this box to deliver optimal performance to your users.</p>
+            <p className="xl:text-base  2xl:pr-6">
+            Longevity is the cornerstone of any business product. Our Support and Maintenance services tick this box to deliver optimal performance to your users.We provide continuous support to address issues promptly and ensure your app remains in good health.
+            From handling updates, and resolving bugs, to adapting to new OS releases, we prioritize the uninterrupted functioning.
+            </p>
           </div>
 
         </div>
