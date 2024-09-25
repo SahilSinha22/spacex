@@ -27,8 +27,9 @@ const page = () => {
     <Imgcmp/>
 <Pef/>
 <Okomo/>
-<Netme/>
 <Liqui/>
+<Netme/>
+
 
     <Journey/>
 <Indus/>
