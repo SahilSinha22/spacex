@@ -32,21 +32,7 @@ const Page = () => {
       
         <Contact />
 
-        <div>
-          <div className="logoss  ">
-            <div className="carouselx md:px-10 px-4 xl:px-40 ">
-              <div className=" flex gap-4 sm:gap-10 2xl:gap-20  pt-10 justify-center items-center text-center">
-                {logos.map((logo, index) => (
-                  <div key={index} className=" ">
-                    <Image src={logo} className='w-20 sm:w-56' alt={`Logo ${index % logos.length + 1}`} width={280} height={100} />
-                  </div>
-                ))}
-              </div>
-
-            </div>
-          </div>
-
-        </div>
+       
       </div>
       <div className="bg-white text-zinc-800 p-8 sm:mx-4 xl:mx-28 mt-10 lg:mt-20">
         <div className="flex flex-col sm:flex-row justify-between">
@@ -139,7 +125,7 @@ const Page = () => {
         </div>
 
         <div className="map-responsive">
-        <iframe   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <iframe   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.246309723172!2d77.361188!3d28.61108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5697f8ef789%3A0x89218b014db0771c!2sPlatina%20Heights!5e0!3m2!1sen!2sin!4v1724229359599!5m2!1sen!2sin"  allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>   
              </div>
       </div>

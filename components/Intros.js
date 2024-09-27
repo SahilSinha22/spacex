@@ -28,10 +28,12 @@ const Intros = () => {
     "/7intro.png",
     "/8intro.png",
     "/9intro.png",
+    "/10intro.png",
     "/6intro.png",
     "/7intro.png",
     "/8intro.png",
-    "/9intro.png"
+    "/9intro.png",
+    "/10intro.png"
 
   ];
 

@@ -255,7 +255,7 @@ const Navbar = ({ role }) => {
                 aria-expanded={isOpenMenuT ? true : false}
                 onClick={() => setIsOpenMenuT(!isOpenMenuT)}
               >
-                Technology
+                Technologies
                 {isOpenMenuT ? (
                   <FaChevronUp className="inline-flex ml-2" size={14} />
                 ) : (
