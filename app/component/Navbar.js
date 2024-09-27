@@ -132,7 +132,7 @@ const Navbar = ({ role }) => {
         <div className="flex items-center flex-shrink-0 text-white mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-18">
           <span>
             <Link href="/" >
-              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 sm:h-10" alt="Logo" width={600} height={10} />
+              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5  sm:h-10" alt="Logo" width={600} height={10} />
             </Link>
           </span>
         </div>
