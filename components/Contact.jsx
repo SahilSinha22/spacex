@@ -227,7 +227,7 @@ const Contact = () => {
   return (
     <>
       <div className=' h-auto sm:h-[800px] lg:h-screen  w-screen 2xl:max-w-full m-auto relative'>
-        <Image src="/Contact.png" className="absolute  -z-10 inset-0 w-screen h-[8000px] sm:h-full lg:h-screen xl:h-screen object-cover" alt="" width={1000} height={1000} />
+        <Image src="/Contact.png" className="absolute  -z-10 inset-0 w-screen h-[1400px] sm:h-full lg:h-screen xl:h-screen object-cover" alt="" width={1000} height={1000} />
 
         <nav className=" items-center left-0 right-0 text-center  p-4" >
           <div className="  md:px-10 xl:px-40  relative  max-w-screen-2xl  2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
