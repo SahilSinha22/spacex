@@ -50,8 +50,7 @@ const Indus = () => {
                 <h3 className="head">Healthcare</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's.
+                  Transforming patient care with innovative solutions and compassionate support.
                   </p>
                 </div>
                 <div className=" mt-5  lg:mt-5 xl:mt-10">
@@ -63,11 +62,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus1">
               <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="head ">Manufacturing</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's.
+                  Streamlining production with cutting-edge technology and precision expertise.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -79,11 +77,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus2">
             <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="head ">Health Sector</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's.
+                  Improving lives through collaborative research and exceptional care.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -95,11 +92,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus3">
             <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="head ">Water Purification</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's.
+                  Ensuring access to clean water for a healthier tomorrow.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -111,11 +107,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus4">
             <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="head ">Food and Hospitality</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's.
+                  Delivering memorable experiences and savory delights with passion
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
@@ -127,11 +122,10 @@ const Indus = () => {
             </div>
             <div className="panel Indus5">
             <div className="img-boxs ">
-                <h3 className="head ">Healthcare</h3>
+                <h3 className="head ">Social Media</h3>
                 <div className="mt-1 md:mt-2">
                   <p className="">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's.
+                  Connecting communities and empowering voices through digital innovation.
                   </p>
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
