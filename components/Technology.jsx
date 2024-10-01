@@ -72,20 +72,20 @@ const Technology = () => {
         </div>
       </div>
       <div>
-        <div className="bg-black xl:mb-10  text-white  w-full  p-2 md:p-8 flex flex-row md:flex-row items-center open_sans_displays font-extralight">
+        <div className="bg-black xl:mb-10  text-white  w-full  p-2 sm:p-8 flex flex-row md:flex-row items-center open_sans_displays font-extralight">
 
           <div className=" p-0  lg:ml-28 2xl:ml-48 mt-10 md:space-y-8 w-1/2">
             <div className=" font-extralight md:space-y-4 flex flex-col">
-              <span className=" text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Why is React Native </span>
-              <span className=" text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">The Future of</span>
-              <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Mobile App</span>
-              <span className="text-lg md:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Development?</span>
+              <span className=" text-lg sm:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Why is React Native </span>
+              <span className=" text-lg sm:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">The Future of</span>
+              <span className="text-lg sm:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Mobile App</span>
+              <span className="text-lg sm:text-4xl xl:text-5xl 2xl:text-6xl font-extralight">Development?</span>
             </div>
-            <button onClick={handleButtonClick}  className=" mt-4  max-w-xl text-sm md:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  md:px-6 py-2 rounded-3xl">Let's Talk</button>
+            <button onClick={handleButtonClick}  className=" mt-4  max-w-xl text-sm sm:text-lg bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] px-3  sm:px-6 py-2 rounded-3xl">Let's Talk</button>
 
           </div>
           <div className=" mt-10 md:mt-6 2xl:mr-20 mb-6">
-            <Image src={Techno2} alt="Mobile App Screenshot 1" className=" w-40 h-40 md:w-96 md:h-full 2xl:w-[550px] 2xl:h-[500px]" width={1000} height={1000} />
+            <Image src={Techno2} alt="Mobile App Screenshot 1" className=" w-40 h-40 sm:w-96 sm:h-full 2xl:w-[550px] 2xl:h-[500px]" width={1000} height={1000} />
 
           </div>
 
