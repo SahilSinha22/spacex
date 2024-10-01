@@ -365,41 +365,41 @@ const Contact = () => {
                     )}
                   </Link>
                   <div
-                    className={`absolute  max-w-7xl left-0 xl:left-28 2xl:left-40  justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
-                  >
+                className={`absolute  max-w-7xl sm:left-[10%] md:left-0 xl:left-28 2xl:left-40  justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+              >
 
 
-                    <section className="flex flex-col md:flex-row justify-between xl:justify-around rounded-3xl w-full md:gap-6 xl:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
-                      <div className="max-w-5xl xl:w-auto  sm:w-[250px]  w-full mt-6 lg:mt-0  ">
-                        <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
-                        <Image src="/Technology/Technologyimg.png" className=" m-6 w-72 md:w-auto xl:w-72 2xl:w-96 " alt="" width={400} height={400} />
-                      </div>
-                      <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 md:grid-cols-3">
-                        {technology.map((service, index) => (
-                          <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-60 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
-                            <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
-
-                              <Image
-                                src={service.logo}
-                                alt={`${service.name} logo`}
-                                width={100}
-                                height={100}
-                              />
-                            </div>
-                            <Link
-                              /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
-                              href={`${service.link}`}
-
-
-                              className="block lg:px-2 py-2 md:py-4 lg:py-0 "
-                            >
-                              {service.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </section>
+                <section className="flex flex-col md:flex-row justify-between xl:justify-around rounded-3xl w-full md:gap-6 xl:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
+                  <div className="max-w-5xl xl:w-auto   md:w-[250px]  w-full mt-6 lg:mt-0  ">
+                    <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
+                    <Image src="/Technology/Technologyimg.png" className=" p-4 w-auto sm:w-full  md:w-auto xl:w-72 2xl:w-96 " alt="" width={1000} height={1000} />
                   </div>
+                  <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 sm:grid-cols-3">
+                    {technology.map((service, index) => (
+                      <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-60 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
+                        <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+
+                          <Image
+                            src={service.logo}
+                            alt={`${service.name} logo`}
+                            width={100}
+                            height={100}
+                          />
+                        </div>
+                        <Link
+                          /* href={`/Technology/${service.name.toLowerCase().replace(/\s+/g, "")}`}  */
+                          href={`${service.link}`}
+
+
+                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                        >
+                          {service.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              </div>
                 </div>
                 <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-[#ffffff]-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-[#ffffff]'}`}>
                   Portfolio
