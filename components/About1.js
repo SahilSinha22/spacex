@@ -222,7 +222,7 @@ const About1 = () => {
                                                     </h2>
                                                 </div>
                                             </div>
-                                            <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-2 md:grid-cols-3">
+                                            <ul className="py-1 text-xs xl:text-sm 2xl:text-lg  md:pl-10 md:gap-4 Poppin grid grid-cols-2 sm:grid-cols-3">
                                                 {services.map((service, index) => (
                                                     <li
                                                         key={index}
