@@ -8,47 +8,53 @@ import Leader from '@/components/Leadership';
 const About = () => {
     
 
-    const isInViewport = useCallback((element) => {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }, []);
+    
+  const isInViewport = useCallback((element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }, []);
 
-    const updateNumber = useCallback((element) => {
-        const targetValue = parseInt(element.dataset.target);
-        let currentValue = 0;
-        const interval = setInterval(() => {
-            if (currentValue < targetValue) {
-                currentValue++;
-                element.textContent = currentValue;
-            } else {
-                clearInterval(interval);
-            }
-        }, 50);
-    }, []);
+  const updateNumber = useCallback((element) => {
+    const targetValue = parseInt(element.dataset.target);
+    let currentValue = 0;
+    const interval = setInterval(() => {
+      if (currentValue < targetValue) {
+        currentValue++;
+        element.textContent = currentValue;
+      } else {
+        clearInterval(interval);
+      }
+    }, 50);
+  }, []);
 
-    const animateNumbers = useCallback(() => {
-        const numberElements = document.querySelectorAll(".number");
-        numberElements.forEach((element) => {
-            if (isInViewport(element)) {
-                element.classList.add("fall-in");
-                updateNumber(element);
-            }
-        });
-    }, [isInViewport, updateNumber]);
+  const animateNumbers = useCallback(() => {
+    const numberElements = document.querySelectorAll(".number");
+    numberElements.forEach((element) => {
+      // Check if element is in the viewport and hasn't been animated yet
+      if (isInViewport(element) && !element.classList.contains("animated")) {
+        element.classList.add("fall-in", "animated"); // Add 'animated' class to prevent rerun
+        updateNumber(element);
+      }
+    });
+  }, [isInViewport, updateNumber]);
 
-    useEffect(() => {
-        document.addEventListener("scroll", animateNumbers);
-        animateNumbers();
+  useEffect(() => {
+    const handleScroll = () => {
+      animateNumbers();
+    };
 
-        return () => {
-            document.removeEventListener("scroll", animateNumbers);
-        };
-    }, [animateNumbers]);
+    document.addEventListener("scroll", handleScroll);
+    animateNumbers(); // Trigger animation on page load in case the elements are already in view
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [animateNumbers]);
 
 
     return (
