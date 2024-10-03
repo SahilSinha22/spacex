@@ -410,7 +410,7 @@ const Contact = () => {
           </div>
          
         </div>
-        <div className={`  lg:flex  text-center   ${isOpen ? "block" : "hidden"}`}>
+        <div className={` w-auto m-auto block  lg:m-0 lg:flex justify-center lg:justify-normal text-center    ${isOpen ? "block" : "hidden"}`}>
             <Link href="/contact" className={linkStyles('/contact')}>
               <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white  ">
                 Contact Us
