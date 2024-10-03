@@ -300,7 +300,7 @@ const About1 = () => {
                           href={`${service.link}`}
 
 
-                          className="block lg:px-2 py-2 md:py-4 lg:py-0 "
+                          className="block lg:px-2 py-2 md:py-4 lg:py-0 whitespace-nowrap overflow-hidden text-ellipsis"
                         >
                           {service.name}
                         </Link>
