@@ -70,7 +70,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 xl:px-4 xl:py-4 px-1">Explore more →</span> 
                   </Link>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <Link href="#"  onClick={(e) => e.preventDefault()} className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 xl:px-4 xl:py-4 px-1">Explore more →</span> 
                   </Link>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 xl:px-4 xl:py-4 px-1">Explore more →</span> 
                   </Link>
                 </div>
               </div>
@@ -115,7 +115,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 xl:px-4 xl:py-4 px-1">Explore more →</span> 
                   </Link>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const Indus = () => {
                 </div>
                 <div className="mt-5 lg:mt-5 xl:mt-10">
                   <Link href="#" onClick={(e) => e.preventDefault()} className=" round    ">
-                    <span  className="md:px-2 xl:px-4 xl:py-4 ">Explore more →</span> 
+                    <span  className="md:px-2 xl:px-4 xl:py-4 px-1">Explore more →</span> 
                   </Link>
                 </div>
               </div>

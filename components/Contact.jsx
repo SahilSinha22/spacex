@@ -227,7 +227,7 @@ const Contact = () => {
   return (
     <>
       <div className=' h-auto sm:h-[800px] lg:h-screen  w-screen 2xl:max-w-full m-auto relative'>
-        <Image src="/Contact.png" className="absolute  -z-10 inset-0 w-screen h-[1400px] sm:h-full lg:h-screen xl:h-screen object-cover" alt="" width={1000} height={1000} />
+        <Image src="/Contact.png" className="absolute  -z-10 inset-0 w-screen h-[1550px] sm:h-full lg:h-screen xl:h-screen object-cover" alt="" width={1000} height={1000} />
 
         <nav className=" items-center left-0 right-0 text-center  p-4" >
           <div className="  md:px-10 xl:px-40  relative  max-w-screen-2xl  2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
@@ -374,10 +374,10 @@ const Contact = () => {
                     <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
                     <Image src="/Technology/Technologyimg.png" className=" p-4 w-auto sm:w-full  md:w-auto xl:w-72 2xl:w-96 " alt="" width={1000} height={1000} />
                   </div>
-                  <ul className="py-1 text-xs md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 sm:grid-cols-3">
+                  <ul className="py-1 text-xs sm:text-base md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 sm:grid-cols-3">
                     {technology.map((service, index) => (
                       <li key={index} className="flex items-center w-auto sm:w-full lg:w-[250px] xl:w-60 2xl:w-[300px] dropslash lg:mr-2 xl:mr-2 p-2 hover:text-[#C9784F] custom-filter">
-                        <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full md:h-6 md:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
+                        <div className="lg:h-8 lg:w-8 h-4 w-4 hover:bg-yellow-700  hover:dropslash p-1 lg:p-1.5 2xl:p-2 bg-gray-700 rounded-full sm:h-6 sm:w-6 mr-1 md:mr-2 xl:h-6 xl:w-6 2xl:w-8 2xl:h-8">
 
                           <Image
                             src={service.logo}
