@@ -231,7 +231,7 @@ const Contact = () => {
 
         <nav className=" items-center left-0 right-0 text-center  p-4" >
           <div className="  md:px-10 xl:px-40  relative  max-w-screen-2xl  2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
-            <div className="flex items-center flex-shrink-0 text-[#ffffff] mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-20 2xl:mr-40 lg:mr-18 ">
+            <div className="flex items-center flex-shrink-0 text-[#ffffff] mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-19 2xl:mr-40 lg:mr-18 ">
               <span>
                 <Link href="/" >
                   <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5 2xl:h-7 2xl:w-48 sm:h-10" alt="Logo" width={600} height={10} />
