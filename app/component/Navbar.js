@@ -105,8 +105,8 @@ const Navbar = ({ role }) => {
 
   const linkStyles = (path) => {
     const isActive = pathname === path;
-    let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-8 ';
-    let baseStyles='nav-link block mt-4 lg:inline-block lg:mt-0 text-black mr-4 lg:mr-0 ';
+    let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mx-4 ';
+    let baseStyles = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black  ';
     if (path === '/') {
       baseStyle += isActive ? 'text-zinc-400 hover:text-white' : 'text-zinc-400 hover:text-white ';
     }
@@ -114,7 +114,7 @@ const Navbar = ({ role }) => {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
     }
     else if (path === '/contact') {
-      baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
+      baseStyles += isActive ? 'text-black ' : 'text-zinc-400 hover:text-white ';
     }
     else if (path === '/About') {
       baseStyle += isActive ? 'text-orange-600 ' : 'text-zinc-400 hover:text-white ';
@@ -128,8 +128,8 @@ const Navbar = ({ role }) => {
 
   return (
     <nav className="items-center text-center  p-4" style={{ backgroundColor: bgColor }}>
-      <div className="md:px-10 xl:px-40  relative  max-w-screen-2xl 2xl:max-w-screen-2xl 2xl:mx-auto flex items-center place-content-center justify-between flex-wrap">
-        <div className="flex items-center flex-shrink-0 text-white mr-5 ml-2 md:ml-8 xl:ml-0 2xl:ml-8 xl:mr-19 2xl:mr-40 lg:mr-18">
+      <div className="w-auto   m-auto  max-w-2xl lg:max-w-5xl  relative  2xl:max-w-6xl 2xl:mx-auto flex items-center place-content-center justify-between lg:justify-around flex-wrap">
+        <div className="flex items-center flex-shrink-0 text-white ">
           <span>
             <Link href="/" >
               <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5  sm:h-10" alt="Logo" width={600} height={10} />
@@ -157,9 +157,9 @@ const Navbar = ({ role }) => {
             </svg>
           </button>
         </div>
-        <div className={`w-full block flex-grow lg:flex  text-center lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
-          <div className="text-sm  open_sans_display font-semibold justify-left lg:flex-grow">
-            <Link href="/About" className={linkStyles('/About')}>
+        <div className={`w-full block flex-grow lg:flex  text-center  justify-center  lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}>
+          <div className="text-sm  open_sans_display font-semibold justify-around lg:flex">
+            <Link href="/About" className={linkStyles('/About') }>
               About
             </Link>
 
@@ -184,7 +184,7 @@ const Navbar = ({ role }) => {
               </Link>
 
               <div
-                className={`absolute md:mx-10 xl:mx-40 left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto text-black bg-white rounded-md z-50 transition-all duration-300 ${isOpenMenu ? 'opacity-100 visible' : 'opacity-0 invisible'
+                className={`absolute  left-0 p-2 md:p-6 mt-10 w-auto h-auto md:h-auto text-black bg-white rounded-md z-50 transition-all duration-300 ${isOpenMenu ? 'opacity-100 visible' : 'opacity-0 invisible'
                   }`}
               >
                 <section className="flex flex-col md:flex-row  md:flex open_sans_display font-light">
@@ -263,14 +263,14 @@ const Navbar = ({ role }) => {
                 )}
               </Link>
               <div
-                className={`absolute  max-w-7xl sm:left-[10%] md:left-0 xl:left-28 2xl:left-40  justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
+                className={`absolute  w-full sm:left-[10%] md:left-0   justify-center  mt-10  h-full md:h-auto  text-black   z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300`}
               >
 
 
                 <section className="flex flex-col md:flex-row justify-between xl:justify-around rounded-3xl w-full md:gap-6 xl:gap-6 md:pt-10 lg:pt-16 pb-6 md:px-0 bg-white md:flex Poppinx ">
                   <div className="max-w-5xl xl:w-auto   md:w-[250px]  w-full mt-6 lg:mt-0  ">
                     <h2 className="text-xl lg:text-4xl text-left  pl-6 open_sans_displays">Technologies</h2>
-                    <Image src="/Technology/Technologyimg.png" className=" p-4 w-auto sm:w-full  md:w-auto xl:w-72 2xl:w-96 " alt="" width={1000} height={1000} />
+                    <Image src="/Technology/Technologyimg.png" className=" p-4 w-auto sm:w-full  md:w-auto xl:w-72  2xl:w-96 " alt="" width={1000} height={1000} />
                   </div>
                   <ul className="py-1 text-xs sm:text-base md:text-xs  lg:text-base xl:text-lg  Poppin grid grid-cols-2 sm:grid-cols-3">
                     {technology.map((service, index) => (
@@ -299,21 +299,22 @@ const Navbar = ({ role }) => {
                 </section>
               </div>
             </div>
-            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-8 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
+            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mx-4 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
               Portfolio
             </Link>
             <Link href="/Career" className={linkStyles('/')}>
              Career
             </Link>
           </div>
-          <div>
+         
+        </div>
+        <div className={`  w-auto m-auto block  lg:m-0 lg:flex justify-center lg:justify-normal text-center   ${isOpen ? "block" : "hidden"}`}>
             <Link href="/contact" className={linkStyles('/contact')}>
-              <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white  xl:ml-10 2xl:ml-40 ">
+              <button className="juggle-button mt-4 lg:mt-0 bg-gradient-to-r from-red-400 to-purple-600 rounded-full inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white  ">
                 Contact Us
               </button>
             </Link>
           </div>
-        </div>
 
       </div>
     </nav>
