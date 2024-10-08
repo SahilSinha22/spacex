@@ -16,13 +16,14 @@ const logos = {
   '/Technology/flutter': 'logo1.png',
   '/Career': 'logo1.png',
   '/Industries': 'logo1.png',
+  '/Technology/Chatbot': 'logo1.png',
 
 };
 const technology = [
 
   { name: "React Native", logo: "/Technology/reactNative.svg", link:"/Technology/reactnative" },
   { name: "AI Development", logo: "/Technology/Ai.svg", link:"#" },
-  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"#" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"/Technology/Chatbot" },
   { name: "IOT", logo: "/Technology/IOT.svg", link:"#" },
   { name: "Augmented Reality", logo: "/Technology/AR.svg", link:"#" },
   { name: "Ionic", logo: "/Technology/Ionic.svg", link:"#" },
@@ -295,7 +296,7 @@ const Navbar = ({ role }) => {
                 </section>
               </div>
             </div>
-            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mx-4 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-white'}`}>
+            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mx-4 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear')   ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-black'}`}>
               Portfolio
             </Link>
             <Link href="/Career" className={linkStyles('/')}>

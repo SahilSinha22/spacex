@@ -16,6 +16,7 @@ const logos = {
   '/Blog': 'logo1.png',
   '/contact': 'logo.png',
   '/About': 'logo1.png',
+  '/Chatbot':'logo1.png'
 };
 const services = [
 
@@ -55,7 +56,7 @@ const technology = [
 
   { name: "React Native", logo: "/Technology/reactNative.svg", link:"/Technology/reactnative" },
   { name: "AI Development", logo: "/Technology/Ai.svg", link:"#" },
-  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"#" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link:"/Technology/Chatbot" },
   { name: "IOT", logo: "/Technology/IOT.svg", link:"#" },
   { name: "Augmented Reality", logo: "/Technology/AR.svg", link:"#" },
   { name: "Ionic", logo: "/Technology/Ionic.svg", link:"#" },
@@ -119,6 +120,7 @@ const Navbar = ({ role }) => {
     else if (path === '/About') {
       baseStyle += isActive ? 'text-orange-600 ' : 'text-zinc-400 hover:text-white ';
     }
+    
     else {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
     }
@@ -289,7 +291,7 @@ const Navbar = ({ role }) => {
                           href={`${service.link}`}
 
 
-                          className="block lg:px-2 py-2 md:py-4 lg:py-0 whitespace-nowrap overflow-hidden text-ellipsis "
+                          className={`block lg:px-2 py-2 md:py-4 lg:py-0 whitespace-nowrap overflow-hidden text-ellipsis `}
                         >
                           {service.name}
                         </Link>

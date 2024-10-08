@@ -58,7 +58,7 @@ const technology = [
 
   { name: "React Native", logo: "/Technology/reactNative.svg", link: "/Technology/reactnative" },
   { name: "AI Development", logo: "/Technology/Ai.svg", link: "#" },
-  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link: "#" },
+  { name: "Chatbot", logo: "/Technology/Chatbot.svg", link: "/Technology/Chatbot" },
   { name: "IOT", logo: "/Technology/IOT.svg", link: "#" },
   { name: "Augmented Reality", logo: "/Technology/AR.svg", link: "#" },
   { name: "Ionic", logo: "/Technology/Ionic.svg", link: "#" },
