@@ -226,8 +226,8 @@ const Contact = () => {
   };
   return (
     <>
-      <div className=' h-auto sm:h-[800px] lg:h-screen  w-screen 2xl:max-w-full m-auto relative'>
-        <Image src="/Contact.png" className="absolute  -z-10 inset-0 w-screen h-[1550px] sm:h-full lg:h-screen xl:h-screen object-cover" alt="" width={1000} height={1000} />
+      <div className=' h-auto   w-screen 2xl:max-w-full md:h-full m-auto pb-6  xl:pb-8 relative'>
+        <Image src="/Contact.png" className="absolute  -z-10 inset-0 w-screen  h-full  object-cover" alt="" width={1000} height={1200} />
 
         <nav className="items-center text-center  p-4" >
       <div className="w-auto   m-auto  max-w-2xl lg:max-w-5xl  relative  2xl:max-w-6xl 2xl:mx-auto flex items-center place-content-center justify-between lg:justify-around flex-wrap">
@@ -421,7 +421,7 @@ const Contact = () => {
       </div>
     </nav>
 
-        <div className="flex flex-col sm:flex-row justify-center  2xl:justify-center w-auto sm:my-20 xl:my-36  m-auto px-4 md:px-10 lg:px-0 xl:px-32 ">
+        <div className="flex flex-col sm:flex-row justify-center lg:h-auto  2xl:justify-center w-auto sm:my-20 xl:my-36  m-auto px-4 md:px-10 lg:px-0 xl:px-32 ">
 
 
           <div className="my-10 sm:my-0 mr-20 lg:mr-20 2xl:mr-40">
