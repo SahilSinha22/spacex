@@ -1,6 +1,6 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
-
+import React, { useState, useEffect, useRef } from "react";
 const Benefit = [
     { title: "Work From Anywhere", para: "You don’t need to move towns or cross seas to work with us." },
     { title: "Amazing Team", para: "Work with our diverse and talented professionals scattered all across the world." },
@@ -27,6 +27,29 @@ const logos = [
 
 ];
 const Career = () => {
+    const textRef = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Use the global CSS class
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        if (textRef.current) {
+            observer.observe(textRef.current);
+        }
+
+        return () => {
+
+        };
+    }, []);
     return (
         <div>
             <div className='text-center flex flex-col justify-center max-w-7xl 2xl:max-w-[1500px] m-auto mt-20 mb-16'>
@@ -53,7 +76,7 @@ const Career = () => {
                         We prioritize a culture where every individual is empowered to innovate, <br />contribute, and make decisions that matter.
                     </p>
                     <div>
-                        <button className="border open_sans_display text-sm lg:text-lg xl:text-xl  border-solid rounded-full text-white px-3 py-2 lg:py-3 lg:px-5 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] transition duration-300">
+                        <button onClick={() => document.getElementById('carrercurr').scrollIntoView({ behavior: 'smooth' })} className="border open_sans_display text-sm lg:text-lg xl:text-xl  border-solid rounded-full text-white px-3 py-2 lg:py-3 lg:px-5 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] transition duration-300">
                             Apply Now
                         </button>
                     </div>
@@ -112,7 +135,7 @@ const Career = () => {
                          candidates for technical knowledge, IQ, communications skills, and ability to work in a team environment.
                     </p>
                     <div>
-                        <button className="border-2 open_sans_display text-sm xl:text-lg  border-solid rounded-full text-white px-3 py-2 lg:py-2 md:px-4 bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] transition duration-300">
+                        <button onClick={() => document.getElementById('carrercurr').scrollIntoView({ behavior: 'smooth' })} className="border-2 open_sans_display text-sm xl:text-lg  border-solid rounded-full text-white px-3 py-2 lg:py-2 md:px-4 bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] transition duration-300">
                             Apply Now
                         </button>
                     </div>
@@ -172,7 +195,7 @@ const Career = () => {
                 </div>
             </div>
 
-            <div className='max-w-7xl flex flex-col justify-start m-auto my-10 '>
+            <div id="carrercurr" className='max-w-7xl flex flex-col justify-start m-auto my-10 '>
 <div className='mx-4'>
                 <h1 className='text-2xl lg:text-3xl xl:text-4xl playfair_displays font-bold '>
                     Join Us To Revolutionize The Future Of Technology                </h1>
