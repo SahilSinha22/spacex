@@ -97,7 +97,7 @@ function Chatbot() {
                         </p>
 
                         <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 text-[#000000] h-auto mt-8 gap-6 lg:gap-10 justify-around  '>
-                            <div className='flex flex-col bg-[#E3E3E3] rounded-xl p-4 md:p-6'>
+                            <div className='flex flex-col bg-[#E3E3E3] rounded-3xl p-4 md:p-6'>
                                 <div >
                                     <div className='py-3 px-5 bg-black Bebas_Neue  inline-flex rounded-full'>
                                         <span className='text-white text-3xl'>01</span>
