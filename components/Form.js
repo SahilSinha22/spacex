@@ -145,7 +145,7 @@ const Form = () => {
                   <h1 className="md:text-xl 2xl:text-2xl text-xl font-semibold mt-2 xl:mt-4">
                     Connect with us
                   </h1>
-                  <div className="text-xl lg:text-base flex flex-col space-y-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
+                  <div className="text-xl lg:text-base flex flex-col space-t-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
                   <a href= "mailto: amit@spacetotech.com  ">   <span> Email : amit@spacetotech.com </span> </a>
                     
                     <span className="w-[300px] 2xl:w-[450px] leading-7">Office : Platina Heights, C24, C Block,

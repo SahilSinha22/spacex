@@ -1,11 +1,23 @@
-import React from 'react'
+"use client"
+import React, {useState} from 'react'
 import Image from 'next/image'
 
 import Indus from './Indus'
 import FAQ from './FAQ'
 import Form from './Form'
-
+import Modal from '@/components/Model'; // Assuming Modal is in the same directory
+import ContactForm from '@/components/Popups';
 function Chatbot() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    
+  };
     return (
         <>
         <div>
@@ -199,10 +211,13 @@ function Chatbot() {
                     </div>
                     <div className='place-content-center w-auto '>
                         <h2 className='text-xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-snug lg:leading-normal xl:leading-relaxed open_sans_displays font-light text-white '> Request custom <br />Chatbot Development </h2>
-                        <button className="text-[#000000] font-bold mt-4 md:mt-10 open_Sans  max-w-xl text-xs md:text-sm lg:text-base xl:text-lg bg-[#ffffff] px-3  md:px-6 py-2 rounded-3xl">Let&apos;s Talk</button>
+                        <button onClick={handleButtonClick} className="text-[#000000] font-bold mt-4 md:mt-10 open_Sans  max-w-xl text-xs md:text-sm lg:text-base xl:text-lg bg-[#ffffff] px-3  md:px-6 py-2 rounded-3xl">Let&apos;s Talk</button>
 
                     </div>
                 </div>
+                <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm onClose={closeModal} />
+      </Modal>
 
             </div>
             <div className=" max-w-7xl mx-auto my-10 md:mt-40 open_sans_display px-4 sm:px-10 xl:px-20 ">
