@@ -1,23 +1,20 @@
 "use client"
 import React, {useState} from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 
 import Indus from './Indus'
 import FAQ from './FAQ'
 import Form from './Form'
-import Modal from '@/components/Model'; // Assuming Modal is in the same directory
-import ContactForm from '@/components/Popups';
+
 function Chatbot() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
+   
+    const router = useRouter();
   const handleButtonClick = () => {
-    setIsModalOpen(true);
+    router.push('/contact');
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-    
-  };
+ 
     return (
         <>
         <div>
@@ -28,10 +25,10 @@ function Chatbot() {
                         <h2 className="text-xl xl:mx-0 lg:text-5xl sm:text-4xl 2xl:text-6xl font-bold mb-4 playfair_display">
                             Chatbot Services : A Floodgate of <br />Opportunities for Business
                         </h2>
-                        <p className=" Open_Sans w-[300px] sm:w-[450px] lg:w-[650px]  2xl:w-[850px] text-base Open_Sans   xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
+                        <p className=" Open_Sans w-[300px] sm:w-[450px] lg:w-[650px]  2xl:w-[800px] text-base Open_Sans   xl:text-xl 2xl:text-2xl lg:text-xl md:text-lg mb-8 ">
                             Have you ever wondered if a computer program could impersonate human interaction?
                         </p>
-                        <button className="border-2 z-20 text-sm  border-solid rounded-full text-white  py-4 px-6  bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
+                        <button onClick={handleButtonClick} className="border-2 z-20 text-sm  border-solid rounded-full text-white  py-4 px-6  bg-gradient-to-r from-[#C9784F] via-[#A06A7B] to-[#6C506F] ">
                             Get in touch with our experts
                         </button>
                     </div>
@@ -105,7 +102,7 @@ function Chatbot() {
                         <h2 className='text-2xl md:text-4xl xl:text-5xl playfair_display  '>
                             How can Space to Tech help <br /> you achieve the Desired Results?       </h2>
                         <p className='my-4 text-base md:text-lg xl:text-xl Open_Sans  md:w-[640px] lg:w-[850px] xl:w-[1050px]'>
-                            Techugo, the best chatbot development company in USA, Canada, UK, and UAE, comprises a brood of experts dedicated to delivering efficient chatbot apps.
+                            Space to Tech, the best chatbot development company in USA, Canada, UK, and UAE, comprises a brood of experts dedicated to delivering efficient chatbot apps.
                         </p>
 
                         <div className='flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 text-[#000000] h-auto mt-8 gap-6 lg:gap-10 justify-around  '>
@@ -215,9 +212,7 @@ function Chatbot() {
 
                     </div>
                 </div>
-                <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ContactForm onClose={closeModal} />
-      </Modal>
+              
 
             </div>
             <div className=" max-w-7xl mx-auto my-10 md:mt-40 open_sans_display px-4 sm:px-10 xl:px-20 ">
