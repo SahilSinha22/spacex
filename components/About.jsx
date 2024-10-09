@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useState, useEffect, useCallback } from "react";
 import Aboutproc from "@/components/Aboutprocess"
 import Leader from '@/components/Leadership';
-
+import Loc from "@/components/Loc"
 const About = () => {
     
 
@@ -62,16 +62,7 @@ const About = () => {
 
 
             
-
-            <div className='b-2 bg-white my-10 py-8'>
-                <span className='border-black border-b py-1 text-lg md:text-2xl lg:text-3xl playfair_displays font-bold'> Location we are Catering</span>
-                <div className='place-content-center py-10 items-center flex justify-center'>
-
-
-                    <Image src="/World.webp" alt="" width={1000} height={1000} />
-                </div>
-            </div>
-
+<Loc/>
 
             <div className="flex flex-col md:flex-row gap-4 items-center bg-card p-6 m-auto max-w-7xl px-10 xl:px-20 2xl:px-0 open_sans_display">
             <div className="md:w-1/2 mt-4 md:mt-0">

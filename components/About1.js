@@ -339,6 +339,7 @@ const About1 = () => {
                         </p>
                     </div>
                 </div>
+               
             </div>
         </div>
     )

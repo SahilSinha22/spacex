@@ -136,13 +136,13 @@ const Form = () => {
                   <h1 className="md:text-2xl text-2xl 2xl:text-3xl font-semibold">
                     Hello now !
                   </h1>
-                  <div className="flex flex-row my-2">
-                   <a href="tel:+91 88 820 76 755" ><Image src="/flag.svg" alt="logo" width={40} height={4} />{" "}</a> 
-                    <div className="ml-4 2xl:text-3xl md:text-xl">
+                  <div className="flex flex-row mt-2 ">
+                   <a href="tel:+91 88 820 76 755" ><Image src="/flag.svg" alt="logo" className=" h-6 lg:h-8 w-10 2xl:h-10" width={100} height={100} />{" "}</a> 
+                    <div className="ml-4 text-xl 2xl:text-3xl md:text-xl">
                     <a href="tel:+91 88 820 76 755" >  +91 88 820 76 755{" "}</a>
                     </div>{" "}
                   </div>
-                  <h1 className="md:text-xl 2xl:text-2xl text-xl font-semibold mt-2 xl:mt-4">
+                  <h1 className="md:text-xl 2xl:text-2xl text-xl font-semibold mt-2 xl:mt-3">
                     Connect with us
                   </h1>
                   <div className="text-xl lg:text-base flex flex-col space-t-2 open_sans_display xl:text-[17px] 2xl:text-2xl ">
