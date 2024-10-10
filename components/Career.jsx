@@ -227,13 +227,14 @@ const Career = () => {
                                 <button onClick={handleButtonClick} className="border open_sans_display text-sm  border-solid rounded-full text-white  py-1 px-3 bg-gradient-to-b from-[#C9784F] via-[#A06A7B] to-[#6C506F] transition duration-300">
                                     Apply Now
                                 </button>
+                                <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ContactForm onClose={closeModal} />
+      </Modal>
                             </div>
                             <div className=''>
                                 <Image src={tech.img} alt="" className="w-auto h-14 lg:h-20" width={100} height={100} />
                             </div>
-                            <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ContactForm onClose={closeModal} />
-      </Modal>
+                       
                         </div>
 
                     )
