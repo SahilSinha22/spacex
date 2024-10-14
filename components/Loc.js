@@ -19,6 +19,7 @@ const GlobeWithPins = () => {
         canada: { top: "35%", left: "20%" },
         usa: { top: "42%", left: "55%" },
         russia: { top: "22%", left: "64%" },
+        india: { top: "38%", left: "69.5%" },
       };
     } else if (screenWidth > 640 && screenWidth <= 1024) {
       // Tablet view positions
@@ -27,6 +28,7 @@ const GlobeWithPins = () => {
         canada: { top: "30%", left: "20%" },
         usa: { top: "40%", left: "50%" },
         russia: { top: "20%", left: "60%" },
+        india: { top: "40%", left: "70.2%" },
       };
     }
     else if (screenWidth > 1024 && screenWidth <= 1280) {
@@ -36,6 +38,7 @@ const GlobeWithPins = () => {
         canada: { top: "30%", left: "23%" },
         usa: { top: "40%", left: "52%" },
         russia: { top: "20%", left: "65%" },
+        india: { top: "40%", left: "66.7%" },
       };
     } 
     else if (screenWidth > 1280 && screenWidth <= 1530) {
@@ -45,6 +48,7 @@ const GlobeWithPins = () => {
         canada: { top: "30%", left: "28%" },
         usa: { top: "40%", left: "50%" },
         russia: { top: "20%", left: "60%" },
+        india: { top: "40%", left: "63.7%" },
       };
     } else {
       // Desktop view positions
@@ -53,6 +57,7 @@ const GlobeWithPins = () => {
         canada: { top: "32%", left: "32%" },
         usa: { top: "42%", left: "52%" },
         russia: { top: "18%", left: "58%" },
+        india: { top: "40%", left: "60.5%" },
       };
     }
 
@@ -105,7 +110,16 @@ const GlobeWithPins = () => {
             onMouseEnter={() => handleMouseEnter("Africa", positions.africa)}
             onMouseLeave={handleMouseLeave}
           />
-
+ <Image
+            src="/pin.svg"
+            alt="Pin"
+            className="absolute h-6 w-4 md:h-10 md:w-10"
+            style={positions.india} // Dynamically set position
+            width={1000}
+            height={1000}
+            onMouseEnter={() => handleMouseEnter("India", positions.india)}
+            onMouseLeave={handleMouseLeave}
+          />
           {/* Pin for Canada */}
           <Image
             src="/pin.svg"
