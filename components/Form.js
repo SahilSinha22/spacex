@@ -335,7 +335,7 @@ const Form = () => {
                     }}
                     disabled={isCaptchaValid === null || !isCaptchaValid}
                   >
-                    Get a free quote →
+                    Get a free quote <span className="text-xl">→</span>
                   </button>
                 </form>
               </div>
