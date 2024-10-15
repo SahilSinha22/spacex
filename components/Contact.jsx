@@ -590,7 +590,7 @@ const Contact = () => {
                       </label>
                     </div>
                   </div>
-                  <div className=" flex relative z-0 w-full md:w-full 2xl:w-[450px] mb-5 mt-6 group">
+                  <div className=" flex-col relative z-0 w-full md:w-full 2xl:w-[450px] mb-5 mt-6 group">
                     <input
                       type="text"
                       name="message"
