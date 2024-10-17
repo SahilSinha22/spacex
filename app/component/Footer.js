@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="     items-center justify-center   w-full    text-white  text-xs">
       <div className=" bg-black pt-12 flex-col sm:flex-row       2xl: xl:text-xl 2xl:text-2xl   grid grid-cols-3  sm:gap-6   sm:gap-y-10 lg:grid-cols-4  md:flex    py-5  text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
         <ul
-          className="w-auto sm:ml-10  ml-2 xl:ml-40 2xl:ml-36 md:ml-20 flex-col 2xl:justify-around xl:justify-between  xl:text-xl 2xl:text-2xl   mb-4 sm:flex sm:flex-col space-y-5 md:mb-0 "
+          className="w-auto sm:ml-10  ml-2 xl:ml-40 2xl:ml-36 md:ml-10 lg:ml-20 flex-col 2xl:justify-around xl:justify-between  xl:text-xl 2xl:text-2xl   mb-4 sm:flex sm:flex-col space-y-5 md:mb-0 "
           aria-labelledby="mega-menu-full-image-button"
         >
           <li>

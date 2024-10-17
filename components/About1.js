@@ -105,22 +105,22 @@ const About1 = () => {
 
     const linkStyles = (path) => {
         const isActive = pathname === path;
-        let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0 text-black mx-4 ';
+        let baseStyle = 'nav-link block mt-4 lg:inline-block lg:mt-0  mx-4 ';
 
         if (path === '/') {
             baseStyle += isActive ? 'text-white hover:text-white' : 'text-white hover:text-orange-600 ';
         }
         else if (path === '/Technology') {
-            baseStyle += isActive ? 'text-black ' : 'text-white hover:text-orange-600 ';
+            baseStyle += isActive ? ' ' : 'text-white  hover:text-orange-600 ';
         }
         else if (path === '/contact') {
-            baseStyle += isActive ? 'text-black ' : 'text-white hover:text-orange-600 ';
+            baseStyle += isActive ? ' ' : 'text-white hover:text-orange-600 ';
         }
         else if (path === '/About') {
             baseStyle += isActive ? 'text-orange-600 ' : 'text-white hover:text-orange-600 ';
         }
         else {
-            baseStyle += isActive ? 'text-black ' : 'text-white hover:text-orange-600 ';
+            baseStyle += isActive ? ' ' : 'text-white hover:text-orange-600 ';
         }
 
         return baseStyle;
@@ -137,13 +137,13 @@ const About1 = () => {
                     <source src="/About.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <div class="video-overlay"></div>
+                <div className="video-overlay"></div>
                 <nav className="items-center text-center  p-4">
       <div className="w-auto   m-auto  max-w-2xl lg:max-w-5xl  relative  2xl:max-w-6xl 2xl:mx-auto flex items-center place-content-center justify-between lg:justify-around flex-wrap">
         <div className="flex items-center flex-shrink-0 text-white ">
           <span>
             <Link href="/" >
-              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5  sm:h-10" alt="Logo" width={600} height={10} />
+              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-8  sm:h-10" alt="Logo" width={600} height={10} />
             </Link>
           </span>
         </div>
@@ -310,7 +310,7 @@ const About1 = () => {
                 </section>
               </div>
             </div>
-            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mx-4 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-white hover:text-orange-600'}`}>
+            <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white mx-4 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear') ? 'text-black hover:text-black' : 'text-white hover:text-orange-600'}`}>
               Portfolio
             </Link>
             <Link href="/Career" className={linkStyles('/')}>

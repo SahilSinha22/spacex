@@ -113,6 +113,7 @@ const Navbar = ({ role }) => {
     else if (path === '/Technology') {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
     }
+    
     else if (path === '/Career') {
       baseStyle += isActive ? 'text-black ' : 'text-zinc-400 hover:text-black ';
     }
@@ -129,7 +130,7 @@ const Navbar = ({ role }) => {
         <div className="flex items-center flex-shrink-0 text-white ">
           <span>
             <Link href="/" >
-              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-5  sm:h-10" alt="Logo" width={600} height={10} />
+              <Image src={`/${logo}`} id="navbar-logo" className="w-56 sm:w-60 lg:w-44 lg:h-8  sm:h-10" alt="Logo" width={600} height={10} />
             </Link>
           </span>
         </div>
@@ -299,7 +300,7 @@ const Navbar = ({ role }) => {
             <Link href="/Portfolio" className={`nav-link block mt-4 lg:inline-block lg:mt-0 text-white-200 mx-4 ${isActiveLink('/Portfolio') || isActiveLink('/LiquiClear')   ? 'text-black hover:text-black' : 'text-zinc-400 hover:text-black'}`}>
               Portfolio
             </Link>
-            <Link href="/Career" className={linkStyles('/')}>
+            <Link href="/Career" className={linkStyles('/Career') }>
              Career
             </Link>
           </div>
